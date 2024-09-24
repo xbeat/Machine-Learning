@@ -723,6 +723,12 @@ Introduction to Reinforcement Learning
 
 Reinforcement Learning (RL) is a type of machine learning where an agent learns to make decisions by interacting with an environment. The agent receives rewards or penalties based on its actions, aiming to maximize cumulative rewards over time. This process mimics how humans and animals learn through trial and error.
 
+## Building Decision Trees from Scratch in Python
+
+Introduction to Decision Trees
+
+Decision trees are powerful machine learning models used for both classification and regression tasks. They work by recursively splitting the data based on features to create a tree-like structure for making predictions. In this presentation, we'll explore how to build decision trees from scratch using Python.
+
 ## Vector Embeddings, Databases, and Search in Python
 
 Introduction to Vector Embeddings
@@ -1144,6 +1150,12 @@ Foundation Agents are an emerging paradigm in AI that combines large language mo
 Introduction to Finite Element Analysis (FEA)
 
 Finite Element Analysis is a numerical method for solving complex engineering problems. It involves dividing a large problem into smaller, simpler parts called finite elements. Let's visualize a simple mesh generation:
+
+## Quasi-Newton Optimization Methods in Python
+
+Introduction to Quasi-Newton Methods
+
+Quasi-Newton methods are optimization algorithms used to find local maxima and minima of functions. They are particularly useful when the Hessian matrix is unavailable or too expensive to compute. These methods approximate the Hessian matrix or its inverse, updating it iteratively to improve convergence.
 
 ## Introduction to Regular Expressions in Python
 
@@ -2598,6 +2610,16 @@ Architectural Design Patterns in Python
 
 Architectural design patterns are reusable solutions to common problems in software design. They provide a structured approach to organizing code and improving system scalability, maintainability, and flexibility. In this presentation, we'll explore several key patterns and their implementation in Python.
 
+## Comprehensive Guide to Code Smells
+
+Introduction to Code Smells
+
+Code smells are indicators of potential problems in software design and implementation. They are not bugs or errors, but rather signs that the code might benefit from refactoring. Understanding code smells is crucial for maintaining clean, efficient, and maintainable code.
+
+Code smells → Refactoring opportunities → Improved code quality
+
+The process of dealing with code smells typically follows this pattern: Identify code smell → Analyze root cause → Apply appropriate refactoring → Validate improvement
+
 ## Building a Logistic Regression Algorithm from Scratch in Python
 
 Introduction to Logistic Regression
@@ -3167,6 +3189,12 @@ Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) are advanced recurr
 Introduction to LoRA Adapters
 
 LoRA (Low-Rank Adaptation) is a technique used to efficiently fine-tune large language models. It reduces the number of trainable parameters by adding pairs of rank-decomposition matrices to existing weights, enabling faster and more memory-efficient adaptation of pre-trained models.
+
+## Zero-Shot Learning with Python
+
+Introduction to Zero-Shot Learning
+
+Zero-Shot Learning (ZSL) is a machine learning paradigm where a model can classify or make predictions for classes it has never seen during training. This approach leverages the semantic relationships between known and unknown classes to generalize knowledge.
 
 ## Introduction to Python Utility Function
 
@@ -3934,6 +3962,12 @@ Introduction to Graph Traversal
 
 Graph traversal is a fundamental technique in computer science for exploring and analyzing graph structures. Two primary methods are Depth-First Search (DFS) and Breadth-First Search (BFS). These algorithms are essential for solving various problems, including pathfinding, connectivity analysis, and cycle detection.
 
+## Kernel Density Estimation in Python
+
+Introduction to Kernel Density Estimation
+
+Kernel Density Estimation (KDE) is a non-parametric method for estimating the probability density function of a random variable based on a finite data sample. It's a powerful technique used in data analysis and visualization to smooth out the data and reveal underlying patterns.
+
 ## Pros and Cons of Gradient Boosting in Python
 
 Introduction to Gradient Boosting
@@ -4304,6 +4338,36 @@ Convolutional Neural Networks are a class of deep learning models designed to pr
 Introduction to Complex Analysis
 
 Complex analysis is a branch of mathematics that studies functions of complex numbers. It has wide-ranging applications in physics, engineering, and other fields of mathematics.
+
+## Leveraging Git From Narrative to Refactor
+
+Interactive Rebase
+
+Interactive rebase is a powerful Git feature that allows developers to rewrite commit history. This tool is essential for maintaining a clean and organized Git history, especially in collaborative environments.
+
+Interactive rebase works by allowing you to modify, combine, or delete commits before they are applied to the target branch. This process can be visualized as follows:
+
+* Original commits → Interactive rebase → Modified commits
+* Messy history → Clean up → Clear narrative
+
+Here's how to perform an interactive rebase:
+
+```bash
+git rebase -i HEAD~3
+```
+
+This command will open an editor where you can choose actions for the last three commits:
+
+* pick → Keep the commit as is
+* reword → Change the commit message
+* squash → Combine with previous commit
+* drop → Remove the commit
+
+Interactive rebase is particularly useful for:
+
+* Cleaning up work-in-progress commits → Creating a coherent feature history
+* Fixing typos in commit messages → Improving project documentation
+* Combining related commits → Simplifying code review process
 
 ## Fine-tuning T5-small for Retrieval-Augmented Generation (RAG) Using Python
 
