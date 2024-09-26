@@ -657,6 +657,12 @@ Dependency Inversion Principle in Python
 
 The Dependency Inversion Principle (DIP) is one of the core principles of the SOLID principles in object-oriented programming. It states that high-level modules should not depend on low-level modules; both should depend on abstractions. Abstractions should not depend on details. Details should depend on abstractions.
 
+## Temperature's Role in Language Model Output
+
+Understanding Temperature in Language Models
+
+Temperature is a crucial hyperparameter in language models that controls the randomness of the model's output. It affects the probability distribution of the next token prediction, influencing the creativity and diversity of generated text.
+
 ## Transfer Learning with VGG in Python
 
 Introduction to Transfer Learning
@@ -2586,6 +2592,12 @@ Vector 1: [1, 2, 3]
 Vector 2: [4 5 6]
 ```
 
+## Sigmoid Activation Function in Python
+
+Introduction to Sigmoid Activation Function
+
+The sigmoid activation function is a fundamental component in neural networks and machine learning. It maps input values to an output range between 0 and 1, making it useful for binary classification problems and as a smooth, differentiable alternative to step functions.
+
 ## Solving Multicollinearity with One-Hot Encoding in Python
 
 Introduction to Multicollinearity
@@ -3426,6 +3438,12 @@ Linear Independence in AI and ML
 
 Linear independence is a fundamental concept in linear algebra that plays a crucial role in various aspects of artificial intelligence and machine learning. It helps in understanding the uniqueness of solutions, feature selection, and dimensionality reduction. This presentation will explore the concept of linear independence and its applications in AI and ML using Python.
 
+## Efficient Market Hypothesis using Python
+
+Introduction to Efficient Market Hypothesis (EMH)
+
+The Efficient Market Hypothesis (EMH) is a fundamental concept in financial economics that suggests asset prices fully reflect all available information. This theory implies that it's impossible to consistently outperform the market through expert stock selection or market timing.
+
 ## Advanced Pandas Techniques for Machine Learning
 
 Introduction to Advanced Data Manipulation
@@ -3649,6 +3667,12 @@ Functional analysis is a branch of mathematics that studies vector spaces and th
 
 Introduction to Natural Language Toolkit (NLTK) NLTK is a suite of libraries and programs for symbolic and statistical natural language processing (NLP) for the Python programming language. It provides easy-to-use interfaces to over 50 corpora and lexical resources, along with a suite of text processing libraries for classification, tokenization, stemming, tagging, parsing, and semantic reasoning.
 
+## Evaluating Large Language Models 30 Common Metrics
+
+Introduction to LLM Evaluation Metrics
+
+Large Language Models (LLMs) have revolutionized natural language processing tasks. To assess their performance, researchers and practitioners use various evaluation metrics. This presentation covers 30 common metrics, their applications, and implementations.
+
 ## Decision Trees, Random Forests, and Gradient Boosting in Python
 
 Decision Trees in Python
@@ -3826,6 +3850,12 @@ Introduction to Fine-tuning Large Language Models (LLMs)
 
 Fine-tuning is a process of adapting a pre-trained language model to a specific task or domain by updating its parameters on a smaller, task-specific dataset. This technique allows you to leverage the knowledge and capabilities of the base model while tailoring it to your specific needs. In this presentation, we'll explore five popular fine-tuning techniques: LoRA, LoRA-FA, VeRA, Delta-LoRA, and LoRA+.
 
+## 11 Essential Data Normality Tests for Machine Learning
+
+Introduction to Data Normality Testing
+
+Data normality testing is crucial in many machine learning models and statistical analyses. This slideshow will explore 11 essential methods to test for normality in data distributions. We'll cover both visual and quantitative approaches, providing code examples and practical applications for each method.
+
 ## Evaluating Classification Models with ROC Curves and AUC in Python
 
 Introduction to ROC Curves and AUC
@@ -3991,6 +4021,12 @@ Graph traversal is a fundamental technique in computer science for exploring and
 Introduction to Kernel Density Estimation
 
 Kernel Density Estimation (KDE) is a non-parametric method for estimating the probability density function of a random variable based on a finite data sample. It's a powerful technique used in data analysis and visualization to smooth out the data and reveal underlying patterns.
+
+## Regression Decision Tree in Python
+
+Introduction to Regression Decision Trees
+
+Regression Decision Trees are a powerful machine learning technique used for predicting continuous numerical values. They combine the simplicity of decision trees with the ability to handle regression tasks, making them versatile for various real-world applications.
 
 ## Pros and Cons of Gradient Boosting in Python
 
