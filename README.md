@@ -789,6 +789,12 @@ Introduction to Topological Vector Spaces
 
 Topological vector spaces are a fundamental concept in functional analysis, combining linear algebra with topology. They provide a framework for studying infinite-dimensional vector spaces equipped with a topology compatible with vector operations.
 
+## GraphRAG Graph-based NLP with Python
+
+Introduction to GraphRAG
+
+GraphRAG is an innovative approach that combines graph-based knowledge representation with Retrieval-Augmented Generation (RAG) for enhanced natural language processing tasks. This method leverages the structural information in graphs to improve the quality and relevance of generated text.
+
 ## Weights in Machine Learning and Deep Learning with Python
 
 Introduction to Weights in Machine Learning
@@ -1978,6 +1984,12 @@ Introduction to BERT
 
 BERT (Bidirectional Encoder Representations from Transformers) is a revolutionary natural language processing model that has significantly improved the way machines understand and process human language. Developed by Google in 2018, BERT has become a cornerstone in various NLP tasks, including question answering, sentiment analysis, and text classification. In this presentation, we'll explore BERT's architecture, its key features, and how to implement it using Python.
 
+## My Notes About Neural Network Design in a Comprehensive Way
+
+Title Slide
+
+Neural Network Training: Loss Functions, Activation Functions, and Architecture Design
+
 ## Exploring Transcendence in Machine Learning with Python
 
 Transcendence in Machine Learning: An Introduction
@@ -2285,6 +2297,12 @@ Regular expressions (regex) are powerful tools for pattern matching and text man
 Introduction to Multi-Dimensional Data Visualization
 
 Multi-dimensional data visualization is a critical aspect of machine learning that allows us to understand complex datasets with multiple features. It helps in identifying patterns, correlations, and outliers that may not be apparent in lower-dimensional representations. In this presentation, we'll explore various techniques and Python libraries for visualizing high-dimensional data.
+
+## Snowflake vs Databricks Python-Powered Comparison
+
+Introduction to Snowflake and Databricks
+
+Snowflake and Databricks are both cloud-based data platforms that offer solutions for data warehousing, analytics, and big data processing. While they share some similarities, they have distinct architectures and strengths. This presentation will explore their key features, differences, and use cases, with practical Python examples.
 
 ## Visualizing Syzygies with Python
 
@@ -3463,6 +3481,12 @@ Introduction to Telegram Bots and Python
 
 Telegram is a popular messaging platform that allows users to interact with bots, which are essentially automated programs that can perform various tasks. Python, with its simplicity and extensive libraries, is an excellent choice for creating Telegram bots. In this slideshow, we'll explore the process of building a Telegram bot using Python.
 
+## Lipschitz Constant in Neural Networks
+
+Introduction to Lipschitz Constant
+
+The Lipschitz constant is a measure of how fast a function can change. It's crucial in deep learning for ensuring stability and convergence. This slideshow explores the Lipschitz constant in various neural network components.
+
 ## Building Simple Neural Networks with TensorFlow
 
 Building Simple Neural Networks with TensorFlow
@@ -4298,6 +4322,12 @@ The Fly-Lifting Conundrum
 
 In this presentation, we'll explore the intriguing question: "Would 20,000 flies be enough to lift me?" We'll approach this problem mathematically, breaking it down into manageable components and using Python to calculate our results. This analysis will involve considering the lifting capacity of flies, human weight, and the physics of flight.
 
+## Process Capability Analysis for Non-Normal Distributions in Python
+
+Process Capability for Non-Normal Distributions
+
+Process capability analysis is a crucial tool in quality control, traditionally designed for normal distributions. However, real-world data often follows non-normal distributions, necessitating alternative approaches. This presentation explores methods to assess process capability for non-normal distributions using Python.
+
 ## Empirical Rule and Normal Distribution in Python
 
 The Empirical Rule in Normal Distribution
@@ -4475,6 +4505,12 @@ The binomial distribution models the number of successes in a fixed number of in
 Introduction to CNNs and PyTorch
 
 Convolutional Neural Networks (CNNs) are a powerful class of deep learning models particularly effective for image classification tasks. PyTorch, a popular deep learning framework, provides an intuitive way to implement CNNs. This slideshow will guide you through the process of creating a CNN for image classification using PyTorch and Python.
+
+## Calculating Lipschitz Constant with Python
+
+Introduction to Lipschitz Constants
+
+The Lipschitz constant is a measure of how fast a function can change. It's crucial in optimization, machine learning, and differential equations. This slideshow will guide you through calculating Lipschitz constants using Python, providing practical examples and code snippets.
 
 ## Calculating the Surface Area of a Scutoid
 
