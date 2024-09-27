@@ -1031,6 +1031,12 @@ Introduction to One-Hot Encoding
 
 One-Hot Encoding is a technique used in machine learning to represent categorical data as binary vectors. It is particularly useful when working with algorithms that require numerical input, as it transforms categorical variables into a format that can be easily understood by the model.
 
+## Classification Concepts and Decision Trees
+
+Introduction to Classification
+
+Classification is a fundamental task in machine learning where we predict the category of an input based on its features. It's widely used in various fields, from medicine to technology.
+
 ## Unveiling Explainable AI (XAI) with Python
 
 Introduction to Explainable AI (XAI)
@@ -1990,6 +1996,12 @@ Introduction to BERT
 
 BERT (Bidirectional Encoder Representations from Transformers) is a revolutionary natural language processing model that has significantly improved the way machines understand and process human language. Developed by Google in 2018, BERT has become a cornerstone in various NLP tasks, including question answering, sentiment analysis, and text classification. In this presentation, we'll explore BERT's architecture, its key features, and how to implement it using Python.
 
+## Convolutional Neural Network with Python
+
+Introduction to Convolutional Operations
+
+Convolutional operations are fundamental building blocks in neural networks, particularly in computer vision tasks. They enable the network to learn spatial hierarchies of features, making them highly effective for image processing and recognition tasks.
+
 ## My Notes About Neural Network Design in a Comprehensive Way
 
 Title Slide
@@ -2358,6 +2370,12 @@ Introduction to Accelerated Generation Techniques in LLMs
 
 Accelerated generation techniques refer to methods that enable Large Language Models (LLMs) to generate text more efficiently and with improved performance. These techniques are crucial for applications that demand real-time or near-real-time responses, such as conversational AI assistants, machine translation, and text summarization.
 
+## Cross-Validation Techniques in Python for Machine Learning
+
+Introduction to Cross-Validation
+
+Cross-validation is a crucial technique in machine learning for assessing model performance and preventing overfitting. It involves partitioning the data into subsets, training the model on a subset, and validating it on the remaining data. This process helps in estimating how well the model will generalize to unseen data.
+
 ## Enhancing Data Visualizations with Seaborn in Python
 
 Introduction to Seaborn
@@ -2554,6 +2572,12 @@ Noncommutative rings are algebraic structures where multiplication is not commut
 Introduction to VQ-VAE
 
 Vector Quantized Variational Auto-Encoder (VQ-VAE) is a powerful neural network architecture for learning discrete representations of data. It combines the ideas of vector quantization and variational autoencoders to create a model that can compress and reconstruct complex data while maintaining important features. This approach is particularly useful in various applications, including image and audio processing, as well as generative modeling.
+
+## Explaining the Decoder in Machine Learning Models with Python
+
+Understanding the Decoder in ML Models
+
+The decoder is a crucial component in many machine learning models, particularly in sequence-to-sequence architectures. It takes the encoded representation of input data and generates meaningful output, often used in tasks like machine translation, text summarization, and image captioning.
 
 ## Reinforcement Learning from Human Feedback in Python
 
@@ -2829,6 +2853,12 @@ The concept of a "discovered universal number" is not a well-established mathema
 Introduction to Distributed Model Training with TensorFlow
 
 Distributed model training is a technique used to train machine learning models across multiple devices or machines. This approach is particularly useful for large datasets or complex models that would be time-consuming or impossible to train on a single device. TensorFlow, a popular open-source machine learning framework, provides robust support for distributed training.
+
+## Building Linear Discriminant Analysis without Libs in Python
+
+Introduction to Linear Discriminant Analysis (LDA)
+
+Linear Discriminant Analysis (LDA) is a dimensionality reduction and classification technique used in machine learning and statistics. It aims to find a linear combination of features that best separates two or more classes of objects or events. LDA is particularly useful when dealing with multi-class classification problems and can be used for both dimensionality reduction and classification tasks.
 
 ## Stacking Ensemble Learning with Python
 
