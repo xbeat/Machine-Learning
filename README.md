@@ -230,6 +230,16 @@ Introduction to Cosine Similarity Loss
 
 Cosine Similarity Loss is a popular metric in machine learning, particularly in natural language processing and recommendation systems. It measures the cosine of the angle between two non-zero vectors, providing a value between -1 and 1. While widely used, it has several hidden pitfalls that can lead to unexpected results.
 
+## Building Efficient APIs with Python
+
+APIs and System Integration
+
+APIs are indeed the backbone of modern systems, enabling seamless interaction between different components. The choice of API architecture style is crucial for building efficient, scalable, and maintainable applications. Let's explore the top 6 API architecture styles mentioned, their characteristics, and use cases.
+
+
+
+Would you like me to explain or break down this code?
+
 ## Understanding K-Means Clustering in Python
 
 Introduction to K-Means Clustering
@@ -4411,6 +4421,12 @@ In this presentation, we will explore techniques to automatically detect errors 
 Feature Encoding: An Introduction
 
 Feature encoding is a crucial step in data preprocessing for machine learning. It involves converting categorical variables into a numerical format that algorithms can understand and process. This transformation enables models to work with diverse data types and extract meaningful patterns.
+
+## Computational Graphs for Machine Learning in Python
+
+Introduction to Computational Graphs in Machine Learning
+
+Computational graphs are powerful tools for representing and optimizing complex mathematical operations in machine learning. They form the backbone of modern deep learning frameworks, allowing efficient computation and automatic differentiation. In this presentation, we'll explore the concept of computational graphs and their implementation using Python.
 
 ## Modeling Viral App Feature Adoption Using Python
 
