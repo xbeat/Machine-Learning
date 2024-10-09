@@ -48,6 +48,12 @@ Introduction to Vision-Language Models (VLMs)
 
 Vision-Language Models (VLMs) are a class of deep learning models that combine computer vision and natural language processing to enable bidirectional reasoning between visual and textual data. These models can perform tasks such as image captioning, visual question answering, and multimodal machine translation.
 
+## LSTM and GRU Basics
+
+Introduction to LSTM and GRU
+
+Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) are advanced recurrent neural network architectures designed to handle sequential data and long-term dependencies. These models have revolutionized natural language processing, time series analysis, and many other sequence-based tasks.
+
 ## Choosing the Best Embedding Model for RAG in Python
 
 Introduction to Embedding Models for RAG
@@ -137,6 +143,12 @@ Kolmogorov-Arnold Networks (KANs) are a type of neural network architecture insp
 Model Instantiation
 
 Understanding how to instantiate a Transformer model is the first step in working with these powerful architectures. We'll use the Hugging Face Transformers library to load a pre-trained BERT model.
+
+## Introducing Geometric Hypergraph Neural Networks in Python
+
+Introduction to Geometric Hypergraph Neural Networks
+
+Geometric Hypergraph Neural Networks (GHNNs) are a novel class of neural networks designed to process complex relational data represented as hypergraphs. These networks extend traditional graph neural networks to capture higher-order relationships between entities, making them particularly useful for applications in molecular biology, social network analysis, and recommendation systems.
 
 ## Weights and Biases in Neural Networks in Python
 
@@ -577,6 +589,12 @@ Introduction to LinearBoost Classifier
 
 LinearBoost is an ensemble learning algorithm that combines multiple weak classifiers to create a strong classifier. It is a variant of the AdaBoost algorithm, designed specifically for linear classifiers. LinearBoost aims to improve the accuracy and robustness of linear classifiers by iteratively updating the weights of training samples and combining multiple weighted classifiers.
 
+## The Psychology of Effective Data Visualization
+
+The Psychology Behind Data Visualization
+
+Data visualization leverages our innate pattern recognition abilities to convey information more effectively than raw numbers. This presentation explores key psychological theories that make data visualization intuitive and impactful.
+
 ## Introduction to Math and Statistics for Steam AI in Python
 
 Introduction to Mathematics and Statistics for Steam AI using Python
@@ -673,11 +691,23 @@ Identity Mappings in Deep Residual Networks
 
 Identity mappings are a key component in deep residual networks, enhancing gradient flow and easing optimization. They allow for the creation of very deep networks by addressing the vanishing gradient problem. Let's explore their implementation and benefits using Python and TensorFlow.
 
+## Feature Selection Using Information Gain and Mutual Information in Python
+
+Feature Selection Using Information Gain/Mutual Information
+
+Feature selection is a crucial step in machine learning that helps identify the most relevant features for a given task. Information Gain and Mutual Information are powerful techniques used to measure the importance of features. This presentation will explore these concepts and their implementation in Python.
+
 ## Dependency Inversion Principle in Python
 
 Dependency Inversion Principle in Python
 
 The Dependency Inversion Principle (DIP) is one of the core principles of the SOLID principles in object-oriented programming. It states that high-level modules should not depend on low-level modules; both should depend on abstractions. Abstractions should not depend on details. Details should depend on abstractions.
+
+## Time Shifting in Pandas Manipulating Time Series Data
+
+Time Shifting in Pandas
+
+Time shifting is a powerful feature in pandas that allows you to manipulate and analyze time series data efficiently. It enables you to shift index labels forward or backward, creating new time-based perspectives on your data. This slideshow will guide you through the concepts and practical applications of time shifting in pandas using Python.
 
 ## Temperature's Role in Language Model Output
 
@@ -840,6 +870,12 @@ Variational Autoencoders (VAEs) are powerful generative models that combine idea
 Introduction to Numba
 
 Numba is a just-in-time compiler for Python that can significantly speed up numerical and scientific Python code. It works by translating Python functions to optimized machine code at runtime using the industry-standard LLVM compiler library.
+
+## Artificial Neurons for Modeling Local Joint Distributions in Python
+
+Introduction to Artificial Neurons and Local Joint Distributions
+
+Artificial neurons are computational units inspired by biological neurons, forming the foundation of artificial neural networks. In this context, we'll explore how these neurons can model local joint distributions, a crucial concept in probability theory and machine learning.
 
 ## Normalizing and Feature Extraction of 3D Point Clouds
 
@@ -1444,6 +1480,12 @@ Introduction to Univalent Functions
 
 Univalent functions are a fundamental concept in complex analysis, characterized by their one-to-one property. A function f(z) is univalent in a domain D if it never takes the same value twice in D. In other words, for any two distinct points z1 and z2 in D, f(z1) ≠ f(z2).
 
+## Mastering NumPy Indexing and Slicing for Data Analysis
+
+Introduction to NumPy Indexing and Slicing
+
+NumPy, a fundamental library for scientific computing in Python, offers powerful tools for data manipulation. Indexing and slicing are key techniques that allow efficient access and modification of array elements. These operations form the foundation for advanced data analysis and processing in NumPy.
+
 ## Implementing N-Point Crossover in Python
 
 Introduction to N-point Crossover
@@ -1588,11 +1630,23 @@ Introduction to Statistical Learning
 
 Statistical learning refers to a vast set of tools for understanding data. It has led to fascinating advances in fields ranging from biology to astrophysics to marketing and beyond. In this slideshow, we will explore the fundamental concepts and techniques of statistical learning using Python.
 
+## Autoencoders for Manifold Dimension Discovery in Python
+
+Introduction to Autoencoders for Manifold Dimension Discovery
+
+Autoencoders are neural networks designed to learn efficient data representations in an unsupervised manner. They can be used to discover the intrinsic dimensionality of data, often referred to as the manifold dimension. This process involves compressing the input data into a lower-dimensional representation and then reconstructing it, allowing us to understand the underlying structure of complex datasets.
+
 ## Radix and Bucket Sort in Python
 
 Introduction to Sorting Algorithms
 
 Sorting algorithms are fundamental in computer science, organizing data for efficient retrieval and processing. This presentation focuses on two efficient sorting algorithms: Radix Sort and Bucket Sort. Both are non-comparative sorting algorithms that can achieve linear time complexity under certain conditions.
+
+## Ensemble Methods for Improved Predictions in Python
+
+Introduction to Ensemble Methods
+
+Ensemble methods are powerful machine learning techniques that combine multiple models to create a more robust and accurate predictor. By leveraging the strengths of various algorithms, ensemble methods can often outperform individual models. In this presentation, we'll explore different ensemble techniques and their implementation in Python.
 
 ## Attention Mechanism in Python
 
@@ -1933,6 +1987,12 @@ Neuron models are mathematical representations of the electrical activity in neu
 Introduction to Commutative Algebra
 
 Commutative algebra is a branch of mathematics that studies commutative rings and their ideals. It forms the foundation for algebraic geometry and has applications in various fields, including cryptography and coding theory.
+
+## Explaining the Vanishing Gradient Problem in Neural Networks with Python
+
+The Vanishing Gradient Problem
+
+The vanishing gradient problem is a significant challenge in training deep neural networks. It occurs when the gradients of the loss function approach zero, making it difficult for the network to learn and adjust its parameters effectively. This issue is particularly prevalent in networks with many layers and certain activation functions.
 
 ## Introduction to LLM-based Text-to-SQL Integration
 
@@ -2589,6 +2649,12 @@ Imbalanced Classification: An Introduction
 
 Imbalanced classification is a common problem in machine learning where one class significantly outnumbers the other(s). This can lead to biased models that perform poorly on minority classes. Let's explore techniques to address this issue.
 
+## Confusion Matrix and Performance Metrics in Python
+
+Introduction to Confusion Matrix
+
+A confusion matrix is a fundamental tool in machine learning for evaluating classification models. It provides a tabular summary of the model's predictions compared to the actual outcomes, allowing us to assess various performance metrics and identify areas for improvement.
+
 ## Noncommutative Rings using Python
 
 Introduction to Noncommutative Rings
@@ -2737,6 +2803,12 @@ The Transformer architecture, introduced in the "Attention Is All You Need" pape
 Introduction to Double and Triple Integrals in Machine Learning and AI
 
 Double and triple integrals are mathematical tools used in Machine Learning and AI to solve complex problems involving multiple variables. They are particularly useful in calculating multidimensional integrals, which arise in various applications such as image processing, computer vision, and optimization algorithms. In this slideshow, we will explore the concepts and applications of double and triple integrals in the context of Machine Learning and AI using Python.
+
+## Direct Preference Optimization in Machine Learning with Python
+
+Introduction to Direct Preference Optimization (DPO)
+
+Direct Preference Optimization is a novel approach in machine learning that aims to improve model performance by directly optimizing for human preferences. Unlike traditional methods that rely on predefined loss functions, DPO leverages human feedback to guide the learning process.
 
 ## Exploring GRU and LSTM in Python for Sequence Modeling
 
@@ -4098,6 +4170,12 @@ Introduction to Regression Decision Trees
 
 Regression Decision Trees are a powerful machine learning technique used for predicting continuous numerical values. They combine the simplicity of decision trees with the ability to handle regression tasks, making them versatile for various real-world applications.
 
+## Contrastive Learning with Python
+
+Introduction to Contrastive Learning
+
+Contrastive Learning is a machine learning technique that aims to learn representations by comparing similar and dissimilar samples. It's particularly useful in self-supervised learning scenarios where labeled data is scarce. This approach encourages the model to bring similar samples closer in the embedding space while pushing dissimilar samples apart.
+
 ## Pros and Cons of Gradient Boosting in Python
 
 Introduction to Gradient Boosting
@@ -4581,6 +4659,12 @@ Code:
 
 Caption: This code defines a function `simpson` that takes a function `f`, the integration limits `a` and `b`, and the number of subintervals `n`. It calculates the approximation of the integral using Simpson's Rule.
 
+## Image Segmentation using K-means Clustering in Python
+
+Introduction to Image Segmentation with K-means Clustering
+
+Image segmentation is a crucial task in computer vision that involves partitioning an image into multiple segments or regions. K-means clustering is a popular unsupervised learning algorithm that can be applied to image segmentation. This technique groups pixels with similar characteristics into clusters, effectively separating different objects or regions in an image.
+
 ## Aggregation of Reasoning in Python
 
 Introduction to Aggregation of Reasoning
@@ -4703,6 +4787,12 @@ Encoders, decoders, and encoder-decoder models are fundamental components in nat
 Introduction to Django
 Django is a high-level Python web framework that follows the Model-View-Template (MVT) architectural pattern. It simplifies the development of secure and maintainable websites by providing a comprehensive set of features out-of-the-box, including an Object-Relational Mapping (ORM) layer, URL routing, and a template engine.
 
+## Few-Shot Learning with Python
+
+Introduction to Few-Shot Learning
+
+Few-Shot Learning is a machine learning paradigm where models are trained to recognize new classes or perform new tasks with only a small number of labeled examples. This approach is crucial in scenarios where large datasets are unavailable or expensive to obtain.
+
 ## Understanding LLM Benchmarks with Python
 
 Understanding LLM Benchmarks using Python
@@ -4714,6 +4804,12 @@ Large Language Models (LLMs) have revolutionized natural language processing. To
 Jeff Dean: Pioneering Innovations in Large-Scale Distributed Systems and Machine Learning
 
 Journey Through the Life and Work of a Google AI Visionary
+
+## NumPy Broadcasting Simplifying Python Code
+
+What Is NumPy Broadcasting?
+
+NumPy broadcasting is a powerful mechanism that allows arrays with different shapes to be used in arithmetic operations. It automatically expands arrays to compatible shapes, enabling efficient and concise computations without explicitly reshaping or ing data.
 
 ## Comparing Kolmogorov Arnold Networks (KAN) and Multi-Layer Perceptron (MLP) in Python
 
@@ -4732,6 +4828,12 @@ Retrieval-Augmented Language Models (RALMs) combine the power of large language 
 Introduction to Self-Attention & Cross-Attention
 
 Self-attention and cross-attention are fundamental mechanisms in transformer architectures. They allow models to weigh the importance of different parts of the input sequence when processing each element. This slideshow will explore these concepts with practical Python examples.
+
+## Activation Functions The Driving Force of Neural Networks
+
+Activation Functions: The Spark of Neural Networks
+
+Activation functions are a crucial component in neural networks, acting as the non-linear transformation that allows these networks to learn complex patterns. They introduce non-linearity into the network, enabling it to approximate any function and solve non-trivial problems.
 
 ## Understanding Convolutional Neural Network Layers Using Python
 
@@ -4846,6 +4948,12 @@ Introduction to Physics with Python "Exploring Physics with Python" This slide d
 Comparing Strings in Python: Identity vs. Equality
 
 When comparing strings in Python, it's crucial to understand the difference between identity and equality. Using the 'is' operator for string comparisons can lead to unexpected results.
+
+## Optimizers and Gradient Descent Challenges in Deep Learning
+
+Introduction to Optimizers in Deep Learning
+
+Optimizers are algorithms used to adjust the parameters of neural networks during training. They aim to minimize the loss function and improve the model's performance. Let's start with a simple example of how an optimizer works:
 
 ## Compact Lie Groups with Python
 
