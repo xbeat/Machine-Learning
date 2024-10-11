@@ -144,6 +144,12 @@ Model Instantiation
 
 Understanding how to instantiate a Transformer model is the first step in working with these powerful architectures. We'll use the Hugging Face Transformers library to load a pre-trained BERT model.
 
+## Comparing MLE and EM Techniques
+
+Introduction to MLE and EM
+
+Maximum Likelihood Estimation (MLE) and Expectation Maximization (EM) are two fundamental techniques in statistical modeling and machine learning. While they share some similarities, they are used in different scenarios and have distinct characteristics. This slideshow will explore the differences between MLE and EM, their applications, and provide practical examples.
+
 ## Introducing Geometric Hypergraph Neural Networks in Python
 
 Introduction to Geometric Hypergraph Neural Networks
@@ -589,6 +595,12 @@ Introduction to LinearBoost Classifier
 
 LinearBoost is an ensemble learning algorithm that combines multiple weak classifiers to create a strong classifier. It is a variant of the AdaBoost algorithm, designed specifically for linear classifiers. LinearBoost aims to improve the accuracy and robustness of linear classifiers by iteratively updating the weights of training samples and combining multiple weighted classifiers.
 
+## Key Hyperparameters of Neural Network Models
+
+Key Hyperparameters of Neural Network Models
+
+Neural network models are powerful tools in machine learning, capable of learning complex patterns from data. Their performance is significantly influenced by various hyperparameters. This presentation explores the key hyperparameters that shape neural network behavior and performance.
+
 ## The Psychology of Effective Data Visualization
 
 The Psychology Behind Data Visualization
@@ -823,6 +835,12 @@ Introduction to Many-Shot vs Few-Shot In-Context Learning
 
 In-context learning (ICL) is a crucial aspect of Large Language Models (LLMs). This presentation explores the differences between many-shot and few-shot ICL, focusing on their implementation and practical applications using Python.
 
+## Impact of Format Restrictions on LLM Performance
+
+Format Restrictions in LLMs
+
+Format restrictions in Large Language Models (LLMs) refer to constraints placed on the input or output of these models. These constraints can significantly impact the performance and capabilities of LLMs.
+
 ## Fine-Tuning MISTRAL AI Model with Python
 
 Fine-Tuning MISTRAL AI Model
@@ -920,6 +938,12 @@ LoRA (Low-Rank Adaptation) is a popular technique for fine-tuning large language
 Introduction to Autoencoders
 
 Autoencoders are neural networks designed to learn efficient data representations in an unsupervised manner. They compress input data into a lower-dimensional space and then reconstruct it, aiming to minimize the difference between the input and output.
+
+## Singular Value Decomposition (SVD) in Machine Learning
+
+Introduction to Singular Value Decomposition (SVD)
+
+Singular Value Decomposition is a fundamental technique in linear algebra with widespread applications in machine learning and AI. It decomposes a matrix into three matrices, revealing important properties of the original matrix. This decomposition is crucial for dimensionality reduction, feature extraction, and noise reduction in various ML tasks.
 
 ## Exploring Modern Fourier Analysis with Python
 
@@ -1270,6 +1294,12 @@ Data cleaning is a crucial step in data analysis, ensuring the data is accurate,
 
 Code:
 
+## Implementing Gradient Boosting Regressor in Python
+
+Introduction to Gradient Boosting Regressor
+
+Gradient Boosting Regressor is a powerful machine learning algorithm used for regression tasks. It builds an ensemble of weak learners, typically decision trees, to create a strong predictor. This technique combines the predictions of multiple models to improve accuracy and reduce overfitting.
+
 ## Comprehensive Guide to Target Encoding in Python
 
 Introduction to Target Encoding
@@ -1319,6 +1349,12 @@ The Minimum Description Length (MDL) principle is a formalization of Occam's Raz
 Introduction to 2-Stage Backpropagation
 
 2-Stage Backpropagation is an advanced technique for training neural networks that aims to improve convergence and generalization. It involves splitting the network into two parts and training them separately before fine-tuning the entire network.
+
+## Understanding Perceptrons A Python Implementation
+
+What is a Perceptron?
+
+A perceptron is a simple artificial neuron that forms the building block of neural networks. It takes multiple inputs, applies weights to them, sums them up, and passes the result through an activation function to produce an output.
 
 ## Web Authentication Overview Session, JWT, Token, SSO, OAuth 2.0 Using Python
 
@@ -1491,6 +1527,12 @@ Univalent functions are a fundamental concept in complex analysis, characterized
 Introduction to NumPy Indexing and Slicing
 
 NumPy, a fundamental library for scientific computing in Python, offers powerful tools for data manipulation. Indexing and slicing are key techniques that allow efficient access and modification of array elements. These operations form the foundation for advanced data analysis and processing in NumPy.
+
+## Python Fundamentals and Applications
+
+Introduction to Advanced Time Series Analysis
+
+Time series analysis is a crucial technique for understanding and predicting sequential data. This presentation explores advanced methods using TensorFlow, Fourier Transforms, and Cohomology Groups. We'll dive into practical examples and code snippets to illustrate these concepts.
 
 ## Implementing N-Point Crossover in Python
 
@@ -1760,6 +1802,23 @@ Model capacity refers to a model's ability to capture complex patterns in data. 
 
 This code demonstrates how model capacity affects fitting to data using polynomial regression of different degrees.
 
+## Mastering String Manipulation in Pandas
+
+String Manipulation in Pandas
+
+Pandas provides powerful string manipulation capabilities through its str accessor. This accessor allows you to apply string operations to entire Series or DataFrame columns efficiently.
+
+
+
+Output:
+
+```
+          name               email
+0     JOHN DOE    john@example.com
+1   JANE SMITH    jane@example.com
+2  BOB JOHNSON     bob@example.com
+```
+
 ## Visualizing Riemannian Manifolds with Python
 
 Introduction to Riemannian Manifolds
@@ -2024,6 +2083,12 @@ Python - If Statement
 
 Conditional execution based on a boolean expression.
 
+## Score Calibration in Embedding Spaces using Python
+
+Introduction to Score Calibration in Embedding Spaces
+
+Score calibration in embedding spaces is a crucial technique for improving the reliability and interpretability of machine learning models. It involves adjusting the raw scores or probabilities produced by a model to better reflect the true likelihood of predictions. This process is particularly important when working with high-dimensional embedding spaces, where distances and similarities may not directly correspond to meaningful probabilities.
+
 ## Building a Powerful Spam Detector with Python
 
 Introduction to Spam Detection
@@ -2226,6 +2291,12 @@ Machine Learning (ML) algorithms are computational methods that enable systems t
 
 Introduction to Real Analysis in Python This slideshow covers fundamental real analysis concepts and their implementation in Python. Real analysis deals with the theoretical foundations of calculus, such as limits, continuity, differentiation, and integration of functions.
 
+## Speech Synthesis with Python
+
+Introduction to Speech Synthesis
+
+Speech synthesis is the artificial production of human speech. It involves converting written text into spoken words, a process known as text-to-speech (TTS). This technology has numerous applications, from accessibility tools for the visually impaired to voice assistants in smart devices.
+
 ## Shallow vs Deep Copy in Python
 
 Understanding Shallow and Deep  in Python
@@ -2365,6 +2436,12 @@ Outliers are data points that significantly deviate from the majority of observa
 The Importance of Testing in Software Development
 
 Testing is a crucial aspect of software development that ensures code quality, reliability, and maintainability. By writing and executing tests, developers can catch bugs early, validate functionality, and gain confidence in their code. Let's explore the benefits of testing through practical examples and real-world scenarios.
+
+## Enhancing Predictive Performance with Fibonacci Neural Networks and XGBoost
+
+Introduction to Fibonacci Neural Networks and XGBoost Stacking
+
+Fibonacci Neural Networks and XGBoost Stacking are advanced techniques in machine learning that can significantly enhance predictive performance. This presentation will explore these concepts, their implementation in Python, and how they can be combined to create powerful predictive models.
 
 ## Efficient Fine-Tuning of Language Models with LoRA and MoRA using Python
 
@@ -2728,6 +2805,12 @@ Introduction to Sigmoid Activation Function
 
 The sigmoid activation function is a fundamental component in neural networks and machine learning. It maps input values to an output range between 0 and 1, making it useful for binary classification problems and as a smooth, differentiable alternative to step functions.
 
+## AdaGrad Optimization in Deep Learning with Python
+
+Introduction to AdaGrad
+
+AdaGrad (Adaptive Gradient Algorithm) is an optimization algorithm used in deep learning to automatically adapt the learning rate for each parameter. It's particularly effective for sparse data and can help accelerate convergence in neural networks.
+
 ## Solving Multicollinearity with One-Hot Encoding in Python
 
 Introduction to Multicollinearity
@@ -2827,6 +2910,12 @@ Direct Preference Optimization is a novel approach in machine learning that aims
 Introduction to Recurrent Neural Networks (RNNs)
 
 Recurrent Neural Networks are a class of neural networks designed to process sequential data. They maintain an internal state (memory) that allows them to capture temporal dependencies in the input sequence.
+
+## Language Modeling in NLP with Python
+
+Introduction to Language Modeling in NLP
+
+Language modeling is a fundamental task in Natural Language Processing (NLP) that involves predicting the probability of a sequence of words. It forms the basis for many NLP applications, including machine translation, speech recognition, and text generation. In this slideshow, we'll explore the concepts and techniques used in language modeling, with a focus on implementation using Python.
 
 ## Confidence Intervals Explained with Python
 
@@ -3022,6 +3111,12 @@ Introduction to Relational Reasoning in Neural Networks
 
 Relational reasoning is a fundamental aspect of human intelligence, allowing us to understand and manipulate relationships between entities. This slideshow explores how we can implement a simple neural network module for relational reasoning using Python, enabling machines to perform similar tasks.
 
+## Fractal Dimension Analysis of Images using Python
+
+Introduction to Fractal Dimension of Images
+
+Fractal dimension is a measure of complexity that quantifies how a pattern's detail changes with scale. In image analysis, it can reveal intricate structures not apparent to the naked eye. This concept is particularly useful in fields like medical imaging, texture analysis, and pattern recognition.
+
 ## Dynamic Mode Decomposition in Python for Complex Systems
 
 Introduction to Dynamic Mode Decomposition (DMD)
@@ -3069,6 +3164,12 @@ Introduction to Analysis in Python
 Introduction to Regression Analysis
 
 Regression analysis is a statistical method used to model the relationship between variables. We'll explore two popular types: Linear Regression and Poisson Regression, highlighting their differences and use cases.
+
+## Motivations for Using KernelPCA over PCA
+
+Introduction to KernelPCA and PCA
+
+Principal Component Analysis (PCA) and Kernel PCA are dimensionality reduction techniques used in machine learning. While PCA is a linear method, KernelPCA extends this concept to non-linear relationships. This presentation will explore the motivation behind using KernelPCA over PCA, providing code examples and practical applications.
 
 ## Commutative Banach Algebra in Python
 
@@ -3221,6 +3322,12 @@ Regularization is a crucial concept in machine learning that helps prevent overf
 The Global Tournament Puzzle
 
 In this presentation, we'll explore an intriguing mathematical problem: If every person in the world competed in a 1-on-1 tournament, how many times would the ultimate winner need to win? We'll use mathematical reasoning and Python programming to solve this puzzle, uncovering the fascinating relationship between population size and tournament structure.
+
+## Visualizing the Empirical Rule in Normal Distributions
+
+The Empirical Rule and Normal Distribution
+
+The empirical rule, also known as the 68-95-99.7 rule, is a statistical principle that describes the distribution of data in a normal distribution. It states that approximately 68% of data falls within one standard deviation of the mean, 95% within two standard deviations, and 99.7% within three standard deviations.
 
 ## Causal Inference in Machine Learning in Python
 
@@ -3390,6 +3497,12 @@ Introduction to Building an Interactive Chatbot App
 
 In this tutorial, we'll explore how to build an interactive chatbot app using Groq's Language Models (LLMs) and Streamlit, a Python library for creating user-friendly web applications. We'll cover the necessary steps to set up the environment, integrate Groq's LLMs, and create a user interface with Streamlit.
 
+## Exponentially Weighted Moving Averages in Deep Learning with Python
+
+Introduction to Exponentially Weighted Moving Averages (EWMA) in Deep Learning
+
+Exponentially Weighted Moving Averages (EWMA) are a powerful technique used in deep learning for various purposes, including optimization, parameter updates, and noise reduction. This presentation will explore the concept, implementation, and applications of EWMA in deep learning using Python.
+
 ## Central Limit Theorem for Confidence Intervals and Hypothesis Testing in Python
 
 Introduction to the Central Limit Theorem
@@ -3407,6 +3520,12 @@ Prefetching is a technique used to optimize data access by loading data into mem
 Introduction to Working with Large Datasets
 
 Python offers several powerful libraries and frameworks for handling large datasets, including Pandas, Dask, and PySpark. In this slideshow, we'll explore the strengths and weaknesses of each tool, helping you choose the right one for your specific needs.
+
+## Supervised Machine Learning Concepts and Techniques
+
+Introduction to Supervised Machine Learning
+
+Supervised Machine Learning is a fundamental concept in artificial intelligence where an algorithm learns from labeled training data to make predictions or decisions on new, unseen data. This process involves a dataset with input features and corresponding target variables, which the model uses to learn patterns and relationships.
 
 ## Probabilistic Graphical Models in Python
 
@@ -3623,6 +3742,12 @@ Code:
 Understanding Confidence and Prediction Intervals
 
 Confidence and prediction intervals are statistical tools used to quantify uncertainty in estimates and forecasts. They provide a range of values that likely contain the true population parameter or future observations. These intervals are crucial for making informed decisions based on data analysis and predictive modeling.
+
+## Neural Networks as Universal Function Approximators in Python
+
+Introduction to Neural Networks as Universal Function Approximators
+
+Neural networks are powerful models capable of approximating any continuous function to arbitrary precision. This property, known as universal approximation, makes them versatile tools for solving complex problems across various domains.
 
 ## Embeddings Re-ranking and Vector Databases in Python
 
@@ -3926,6 +4051,12 @@ Introduction to Tokenization
 
 Tokenization is the process of breaking down text into smaller units called tokens. It is a crucial step in natural language processing (NLP) tasks, as it prepares the input text for further processing. Tokens can be words, subwords, or even characters, depending on the tokenization strategy.
 
+## SGD with Momentum in Deep Learning
+
+Introduction to SGD with Momentum
+
+Stochastic Gradient Descent (SGD) with Momentum is an optimization algorithm used in deep learning to accelerate convergence and reduce oscillations during training. It introduces a velocity term that accumulates past gradients, allowing the optimizer to move faster in consistent directions and dampen oscillations in inconsistent directions.
+
 ## Deep Learning Slideshow with TensorFlow and PyTorch
 
 Introduction to Deep Learning
@@ -3967,6 +4098,12 @@ Stochastic Gradient Descent is a fundamental optimization algorithm used in mach
 MatMul-Free LLMs: A New Approach to Language Models
 
 Traditional Large Language Models (LLMs) rely heavily on matrix multiplication operations, which can be computationally expensive. MatMul-Free LLMs aim to enhance efficiency by exploring alternative architectures that reduce or eliminate these operations. This approach has the potential to significantly decrease computational costs and energy consumption in natural language processing tasks.
+
+## Comparing Random Forest and XGBoost in Python
+
+Introduction to Random Forest and XGBoost
+
+Random Forest and XGBoost are powerful ensemble learning algorithms used in machine learning. Both methods combine multiple decision trees to create robust predictive models. This presentation will explore their similarities, differences, and implementation in Python.
 
 ## Generating Structured Outputs with Language Models Using Python
 
@@ -4021,6 +4158,12 @@ Enumeration is a fundamental concept in combinatorics that involves counting dis
 Introduction to Self-Tuning in Python
 
 Self-tuning is an advanced technique in machine learning and optimization where algorithms automatically adjust their parameters or hyperparameters to improve performance. This process is crucial for creating adaptive systems that can handle varying data distributions and evolving environments. In Python, we can implement self-tuning algorithms using various libraries and custom code.
+
+## Multivariate Sampling Techniques in Python for Data Science
+
+Multivariate Sampling Techniques in Data Science
+
+Multivariate sampling techniques are essential tools in data science for collecting and analyzing data with multiple variables. These methods help researchers and data scientists gather representative samples from complex datasets, enabling more accurate insights and predictions. In this presentation, we'll explore various multivariate sampling techniques and their implementation using Python.
 
 ## Distributed Training Parallelism in Python
 
@@ -4317,6 +4460,12 @@ Game graphs, also known as game trees, are a fundamental concept in AI and game 
 Introduction to LoRA Finetuning
 
 LoRA (Low-Rank Adaptation) is a technique for efficiently fine-tuning large language models (LLMs) with minimal computational resources. It works by adding small, trainable matrices to the model's attention layers, allowing for task-specific adaptation without modifying the entire model. This approach significantly reduces the number of trainable parameters and memory requirements.
+
+## Parameters vs Hyperparameters in Machine Learning
+
+Parameters vs Hyperparameters in Machine Learning
+
+Parameters and hyperparameters are fundamental concepts in machine learning, but they are often confused. This presentation will clarify the differences between these two important elements and demonstrate their roles using Python examples.
 
 ## Mastering Bias, Variance, Overfitting, and Underfitting in Python
 
@@ -4658,6 +4807,12 @@ Long Short-Term Memory (LSTM) networks are a type of recurrent neural network (R
 Introduction to F-Strings
 
 F-strings, introduced in Python 3.6, provide a concise and readable way to embed expressions inside string literals. They offer improved performance and flexibility compared to older string formatting methods.
+
+## Sequence Modeling Algorithms and Applications
+
+Introduction to Sequence Models
+
+Sequence models are a class of machine learning algorithms designed to process and analyze sequential data. These models are crucial in various fields, including natural language processing, time series analysis, and bioinformatics. They excel at capturing patterns and dependencies in ordered data, making them invaluable for tasks like language translation, speech recognition, and stock price prediction.
 
 ## Simpsons Rule in Python
 
