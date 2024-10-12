@@ -180,6 +180,12 @@ Introduction to Geometric Hypergraph Neural Networks
 
 Geometric Hypergraph Neural Networks (GHNNs) are a novel class of neural networks designed to process complex relational data represented as hypergraphs. These networks extend traditional graph neural networks to capture higher-order relationships between entities, making them particularly useful for applications in molecular biology, social network analysis, and recommendation systems.
 
+## Outlier Detection in Python Visualizing and Analyzing Anomalies
+
+Understanding Outliers in Python
+
+Outliers are data points that significantly differ from other observations in a dataset. They can greatly impact statistical analyses and machine learning models. In this presentation, we'll explore how to identify, visualize, and handle outliers using Python.
+
 ## Weights and Biases in Neural Networks in Python
 
 Introduction to Weights and Biases in Neural Networks
@@ -393,6 +399,12 @@ Multiclass and multilabel classification are two fundamental concepts in machine
 Introduction to Counting Sort
 
 Counting Sort is a non-comparative sorting algorithm that operates in O(n+k) time complexity, where n is the number of elements and k is the range of input. This algorithm is particularly efficient when dealing with integers or strings with a limited range of possible values.
+
+## Platt Scaling for Model Calibration in Python
+
+Introduction to Platt Scaling
+
+Platt scaling is a technique used to calibrate machine learning models, particularly for binary classification problems. It transforms the raw output scores of a classifier into well-calibrated probability estimates. This method is especially useful when the model's predictions are not inherently probabilistic or when the model's output scores are not well-calibrated.
 
 ## Understanding AI Through ReLU Activation Function in Python
 
@@ -1175,6 +1187,12 @@ Introduction to Reinforcement Learning from Human Feedback (RLHF)
 
 Reinforcement Learning from Human Feedback (RLHF) is a technique used to align language models with human preferences. It involves training two key components: policy models (PMs) and reward models (RMs). This process aims to improve the quality and relevance of language model outputs by incorporating human judgments.
 
+## Decoding the Confusion Matrix in Machine Learning with Python
+
+Understanding the Confusion Matrix
+
+The confusion matrix is a fundamental tool in machine learning for evaluating classification models. It provides a tabular summary of a model's performance by comparing predicted classes against actual classes.
+
 ## Exploring Arithmetic of Dynamical Systems with Python
 
 Introduction to Dynamical Systems
@@ -1346,6 +1364,12 @@ Probability distributions are mathematical functions that describe the likelihoo
 Introduction to Exponential Equations
 
 Exponential equations involve variables in the exponent. They are crucial in modeling growth and decay processes in various fields like finance, biology, and physics.
+
+## Anomaly Detection in Time Series Data with Python
+
+Introduction to Anomaly Detection in Time Series Data
+
+Anomaly detection in time series data is a crucial task in various fields, from monitoring industrial processes to analyzing environmental changes. This technique helps identify unusual patterns or events that deviate significantly from expected behavior. In this presentation, we'll explore how to perform anomaly detection using Python, focusing on practical examples and actionable insights.
 
 ## Attention is All You Need in Python
 
@@ -2376,6 +2400,12 @@ Transcendence in machine learning refers to the ability of AI systems to surpass
 Introduction to RBF Kernel
 
 The Radial Basis Function (RBF) kernel is a popular kernel function used in various machine learning algorithms, particularly in Support Vector Machines (SVM) for classification and regression tasks. It measures the similarity between two points in a high-dimensional space.
+
+## Time Complexity of K-Means Clustering in Python
+
+K-means Clustering: Time Complexity Analysis
+
+K-means clustering is a popular unsupervised machine learning algorithm used for partitioning a dataset into K distinct, non-overlapping subgroups or clusters. Understanding its time complexity is crucial for efficient implementation and scalability. Let's explore the algorithm's time complexity using Python examples.
 
 ## Explaining RoPE Positional Embeddings in Python
 
@@ -3614,6 +3644,12 @@ OpenPyXL is a powerful Python library that enables seamless integration between 
 Introduction to Linear Discriminant Analysis (LDA)
 
 Linear Discriminant Analysis is a powerful technique for dimensionality reduction and classification. It aims to find a linear combination of features that best separates two or more classes of objects or events. LDA is particularly useful when dealing with multi-class classification problems and can be implemented from scratch using Python.
+
+## Physics-Informed Neural Networks for Quantum Wave Functions
+
+Introduction to Physics-Informed Neural Networks (PINNs)
+
+Physics-Informed Neural Networks (PINNs) are a powerful tool that combines the flexibility of neural networks with the constraints of physical laws. They are designed to solve complex problems in physics and engineering by incorporating domain knowledge into the learning process.
 
 ## Visualizing Multiplicative Number Theory with Python
 
@@ -4929,6 +4965,12 @@ Introduction to Hash Tables
 
 Hash tables are data structures that store key-value pairs and provide efficient insertion, deletion, and lookup operations. They are widely used in various applications, including caching, databases, and machine learning. In this slideshow, we will explore hash tables, their implementation in Python, and how they handle collisions.
 
+## Preventing Overfitting in Neural Networks with Dropout
+
+Understanding Dropout in Neural Networks
+
+Dropout is a regularization technique used in neural networks to prevent overfitting. It works by randomly "dropping out" or deactivating a portion of neurons during training, which helps the network learn more robust features.
+
 ## Introducing Simple Linear Regression
 
 Simple Linear Regression
@@ -4938,6 +4980,12 @@ Simple Linear Regression predicts a dependent variable using one independent var
 
 
 Mathematical formula (LaTeX): [y = \\beta\_0 + \\beta\_1x + \\epsilon]
+
+## Unsupervised Dimensionality Reduction in Python
+
+Unsupervised Dimensionality Reduction
+
+Unsupervised dimensionality reduction is a technique used to reduce the number of features in a dataset while preserving its essential structure. This process is crucial for handling high-dimensional data, improving computational efficiency, and facilitating visualization. In this presentation, we'll explore various methods and their implementation using Python.
 
 ## Exploring Elliptic Curve Arithmetic with Python
 
@@ -5133,6 +5181,12 @@ Clustering is an unsupervised machine learning technique that groups similar dat
 Introduction to Convolutional Neural Networks (CNNs)
 
 Convolutional Neural Networks are a class of deep learning models designed to process grid-like data, such as images. They're particularly effective for tasks like image classification, object detection, and facial recognition. CNNs use specialized layers that apply convolution operations to extract features from input data.
+
+## Compact Clustering with Hierarchical Linkage Methods in Python
+
+Hierarchical Clustering Linkage Methods
+
+Hierarchical clustering is a popular unsupervised learning technique used to group similar data points into clusters. The choice of linkage method in hierarchical clustering significantly impacts the shape and compactness of the resulting clusters. This presentation explores various linkage methods, with a focus on identifying which method produces more compact clusters using Python.
 
 ## Visualizing Complex Analysis with Python
 
@@ -5463,6 +5517,12 @@ Convolutional Neural Networks (CNNs) are a class of deep learning models primari
 Understanding Overfitting
 
 Overfitting occurs when a machine learning model learns the training data too well, including its noise and fluctuations. This results in poor generalization to new, unseen data. Let's visualize this concept:
+
+## Introducing KAN 2.0! Kolmogorov-Arnold Networks in Python
+
+Introduction to KAN 2.0: Kolmogorov-Arnold Networks
+
+KAN 2.0, or Kolmogorov-Arnold Networks, represent an innovative approach to machine learning that combines principles from dynamical systems theory and neural networks. These networks are designed to approximate complex functions using a hierarchical structure inspired by the Kolmogorov-Arnold representation theorem.
 
 ## Process for Retrieval-Augmented Generation In Python
 
