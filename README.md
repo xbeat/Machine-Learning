@@ -272,6 +272,12 @@ Retrieval Techniques in RAG: Sparse and Dense Vector Tools
 
 Retrieval-Augmented Generation (RAG) combines information retrieval with text generation. This presentation focuses on two key retrieval techniques: sparse and dense vector tools, implemented in Python.
 
+## Next Token Prediction and Diffusion with Python
+
+Introduction to Next Token Prediction and Diffusion
+
+Next token prediction and diffusion are two powerful techniques in natural language processing and image generation. Next token prediction is used in language models to predict the next word or token in a sequence, while diffusion models generate high-quality images by gradually denoising random noise. This presentation will explore both concepts, their applications, and implementation in Python.
+
 ## Sequence-to-Sequence for Unordered Sets in Python
 
 Order Matters: Sequence to Sequence for Sets
@@ -361,6 +367,12 @@ Large Language Models (LLMs) are powerful tools for generating human-like text, 
 Self-attention as a Directed Graph
 
 Self-attention is a fundamental mechanism in modern deep learning architectures, particularly in transformer models. By representing self-attention as a directed graph, we can gain insights into its inner workings and visualize the relationships between different elements in a sequence.
+
+## Harnessing K-means Clustering for Advanced Data Analysis in Python
+
+Introduction to K-means Clustering
+
+K-means clustering is an unsupervised machine learning algorithm used for partitioning a dataset into K distinct, non-overlapping subgroups (clusters) of observations. Each observation belongs to the cluster with the nearest mean (centroid). This technique is widely used in data analysis, pattern recognition, and image segmentation.
 
 ## Essential Data Visualization Plots for Data Scientists Using Python
 
@@ -516,6 +528,12 @@ This slide introduces the problem: determining the probability of encountering a
 Understanding Metaclasses
 
 Metaclasses are a powerful feature in Python that allow you to customize class creation. They provide a way to intercept and modify the class creation process, enabling you to add or modify attributes, methods, or behaviors of classes automatically.
+
+## Understanding the Curse of Dimensionality with Python
+
+The Curse of Dimensionality
+
+The curse of dimensionality refers to various phenomena that arise when analyzing and organizing data in high-dimensional spaces. As the number of dimensions increases, the volume of the space increases so fast that the available data becomes sparse, making statistical analysis challenging and often counterintuitive.
 
 ## Explainable AI Techniques Using Python
 
@@ -787,6 +805,12 @@ Why Accuracy Can Be Misleading in Machine Learning
 
 Accuracy is often used as a primary metric for evaluating machine learning models. However, relying solely on accuracy can lead to incorrect conclusions about a model's performance, especially in certain scenarios. This presentation will explore why accuracy can be misleading and introduce alternative metrics and techniques to better evaluate model performance.
 
+## Non-Linearity in Deep Learning with Python
+
+Introduction to Non-Linearity in Deep Learning
+
+Non-linearity is a fundamental concept in deep learning that allows neural networks to learn and represent complex patterns in data. It introduces the ability to model non-linear relationships between inputs and outputs, which is crucial for solving real-world problems that often involve intricate, non-linear dependencies.
+
 ## Image Filtering and Evaluation Using Python
 
 Introduction to Image Filtering and MSE
@@ -876,6 +900,12 @@ Isolation Forest is an unsupervised machine learning algorithm used for anomaly 
 Introduction to Minesweeper AI
 
 Minesweeper is a classic game that involves uncovering a grid of tiles while avoiding hidden mines. Creating an AI to solve Minesweeper can be an exciting project that combines logic, probability, and Python programming. In this slideshow, we'll explore the development of a Minesweeper AI using Matplotlib and Python.
+
+## Mathematics The Language of the Universe
+
+Mathematics: The Universal Language
+
+Mathematics is often described as the universal language that unveils the secrets of the universe. This powerful tool allows us to describe, analyze, and predict phenomena across various fields, from physics to biology, and even in our daily lives. Let's explore how mathematics connects abstract concepts to real-world applications.
 
 ## Surreal Numbers and Cohomology Theory in Machine Learning
 
@@ -1113,6 +1143,12 @@ Introduction to Docker and Python Integration
 
 Docker is a containerization platform that simplifies application deployment and management. This slideshow will cover the basics of integrating Python applications with Docker, making it easier to build, ship, and run Python applications consistently across different environments.
 
+## Detecting Anomalies and Outliers in Data
+
+Flag Outliers
+
+Outliers are data points that significantly differ from other observations. Flagging outliers is crucial for data analysis and model performance.
+
 ## Measuring Feature Importance with Shuffle Importance in Python
 
 Understanding Shuffle Feature Importance
@@ -1245,6 +1281,12 @@ Multi-class Regression with Python
 
 Multi-class regression is an extension of binary classification where we predict one of several possible outcomes. Unlike classification, regression predicts continuous values. In multi-class regression, we predict multiple continuous target variables simultaneously. This technique is useful when dealing with complex problems that require predicting multiple related outputs.
 
+## NLP Models for Sentiment Analysis in Python
+
+Introduction to NLP Models for Sentiment Analysis
+
+Natural Language Processing (NLP) models have revolutionized sentiment analysis, enabling machines to understand and interpret human emotions in text. This presentation explores five powerful models: BERT, RoBERTa, DistilBERT, ALBERT, and XLNet. We'll delve into their architectures, use cases, and implementation in Python, providing practical examples for sentiment analysis tasks.
+
 ## AI-Powered Academic Research Assistance with Python and ArXiv
 
 Introduction to AI-Powered Academic Research Assistance
@@ -1256,6 +1298,12 @@ With the vast amount of research literature available, finding relevant and high
 Convolutional Neural Networks on Manifolds
 
 Convolutional Neural Networks (CNNs) have revolutionized image processing tasks, but their application to non-Euclidean domains like manifolds presents unique challenges. This presentation explores how CNNs can be adapted to work on manifold-structured data, opening up new possibilities in fields such as 3D shape analysis, geospatial data processing, and social network analysis.
+
+## Handling Imbalanced Datasets with kNN in Python
+
+kNN for Imbalanced Datasets
+
+k-Nearest Neighbors (kNN) is a popular machine learning algorithm, but it can struggle with imbalanced datasets. This presentation will explore techniques to effectively use kNN on highly imbalanced data using Python.
 
 ## One-Hot Encoding in Python for Machine Learning
 
@@ -1280,6 +1328,12 @@ Explainable AI (XAI) is a set of techniques and methods that allow humans to und
 Introduction to Uniform Distribution
 
 Uniform distribution is a probability distribution where all outcomes are equally likely. It's characterized by a constant probability density function over a defined interval. This distribution is fundamental in probability theory and statistics, with applications ranging from random number generation to modeling various real-world phenomena.
+
+## Market Segmentation in Insurance using Unsupervised ML
+
+Introduction to Market Segmentation in Insurance
+
+Market segmentation is a crucial strategy in the insurance industry, allowing companies to tailor their products and services to specific customer groups. By leveraging unsupervised machine learning techniques, insurers can identify patterns and clusters within their customer base, leading to more personalized offerings and improved risk assessment.
 
 ## Overfitting and Underfitting in Deep Learning Regularization, Early Stopping, and Data Augmentation
 
@@ -1383,6 +1437,12 @@ Introduction to the Brachistochrone Problem
 
 The Brachistochrone Problem, posed by Johann Bernoulli in 1696, seeks the curve of fastest descent between two points under gravity. This classical problem has found new applications in machine learning optimization.
 
+## Point-NeRF A Python-Based Approach to Neural Radiance Fields
+
+Introduction to Point-NeRF
+
+Point-NeRF is an innovative approach to Neural Radiance Fields (NeRF) that uses point-based representations for 3D scene reconstruction. It combines the strengths of traditional point-based graphics with the power of neural networks to create high-quality, efficient 3D models from 2D images.
+
 ## Exploring Moduli Spaces of Algebraic Curves with Python
 
 Introduction to Moduli of Curves
@@ -1482,11 +1542,23 @@ Introduction to Mamba-2 and Structured State Space Models
 
 Mamba-2 is an innovative architecture built upon the foundation of Structured State Space Models (S4). These models offer a flexible framework for sequence modeling, combining the strengths of recurrent neural networks and transformers. In this presentation, we'll explore the key concepts, implementation details, and practical applications of Mamba-2.
 
+## Pitfalls of Machine Learning Classification Models
+
+The Dark Side of Classification in Machine Learning
+
+Classification is a fundamental task in machine learning, but it's not without its pitfalls. This presentation explores common issues that can compromise the effectiveness of classification models, along with practical solutions using Python.
+
 ## Risks of Indiscriminate AI Use Avoiding Model Collapse
 
 Model Collapse in AI: Understanding the Risks
 
 Model collapse is a phenomenon where AI models lose their ability to generate diverse outputs, potentially due to overuse or misuse. This can lead to a significant reduction in the model's effectiveness and creativity.
+
+## Essentials of Probability and Statistics
+
+Introduction to Probability
+
+Probability is the branch of mathematics that deals with the likelihood of events occurring. It forms the foundation for statistical analysis and decision-making under uncertainty.
 
 ## Comparing KAN and MLP Neural Networks with Python
 
@@ -1576,6 +1648,12 @@ Kolmogorov complexity is a measure of the computational resources needed to spec
 Introduction to Gradient Descent
 
 Gradient descent is a fundamental optimization algorithm in machine learning and deep learning. It's used to minimize a cost function by iteratively moving in the direction of steepest descent. This method is crucial for training various models, including neural networks.
+
+## Common Feature Scaling Techniques in Python
+
+Introduction to Feature Scaling
+
+Feature scaling is a crucial preprocessing step in machine learning. It involves transforming numeric variables to a standard scale, ensuring that all features contribute equally to the model. This process is particularly important when dealing with features of different magnitudes or units.
 
 ## TanH Function in Machine Learning with Python
 
@@ -1876,6 +1954,12 @@ Introduction to Sorting Algorithms
 
 Sorting algorithms are fundamental in computer science, organizing data for efficient retrieval and processing. This presentation focuses on two efficient sorting algorithms: Radix Sort and Bucket Sort. Both are non-comparative sorting algorithms that can achieve linear time complexity under certain conditions.
 
+## Matrix Orientation, Hidden-state Alignment, and Knowledge Distillation in Python
+
+Introduction to Matrix Orientation
+
+Matrix orientation is a crucial concept in linear algebra and machine learning. It refers to how matrices are arranged and interpreted, affecting computations and model performance. In Python, we typically work with row-major orientation, but understanding both row-major and column-major orientations is essential.
+
 ## Ensemble Methods for Improved Predictions in Python
 
 Introduction to Ensemble Methods
@@ -1930,6 +2014,12 @@ Independent Variables
 
 Independent variables are features used as input to predict an outcome. They are manipulated or controlled in experiments to observe their effect on the dependent variable. In data analysis, these are the variables we use to make predictions or explain relationships.
 
+## Types of Hypotheses Null and Alternative
+
+Types of Hypotheses
+
+Hypotheses are fundamental to scientific inquiry and statistical analysis. They serve as testable predictions about the relationships between variables. Let's explore the two main types of hypotheses used in statistical testing.
+
 ## Pandas DataFrame Cheat Sheet
 
 Introduction to Pandas DataFrame
@@ -1941,6 +2031,12 @@ A DataFrame is a 2-dimensional labeled data structure in Pandas, similar to a sp
 Levels of Measurement in Machine Learning
 
 Levels of measurement, also known as scales of measurement, are fundamental concepts in statistics and machine learning. They categorize data based on the properties and constraints of the measurements. Understanding these levels is crucial for selecting appropriate statistical methods and machine learning algorithms. In this presentation, we'll explore the four main levels of measurement: nominal, ordinal, interval, and ratio, along with their applications in Python-based machine learning.
+
+## Leveraging Graph Structures to Enhance LLM Performance with GraphRAG
+
+Introduction to GraphRAG
+
+GraphRAG is an advanced approach to Retrieval-Augmented Generation (RAG) that leverages graph structures to enhance the performance of Large Language Models (LLMs). This method improves upon traditional RAG by capturing complex relationships between information nodes, leading to more accurate and context-aware responses.
 
 ## Enhancing RAG Pipelines Key Techniques Using Python
 
@@ -2389,6 +2485,12 @@ Title Slide
 
 Neural Network Training: Loss Functions, Activation Functions, and Architecture Design
 
+## Few-Shot Prompting in Generative AI with Python
+
+What is Few-Shot Prompting?
+
+Few-Shot Prompting is a technique in generative AI where a model is given a small number of examples to learn from before generating new content. This approach bridges the gap between zero-shot learning (no examples) and fine-tuning (many examples).
+
 ## Exploring Transcendence in Machine Learning with Python
 
 Transcendence in Machine Learning: An Introduction
@@ -2477,6 +2579,12 @@ Understanding Recurrent Neural Networks (RNNs)
 
 Recurrent Neural Networks are a class of neural networks designed to process sequential data. Unlike feedforward networks, RNNs have connections that form cycles, allowing them to maintain an internal state or "memory". This makes them particularly well-suited for tasks involving time series, natural language processing, and other sequential data.
 
+## Discover Pandas UDFs in PySpark
+
+Introduction to Pandas UDFs in PySpark
+
+Pandas UDFs (User Defined Functions) in PySpark combine the flexibility of Python with the distributed computing power of Spark. They allow you to apply custom Python functions to large datasets efficiently, leveraging Pandas' optimized operations.
+
 ## Algebraic Topology Using Python
 
 Introduction to Algebraic Topology
@@ -2532,6 +2640,12 @@ Generative Neural Networks (GNNs) are a class of artificial intelligence models 
 Introduction to Machine Learning Algorithms
 
 Machine Learning (ML) algorithms are computational methods that enable systems to learn from data and improve their performance on specific tasks without being explicitly programmed. These algorithms form the backbone of various applications, from image recognition to natural language processing. In this presentation, we'll explore 15 commonly used ML algorithms, their applications, and implementations using Python.
+
+## Data Modeling with Python
+
+Introduction to Data Modeling in Python
+
+Data modeling is the process of creating a conceptual representation of data and its relationships. In Python, we use various libraries and techniques to model, analyze, and visualize data. This slideshow will cover key concepts and practical examples of data modeling using Python.
 
 ## Beginners Guide to Real Analysis in Python
 
@@ -2715,6 +2829,12 @@ LoRA (Low-Rank Adaptation) and MoRA (Monolithic Residual Adaptation) are two tec
 
 Code:
 
+## Graph-Based Zero-Shot Learning with Contrastive Learning
+
+Graph-Based Zero-Shot Learning and Contrastive Learning
+
+Graph-based zero-shot learning and contrastive learning are two powerful techniques in machine learning. This presentation explores their intersection and demonstrates how they can be combined using Python to create more robust and versatile models.
+
 ## Common Loss Functions for Deep Learning Using Python
 
 Introduction to Loss Functions in Deep Learning
@@ -2891,6 +3011,12 @@ Introduction to "The Count of Monte Cristo"
 
 This presentation explores Alexandre Dumas' classic novel "The Count of Monte Cristo" through the lens of Python programming. We'll examine key events and themes from the book, proposing innovative Python approaches to analyze and understand the story's complexities. Our journey will take us through optimization algorithms, cryptography, network analysis, and more, offering a fresh perspective on this timeless tale of betrayal and revenge.
 
+## Explaining Neural Network Architecture and Training
+
+Introduction to Neural Networks
+
+Neural networks are computational models inspired by the human brain. They consist of interconnected nodes (neurons) organized in layers, designed to recognize patterns and solve complex problems.
+
 ## Thought-Augmented Reasoning with Buffer of Thoughts with Python
 
 Thought-Augmented Reasoning with Buffer of Thoughts
@@ -3032,6 +3158,12 @@ Introduction to Tropical Matroid Representation Network
 
 Tropical matroid representation networks are a fascinating intersection of tropical geometry, matroid theory, and network analysis. These structures provide a unique way to model and analyze complex systems using the tropical semiring, which replaces traditional addition and multiplication with min and addition operations, respectively.
 
+## Accuracy vs. Precision! Python Examples
+
+Accuracy vs. Precision: Understanding the Difference
+
+Accuracy and precision are often confused, but they represent distinct concepts in measurement and data analysis. This presentation will explore their differences using Python examples.
+
 ## Imbalanced Stratification Techniques for Machine Learning using Python
 
 Imbalanced Classification: An Introduction
@@ -3049,6 +3181,12 @@ A confusion matrix is a fundamental tool in machine learning for evaluating clas
 Introduction to Noncommutative Rings
 
 Noncommutative rings are algebraic structures where multiplication is not commutative. This course explores their properties, operations, and applications in various fields of mathematics and computer science.
+
+## Understanding RAG vs. Agentic RAG with Python
+
+Understanding RAG: Retrieval-Augmented Generation
+
+Retrieval-Augmented Generation (RAG) is a powerful technique that combines the strengths of large language models with external knowledge retrieval. It enhances the model's ability to generate accurate and contextually relevant responses by retrieving information from a knowledge base.
 
 ## Boundary Integrated Neural Networks vs Physics Informed Neural Networks
 
@@ -3229,6 +3367,12 @@ Introduction to Language Modeling in NLP
 
 Language modeling is a fundamental task in Natural Language Processing (NLP) that involves predicting the probability of a sequence of words. It forms the basis for many NLP applications, including machine translation, speech recognition, and text generation. In this slideshow, we'll explore the concepts and techniques used in language modeling, with a focus on implementation using Python.
 
+## Deep Dive into Neural Network Core Concepts
+
+Introduction to Neural Networks
+
+Neural networks are computational models inspired by the human brain. They consist of interconnected nodes (neurons) organized in layers, designed to recognize patterns and solve complex problems. This slideshow will explore the fundamental concepts and mathematical foundations of neural networks, focusing on the chain rule, gradient descent, and backpropagation.
+
 ## Pandas vs. Polars Comparing Python Data Processing Libraries
 
 Pandas vs. Polars: A Comparison for Data Processing in Python
@@ -3355,6 +3499,12 @@ Linear Regression Assumptions
 
 Linear regression is a fundamental statistical technique used for modeling the relationship between a dependent variable and one or more independent variables. To ensure the reliability and validity of our regression models, we must consider several key assumptions. This presentation will explore these assumptions, their importance, and how to verify them using Python.
 
+## Word Tokenization vs. WordPiece Tokenization in Python
+
+Introduction to Word Tokenization
+
+Word tokenization is a fundamental process in natural language processing (NLP) that involves breaking down text into individual words or tokens. This process is crucial for various NLP tasks, including text analysis, machine translation, and sentiment analysis. In this presentation, we'll explore two different approaches to word tokenization: the traditional Word Tokenize method and the more recent WordPunk Tokenize method.
+
 ## Credit Card Fraud Detection with Autoencoders in Python
 
 Introduction to Credit Card Fraud Detection
@@ -3402,6 +3552,12 @@ Stacking, also known as stacked generalization, is an ensemble learning techniqu
 Outliers in Machine Learning
 
 Outliers are data points that significantly deviate from the normal pattern in a dataset. These anomalous observations can have a substantial impact on machine learning models, affecting their performance and accuracy. Understanding and handling outliers is crucial for developing robust and reliable models.
+
+## Efficient Fine-Tuning with Quantized Low-Rank Adaptation
+
+Introduction to QLoRA
+
+QLoRA (Quantized Low-Rank Adaptation) is an innovative strategy for fine-tuning large language models while significantly reducing memory usage. It combines quantization techniques with LoRA adapters to enable efficient training on consumer-grade hardware.
 
 ## Masked Grouped Causal Tracing in LLMs with Python
 
@@ -3579,6 +3735,12 @@ Introduction to CUDA Programming with Python
 
 CUDA (Compute Unified Device Architecture) is a parallel computing platform and programming model developed by NVIDIA for general computing on graphical processing units (GPUs). This slideshow will introduce you to CUDA programming using Python, focusing on practical examples and actionable code.
 
+## Hypothesis Testing for Means vs. Normality Tests in Python
+
+Introduction to Hypothesis Testing
+
+Hypothesis testing is a statistical method used to make inferences about population parameters based on sample data. It involves formulating two competing hypotheses: the null hypothesis (H0) and the alternative hypothesis (H1), and then using sample data to determine which hypothesis is more likely to be true.
+
 ## ZFNet CNN for CIFAR-10 Image Classification in Python
 
 Introduction to ZFNet for CIFAR-10 Classification
@@ -3608,6 +3770,12 @@ Missing data is a common challenge in data analysis. Understanding the types of 
 Introduction to Iteration of Rational Functions
 
 Iteration of rational functions is a powerful technique in mathematics with applications in various fields, including dynamical systems and computational methods. A rational function is a function of the form f(x) = P(x) / Q(x), where P and Q are polynomials.
+
+## Generative vs. Discriminative Models in Python
+
+Introduction to Generative and Discriminative Models
+
+Generative and discriminative models are two fundamental approaches in machine learning. Generative models learn the joint probability distribution of inputs and outputs, while discriminative models focus on learning the conditional probability distribution of outputs given inputs. This slideshow will explore their differences, characteristics, and applications using Python examples.
 
 ## Bag of Words in NLP using Python
 
@@ -3993,6 +4161,12 @@ Tree Attention: An Overview
 
 Tree Attention is a novel approach to handling long-context attention in large language models. It addresses the quadratic complexity problem of traditional attention mechanisms by organizing tokens into a tree structure. This structure allows for more efficient processing of long sequences, making it particularly useful for tasks involving large amounts of text or data.
 
+## Exploring Neuro-Vector-Symbolic Architectures in Python
+
+Introduction to Neuro-Vector-Symbolic Architectures (NVSA)
+
+Neuro-Vector-Symbolic Architectures (NVSA) combine neural networks with vector symbolic architectures, aiming to bridge the gap between connectionist and symbolic AI approaches. This fusion allows for more powerful and flexible reasoning capabilities in artificial intelligence systems.
+
 ## BoolLin XGB Combining Boolean and XGBoost for Improved Performance
 
 Introduction to BoolLin XGB
@@ -4338,6 +4512,12 @@ Introduction to Gradient Boosting Machines
 
 Gradient Boosting Machines (GBM) are a powerful ensemble learning technique used in machine learning for both regression and classification tasks. They work by building a series of weak learners, typically decision trees, and combining them to create a strong predictive model. In this presentation, we'll explore how to build a GBM algorithm from scratch using Python.
 
+## Genetic Algorithms for Image Blending in Python
+
+Introduction to Genetic Algorithms and Image Combination
+
+Genetic algorithms are optimization techniques inspired by natural selection. In the context of image combination, they can be used to evolve and blend multiple images into a single, unique result. This process involves encoding image properties as genes, creating a population of potential solutions, and iteratively improving them through selection, crossover, and mutation operations.
+
 ## Elementary Functional Analysis with Python
 
 Introduction to Elementary Functional Analysis
@@ -4414,6 +4594,12 @@ Calculus III deals with multivariable calculus, including partial derivatives, m
 Introduction to Softmax and Categorical Cross-Entropy
 
 Softmax and Categorical Cross-Entropy are fundamental concepts in machine learning, particularly in classification tasks. Softmax transforms raw model outputs into probability distributions, while Categorical Cross-Entropy measures the dissimilarity between predicted and true distributions. This presentation will explore these concepts in depth, covering both forward and backward passes using Python.
+
+## Dynamic Mode Decomposition with OpenFOAM and Python
+
+Introduction to Dynamic Mode Decomposition (DMD) with OpenFOAM and Python
+
+Dynamic Mode Decomposition is a powerful data-driven technique for analyzing complex fluid dynamics systems. It extracts dominant modes from time-series data, revealing underlying patterns and coherent structures. This presentation explores DMD implementation using OpenFOAM for CFD simulations and Python for data processing and visualization.
 
 ## Model Evaluation and Refinement with Python
 
@@ -4603,6 +4789,18 @@ Introduction to Multi-layered Cohort Sequence Modeling
 
 Multi-layered cohort sequence modeling is a powerful technique used in various fields to analyze and predict the behavior of groups over time. This approach combines the concepts of cohort analysis and sequence modeling, allowing researchers to uncover complex patterns and trends within populations.
 
+## Enhancing Open Source LLMs with Attached Heads
+
+Introduction to Attaching Heads to Open Source LLMs
+
+Attaching heads to open source Large Language Models (LLMs) is a powerful technique for enhancing their capabilities. This process involves adding specialized neural network layers on top of pre-trained LLMs to perform specific tasks. We'll explore various methods including linear probes, multi-task fine-tuning, and LLM regression.
+
+## Dimensionality Reduction in Machine Learning with Python
+
+Introduction to Dimensionality Reduction
+
+Dimensionality reduction is a crucial technique in machine learning that aims to reduce the number of features or variables in a dataset while preserving its essential information. This process helps overcome the curse of dimensionality, improves computational efficiency, and can enhance the performance of machine learning models.
+
 ## Deep Learning Titans TensorFlow vs. PyTorch in Python
 
 Deep Learning Titans: TensorFlow vs. PyTorch
@@ -4708,6 +4906,12 @@ Document summarization is a crucial task in natural language processing that inv
 Introduction to RAG and Langchain
 
 Retrieval-Augmented Generation (RAG) is a powerful technique that combines information retrieval with text generation to create more accurate and context-aware AI systems. Langchain is a Python library that simplifies the implementation of RAG systems, particularly for processing PDFs and other document types. This presentation will guide you through the process of building an intelligent PDF-based AI system using Langchain and RAG techniques.
+
+## Exploring Logarithmic Functions! A Practical Slideshow
+
+Introduction to Logarithmic Functions
+
+The logarithmic function, denoted as y = log(x), is a fundamental mathematical concept. It represents the inverse operation of exponentiation. In simple terms, it finds the exponent (y) to which a base must be raised to obtain a given number (x). Let's visualize this concept:
 
 ## Quantization for Efficient Large Language Models
 
@@ -5063,6 +5267,12 @@ Pointer Networks are a neural network architecture designed to learn the conditi
 
 **Singleton Pattern** The Singleton pattern ensures that a class has only one instance and provides a global point of access to it.
 
+## Python Namespace Types and Scopes
+
+Python Namespaces Overview
+
+Python namespaces are containers that hold mappings of names to objects. There are four types of namespaces in Python: Built-in, Global, Enclosing, and Local. Each namespace has a specific scope and lifetime, determining when and where names are accessible in your code.
+
 ## SIFT Distinctive Image Features with Python
 
 Introduction to SIFT
@@ -5111,6 +5321,12 @@ Introduction to KV Caching in Python
 
 KV (Key-Value) caching is a powerful technique for storing and retrieving data efficiently. In Python, it's implemented using dictionary-like structures, allowing fast access to values based on unique keys. This slideshow will explore KV caching concepts, implementation, and practical examples using Python.
 
+## Time Series Visualization in Python From Raw Data to Insights
+
+Introduction to Time Series Visualization
+
+Time series visualization is a powerful tool for understanding and analyzing data that changes over time. It allows us to identify patterns, trends, and anomalies that might be difficult to spot in raw data. In this presentation, we'll explore various techniques for visualizing time series data using Python, starting from basic plots and progressing to more advanced visualizations.
+
 ## Automatic Error Detection in Tabular Datasets with Python
 
 Introduction to Automatic Error Detection in Tabular Datasets
@@ -5128,6 +5344,12 @@ Feature encoding is a crucial step in data preprocessing for machine learning. I
 Introduction to Computational Graphs in Machine Learning
 
 Computational graphs are powerful tools for representing and optimizing complex mathematical operations in machine learning. They form the backbone of modern deep learning frameworks, allowing efficient computation and automatic differentiation. In this presentation, we'll explore the concept of computational graphs and their implementation using Python.
+
+## Preventing Overfitting in Convolutional Neural Networks
+
+Understanding Overfitting in CNNs
+
+Overfitting occurs when a Convolutional Neural Network (CNN) learns the training data too well, including noise and outliers, leading to poor generalization on unseen data. This phenomenon is particularly common in complex models with limited training data.
 
 ## Modeling Viral App Feature Adoption Using Python
 
@@ -5609,6 +5831,12 @@ Machine learning techniques have revolutionized text analysis, enabling computer
 Introduction to Neural Machine Translation
 
 Neural Machine Translation (NMT) is an advanced approach to machine translation that uses artificial neural networks to predict the likelihood of a sequence of words. This technique has revolutionized language translation by learning to align and translate simultaneously, resulting in more fluent and contextually accurate translations.
+
+## In-Depth Exploration of SVM Polynomial Kernel
+
+Introduction to SVM Kernels
+
+Support Vector Machines (SVMs) are powerful classification algorithms that can be enhanced through the use of kernels. Kernels allow SVMs to handle non-linear decision boundaries by implicitly mapping data into higher-dimensional spaces. This slideshow explores various SVM kernels, with a focus on the Polynomial Kernel, and demonstrates their application in real-world scenarios.
 
 ## Choosing the Right LLM Framework for AI Applications LangChain, LlamaIndex, or Haystack
 
