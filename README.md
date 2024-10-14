@@ -78,6 +78,12 @@ Introduction to LSTM and GRU
 
 Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) are advanced recurrent neural network architectures designed to handle sequential data and long-term dependencies. These models have revolutionized natural language processing, time series analysis, and many other sequence-based tasks.
 
+## Mean Centering and Min-Max Normalization for User Ratings
+
+Introduction to Data Normalization
+
+Data normalization is a crucial preprocessing step in many machine learning and data analysis tasks. It helps to bring different features or variables to a common scale, which can improve the performance and convergence of various algorithms. In this presentation, we'll focus on two popular normalization techniques: mean centering and min-max scaling, specifically in the context of user ratings.
+
 ## Bias-Variance Trade-off in Machine Learning with Python
 
 Understanding Bias-Variance Trade-off
@@ -877,6 +883,12 @@ Dependency Inversion Principle in Python
 
 The Dependency Inversion Principle (DIP) is one of the core principles of the SOLID principles in object-oriented programming. It states that high-level modules should not depend on low-level modules; both should depend on abstractions. Abstractions should not depend on details. Details should depend on abstractions.
 
+## Second Order Optimization in Python
+
+Introduction to Second Order Optimization
+
+Second order optimization methods utilize information about the curvature of the objective function to improve convergence rates and find better local minima. These methods are particularly useful for problems with complex loss landscapes or ill-conditioned gradients.
+
 ## Time Shifting in Pandas Manipulating Time Series Data
 
 Time Shifting in Pandas
@@ -1015,6 +1027,12 @@ Introduction to Many-Shot vs Few-Shot In-Context Learning
 
 In-context learning (ICL) is a crucial aspect of Large Language Models (LLMs). This presentation explores the differences between many-shot and few-shot ICL, focusing on their implementation and practical applications using Python.
 
+## Showcasing MMLU Pro Advancing AI Benchmarking with Python
+
+MMLU Pro: Raising the Bar in AI Benchmarking
+
+MMLU Pro is an enhanced version of the Massive Multitask Language Understanding (MMLU) benchmark, designed to evaluate AI models' performance across a wide range of tasks. This advanced benchmark aims to provide a more comprehensive and challenging assessment of AI capabilities.
+
 ## Impact of Format Restrictions on LLM Performance
 
 Format Restrictions in LLMs
@@ -1050,6 +1068,12 @@ Batch Normalization is a technique used to improve the training of deep neural n
 Introduction to Topological Vector Spaces
 
 Topological vector spaces are a fundamental concept in functional analysis, combining linear algebra with topology. They provide a framework for studying infinite-dimensional vector spaces equipped with a topology compatible with vector operations.
+
+## Reinforcement Learning and Q-Learning Mathematical Foundations and Python Implementation
+
+Introduction to Reinforcement Learning
+
+Reinforcement Learning (RL) is a machine learning paradigm where an agent learns to make decisions by interacting with an environment. The agent receives feedback in the form of rewards or penalties, allowing it to improve its decision-making over time. This approach is inspired by behavioral psychology and has applications in robotics, game playing, and autonomous systems.
 
 ## GraphRAG Graph-based NLP with Python
 
@@ -1371,11 +1395,23 @@ Introduction to Classification
 
 Classification is a fundamental task in machine learning where we predict the category of an input based on its features. It's widely used in various fields, from medicine to technology.
 
+## Rotary Positional Embeddings (RoPE) in Python
+
+Introduction to Rotary Positional Embeddings (RoPE)
+
+Rotary Positional Embeddings (RoPE) is an innovative technique in natural language processing that addresses the challenge of incorporating positional information into transformer models. RoPE offers a more efficient and effective alternative to traditional positional encoding methods, enabling models to better understand the relative positions of tokens in a sequence.
+
 ## Unveiling Explainable AI (XAI) with Python
 
 Introduction to Explainable AI (XAI)
 
 Explainable AI (XAI) is a set of techniques and methods that allow humans to understand and interpret the decisions made by artificial intelligence systems. As AI becomes more prevalent in our daily lives, the need for transparency and accountability in these systems grows. XAI aims to bridge the gap between complex AI models and human understanding, making AI more trustworthy and accessible.
+
+## Choosing the Right Classification Algorithm in Python
+
+Introduction to Classification Algorithms
+
+Classification is a fundamental task in machine learning where we predict the category of input data. Choosing the right algorithm is crucial for accurate results. This presentation will guide you through various classification algorithms, their strengths, and how to implement them using Python.
 
 ## Machine Learning with Hyperparameter Tuning in Python
 
@@ -1562,6 +1598,12 @@ Foundation Agents are an emerging paradigm in AI that combines large language mo
 Introduction to Finite Element Analysis (FEA)
 
 Finite Element Analysis is a numerical method for solving complex engineering problems. It involves dividing a large problem into smaller, simpler parts called finite elements. Let's visualize a simple mesh generation:
+
+## Introduction to Padding, Strides, and Pooling in Deep Learning with Python
+
+Introduction to Padding, Strides, and Pooling in Deep Learning
+
+Padding, strides, and pooling are fundamental concepts in deep learning, particularly in convolutional neural networks (CNNs). These techniques help manage the spatial dimensions of data as it passes through the network, allowing for more effective feature extraction and computational efficiency.
 
 ## Searching and Retrieving Images with Python
 
@@ -1756,6 +1798,12 @@ The TanH (Hyperbolic Tangent) function is a crucial activation function in neura
 Introduction to K-Nearest Neighbors (KNN)
 
 K-Nearest Neighbors is a simple yet powerful machine learning algorithm used for classification and regression tasks. It works by finding the K closest data points to a new instance and making predictions based on their labels or values.
+
+## Bayes' Theorem Explained with Python
+
+Introduction to Bayes' Theorem
+
+Bayes' Theorem is a fundamental concept in probability theory and statistics. It provides a way to update our beliefs about the probability of an event based on new evidence. This powerful tool has applications in various fields, including machine learning, data analysis, and decision-making under uncertainty.
 
 ## Bernoulli Distribution Explained with Python
 
@@ -2803,6 +2851,12 @@ Introduction to Banach Spaces
 
 A Banach space is a complete normed vector space. In simpler terms, it's a vector space with a notion of distance that allows us to talk about convergence of sequences.
 
+## Accelerating Data Processing and Model Training with Python
+
+Introduction to Data Processing Acceleration
+
+Data processing acceleration involves optimizing techniques to handle large datasets efficiently. Python offers various libraries and methods to speed up data manipulation and analysis.
+
 ## Why Transformers Don't Have Vanishing Gradients
 
 Understanding Transformers vs RNNs
@@ -3075,6 +3129,12 @@ Introduction to Cross-Validation
 
 Cross-validation is a crucial technique in machine learning for assessing model performance and preventing overfitting. It involves partitioning the data into subsets, training the model on a subset, and validating it on the remaining data. This process helps in estimating how well the model will generalize to unseen data.
 
+## Efficient Regression Models in Python
+
+Introduction to Regression Models in Python
+
+Regression analysis is a fundamental statistical technique used to model the relationship between variables. In Python, several regression models are available, each with its own computational efficiency. This presentation will explore the most computationally efficient regression models and their implementation using Python.
+
 ## Enhancing Data Visualizations with Seaborn in Python
 
 Introduction to Seaborn
@@ -3187,6 +3247,12 @@ Monomial ideals are fundamental objects in commutative algebra and algebraic geo
 Introduction to Statistical Analysis with Python
 
 Statistical analysis is a powerful tool for understanding data and making informed decisions. Python, with its rich ecosystem of libraries, provides an excellent platform for performing statistical analysis. This slideshow will guide you through the basics of getting started with statistical analysis using Python.
+
+## Comparing Flow Matching and Normalizing Flows in Python
+
+Introduction to Flow Matching and Normalizing Flows
+
+Flow Matching and Normalizing Flows are two powerful techniques in the field of generative modeling. Both methods aim to transform simple probability distributions into more complex ones, enabling the generation of diverse and realistic data. This slideshow explores the common ground between these approaches, highlighting their shared principles and applications.
 
 ## Iterating Neural Networks with Python
 
@@ -4193,6 +4259,12 @@ Introduction to the Central Limit Theorem
 
 The Central Limit Theorem (CLT) is a fundamental concept in probability theory and statistics. It states that the distribution of sample means approximates a normal distribution as the sample size becomes larger, regardless of the population's original distribution. This theorem forms the basis for many statistical inferences and is crucial in understanding confidence intervals and hypothesis testing.
 
+## Handling Imbalanced Data in Machine Learning with Python
+
+Imbalanced Data in Machine Learning
+
+Imbalanced data occurs when one class significantly outnumbers the other(s) in a dataset. This common problem can lead to biased models that perform poorly on minority classes. In this presentation, we'll explore various techniques to handle imbalanced data using Python, focusing on practical implementations and real-world applications.
+
 ## Python Prefetching for Efficient Handling of Huge Data Sets
 
 Introduction to Python Prefetching
@@ -4570,6 +4642,12 @@ Introduction to Machine Learning for E-commerce
 
 Machine Learning (ML) has become a game-changer in the e-commerce industry, enabling businesses to enhance customer experiences, optimize operations, and drive growth. This presentation will explore how Python, a powerful and versatile programming language, can be leveraged to implement ML techniques and revamp e-commerce platforms.
 
+## Improving Long Context LLMs with Writing in the Margins
+
+Introduction to Writing in the Margins (WiM)
+
+Writing in the Margins (WiM) is an innovative inference pattern designed to address the Lost-in-the-Middle problem in long context Language Models (LLMs). This technique enhances the model's ability to process and retain information from extended text inputs, improving overall performance and coherence in responses.
+
 ## Detecting Hallucinations in Language Models Using Semantic Entropy
 
 Detecting Hallucinations in Large Language Models
@@ -4915,6 +4993,12 @@ Understanding Float32, Float16, and BFloat16 in Deep Learning
 
 Floating-point representations play a crucial role in deep learning computations. This presentation explores Float32, Float16, and BFloat16 formats, their implications for neural network training and inference, and how they impact performance and accuracy in Python-based deep learning frameworks.
 
+## Mastering Machine Learning The Importance of Mathematical Foundations
+
+The Importance of Mathematical Foundations in Machine Learning
+
+Machine learning is not just about using tools like scikit-learn. A solid understanding of the underlying mathematics is crucial for long-term success in the field. While it's tempting to skip the math and dive right into coding, this approach can lead to challenges down the road. Let's explore why mathematical foundations are essential and how they contribute to better machine learning practices.
+
 ## Fine-Tuning vs. Prompt Engineering for Transformer Models
 
 Introduction to Fine-tuning and Prompt Engineering
@@ -5098,6 +5182,12 @@ PyTorch is a powerful deep learning framework, but model inference can sometimes
 Introduction to Softmax Activation Function
 
 The Softmax activation function is a crucial component in neural networks, particularly for multi-class classification problems. It transforms a vector of real numbers into a probability distribution, where each value represents the likelihood of belonging to a specific class.
+
+## Introduction to Agents and Multi-Agent Frameworks in Python
+
+Introduction to Agents and Multi-Agent Frameworks
+
+Agents are autonomous entities that can perceive their environment, make decisions, and take actions. Multi-agent frameworks provide a structure for multiple agents to interact and collaborate. This slideshow will guide you through the basics of implementing agents and multi-agent systems using Python.
 
 ## Harmonic Function Theory with Python
 
@@ -5319,6 +5409,12 @@ Understanding Transformer Reasoning Capabilities via Graph Algorithms
 
 Transformers have become a powerful tool in natural language processing, but their reasoning capabilities are not well understood. Graph algorithms offer a way to analyze and understand the reasoning patterns exhibited by transformers, providing insights into their decision-making processes.
 
+## Clustered Data and Linear Models in Python
+
+Clustered Data and Linear Models: Avoiding the Traps
+
+Clustered data occurs when observations are grouped into distinct categories or clusters. Linear models, while powerful, can lead to incorrect conclusions when applied naively to clustered data. This presentation explores the challenges and solutions for handling clustered data in linear modeling using Python.
+
 ## Introduction to Game Graphs in AI using Python
 
 Introduction to Game Graphs in AI
@@ -5507,6 +5603,12 @@ Introduction to SIFT
 
 SIFT (Scale-Invariant Feature Transform) is a powerful algorithm for detecting and describing local features in images. It was developed by David Lowe in 1999 and has been widely used in various computer vision applications. SIFT features are invariant to image scale and rotation, making them robust for object recognition, image stitching, and more.
 
+## Explaining Self-Attention vs. Cross-Attention in Python
+
+Introduction to Self-Attention and Cross-Attention
+
+Self-attention and cross-attention are fundamental mechanisms in modern deep learning architectures, particularly in transformer models. These techniques have revolutionized natural language processing and have found applications in various domains. In this presentation, we'll explore the differences between self-attention and cross-attention, their implementations, and their practical applications.
+
 ## Diving into Train, Validation, and Test Data in Machine Learning with Python
 
 Understanding Train, Validation, and Test Data
@@ -5530,6 +5632,12 @@ The Mixture of Nested Experts (MoNE) is an advanced neural network architecture 
 Q\* MCTSr: A Hybrid Approach to AI Decision Making
 
 Q\* MCTSr, or Monte Carlo Tree Self-refine, is a theoretical algorithm that combines Large Language Models (LLMs) with Monte Carlo Tree Search (MCTS). This hybrid approach aims to enhance decision-making processes in AI systems by leveraging the strengths of both techniques. However, it's important to note that Q\* MCTSr is not a well-established or widely recognized algorithm in the AI community. The following slides will explore the potential components and concepts that such an algorithm might incorporate, based on existing knowledge of LLMs and MCTS.
+
+## Exploring Encoder-Decoder LLMs for Instruction Tasks
+
+Understanding Encoder-Decoder LLMs
+
+Encoder-decoder architectures are indeed used in large language models (LLMs) for instruction tasks. This misconception likely stems from the prominence of decoder-only models in recent years. Let's explore the landscape of LLM architectures and their applications in instruction tasks.
 
 ## Optimizing RAG with Document Chunking Techniques Using Python
 
@@ -6072,6 +6180,12 @@ Introduction to Neural Machine Translation
 
 Neural Machine Translation (NMT) is an advanced approach to machine translation that uses artificial neural networks to predict the likelihood of a sequence of words. This technique has revolutionized language translation by learning to align and translate simultaneously, resulting in more fluent and contextually accurate translations.
 
+## Posterior Collapse in VAEs vs. Diffusion Models
+
+Understanding Posterior Collapse in VAEs and Diffusion Models
+
+Posterior collapse is a phenomenon that can occur in Variational Autoencoders (VAEs) but is less common in diffusion models. This presentation will explore the reasons behind this difference and provide practical insights into both models.
+
 ## In-Depth Exploration of SVM Polynomial Kernel
 
 Introduction to SVM Kernels
@@ -6135,6 +6249,12 @@ Boolean algebra is a mathematical system that deals with binary values, True and
 Understanding Different Types of Merge in Pandas
 
 Pandas is a powerful library for data manipulation in Python. One of its key features is the ability to merge datasets. This slideshow will explore various merge types in Pandas, their use cases, and practical examples.
+
+## Hidden Markov Models for Automatic Speech Recognition in Python
+
+Introduction to Hidden Markov Models for ASR
+
+Hidden Markov Models (HMMs) are statistical models widely used in Automatic Speech Recognition (ASR) systems. They represent speech as a sequence of hidden states, each emitting observable features. In ASR, these states typically correspond to phonemes or sub-phoneme units, while the observations are acoustic features extracted from the speech signal.
 
 ## Probability and Distributions in Python
 
