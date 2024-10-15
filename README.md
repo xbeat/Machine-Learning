@@ -138,6 +138,12 @@ Earth's Rotation and SpaceX's Raptor 2 Engines
 
 This presentation explores the intriguing question: How many SpaceX Raptor 2 engines would be needed to make a noticeable change in Earth's rotation? We'll approach this problem using mathematical modeling and physics principles, breaking down the complex issue into manageable parts. Our analysis will consider the Earth's rotational properties, the thrust capabilities of Raptor 2 engines, and the practical implications of such an endeavor.
 
+## Importance of Central Limit Theorem in AI
+
+Introduction to the Central Limit Theorem (CLT)
+
+The Central Limit Theorem is a fundamental concept in statistics and probability theory. It states that the distribution of sample means approximates a normal distribution as the sample size becomes larger, regardless of the population's underlying distribution.
+
 ## Magic Squares of Powers in Python
 
 Magic Squares of Powers: A Python Exploration
@@ -198,6 +204,12 @@ Introduction to Geometric Hypergraph Neural Networks
 
 Geometric Hypergraph Neural Networks (GHNNs) are a novel class of neural networks designed to process complex relational data represented as hypergraphs. These networks extend traditional graph neural networks to capture higher-order relationships between entities, making them particularly useful for applications in molecular biology, social network analysis, and recommendation systems.
 
+## Correlation Misconceptions and Predictive Power Score
+
+Understanding Correlation and Its Limitations
+
+Correlation is a widely used statistical measure, but it's often misunderstood. This slideshow will explore the limitations of correlation and introduce the Predictive Power Score (PPS) as an alternative measure for assessing relationships between variables.
+
 ## Outlier Detection in Python Visualizing and Analyzing Anomalies
 
 Understanding Outliers in Python
@@ -221,6 +233,12 @@ Euler's Identity is a mathematical equation that connects five fundamental const
 Bias in Stochastic Gradient Descent (SGD)
 
 Stochastic Gradient Descent is a fundamental optimization algorithm in machine learning. While it's highly effective, it can introduce bias in the training process. This bias can affect model performance and generalization. Let's explore the nature of this bias and its implications.
+
+## Explaining ROC Curve and AUC in Model Evaluation with Python
+
+Introduction to ROC Curve and AUC
+
+The Receiver Operating Characteristic (ROC) curve and Area Under the Curve (AUC) are essential tools for evaluating binary classification models. They help assess a model's ability to distinguish between classes across various classification thresholds.
 
 ## Dunder Methods in Python
 
@@ -265,6 +283,12 @@ Introduction to Object-based Image Classification
 Object-based image classification is a technique used in computer vision to identify and classify objects within an image. It involves segmenting the image into regions or objects and then classifying those objects based on their features.
 
 Code:
+
+## Architectural Patterns for Machine Learning APIs
+
+Different Architectures for Machine Learning Application APIs
+
+Machine Learning SaaS APIs can be built using various architectural styles, each with its own strengths and use cases. This presentation explores six key architectures: REST, GraphQL, SOAP, gRPC, WebSockets, and MQTT. We'll delve into their characteristics, benefits, and provide practical Python code examples for implementation.
 
 ## NLP Fundamentals Transformers, Context, and Python
 
@@ -521,6 +545,12 @@ Introduction to Probability Theory in Machine Learning
 
 Probability theory forms the backbone of many machine learning algorithms, enabling us to make predictions and decisions in uncertain environments. This slideshow will explore key concepts of probability theory and their applications in machine learning, using Python to illustrate these ideas.
 
+## Generating Text with Language Models
+
+Text Generation with Language Models
+
+Language models are powerful tools for generating text, but the process is not as straightforward as it might seem. These models are trained to predict the probability of the next token in a sequence, but turning these probabilities into coherent text requires careful consideration of various generation strategies.
+
 ## Calculating Z-Scores with Python
 
 Z-Score Calculation with Python
@@ -594,6 +624,12 @@ Machine learning algorithms are computational methods that enable systems to lea
 Introduction to AdaBoost
 
 AdaBoost, which stands for Adaptive Boosting, is an ensemble learning algorithm that combines multiple weak learners (e.g., decision trees) to create a strong, accurate model. It is an iterative process that assigns higher weights to misclassified instances, helping the subsequent learners focus on those difficult cases.
+
+## Integrating Late Chunking into Python-based RAG Workflows
+
+Introduction to Late Chunking in RAG Workflows
+
+Late Chunking is a technique used to improve the efficiency and accuracy of Retrieval-Augmented Generation (RAG) systems. It involves splitting documents into smaller chunks at query time, rather than during the initial indexing phase. This approach allows for more context-aware and flexible text retrieval, leading to better performance in various natural language processing tasks.
 
 ## Symmetric Indexing in Python Flexible Array Manipulation
 
@@ -751,11 +787,23 @@ Stopwords are common words in a language that are often filtered out during natu
 
 Number of stopwords: 179 First 10 stopwords: \['i', 'me', 'my', 'myself', 'we', 'our', 'ours', 'ourselves', 'you', "you're"\]
 
+## Comparing Multiple Machine Learning Algorithms
+
+Comparing Multiple Machine Learning Algorithms
+
+When developing machine learning solutions, it's crucial to explore various algorithms rather than settling on the first one that yields acceptable results. This approach allows for a more comprehensive evaluation and potentially better outcomes. Let's delve into the process of comparing different algorithms using Python.
+
 ## Introduction to Math and Statistics for Steam AI in Python
 
 Introduction to Mathematics and Statistics for Steam AI using Python
 
 Python has become an essential tool in the field of Steam AI, offering powerful libraries and frameworks for mathematical and statistical analysis. This presentation will cover fundamental concepts and practical applications, demonstrating how Python can be used to solve complex problems in Steam AI.
+
+## Viterbi Algorithm for Hidden Markov Models in Python
+
+Introduction to Viterbi Algorithm for Hidden Markov Models
+
+The Viterbi algorithm is a dynamic programming approach used to find the most likely sequence of hidden states in a Hidden Markov Model (HMM). It's widely used in various fields, including speech recognition, natural language processing, and bioinformatics. This slideshow will explore the algorithm's concepts, implementation, and applications using Python.
 
 ## Methods to Improve Machine Learning Accuracy Evaluation
 
@@ -786,6 +834,12 @@ Complex analysis, also known as function theory, is a branch of mathematics that
 Introduction to TF-IDF
 
 TF-IDF (Term Frequency-Inverse Document Frequency) is a numerical statistic used to reflect the importance of a word in a document within a collection or corpus. It's widely used in information retrieval and text mining.
+
+## Leveraging LLMs for Real-World Smart Agents
+
+Agent-Based Parallel Processing
+
+Agent-based parallel processing in LLMs involves distributing tasks among multiple agents to work simultaneously. This approach significantly reduces overall processing time and enhances efficiency.
 
 ## Explaining Dispersion Parameter with Python
 
@@ -1265,6 +1319,12 @@ Data Augmentation in CNNs
 
 Data augmentation is a powerful technique used to increase the diversity of training data for convolutional neural networks (CNNs). It involves creating new training samples by applying various transformations to existing images. This process helps improve model generalization and reduces overfitting, especially when working with limited datasets.
 
+## Recency Frequency Magnitude Analysis with Python
+
+Introduction to Recency, Frequency, Magnitude (RFM) Analysis
+
+RFM analysis is a customer segmentation technique used in marketing and customer relationship management. It evaluates customers based on three key metrics: Recency (how recently they made a purchase), Frequency (how often they make purchases), and Magnitude (how much they spend). This powerful tool helps businesses understand customer behavior and tailor their marketing strategies accordingly.
+
 ## Calculating the Astronomical Cost of an ISS Wedding Using Python
 
 The ISS Wedding Challenge
@@ -1491,11 +1551,23 @@ Introduction to Hyperbolic Geometry
 
 Hyperbolic geometry is a non-Euclidean geometry that challenges our intuition about parallel lines and the nature of space. In hyperbolic space, the sum of angles in a triangle is less than 180 degrees, and there are infinitely many parallel lines through a point not on a given line.
 
+## Generative Data Augmentation and Bayesian Techniques in Machine Learning
+
+Generative Data Augmentation (GDA)
+
+Generative Data Augmentation is a technique that leverages generative models to create synthetic data for training machine learning models. This approach helps to increase dataset size and diversity, potentially improving model performance and generalization.
+
 ## Predicting Premier League Winner with Random Forest
 
 Introduction to Predicting Premier League Winners
 
 Predicting the winner of the Premier League using machine learning has become an exciting application of data science in sports. This presentation focuses on using the Random Forest algorithm, implemented in Python, to forecast the potential champion of the 2023-2024 season.
+
+## Dimensionality Reduction Methods for Preserving Data Variance
+
+Principal Component Analysis (PCA) for Dimensionality Reduction
+
+PCA is a powerful technique for reducing dimensionality while preserving the maximum variance in the data. It works by identifying the principal components, which are orthogonal vectors that capture the most significant patterns in the dataset.
 
 ## Leaky ReLU Function in Machine Learning with Python
 
@@ -1631,6 +1703,12 @@ A Finite State Machine (FSM) is a computational model used to design systems tha
 AI vs Machine Learning
 
 Artificial Intelligence (AI) and Machine Learning (ML) are often used interchangeably, but they have distinct differences. AI is a broader concept that aims to create systems capable of performing tasks that typically require human intelligence. Machine Learning, on the other hand, is a subset of AI that focuses on algorithms that improve through experience and data.
+
+## Forward Algorithm for Hidden Markov Models in Python
+
+Introduction to Forward Algorithm for HMMs
+
+The Forward Algorithm is a crucial component in Hidden Markov Models (HMMs), used to efficiently calculate the probability of observing a sequence of events. It's particularly useful in speech recognition, natural language processing, and bioinformatics.
 
 ## Exploring Abstract Algebra with Python
 
@@ -1974,6 +2052,12 @@ The Poisson Variational Autoencoder (PVAE) is a type of variational autoencoder 
 
 Code:
 
+## Comparing 2-Layer CNN Models on CIFAR-10
+
+Model Comparison: CNN Architectures
+
+Two 2-layer CNN models were trained on the CIFAR-10 dataset, resulting in different accuracies. Model A achieved 70% accuracy, while Model B reached 74%. This difference is not due to hyperparameter tuning, suggesting that other factors are at play. Let's explore the possible reasons for this performance gap.
+
 ## Introduction to GGML and GGUF for Efficient LLM Inference
 
 Understanding GGML and GGUF
@@ -2011,6 +2095,18 @@ Introduction to BART for Sequence Classification
 BART (Bidirectional and Auto-Regressive Transformers) is a state-of-the-art language model developed by Facebook AI Research. It is a denoising autoencoder for pretraining sequence-to-sequence models, originally proposed for text generation tasks. However, it can also be fine-tuned for sequence classification tasks, where the input sequence is mapped to a class label.
 
 Code:
+
+## Deep Extrinsic Manifold Representation for Computer Vision
+
+Introduction to Deep Extrinsic Manifold Representation
+
+Deep Extrinsic Manifold Representation is a novel approach in computer vision that leverages the power of deep learning to capture and represent complex geometric structures in high-dimensional data. This technique is particularly useful for tasks such as object recognition, pose estimation, and 3D reconstruction.
+
+## Transfer Learning for Convolutional Neural Networks
+
+Introduction to Transfer Learning for CNNs
+
+Transfer Learning is a powerful technique in deep learning where knowledge gained from training a model on one task is applied to a different but related task. In the context of Convolutional Neural Networks (CNNs), this approach can significantly reduce training time and improve performance, especially when working with limited datasets.
 
 ## Thread-Safe Singleton Pattern in Python
 
@@ -2206,6 +2302,12 @@ Introduction to Maximum Likelihood Estimation (MLE) and Expectation Maximization
 
 Maximum Likelihood Estimation (MLE) and Expectation Maximization (EM) are powerful statistical techniques used to estimate parameters in probabilistic models. MLE finds the parameters that maximize the likelihood of observing the given data, while EM is an iterative algorithm used when dealing with incomplete or hidden data.
 
+## Transformers for Regression! Expressive Enough!
+
+Introduction to Transformers in Regression
+
+Transformers, originally designed for natural language processing tasks, have shown remarkable success in various domains. This presentation explores their application in regression tasks and examines their expressiveness in handling continuous numerical predictions.
+
 ## Exploring AdaGrad and Adadelta Optimization Algorithms in Python
 
 Introduction to Optimization Algorithms
@@ -2322,6 +2424,12 @@ Recurrent Neural Networks (RNNs) have demonstrated remarkable capabilities in pr
 Introduction to Coxeter Groups
 
 Coxeter groups are mathematical structures that describe symmetries in geometric spaces. They are named after H.S.M. Coxeter and have applications in various fields, including algebra, geometry, and combinatorics.
+
+## Feature Importance in Machine Learning with Python
+
+Introduction to Feature Importance
+
+Feature importance is a crucial concept in machine learning that helps identify which features in a dataset have the most significant impact on the model's predictions. Understanding feature importance allows data scientists to focus on the most relevant variables, improve model performance, and gain insights into the underlying patterns in the data.
 
 ## Building Neural Networks from Scratch in Python
 
@@ -2741,6 +2849,12 @@ Linear regression with multiple variables is an extension of simple linear regre
 
 Convolutional Neural Networks (CNNs) CNNs are a type of deep neural network designed to process data with a grid-like topology, such as images. They are particularly effective for tasks like image recognition, object detection, and image segmentation. Code Example:
 
+## Mastering Python Loops with the `continue` Statement
+
+The Power of the `continue` Statement
+
+The `continue` statement is a powerful tool in Python loops that allows you to skip the rest of the current iteration and move to the next one. It provides fine-grained control over loop execution, enabling you to bypass certain conditions or elements without breaking the entire loop.
+
 ## Recurrent Neural Network Regularization in Python
 
 Understanding Recurrent Neural Networks (RNNs)
@@ -2778,6 +2892,12 @@ The Mixture of Memory Experts (MoME) is an advanced machine learning model that 
 Introduction to Machine Learning Techniques
 
 Machine learning encompasses various techniques for analyzing and interpreting data. This presentation will cover four fundamental areas: Regression, Classification, Clustering, and Dimensionality Reduction. We'll explore each topic with Python code examples, demonstrating how these techniques can be applied to real-world problems.
+
+## Building Dynamic Topology Neural Networks with Multi-Objective Optimization in Python
+
+Introduction to Dynamic Topology Neural Networks
+
+Dynamic Topology Neural Networks (DTNNs) are an advanced form of artificial neural networks that can adapt their structure during training. This adaptation allows for more efficient learning and better performance on complex tasks.
 
 ## Python List Methods Illustrated
 
@@ -3135,6 +3255,12 @@ Introduction to Regression Models in Python
 
 Regression analysis is a fundamental statistical technique used to model the relationship between variables. In Python, several regression models are available, each with its own computational efficiency. This presentation will explore the most computationally efficient regression models and their implementation using Python.
 
+## Explaining Forward Elimination in Machine Learning with Python
+
+What is Forward Elimination?
+
+Forward Elimination is a crucial step in solving systems of linear equations using Gaussian elimination. It's a systematic process of transforming a matrix into row echelon form by eliminating variables from equations.
+
 ## Enhancing Data Visualizations with Seaborn in Python
 
 Introduction to Seaborn
@@ -3202,6 +3328,12 @@ This presentation explores Alexandre Dumas' classic novel "The Count of Monte Cr
 Introduction to Neural Networks
 
 Neural networks are computational models inspired by the human brain. They consist of interconnected nodes (neurons) organized in layers, designed to recognize patterns and solve complex problems.
+
+## Effective Model Deployment in Machine Learning
+
+Introduction to Model Deployment
+
+Model deployment in machine learning is the process of making a trained model available for use in a production environment. It's a critical step that transforms theoretical work into practical applications, enabling real-time predictions and automated decision-making across various industries.
 
 ## Time Series Analysis with Neural-Prophet
 
@@ -3314,6 +3446,12 @@ Introduction to Predictive Modeling
 
 Predictive modeling is a statistical technique used to forecast future outcomes based on historical data. It involves analyzing patterns in existing data to make informed predictions about future events or behaviors. In this slideshow, we'll explore how to implement predictive models using Python, a versatile programming language with powerful libraries for data analysis and machine learning.
 
+## Introduction to Aggregate and Transform Functions in Apache Spark
+
+Introduction to Aggregate and Transform Functions in Apache Spark
+
+Apache Spark is a powerful distributed computing system that provides a wide range of functions for data processing and analysis. Among these, aggregate and transform functions are essential tools for manipulating large datasets efficiently. This presentation will explore these functions, their applications, and how to implement them using PySpark, the Python API for Apache Spark.
+
 ## Detecting and Mitigating Model Drift
 
 Understanding Model Drift
@@ -3361,6 +3499,16 @@ Tropical matroid representation networks are a fascinating intersection of tropi
 Accuracy vs. Precision: Understanding the Difference
 
 Accuracy and precision are often confused, but they represent distinct concepts in measurement and data analysis. This presentation will explore their differences using Python examples.
+
+## Choosing the Right Statistical Test for Your Data
+
+Why Care About Variable Types?
+
+Understanding variable types is crucial in programming and data analysis. It affects how we store, manipulate, and interpret data. Let's explore this concept with a simple Python example:
+
+
+
+Output: Integer: 42, Type: <class 'int'> Float: 3.14, Type: <class 'float'> String: Hello, World!, Type: <class 'str'> Boolean: True, Type: <class 'bool'>
 
 ## Imbalanced Stratification Techniques for Machine Learning using Python
 
@@ -3522,6 +3670,12 @@ Integral calculus plays a crucial role in various aspects of machine learning an
 Introduction to Multimodal Table Understanding
 
 Multimodal table understanding involves extracting and analyzing information from tables that contain various types of data, including text, numbers, and images. This process combines techniques from computer vision, natural language processing, and data analysis to interpret complex tabular structures.
+
+## Spark User Defined Functions with Python
+
+Introduction to Spark User Defined Functions (UDFs)
+
+Spark UDFs allow us to extend Spark's built-in functionality by defining custom operations on DataFrame columns. They're particularly useful when we need to apply complex transformations or business logic that isn't available in Spark's standard functions.
 
 ## Basic LangChain Tutorial with Python
 
@@ -3861,6 +4015,12 @@ Introduction to Regression Analysis
 
 Regression analysis is a statistical method used to model the relationship between variables. We'll explore two popular types: Linear Regression and Poisson Regression, highlighting their differences and use cases.
 
+## Understanding TF-IDF! A Key Text Analysis Technique in Python
+
+Understanding TF-IDF
+
+TF-IDF (Term Frequency-Inverse Document Frequency) is a numerical statistic used to reflect the importance of a word in a document within a collection or corpus. It's widely used in information retrieval and text mining.
+
 ## Motivations for Using KernelPCA over PCA
 
 Introduction to KernelPCA and PCA
@@ -3902,6 +4062,12 @@ RISE (Recursive IntroSpection) is a technique aimed at improving the performance
 Introduction to Time Series Anomaly Detection
 
 Time series anomaly detection is a crucial task in various domains, including IoT, cybersecurity, and industrial monitoring. Spatial-Temporal Normality Learning (STEN) is an advanced technique that combines spatial and temporal information to identify anomalies in time series data. This presentation will explore STEN and its implementation using Python.
+
+## Mastering Temperature and Top_p in Python Language Models
+
+Understanding Temperature and Top\_p in Language Models
+
+Temperature and top\_p are crucial parameters in language models that control the randomness and diversity of generated text. These settings affect how the model selects the next token in a sequence, influencing the creativity and coherence of the output.
 
 ## Regularization Techniques in Deep Learning L1 and L2 in Keras
 
@@ -4229,6 +4395,12 @@ Zero-Shot Learning (ZSL) is a machine learning paradigm where a model can classi
 
 Introduction to Python Utility Functions Utility functions in Python serve as reusable code snippets that perform common operations. They enhance code readability, maintainability, and promote the DRY (Don't Repeat Yourself) principle. This presentation will explore the intricacies of creating, organizing, and optimizing utility functions in Python projects.
 
+## LLMs as Inductive Reasoning Champions
+
+Introduction to LLMs and Inductive Reasoning
+
+Large Language Models (LLMs) have revolutionized natural language processing, demonstrating remarkable capabilities in various tasks. Recent studies suggest that LLMs excel at inductive reasoning, a cognitive process of drawing general conclusions from specific observations. This discovery challenges our understanding of AI's capabilities and opens new avenues for research and application.
+
 ## Tokens and Tokenization in Large Language Models in Python
 
 Introduction to Tokens and Tokenization in LLMs
@@ -4326,6 +4498,12 @@ Code:
 Introduction to Pooling in Convolutional Neural Networks
 
 Pooling is a crucial operation in Convolutional Neural Networks (CNNs) that reduces the spatial dimensions of feature maps while retaining important information. It helps in achieving spatial invariance and reduces computational complexity.
+
+## Choosing Appropriate Error Functions in Machine Learning
+
+Introduction to Error Functions in Machine Learning
+
+Mean Squared Error (MSE) and Mean Absolute Error (MAE) are two common error functions used in machine learning. While MSE is often the default choice, it's crucial to understand the implications of selecting different error functions. This presentation will explore the characteristics, advantages, and disadvantages of MSE and MAE, as well as their impact on AI training behavior.
 
 ## Mathematical Foundations for Machine Learning
 
@@ -4752,6 +4930,12 @@ Gradient Descent
 
 Gradient Descent is an optimization algorithm used to minimize a function by iteratively moving in the direction of steepest descent. In data science, it's commonly used to train machine learning models by updating parameters to minimize the cost function.
 
+## Context-Independent Word Embeddings in Python
+
+Introduction to Context-Independent Word Embeddings
+
+Context-independent word embeddings are fixed vector representations of words, capturing semantic meaning regardless of surrounding context. These models transform words into dense numerical vectors, enabling machines to process and understand language more effectively.
+
 ## Explaining K-Fold Cross-Validation with Python
 
 Introduction to K-Fold Cross-Validation
@@ -4811,6 +4995,12 @@ Multi-dimensional tables are crucial for representing complex data structures in
 Introduction to Vision Transformer (ViT)
 
 The Vision Transformer (ViT) is a groundbreaking model that applies the Transformer architecture, originally designed for natural language processing, to computer vision tasks. It treats images as sequences of patches, enabling the model to capture global dependencies and achieve state-of-the-art performance on various image classification benchmarks.
+
+## Normalizing vs. Scaling in Python
+
+Normalizing vs. Scaling: What's the Difference?
+
+Normalizing and scaling are two crucial data preprocessing techniques in machine learning and data analysis. While often used interchangeably, they serve distinct purposes and have different mathematical foundations. This presentation will explore their differences, implementations, and practical applications.
 
 ## Creating and Manipulating Tensors with PyTorch
 
@@ -4950,6 +5140,12 @@ Galois Theory is a branch of abstract algebra that provides a connection between
 Introduction to Maximum Likelihood Estimation (MLE)
 
 Maximum Likelihood Estimation is a statistical method used to estimate the parameters of a probability distribution by maximizing the likelihood function. It finds the parameter values that make the observed data most probable.
+
+## Data Structures and Algorithms for AI Enthusiasts
+
+Introduction to Data Structures and Algorithms for AI
+
+Data Structures and Algorithms (DSA) form the backbone of efficient AI systems. They enable us to organize, store, and process data effectively, which is crucial for developing intelligent algorithms. This presentation will explore key DSA concepts relevant to AI, with a focus on Python implementations.
 
 ## Exploring the P vs NP Problem with Python
 
@@ -5153,6 +5349,12 @@ Introduction to Calculus II
 
 Calculus II is a continuation of Calculus I, covering more advanced topics such as techniques of integration, infinite sequences and series, parametric equations, polar coordinates, and vector calculus. In this slideshow, we'll explore how to implement some of these concepts using Python.
 
+## Comprehensive Guide to Python While Loops with Examples
+
+Introduction to While Loops in Python
+
+While loops are fundamental structures in Python that allow you to repeatedly execute a block of code as long as a specified condition remains true. They are essential for tasks that require iteration with an unknown number of repetitions.
+
 ## Implementing Adadelta Optimizer from Scratch in Python
 
 Introduction to Adadelta Optimizer
@@ -5176,6 +5378,12 @@ Autoencoders are neural networks designed to learn efficient data representation
 Optimizing PyTorch Model Inference Speed
 
 PyTorch is a powerful deep learning framework, but model inference can sometimes be slow. This presentation will explore various techniques to boost your PyTorch model's inference speed, making it more efficient for real-world applications.
+
+## The Limitations of Retrieval-Augmented Generation (RAG) Systems
+
+The Reality of RAG Systems
+
+Retrieval-Augmented Generation (RAG) systems are not the plug-and-play solution many expect. While they offer exciting possibilities for utilizing Large Language Models (LLMs) with external knowledge, implementing them effectively requires careful consideration and optimization at every step.
 
 ## Softmax Activation Function in Neural Networks with Python
 
@@ -5267,11 +5475,23 @@ Introduction to Regression Decision Trees
 
 Regression Decision Trees are a powerful machine learning technique used for predicting continuous numerical values. They combine the simplicity of decision trees with the ability to handle regression tasks, making them versatile for various real-world applications.
 
+## Handling Outliers in Python
+
+Introduction to Outliers
+
+Outliers are data points that significantly differ from other observations in a dataset. They can arise due to various reasons such as measurement errors, natural variability, or exceptional cases. Identifying and handling outliers is crucial for maintaining data integrity and ensuring accurate analysis results.
+
 ## Contrastive Learning with Python
 
 Introduction to Contrastive Learning
 
 Contrastive Learning is a machine learning technique that aims to learn representations by comparing similar and dissimilar samples. It's particularly useful in self-supervised learning scenarios where labeled data is scarce. This approach encourages the model to bring similar samples closer in the embedding space while pushing dissimilar samples apart.
+
+## Self-Attention Network Architecture in Python
+
+Introduction to Self-Attention Networks
+
+Self-Attention Networks are a fundamental component of modern deep learning architectures, particularly in natural language processing. They allow models to weigh the importance of different parts of the input data dynamically, leading to more effective learning of complex relationships.
 
 ## Pros and Cons of Gradient Boosting in Python
 
@@ -5420,6 +5640,12 @@ Clustered data occurs when observations are grouped into distinct categories or 
 Introduction to Game Graphs in AI
 
 Game graphs, also known as game trees, are a fundamental concept in AI and game theory. They represent the possible moves and outcomes in a game, allowing AI agents to reason about optimal strategies. In this slideshow, we'll explore game graphs using Python, focusing on beginner-level concepts and actionable examples.
+
+## Best Face Recognition Models in Python
+
+Introduction to Face Recognition
+
+Face recognition is a biometric technology that identifies or verifies a person's identity using their facial features. This technology has gained significant popularity in recent years due to advancements in machine learning and computer vision. In this presentation, we'll explore some of the best models for face recognition using Python, along with practical examples and code snippets.
 
 ## Discover LoRA Finetuning of LLMs with Python
 
@@ -5752,6 +5978,12 @@ Introduction to Complex Analysis
 
 Complex analysis is a branch of mathematics that studies functions of complex numbers. It has wide-ranging applications in physics, engineering, and other fields of mathematics.
 
+## Machine Learning Model Lifecycle! Scoping, Data, Modeling, Deployment
+
+Machine Learning Model Lifecycle: Scoping
+
+The scoping phase is crucial for defining project goals and requirements. It involves identifying the problem, determining feasibility, and setting success metrics.
+
 ## Leveraging Git From Narrative to Refactor
 
 Interactive Rebase
@@ -5858,6 +6090,12 @@ Code:
 
 Caption: This code defines a function `simpson` that takes a function `f`, the integration limits `a` and `b`, and the number of subintervals `n`. It calculates the approximation of the integral using Simpson's Rule.
 
+## The Hidden Flaw in Object Detection Models
+
+Understanding Object Detection Models
+
+Object detection models like YOLO and Faster R-CNN are widely used for identifying and localizing objects in images. These models typically process input images to generate low-resolution feature maps, which are then used to predict bounding boxes and object classes. Let's explore how these models work with a simple example.
+
 ## Strategies to Address Overfitting in Neural Networks
 
 Understanding Overfitting in Neural Networks
@@ -5951,6 +6189,12 @@ Information Theory: The Basics
 
 Information theory is a mathematical framework for quantifying, storing, and communicating information. It was developed by Claude Shannon in 1948 and has since become fundamental to many fields, including computer science, data compression, and cryptography.
 
+## Simple Regression Model to Predict Height from Weight
+
+Simple Regression Model to Predict Height from Weight
+
+A simple regression model is a statistical method used to analyze the relationship between two variables. In this case, we'll explore how to predict a person's height based on their weight using Python.
+
 ## Statistical Methods for Machine Learning in Python
 
 Introduction to Statistical Methods in Machine Learning
@@ -5968,6 +6212,12 @@ P-value is a fundamental concept in statistical hypothesis testing. It represent
 Introduction to Sine and Cosine Functions in Data Analysis
 
 Sine and cosine functions, which are periodic and oscillatory in nature, play a crucial role in various data analysis techniques. These functions are particularly useful in analyzing time-series data, harmonic analysis, frequency domain analysis, and signal processing. This presentation will explore their applications and implementations using Python.
+
+## 25 Key Mathematical Definitions for Data Science
+
+Gradient Descent
+
+Gradient descent is an optimization algorithm used to minimize a function by iteratively moving in the direction of steepest descent. It's widely used in machine learning for training models.
 
 ## SelfGoal in Machine Learning with Python
 
@@ -5987,11 +6237,23 @@ Introduction to Masked Attention for Graphs (MAG)
 
 Masked Attention for Graphs (MAG) is a technique used in graph neural networks to improve the efficiency and effectiveness of attention mechanisms when processing large-scale graphs. It selectively focuses on important parts of the graph, reducing computational complexity and improving performance.
 
+## NLP FastText! Word Embedding with Python
+
+Introduction to FastText
+
+FastText is an open-source library developed by Facebook's AI Research lab for efficient learning of word representations and sentence classification. It extends the word2vec model by representing each word as a bag of character n-grams, allowing it to capture subword information and handle out-of-vocabulary words effectively.
+
 ## Power Series and Sequences in Machine Learning Using Python
 
 Introduction to Power Series in Machine Learning
 
 Power series are mathematical tools that represent functions as infinite sums of terms. In machine learning, they're used to approximate complex functions, enabling models to learn and represent intricate patterns in data. This slide introduces the concept and its relevance to AI and ML applications.
+
+## Learning and Verifying Maximal Taylor-Neural Lyapunov Functions in Python
+
+Introduction to Taylor-Neural Lyapunov Functions
+
+Taylor-Neural Lyapunov functions combine the power of Taylor series expansions with neural networks to create robust stability certificates for nonlinear dynamical systems. This approach leverages the approximation capabilities of neural networks and the analytical properties of Taylor expansions to construct Lyapunov functions that can verify stability over larger regions of the state space.
 
 ## Fundamental Topics of LLM Fine-tuning
 
@@ -6028,6 +6290,12 @@ Understanding LLM Benchmarks using Python
 
 Large Language Models (LLMs) have revolutionized natural language processing. To evaluate their performance, we use benchmarks. This presentation explores various LLM benchmarks and demonstrates how to implement them using Python.
 
+## Vector Embedding in Python Representing Semantic Relationships
+
+Introduction to Vector Embedding
+
+Vector embedding is a technique used to represent discrete objects as continuous vectors in a high-dimensional space. This method allows us to capture semantic relationships and similarities between objects, making it easier for machine learning models to process and analyze data.
+
 ## Early Stopping and Spectral Alignment in Neural Networks
 
 Early Stopping in Untrained Neural Networks
@@ -6040,11 +6308,23 @@ Introduction to Gradient Boosting Classifier
 
 Gradient Boosting Classifier is an ensemble learning method that combines multiple weak learners to create a strong predictive model. It builds trees sequentially, with each new tree correcting the errors of the previous ones.
 
+## Understanding Popular Clustering Algorithms
+
+Introduction to Clustering
+
+Clustering is an unsupervised machine learning technique used to group similar data points together. It's essential for discovering patterns and structures in datasets without predefined labels. Clustering helps in data exploration, customer segmentation, anomaly detection, and much more.
+
 ## Influential Computer Scientist Jeff Dean A Comprehensive Presentation
 
 Jeff Dean: Pioneering Innovations in Large-Scale Distributed Systems and Machine Learning
 
 Journey Through the Life and Work of a Google AI Visionary
+
+## Introduction to Machine Learning with Python
+
+Introduction to Machine Learning
+
+Machine Learning (ML) is a subset of Artificial Intelligence that focuses on developing algorithms and statistical models that enable computer systems to improve their performance on a specific task through experience. It's the science of getting computers to learn and act like humans do, improving their learning over time in autonomous fashion, by feeding them data and information in the form of observations and real-world interactions.
 
 ## NumPy Broadcasting Simplifying Python Code
 
@@ -6123,6 +6403,12 @@ Partial Autocorrelation Function (PACF) plots are crucial tools in time series a
 Introduction to Deep Learning
 
 Deep Learning is a subset of machine learning that uses artificial neural networks to model and solve complex problems. It has revolutionized various fields, from computer vision to natural language processing.
+
+## Debunking the Myth! Hidden Layers and Neural Network Performance
+
+Myth Busting: Hidden Layers and Neural Network Performance
+
+The idea that increasing the number of hidden layers always improves neural network performance is a common misconception. In reality, the relationship between network depth and performance is far more nuanced. This presentation will explore the complexities of neural network architecture and provide insights into optimal design strategies.
 
 ## Introduction to Pandas
 
@@ -6232,11 +6518,23 @@ Introduction to Optimizers in Deep Learning
 
 Optimizers are algorithms used to adjust the parameters of neural networks during training. They aim to minimize the loss function and improve the model's performance. Let's start with a simple example of how an optimizer works:
 
+## Visualizing Skewness in Probability Distributions with Python
+
+Types of Skewness in Probability Distributions
+
+Skewness is a measure of asymmetry in probability distributions. It indicates the extent to which a distribution deviates from a symmetrical shape. Understanding skewness is crucial for data analysis and statistical modeling. In this presentation, we'll explore different types of skewness and their implications.
+
 ## Compact Lie Groups with Python
 
 Introduction to Compact Lie Groups
 
 Compact Lie groups are fundamental structures in mathematics and physics, combining the properties of compactness and differentiability. They play a crucial role in various fields, including quantum mechanics, particle physics, and differential geometry. In this presentation, we'll explore the basics of compact Lie groups and their applications, using Python to illustrate key concepts.
+
+## Spark Window Functions for Time-Series Analysis in PySpark
+
+Introduction to Window Functions in PySpark
+
+Window functions in PySpark allow us to perform calculations across a set of rows that are related to the current row. They are particularly useful for time-series analysis, enabling operations like running totals, moving averages, and rank calculations. These functions provide a powerful way to analyze data within a specific window or frame of rows.
 
 ## Introduction to Boolean Algebra with Python
 
