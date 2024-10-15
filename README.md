@@ -54,6 +54,12 @@ Introduction to Boosting in Model Training
 
 Boosting is an ensemble learning technique that combines multiple weak learners to create a strong predictive model. It focuses on iteratively improving model performance by giving more weight to misclassified instances. Let's explore how boosting works with Python examples.
 
+## Implementing Neural Networks! Beyond the Code
+
+GPU Memory Optimization in Neural Networks
+
+The real challenge and excitement in neural network implementation often lies in optimizing GPU memory usage. This presentation explores a technique to improve data transfer efficiency in image classification tasks.
+
 ## John McCarthy The Father of Artificial Intelligence
 
 John McCarthy - Father of Artificial Intelligence
@@ -197,6 +203,12 @@ When choosing a machine learning model, dataset size plays a crucial role. Small
 Introduction to MLE and EM
 
 Maximum Likelihood Estimation (MLE) and Expectation Maximization (EM) are two fundamental techniques in statistical modeling and machine learning. While they share some similarities, they are used in different scenarios and have distinct characteristics. This slideshow will explore the differences between MLE and EM, their applications, and provide practical examples.
+
+## Simulating the Monty Hall Problem in Python
+
+The Monty Hall Problem in Machine Learning
+
+The Monty Hall problem, a classic probability puzzle, has intriguing applications in machine learning. This slideshow explores how we can use Python to simulate and analyze this problem, demonstrating its relevance to decision-making algorithms and reinforcement learning.
 
 ## Introducing Geometric Hypergraph Neural Networks in Python
 
@@ -625,6 +637,12 @@ Introduction to AdaBoost
 
 AdaBoost, which stands for Adaptive Boosting, is an ensemble learning algorithm that combines multiple weak learners (e.g., decision trees) to create a strong, accurate model. It is an iterative process that assigns higher weights to misclassified instances, helping the subsequent learners focus on those difficult cases.
 
+## Metropolis-Hastings Algorithm in Python
+
+Introduction to Metropolis-Hastings Algorithm
+
+The Metropolis-Hastings algorithm is a Markov Chain Monte Carlo (MCMC) method used for sampling from complex probability distributions. It's particularly useful when direct sampling is difficult or impossible. This algorithm is widely applied in Bayesian inference, statistical physics, and machine learning.
+
 ## Integrating Late Chunking into Python-based RAG Workflows
 
 Introduction to Late Chunking in RAG Workflows
@@ -679,6 +697,12 @@ Introduction to Jacobian Matrices
 
 A Jacobian matrix is a fundamental concept in multivariable calculus and linear algebra. It represents the best linear approximation of a differentiable function near a given point. The Jacobian matrix contains all first-order partial derivatives of a vector-valued function.
 
+## Handwritten Digit Classification with TensorFlow and Python
+
+Introduction to Handwritten Digit Classification
+
+Handwritten digit classification is a fundamental problem in computer vision and machine learning. It involves teaching a computer to recognize and categorize handwritten digits automatically. This task has numerous real-world applications, from postal code recognition to digitizing historical documents. In this presentation, we'll explore how to build a handwritten digit classifier using TensorFlow and the MNIST dataset.
+
 ## Comparing Python and C++ File IO
 
 Python - Opening a File
@@ -716,6 +740,12 @@ The Equal Scores Paradox is a counterintuitive phenomenon that arises in certain
 Introduction to Difference-in-Differences (DiD)
 
 Difference-in-Differences (DiD) is a statistical method used to estimate the causal effect of a treatment or intervention by comparing the changes in outcomes over time between a treatment group and a control group. This technique is particularly useful when randomized experiments are not feasible or ethical.
+
+## Building an Efficient Local Semantic Search System with Python
+
+Introduction to Local Semantic Search
+
+Semantic search goes beyond keyword matching, understanding the intent and contextual meaning of a query. A local semantic search system processes and retrieves information from a local dataset, providing relevant results based on semantic similarity. This slideshow will guide you through building an efficient local semantic search system using Python.
 
 ## Exploring Python's Abstract Syntax Tree Manipulation
 
@@ -991,6 +1021,12 @@ Mathematics: The Universal Language
 
 Mathematics is often described as the universal language that unveils the secrets of the universe. This powerful tool allows us to describe, analyze, and predict phenomena across various fields, from physics to biology, and even in our daily lives. Let's explore how mathematics connects abstract concepts to real-world applications.
 
+## Batch Normalization in Neural Networks with Python
+
+Introduction to Batch Normalization
+
+Batch Normalization is a technique used to improve the training of deep neural networks by normalizing the inputs of each layer. It addresses the problem of internal covariate shift, which occurs when the distribution of network activations changes during training. This technique helps to stabilize the learning process and dramatically reduces the number of training epochs required to train deep networks.
+
 ## Surreal Numbers and Cohomology Theory in Machine Learning
 
 Introduction to Surreal Numbers and Cohomology Theory in Machine Learning
@@ -1080,6 +1116,12 @@ Hyperparameter tuning is the process of optimizing the configuration of a deep l
 Introduction to Many-Shot vs Few-Shot In-Context Learning
 
 In-context learning (ICL) is a crucial aspect of Large Language Models (LLMs). This presentation explores the differences between many-shot and few-shot ICL, focusing on their implementation and practical applications using Python.
+
+## Understanding Attention Layers in Neural Networks
+
+Understanding Attention Layers in Neural Networks
+
+Attention layers are a crucial component of modern neural network architectures, particularly in natural language processing and computer vision tasks. They allow models to focus on specific parts of the input data, improving performance and interpretability. Let's explore the internals of attention layers and how they work.
 
 ## Showcasing MMLU Pro Advancing AI Benchmarking with Python
 
@@ -1185,6 +1227,12 @@ Linear search is a simple search algorithm used to find an element in a list or 
 
 Code:
 
+## Exploring the Tsetlin Machine! A Cutting-Edge Classification Algorithm
+
+Introduction to Tsetlin Machines
+
+The Tsetlin Machine is a novel machine learning algorithm that uses propositional logic to create interpretable models. It combines concepts from finite state automata, reinforcement learning, and Boolean algebra to tackle classification problems efficiently.
+
 ## Constructing MaxOut Neural Networks in Python
 
 MaxOut Networks: An Introduction
@@ -1226,6 +1274,12 @@ Large Language Models (LLMs) have limited context windows. Recursive summarizati
 Introduction to Sparse Matrices
 
 Sparse matrices are data structures that efficiently store and operate on matrices with mostly zero elements. They are crucial in machine learning for handling large datasets with many zero values, saving memory and computational resources.
+
+## Data Wrangling with Dask in Python
+
+Introduction to Data Wrangling with Dask
+
+Data wrangling is the process of cleaning, structuring, and enriching raw data into a desired format for better decision making in less time. Dask is a flexible library for parallel computing in Python that makes data wrangling of large datasets easier and more efficient.
 
 ## Combinatorics Fundamentals
 
@@ -1889,6 +1943,12 @@ Introduction to Bernoulli Distribution
 
 The Bernoulli distribution is a discrete probability distribution for a binary random variable. It models scenarios with two possible outcomes, often referred to as "success" and "failure." This distribution is named after Swiss mathematician Jacob Bernoulli and serves as a foundation for more complex probability distributions.
 
+## Exposing LLM Application Vulnerabilities with Python
+
+Understanding LLM Vulnerabilities
+
+Large Language Models (LLMs) have revolutionized natural language processing, but they also introduce new security challenges. This presentation explores critical vulnerabilities in LLM applications and demonstrates how to identify and mitigate them using Python.
+
 ## MASA and SAM Image Segmentation Models in Python
 
 Introduction to MASA and SAM
@@ -2113,6 +2173,12 @@ Transfer Learning is a powerful technique in deep learning where knowledge gaine
 Introduction to the Singleton Pattern
 
 The Singleton pattern ensures a class has only one instance and provides a global point of access to it. This pattern is useful when exactly one object is needed to coordinate actions across the system.
+
+## Advanced Python Slideshow on Random Forests and Decision Trees
+
+Introduction to Random Forests and Decision Trees
+
+Random Forests and Decision Trees are powerful machine learning algorithms used for both classification and regression tasks. These algorithms are popular due to their interpretability, versatility, and ability to handle complex datasets. In this presentation, we'll explore advanced concepts and implementations using Python.
 
 ## Catastrophic Forgetting in Linear Regression Models
 
@@ -2905,6 +2971,12 @@ Introduction to Python List Methods
 
 Python lists are versatile data structures that offer various built-in methods for manipulation. This slideshow will explore common list methods using food-themed examples.
 
+## Interactive Air Canvas with Gesture Control using Python
+
+Introduction to Interactive Air Canvas
+
+Interactive Air Canvas is a technology that allows users to draw or interact with digital content using hand gestures in the air. This system combines computer vision, gesture recognition, and Python programming to create an intuitive and engaging user experience.
+
 ## Building Property Graph Presentations with LlamaIndex Using Python
 
 Introduction to Property Graphs with LlamaIndex
@@ -3128,6 +3200,18 @@ Code:
 Graph-Based Zero-Shot Learning and Contrastive Learning
 
 Graph-based zero-shot learning and contrastive learning are two powerful techniques in machine learning. This presentation explores their intersection and demonstrates how they can be combined using Python to create more robust and versatile models.
+
+## Challenges and Applications of Dynamic Mode Decomposition
+
+Understanding Dynamic Mode Decomposition (DMD)
+
+Dynamic Mode Decomposition (DMD) is a powerful data-driven method for analyzing complex dynamical systems. It extracts spatiotemporal coherent structures from high-dimensional data, providing insights into the system's behavior and underlying dynamics.
+
+## Limitations of Point Estimates in Regression Modeling
+
+Understanding the Limitations of Point Estimates in Regression Models
+
+Point estimates from regression models often fail to capture the full complexity of real-world data distributions. While they provide a single value prediction, they lack information about the uncertainty and variability inherent in many scenarios. This slideshow explores why point estimates can be insufficient and introduces quantile regression as a more comprehensive approach.
 
 ## Common Loss Functions for Deep Learning Using Python
 
@@ -3643,6 +3727,12 @@ Architectural Design Patterns in Python
 
 Architectural design patterns are reusable solutions to common problems in software design. They provide a structured approach to organizing code and improving system scalability, maintainability, and flexibility. In this presentation, we'll explore several key patterns and their implementation in Python.
 
+## Handling Non-Linear Relationships in Python
+
+Understanding Non-Linear Relationships in Data
+
+Non-linear relationships are common in real-world data, where the relationship between variables doesn't follow a straight line. This slideshow will explore techniques to handle and analyze non-linear relationships using Python, providing practical examples and code snippets.
+
 ## Comprehensive Guide to Code Smells
 
 Introduction to Code Smells
@@ -4117,6 +4207,12 @@ Introduction to ZFNet for CIFAR-10 Classification
 
 ZFNet, introduced by Zeiler and Fergus in 2013, is a Convolutional Neural Network (CNN) architecture that achieved state-of-the-art results on the CIFAR-10 image classification dataset. In this presentation, we will explore how to implement ZFNet using Python and the Pandas library for data preprocessing and manipulation.
 
+## Transforming Industries with Large Language Models
+
+Introduction to LLM Evaluation
+
+Evaluating Large Language Models (LLMs) is crucial for understanding their performance and capabilities. As LLMs become more prevalent in various industries, it's essential to have robust methods for assessing their outputs. This presentation will cover different evaluation techniques, including automated metrics, human evaluation, and emerging frameworks.
+
 ## Comprehensive xLSTM Introduction in Python
 
 Introduction to xLSTM
@@ -4194,6 +4290,12 @@ Physics-Informed Neural Networks (PINNs) are a powerful tool that combines the f
 Introduction to Multiplicative Number Theory
 
 Multiplicative Number Theory is a branch of mathematics that focuses on the properties of integers under multiplication. It explores concepts like prime numbers, divisibility, and multiplicative functions.
+
+## Exploring Vector Databases
+
+Introduction to Vector Databases
+
+Vector databases are specialized systems designed to store, index, and query high-dimensional vectors. These vectors are mathematical representations of data points, capturing the semantic essence of information. Unlike traditional databases that focus on structured data, vector databases excel at handling complex, multidimensional data, making them ideal for similarity searches and AI-driven applications.
 
 ## Introduction to Precision-Recall Curve in Python
 
@@ -4345,6 +4447,12 @@ Introduction to Probability in Machine Learning
 
 Probability theory forms the backbone of many machine learning algorithms. It provides a framework for dealing with uncertainty and making predictions based on incomplete information. In this presentation, we'll explore key concepts of probability and their applications in machine learning using Python.
 
+## Effective Python Presentation with Explanatory Code
+
+The Importance of Data Quality in AI
+
+"Garbage in, garbage out" is a well-known phrase in AI, emphasizing the critical role of data quality. While this principle holds some truth, it's an oversimplification. High-quality data is indeed crucial, but it's not the only factor determining AI success. Let's explore a more nuanced view of data quality and its impact on AI systems.
+
 ## Advantages of Random Forest Algorithm in Python
 
 Random Forest: Ensemble Learning at Its Best
@@ -4443,6 +4551,12 @@ Introduction to Python Prefetching
 
 Prefetching is a technique used to optimize data access by loading data into memory before it's actually needed. This can significantly improve performance when working with huge datasets.
 
+## Anomaly Detection Techniques in Python
+
+Introduction to Anomaly Detection
+
+Anomaly detection is a crucial technique in data analysis, used to identify unusual patterns or observations that deviate significantly from the expected behavior. In various fields such as cybersecurity, fraud detection, and system health monitoring, anomaly detection plays a vital role in identifying potential issues or threats. This slideshow will explore different techniques for anomaly detection using Python, providing practical examples and code snippets to help you understand and implement these methods.
+
 ## Choosing the Right Python Tool for Large Datasets Pandas, Dask, or PySpark
 
 Introduction to Working with Large Datasets
@@ -4513,6 +4627,12 @@ Mathematical Notation in Linear Algebra and Machine Learning
 
 Mathematical notation is the foundation for expressing complex ideas concisely. In machine learning, we often use vectors (boldface lowercase letters) and matrices (boldface uppercase letters). Scalars are typically represented by italic lowercase letters.
 
+## Pandas DataFrame Attributes and Python Code Examples
+
+Pandas DataFrame Attributes
+
+DataFrames are the most commonly used data structure in pandas. They are two-dimensional labeled data structures with columns of potentially different types. Understanding DataFrame attributes is crucial for effective data manipulation and analysis.
+
 ## Weight Initialization Techniques for Deep Learning in Python
 
 Weight Initialization in Deep Learning
@@ -4573,6 +4693,12 @@ Introduction to BoolLin XGB
 
 BoolLin XGB is an innovative approach that combines Boolean transformations with XGBoost, designed to handle datasets containing both Boolean and continuous features. This method aims to enhance the performance of XGBoost by leveraging the unique characteristics of Boolean data while maintaining the ability to process continuous variables.
 
+## Explaining the Need for Activation Functions in Python
+
+Introduction to Activation Functions
+
+Activation functions are crucial components in neural networks, introducing non-linearity to the model. They transform the input signal of a neuron into an output signal, determining whether the neuron should be activated or not. Without activation functions, neural networks would be limited to linear transformations, significantly reducing their ability to learn complex patterns.
+
 ## Introduction to Signal Processing with Python
 
 Introduction to Signal Processing with Python
@@ -4596,6 +4722,12 @@ KNN is a simple yet powerful machine learning algorithm used for classification 
 Introduction to Evaluating Classification Models
 
 Evaluating the performance of a machine learning model for classification tasks is crucial to ensure its effectiveness and reliability. Various metrics are available, and choosing the appropriate one depends on the problem at hand and the trade-offs you're willing to make. This slideshow will guide you through the process of selecting the best metric for your classification task.
+
+## Knowledge Graphs as Powerful Evaluation Tools for LLM
+
+Knowledge Graphs and LLM Document Intelligence
+
+Knowledge graphs are powerful tools for organizing and representing complex information. When combined with Large Language Models (LLMs), they can significantly enhance document intelligence tasks. This presentation explores how knowledge graphs can be used to evaluate and improve LLM performance in processing and understanding documents.
 
 ## Cross-Entropy in Python
 
@@ -4766,6 +4898,12 @@ Building Simple Neural Networks with TensorFlow
 
 TensorFlow is a powerful open-source library for machine learning and deep learning. This slideshow will guide you through the process of creating basic neural networks using TensorFlow and Python, providing practical examples and code snippets along the way.
 
+## Predictive Maintenance and Condition-Based Monitoring Using Machine Learning
+
+Introduction to Predictive Maintenance and CBM
+
+Predictive Maintenance and Condition-Based Monitoring (CBM) are advanced approaches to equipment maintenance that leverage data analytics and machine learning techniques to optimize maintenance schedules and reduce downtime. These methods aim to predict when equipment is likely to fail and perform maintenance only when necessary, rather than on a fixed schedule.
+
 ## Measures of Dispersion in Python
 
 Introduction to Measures of Dispersion
@@ -4880,6 +5018,12 @@ Understanding Iterations and Epochs in Neural Networks
 
 In neural network training, iterations and epochs are fundamental concepts that often confuse beginners. This presentation will clarify the differences between these terms and demonstrate their implementation using Python.
 
+## Evaluating the Performance of Large Language Models
+
+Leveraging LLM Performance Evaluation
+
+Large Language Models (LLMs) have revolutionized various industries with their ability to generate human-like text. As these models become increasingly prevalent in tasks such as customer support and content creation, evaluating their performance has become crucial. This presentation explores the metrics and techniques used to assess LLM performance across different tasks.
+
 ## Outlier Detection and Removal in Python
 
 Introduction to Outlier Detection and Removal
@@ -4969,6 +5113,12 @@ Functional analysis is a branch of mathematics that studies vector spaces and th
 ## Natural Language Processing with NLTK and Pandas
 
 Introduction to Natural Language Toolkit (NLTK) NLTK is a suite of libraries and programs for symbolic and statistical natural language processing (NLP) for the Python programming language. It provides easy-to-use interfaces to over 50 corpora and lexical resources, along with a suite of text processing libraries for classification, tokenization, stemming, tagging, parsing, and semantic reasoning.
+
+## ETL, ELT, and EtLT Processes in Python
+
+Introduction to ETL, ELT, and EtLT
+
+ETL (Extract, Transform, Load), ELT (Extract, Load, Transform), and EtLT (Extract, transform, Load, transform) are data integration processes used in data warehousing and analytics. These approaches differ in the order and location of data transformation, each offering unique advantages depending on the specific use case and data architecture.
 
 ## Evaluating Large Language Models 30 Common Metrics
 
@@ -5122,6 +5272,12 @@ Stochastic Gradient Descent (SGD) with Momentum is an optimization algorithm use
 Introduction to Deep Learning
 
 Deep Learning is a subset of machine learning that uses artificial neural networks with multiple layers to learn and make decisions. It's inspired by the human brain's structure and function, allowing computers to learn from experience and understand the world in terms of a hierarchy of concepts.
+
+## K-Fold Cross Validation with Python
+
+K-Fold Cross Validation: An Introduction
+
+K-Fold Cross Validation is a statistical method used to estimate the performance of machine learning models. It involves dividing the dataset into K subsets, or folds, and iteratively using each fold as a validation set while the remaining folds serve as the training set. This technique helps to reduce overfitting and provides a more robust estimate of model performance.
 
 ## Control System Theory with Python
 
@@ -5567,6 +5723,12 @@ Classifying Complex Data in Machine Learning
 
 Machine learning classification involves assigning categories to input data. Complex data often requires sophisticated techniques to extract meaningful features and build accurate models. This slideshow explores various aspects of classifying complex data using Python, focusing on practical examples and code implementations.
 
+## Comparing CSV Files Using Machine Learning in Python
+
+Comparing CSV Files for Similarity Using Machine Learning in Python
+
+Machine learning techniques can be applied to compare CSV files for similarity. This process involves data preprocessing, feature extraction, and utilizing various algorithms to measure the similarity between files. Let's explore this topic step by step.
+
 ## Generative Adversarial Networks in Python
 
 Introduction to Generative Adversarial Networks (GANs)
@@ -5640,6 +5802,12 @@ Clustered data occurs when observations are grouped into distinct categories or 
 Introduction to Game Graphs in AI
 
 Game graphs, also known as game trees, are a fundamental concept in AI and game theory. They represent the possible moves and outcomes in a game, allowing AI agents to reason about optimal strategies. In this slideshow, we'll explore game graphs using Python, focusing on beginner-level concepts and actionable examples.
+
+## Predictive Analytics with Markov Chains in Python
+
+Introduction to Markov Chains
+
+Markov chains are mathematical systems that undergo transitions from one state to another according to certain probabilistic rules. They are named after the Russian mathematician Andrey Markov and have wide-ranging applications in various fields, including predictive analytics.
 
 ## Best Face Recognition Models in Python
 
@@ -5888,6 +6056,12 @@ KV (Key-Value) caching is a powerful technique for storing and retrieving data e
 Introduction to Time Series Visualization
 
 Time series visualization is a powerful tool for understanding and analyzing data that changes over time. It allows us to identify patterns, trends, and anomalies that might be difficult to spot in raw data. In this presentation, we'll explore various techniques for visualizing time series data using Python, starting from basic plots and progressing to more advanced visualizations.
+
+## Contextual Awareness in AI and Language Models
+
+The Importance of Context in AI and Large Language Models
+
+Context plays a crucial role in the functioning and effectiveness of artificial intelligence, particularly in large language models. It provides the necessary background information and situational awareness that allows these models to generate more accurate, relevant, and coherent responses. Understanding context is essential for developing more sophisticated AI systems that can interpret and respond to human inputs in a meaningful way.
 
 ## Automatic Error Detection in Tabular Datasets with Python
 
@@ -6517,6 +6691,12 @@ When comparing strings in Python, it's crucial to understand the difference betw
 Introduction to Optimizers in Deep Learning
 
 Optimizers are algorithms used to adjust the parameters of neural networks during training. They aim to minimize the loss function and improve the model's performance. Let's start with a simple example of how an optimizer works:
+
+## Mini-Batching with In-Memory Datasets in Python
+
+Introduction to Mini-batching with In-Memory Datasets
+
+Mini-batching is a technique used in machine learning to process subsets of data during training. It allows for efficient computation and improved generalization. This presentation will cover the implementation of mini-batching using Python for in-memory datasets.
 
 ## Visualizing Skewness in Probability Distributions with Python
 
