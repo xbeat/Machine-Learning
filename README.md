@@ -1667,6 +1667,12 @@ Understanding Bias-Variance Trade-off in Machine Learning
 
 The bias-variance trade-off is a fundamental concept in machine learning that affects model performance. It represents the balance between underfitting and overfitting. This slideshow will explore this concept using Python examples and practical applications.
 
+## 5 Chunking Strategies for Retrieval-Augmented Generation
+
+Introduction to Chunking Strategies for RAG
+
+Chunking is a crucial step in Retrieval-Augmented Generation (RAG) systems, where large documents are divided into smaller, manageable pieces. This process ensures that text fits the input size of embedding models and enhances the efficiency and accuracy of retrieval. Let's explore five common chunking strategies and their implementations.
+
 ## Advanced Django Custom Manager and ORM Techniques
 
 Custom Managers in Django
@@ -2196,6 +2202,12 @@ Explainable AI (XAI) is a set of techniques and methods that allow humans to und
 Introduction to Memoization
 
 Memoization is an optimization technique that stores the results of expensive function calls and returns the cached result when the same inputs occur again. This powerful strategy can significantly improve the performance of recursive algorithms or functions with repeated computations.
+
+## Advanced Linear Algebra for Data Science
+
+The Power of Advanced Linear Algebra in Data Science
+
+Advanced linear algebra forms the backbone of many sophisticated algorithms in data science and machine learning. It enables us to manipulate high-dimensional data, extract meaningful patterns, and build powerful predictive models. This presentation explores key concepts in advanced linear algebra and their applications in data science, providing practical Python implementations to illustrate these ideas.
 
 ## Choosing the Right Classification Algorithm in Python
 
@@ -3573,6 +3585,12 @@ Introduction to Advanced LLM Techniques
 
 Large Language Models (LLMs) have revolutionized natural language processing. This presentation explores advanced techniques that enhance LLM performance and capabilities. We'll cover pause tokens, Infini-Attention, Rotary Positional Encoding (RoPE), KV Cache, and Mixture of Experts (MoE). These concepts are crucial for understanding state-of-the-art LLMs and their evolving architectures.
 
+## Statistical Tests and Machine Learning for Process Engineering
+
+Introduction to Statistical Tests and Machine Learning
+
+Statistical tests and machine learning techniques are essential tools for process engineers. This presentation covers fundamental statistical tests and introduces basic machine learning concepts, providing a foundation for data-driven decision-making in engineering contexts. We'll explore Z-tests, t-tests, F-tests, ANOVA, linear regression, and basic supervised and unsupervised learning methods, including practical Python implementations.
+
 ## Limitations of Binary Classifiers for Face Unlock
 
 Binary Classifier Limitations for Face Unlock
@@ -4575,6 +4593,12 @@ Introduction to Support Vector Machines (SVM)
 
 Support Vector Machines (SVM) are powerful supervised machine learning algorithms used for classification and regression tasks. They work by finding the optimal hyperplane that maximally separates classes in high-dimensional feature spaces. SVMs are particularly effective for handling non-linear problems and high-dimensional data.
 
+## Simplifying Python Code with Attribute Functions
+
+Introduction to Python's Attribute Functions
+
+Python provides built-in functions for dynamic attribute manipulation: getattr(), setattr(), hasattr(), and delattr(). These functions offer flexibility and efficiency when working with object attributes, making code more concise and maintainable.
+
 ## Balancing Accuracy and Interpretability in Machine Learning with Python
 
 Balancing Accuracy and Interpretability in Machine Learning
@@ -4744,6 +4768,12 @@ Support Vector Machines (SVM) are powerful supervised learning models used for c
 Introduction to Weakly Differentiable Functions
 
 Weakly differentiable functions are a generalization of differentiable functions in the context of functional analysis and partial differential equations. These functions may not be differentiable in the classical sense but possess a weak derivative that satisfies certain integral conditions. This concept is crucial in the study of Sobolev spaces and the weak formulation of PDEs.
+
+## Mastering Statistics for Data Science and Machine Learning
+
+Introduction to Statistics in Data Science
+
+Statistics forms the foundation of data science and machine learning. It provides the tools to analyze, interpret, and draw meaningful insights from data. This book aims to introduce key statistical concepts essential for aspiring data scientists and machine learning practitioners.
 
 ## Exploring Correlations in Machine Learning Using Python
 
@@ -5880,6 +5910,12 @@ Use Caching
 
 Caching is a powerful technique to improve API performance by storing frequently accessed data in memory. This approach significantly reduces response time by eliminating the need to fetch data from slower sources like databases repeatedly. Let's implement a simple caching mechanism using Python's built-in dictionary.
 
+## Weights and Activation Functions in Deep Learning
+
+Introduction to Weights and Activation Functions
+
+Weights and activation functions are fundamental components of neural networks in deep learning. Weights determine the strength of connections between neurons, while activation functions introduce non-linearity, enabling the network to learn complex patterns. Together, they form the basis for the network's ability to approximate various functions and make predictions.
+
 ## Running Open-Source Large Language Models Locally with Python
 
 Introduction to Running Open-Source LLMs Locally
@@ -6895,6 +6931,12 @@ Introduction to Evaluating Classification Models
 
 Evaluating the performance of a machine learning model for classification tasks is crucial to ensure its effectiveness and reliability. Various metrics are available, and choosing the appropriate one depends on the problem at hand and the trade-offs you're willing to make. This slideshow will guide you through the process of selecting the best metric for your classification task.
 
+## Mastering Artificial Neural Networks Feedforward and Backpropagation Fundamentals
+
+Introduction to Artificial Neural Networks
+
+Artificial Neural Networks (ANNs) are computational models inspired by biological neural networks. They consist of interconnected nodes (neurons) organized in layers, capable of learning patterns from data. ANNs are fundamental to many machine learning tasks, including image recognition, natural language processing, and predictive modeling.
+
 ## Knowledge Graphs as Powerful Evaluation Tools for LLM
 
 Knowledge Graphs and LLM Document Intelligence
@@ -7545,6 +7587,12 @@ Using the Asterisk (\*) in Python
 
 The asterisk (\*) symbol in Python is a powerful and versatile operator that can enhance code readability and functionality. It has multiple uses beyond simple multiplication, including variable-length arguments, extended iterable unpacking, sequence multiplication, and more. This presentation will explore these applications with practical examples.
 
+## Troubleshooting Missing Python Imports
+
+Understanding ImportError in Python
+
+ImportError is a common exception in Python that occurs when a module or attribute cannot be imported. This error can be intimidating for beginners, but understanding its causes and solutions is crucial for effective Python programming.
+
 ## Feature Engineering Techniques for Data Science
 
 Feature Engineering Techniques for Data Scientists
@@ -7982,6 +8030,12 @@ Introduction to Recurrent Neural Networks (RNNs)
 
 Recurrent Neural Networks are a class of neural networks designed to process sequential data. Unlike traditional feedforward networks, RNNs have connections that form cycles, allowing them to maintain an internal state or "memory". This architecture makes them particularly well-suited for tasks involving time series, natural language processing, and other sequence-based problems.
 
+## Components of a RAG System
+
+Introduction to RAG Systems
+
+Retrieval-Augmented Generation (RAG) systems combine information retrieval with language generation to produce more accurate and contextually relevant responses. These systems extend traditional software applications by incorporating vector stores, embedding models, and advanced language models.
+
 ## Evaluation Metrics Storytelling for Your Model
 
 Understanding Evaluation Metrics
@@ -8416,6 +8470,12 @@ Kernel Trick: Transforming Data for Non-Linear Classification
 
 The kernel trick is a powerful technique in machine learning that allows linear classifiers to operate in high-dimensional feature spaces without explicitly computing the coordinates of the data in that space. This method is particularly useful for Support Vector Machines (SVMs) and other algorithms that rely on the inner products between data points.
 
+## Semi-Implicit Variational Inference (SIVI) Presentation
+
+Introduction to Semi-Implicit Variational Inference (SIVI)
+
+Semi-Implicit Variational Inference (SIVI) is an advanced technique in machine learning that enhances the flexibility of variational approximations. Introduced by Mingzhang Yin and Mingyuan Zhou in their 2018 ICML paper, SIVI addresses limitations of traditional variational inference methods by using a more expressive family of distributions.
+
 ## Mastering SQL Query Execution Order
 
 SQL Query Execution Order
@@ -8552,6 +8612,12 @@ Introduction to Named Entity Recognition
 
 Named Entity Recognition (NER) is a natural language processing task that identifies and classifies named entities in text into predefined categories such as person names, organizations, locations, and more. It's a crucial component in various NLP applications, including information extraction, question answering, and text summarization.
 
+## Misleading Box Plots Limitations and Alternatives
+
+Understanding Box Plots
+
+Box plots are powerful tools for visualizing data distributions, but they can sometimes be misleading. A box plot represents only five key values: the minimum, first quartile, median, third quartile, and maximum. While this simplification is often useful, it can obscure important details about the underlying data distribution.
+
 ## Diagnosing Data Deficiency in Machine Learning Models
 
 Understanding Model Data Deficiency
@@ -8681,6 +8747,12 @@ Q\* MCTSr, or Monte Carlo Tree Self-refine, is a theoretical algorithm that comb
 Understanding Encoder-Decoder LLMs
 
 Encoder-decoder architectures are indeed used in large language models (LLMs) for instruction tasks. This misconception likely stems from the prominence of decoder-only models in recent years. Let's explore the landscape of LLM architectures and their applications in instruction tasks.
+
+## Decorating Python Classes
+
+Understanding Class Decorators in Python
+
+Class decorators are a powerful feature in Python that allow you to modify or enhance the behavior of classes. They are similar to function decorators but operate on entire classes instead of individual functions. Class decorators can be used to add functionality, modify attributes, or even completely transform the class definition.
 
 ## Optimizing RAG with Document Chunking Techniques Using Python
 
@@ -9083,6 +9155,12 @@ Graph Neural Networks (GNNs) have emerged as a powerful tool for analyzing and c
 Introduction to Ensemble Methods
 
 Ensemble methods combine multiple models to create a stronger predictor. This approach leverages the collective wisdom of several weaker learners to improve overall performance and robustness. The three main types of ensemble methods we'll explore are Bagging, Boosting, and Stacking. Each method has its unique characteristics and applications in machine learning.
+
+## PyTorch Tutorial 
+
+Introduction to PyTorch
+
+PyTorch is an open-source machine learning library developed by Facebook's AI Research lab. It provides a flexible and efficient framework for building and training neural networks. PyTorch is known for its dynamic computational graph, which allows for easier debugging and more intuitive development compared to static graph frameworks.
 
 ## Stochastic Synapse Networks and Hierarchical Multi-task Learning in Python
 
