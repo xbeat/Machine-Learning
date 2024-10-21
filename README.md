@@ -464,6 +464,12 @@ Retrieval Techniques in RAG: Sparse and Dense Vector Tools
 
 Retrieval-Augmented Generation (RAG) combines information retrieval with text generation. This presentation focuses on two key retrieval techniques: sparse and dense vector tools, implemented in Python.
 
+## Faster Code with Literal Syntax
+
+Literal Syntax vs Constructor Syntax
+
+Python offers two main ways to initialize basic data structures: literal syntax and constructor syntax. This slideshow will explore why literal syntax is generally faster and more efficient than constructor syntax for creating lists, dictionaries, and strings.
+
 ## Types of Recurrent Neural Networks and Their Applications
 
 Types of RNNs: An Overview
@@ -758,6 +764,12 @@ Building an LLM Shopping Copilot combines natural language processing with e-com
 Introduction to Spectral Theory
 
 Spectral theory is a branch of mathematics that studies the properties of linear operators and their spectra. It has applications in quantum mechanics, signal processing, and data analysis.
+
+## Limitations of Grid Search and Random Search for Hyperparameter Optimization
+
+Understanding Hyperparameter Optimization
+
+Hyperparameter optimization is crucial for machine learning model performance. While grid search and random search are common, they have limitations. This presentation explores these limitations and introduces Bayesian Optimization as a more efficient alternative.
 
 ## Probability Theory for Machine Learning with Python
 
@@ -1463,6 +1475,12 @@ Introduction to Batch Normalization
 
 Batch Normalization is a technique used to improve the training of deep neural networks by normalizing the inputs of each layer. It addresses the problem of internal covariate shift, which occurs when the distribution of network activations changes during training. This technique helps to stabilize the learning process and dramatically reduces the number of training epochs required to train deep networks.
 
+## Sentiment Analysis on Twitter Data using Transformer Models and Machine Learning
+
+Understanding Sentiment Analysis
+
+Sentiment analysis is the process of identifying and categorizing opinions expressed in text data. It aims to determine the writer's attitude towards a particular topic or the overall contextual polarity of a document. This technique is widely used in social media monitoring, market research, and customer feedback analysis. Sentiment analysis can classify text as positive, negative, or neutral, and sometimes provide more nuanced emotional states like happy, angry, or sad.
+
 ## Leave-One-Out Cross-Validation with Python
 
 Introduction to Leave-One-Out Cross-Validation
@@ -1703,6 +1721,12 @@ Introduction to Topological Vector Spaces
 
 Topological vector spaces are a fundamental concept in functional analysis, combining linear algebra with topology. They provide a framework for studying infinite-dimensional vector spaces equipped with a topology compatible with vector operations.
 
+## Top 10 Python AI Libraries and Their Uses
+
+Top 10 Python Libraries for AI
+
+The field of Artificial Intelligence (AI) has been revolutionized by Python libraries that simplify complex tasks and accelerate development. This presentation will explore the top 10 Python libraries for AI, focusing on their key features and practical applications. We'll dive into code examples to demonstrate how these libraries can be used in real-world scenarios.
+
 ## Reinforcement Learning and Q-Learning Mathematical Foundations and Python Implementation
 
 Introduction to Reinforcement Learning
@@ -1818,6 +1842,12 @@ MaxOut networks are a type of neural network architecture introduced by Ian Good
 Why LoRA Isn't Suitable for Pre-training LLMs
 
 LoRA (Low-Rank Adaptation) is a popular technique for fine-tuning large language models, but it's not typically used for pre-training. This presentation will explore the reasons behind this limitation and discuss alternative approaches.
+
+## Polars vs. Pandas Accelerating Data Analysis
+
+Introduction to Polars and Pandas
+
+Polars and Pandas are both powerful data manipulation libraries in Python. While Pandas has been the go-to library for data analysis for years, Polars is a newer contender that promises significant performance improvements. This presentation will compare these two libraries, focusing on their strengths, differences, and how Polars can potentially accelerate your data analysis tasks.
 
 ## Exploring Bootstrap Techniques
 
@@ -2347,6 +2377,12 @@ Introduction to Inheritance and Polymorphism
 
 Inheritance and polymorphism are fundamental concepts in object-oriented programming (OOP) that enhance code reusability, flexibility, and maintainability. These powerful features allow developers to create hierarchical relationships between classes and write more modular, extensible code. Let's explore these concepts in Python with practical examples.
 
+## Comprehensive Overview of Deep Learning
+
+What is Deep Learning?
+
+Deep Learning is a subset of Machine Learning that uses artificial neural networks with multiple layers to learn and extract features from data. It's capable of learning hierarchical representations, allowing it to process complex patterns in data such as images, text, and sound.
+
 ## Dimensionality Reduction Methods for Preserving Data Variance
 
 Principal Component Analysis (PCA) for Dimensionality Reduction
@@ -2542,6 +2578,12 @@ AI vs Machine Learning
 
 Artificial Intelligence (AI) and Machine Learning (ML) are often used interchangeably, but they have distinct differences. AI is a broader concept that aims to create systems capable of performing tasks that typically require human intelligence. Machine Learning, on the other hand, is a subset of AI that focuses on algorithms that improve through experience and data.
 
+## Comprehensive Python Pandas Presentation
+
+Introduction to Python Pandas
+
+Pandas is a powerful Python library for data manipulation and analysis. It provides data structures like DataFrames and Series, which allow efficient handling of structured data. Pandas is built on top of NumPy and integrates well with other scientific computing libraries in Python.
+
 ## Extending ANOVA Beyond the Basics
 
 Understanding AN\[C\]OVA and Beyond
@@ -2708,6 +2750,12 @@ This slide will provide an overview of Calculus I and its applications in Python
 Introduction to Feature Scaling
 
 Feature scaling is a crucial preprocessing step in machine learning that transforms the attributes of a dataset to a common scale. This process ensures that all features contribute equally to the model's learning process, preventing features with larger magnitudes from dominating those with smaller ranges. By standardizing the input features, we can significantly improve the performance and convergence of many machine learning algorithms.
+
+## PyTorch Tutorial Building Neural Networks with Python
+
+Introduction to PyTorch
+
+PyTorch is an open-source machine learning library developed by Facebook's AI Research lab. It provides a flexible and efficient framework for building and training neural networks. PyTorch is known for its dynamic computational graph, which allows for easier debugging and more intuitive development of complex models.
 
 ## Sequence Data in Machine Learning with Python
 
@@ -2953,6 +3001,12 @@ Document summarization is the process of distilling the most important informati
 Introduction to Univalent Functions
 
 Univalent functions are a fundamental concept in complex analysis, characterized by their one-to-one property. A function f(z) is univalent in a domain D if it never takes the same value twice in D. In other words, for any two distinct points z1 and z2 in D, f(z1) ≠ f(z2).
+
+## Python Beginner Series Concatenation and Input
+
+Understanding String Concatenation
+
+String concatenation is the process of combining two or more strings into a single string. In Python, we can use the + operator to concatenate strings. This operation is fundamental for creating dynamic text and combining user inputs.
 
 ## Mastering NumPy Indexing and Slicing for Data Analysis
 
@@ -3561,6 +3615,12 @@ Introduction to Clustering Algorithms
 
 Clustering is an unsupervised machine learning technique used to group similar data points together. While there are various clustering algorithms, this presentation will focus on the K-means algorithm, which is one of the most commonly used clustering methods due to its simplicity and effectiveness.
 
+## Understanding Python Memory Leaks
+
+Memory Leaks in Python
+
+Memory leaks in Python are indeed possible, despite the presence of a garbage collector. While Python's automatic memory management helps prevent many common memory issues, it doesn't guarantee complete immunity from leaks. Long-running applications are particularly susceptible to these problems. Let's explore why memory leaks occur and how to address them.
+
 ## Exploring Byte Pair Encoding Tokenization with Python
 
 Introduction to Byte Pair Encoding (BPE)
@@ -4052,6 +4112,12 @@ Low-Rank Adaptation (LoRA) is an efficient method for fine-tuning large language
 Introduction to Experiment Tracking in Machine Learning
 
 Experiment tracking is a crucial aspect of machine learning projects, enabling data scientists to organize, compare, and reproduce their work efficiently. It involves systematically recording parameters, metrics, and artifacts for each experiment run. This practice is essential for maintaining a clear history of your ML development process and facilitating collaboration among team members.
+
+## Machine Learning Python Cheat Sheet
+
+Introduction to Machine Learning
+
+Machine Learning is a branch of artificial intelligence that focuses on developing algorithms and models that enable computers to learn from and make predictions or decisions based on data. It's a powerful tool for solving complex problems and extracting insights from large datasets.
 
 ## Python for Data Science Simplicity and Power
 
@@ -4653,6 +4719,12 @@ Understanding Data Types in Pandas
 
 Data types (dtypes) in Pandas define how data is stored and processed in DataFrames and Series. They play a crucial role in memory usage and performance. Pandas supports various dtypes, including numeric types (int64, float64), boolean, object, datetime, and categorical. Let's explore these types with a practical example.
 
+## Disabling GIL in Python 3.13 for Faster Multi-Threading
+
+Python 3.13 and the Global Interpreter Lock (GIL)
+
+Python 3.13 introduces a significant change in how it handles multi-threading. The Global Interpreter Lock (GIL), a mechanism that prevents multiple native threads from executing Python bytecodes at once, can now be disabled in certain scenarios. This change aims to improve performance in multi-threaded applications, especially those that are CPU-bound.
+
 ## Combining Iterables with Python's zip() Function
 
 Introduction to zip() Function
@@ -4696,6 +4768,12 @@ In deep learning, loss functions play a crucial role in training models by quant
 Introduction to MixEval & MixEval-Hard
 
 MixEval and MixEval-Hard are evaluation frameworks designed to assess the performance of language models across various tasks. These frameworks aim to provide a comprehensive and challenging set of benchmarks to measure model capabilities and limitations.
+
+## Matrix Multiplication in Deep Learning
+
+Matrix Multiplication in Deep Learning
+
+Matrix multiplication is a fundamental operation in deep learning, crucial for processing inputs, applying weights, and propagating information through neural networks. It allows the network to combine and transform data in ways that enable pattern recognition and complex computations.
 
 ## Partial Functions in Python for Code Modularity
 
@@ -6351,6 +6429,12 @@ The Precision-Recall Curve is a powerful evaluation metric used in machine learn
 
 Code:
 
+## The Math Behind Neural Network Learning Backpropagation
+
+Introduction to Backpropagation
+
+Backpropagation is a fundamental algorithm in training artificial neural networks. It's used to calculate gradients of the loss function with respect to the network's weights, enabling efficient optimization. This process allows neural networks to learn from their errors and improve their performance over time.
+
 ## Feature scaling is NOT always necessary
 
 Feature Scaling: Not Always Necessary
@@ -6504,6 +6588,12 @@ Fluid dynamics is the study of fluid motion, including liquids and gases. The Na
 Introduction to Gradient Descent
 
 Gradient Descent is a fundamental optimization algorithm in machine learning used to minimize a cost function and improve model performance. It iteratively adjusts model parameters to find the optimal solution. This process transforms initial random points in parameter space into powerful predictions.
+
+## Behind the Scenes of Generative Adversarial Networks (GANs)
+
+Introduction to GANs
+
+Generative Adversarial Networks (GANs) are a class of machine learning models consisting of two neural networks: a generator and a discriminator. The generator creates new data from random noise, while the discriminator evaluates whether the data is real or generated. This adversarial process leads to the creation of highly realistic synthetic data.
 
 ## Siamese Network Architecture in Python
 
@@ -7160,6 +7250,12 @@ Introduction to Telegram Bots and Python
 
 Telegram is a popular messaging platform that allows users to interact with bots, which are essentially automated programs that can perform various tasks. Python, with its simplicity and extensive libraries, is an excellent choice for creating Telegram bots. In this slideshow, we'll explore the process of building a Telegram bot using Python.
 
+## Securing Python Mitigating Shell Injection Vulnerabilities
+
+Understanding Shell Injection Vulnerability
+
+Shell injection is a critical security vulnerability in Python applications that can occur when user input is directly used in shell commands. This vulnerability allows attackers to execute arbitrary commands on the system, potentially leading to severe security breaches.
+
 ## Regularization in Machine Learning
 
 What is Regularization?
@@ -7456,6 +7552,12 @@ Introduction to Gradient Boosting Machines
 
 Gradient Boosting Machines (GBM) are a powerful ensemble learning technique used in machine learning for both regression and classification tasks. They work by building a series of weak learners, typically decision trees, and combining them to create a strong predictive model. In this presentation, we'll explore how to build a GBM algorithm from scratch using Python.
 
+## Python Data Science Cheatsheet
+
+Python for Data Science: Introduction
+
+Data Science with Python involves using powerful libraries and tools to analyze, visualize, and interpret data. This cheatsheet covers essential concepts and techniques for beginners and intermediate users, focusing on practical, actionable examples.
+
 ## Genetic Algorithms for Image Blending in Python
 
 Introduction to Genetic Algorithms and Image Combination
@@ -7648,6 +7750,12 @@ Tokenization is the process of breaking down text into smaller units called toke
 What is Regularization?
 
 Regularization is a technique used in machine learning to prevent overfitting by adding a penalty term to the loss function. It helps to reduce the model's complexity and improve its generalization ability. By constraining the model's parameters, regularization ensures that the learned patterns are more robust and less sensitive to noise in the training data.
+
+## Akaike's Information Criterion (AIC) for Model Selection
+
+Introduction to Akaike's Information Criterion (AIC)
+
+Akaike's Information Criterion (AIC) is a powerful tool in statistics and probability for model selection and comparison. Developed by Japanese statistician Hirotugu Akaike in 1971, AIC helps researchers determine how well a model fits the data it was generated from and compare different models to find the best fit. AIC balances the goodness of fit against model complexity, addressing the issue of overfitting.
 
 ## SGD with Momentum in Deep Learning
 
@@ -8379,6 +8487,12 @@ Master Waffle Charts are a visually appealing alternative to pie charts, display
 Introduction to Kalman Filter for Time Series
 
 The Kalman filter is a powerful algorithm for estimating the state of a system from noisy measurements. In time series analysis, it's used to estimate the true underlying signal, reduce noise, and make predictions. This presentation will explore the application of Kalman filters to time series data using Python.
+
+## PyTorch Research Reproducibility 
+
+Introduction to PyTorch Research Reproducibility
+
+Research reproducibility is a crucial aspect of scientific progress, especially in the field of machine learning. PyTorch, a popular deep learning framework, provides tools and best practices to ensure that research conducted using it can be easily reproduced and verified by others. This slideshow will explore various techniques and strategies for enhancing reproducibility in PyTorch-based research.
 
 ## End-to-End Retrieval-Augmented Generation (RAG) Application Using Haystack, Pinecone, and Mistral AI
 
