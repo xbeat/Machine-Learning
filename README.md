@@ -1115,6 +1115,12 @@ Introduction to Distance Measures in Machine Learning
 
 Distance measures play a crucial role in various machine learning algorithms, helping to quantify the similarity or dissimilarity between data points. These measures are fundamental in tasks such as clustering, classification, and recommendation systems. In this presentation, we'll explore several popular distance measures, their applications, and implementation in Python.
 
+## Why Ordinary Least Squares is an Unbiased Estimator
+
+Introduction to Python Variables and Data Types
+
+Python's type system provides flexible and dynamic variable handling. Variables are containers that store data, and their type is determined automatically when you assign a value. Python supports common data types like integers, floating-point numbers, strings, and booleans.
+
 ## The Story Behind the 68-95-99.7 Rule in Normal Distribution
 
 The Normal Distribution and the 68-95-99.7 Rule
@@ -1975,6 +1981,11 @@ Introduction to MuZero
 
 MuZero is a general-purpose algorithm developed by DeepMind for planning in environments with unknown dynamics. It combines the strengths of model-based and model-free reinforcement learning approaches, allowing it to excel in both perfect information games like chess and Go, as well as visually complex domains like Atari games.
 
+## Streamlining PyTorch Training Loops
+
+Introduction to Skorch
+Skorch bridges PyTorch and scikit-learn, offering a more streamlined approach to neural network training. It eliminates the need for explicit training loops while maintaining PyTorch's flexibility and power.
+
 ## Log Transform in Machine Learning with Python
 
 Introduction to Log Transform in Machine Learning
@@ -2012,6 +2023,12 @@ Data augmentation is a powerful technique used to increase the diversity of trai
 Introduction to Recency, Frequency, Magnitude (RFM) Analysis
 
 RFM analysis is a customer segmentation technique used in marketing and customer relationship management. It evaluates customers based on three key metrics: Recency (how recently they made a purchase), Frequency (how often they make purchases), and Magnitude (how much they spend). This powerful tool helps businesses understand customer behavior and tailor their marketing strategies accordingly.
+
+## Classification Metrics for Machine Learning Models
+
+Understanding Classification Metrics
+
+Machine learning classification models require robust evaluation metrics to assess their performance accurately and ensure reliable predictions. These metrics help quantify how well a model can generalize its learning from training data to new, unseen examples.
 
 ## Exploring ETL Data Pipeline Processes
 
@@ -3591,6 +3608,12 @@ Introduction to Active Shape Models (ASM)
 
 Active Shape Models (ASM) are statistical models of shape that can deform to fit new examples. They are particularly useful in face recognition and image generation tasks. ASMs learn the patterns of shape variability from a training set of annotated images and can then be used to find and fit to new instances of the object in novel images.
 
+## Literal Syntax vs Constructors for Initializing Data Structures
+
+Understanding Literal vs Constructor Syntax
+
+The fundamental difference between literal and constructor syntax lies in their performance and readability. Literal syntax provides a more direct and efficient way to create objects, as it's optimized at the interpreter level, while constructor syntax involves additional function calls.
+
 ## Three Concurrency Techniques in Python
 
 Three Ways to Perform Concurrency in Python
@@ -4575,6 +4598,12 @@ Introduction to Word2Vec
 
 Word2Vec is a powerful technique in Natural Language Processing (NLP) that transforms words into dense vector representations. These vectors capture semantic relationships between words, allowing machines to understand language contexts better. Word2Vec models are trained on large corpora of text and learn to predict words given their context or vice versa.
 
+## Levels of Measurement in Python
+
+Introduction to Levels of Measurement
+
+Measurement levels are fundamental ways of categorizing different types of data based on their properties and the mathematical operations that can be performed on them. Understanding these levels helps in selecting appropriate statistical analyses and visualization methods.
+
 ## Filling Blank Values in a DataFrame
 
 Filling NaN Values in a DataFrame
@@ -4780,6 +4809,12 @@ Matrix multiplication is a fundamental operation in deep learning, crucial for p
 Introduction to Partial Functions in Python
 
 Partial functions in Python allow us to create new functions by fixing a subset of arguments of an existing function. This technique enhances code modularity and reusability.
+
+## Mastering Python Error Handling
+
+Understanding Exception
+
+Handling Basics Exception handling in Python is a way to deal with runtime errors gracefully. When an error occurs, instead of crashing, your program can catch the error and respond appropriately. This fundamental concept helps create more resilient and user-friendly applications.
 
 ## Using Regular Expressions for Natural Language Processing in Python
 
@@ -5856,6 +5891,12 @@ Introduction to LLM Model Compression
 
 Model compression is crucial for deploying large language models (LLMs) in resource-constrained environments. It aims to reduce model size and computational requirements while maintaining performance. This slideshow explores common techniques for LLM model compression using Python.
 
+## SQL vs PySpark Comparative 
+
+Introduction to SQL and PySpark
+
+Data manipulation and analysis can be performed using both SQL and PySpark. These technologies serve similar purposes but operate differently. SQL is a standard language for relational databases, while PySpark is a Python API for Apache Spark, designed for big data processing.
+
 ## Building a Gradient Descent Optimizer from Scratch in Python
 
 Introduction to Gradient Descent
@@ -6043,6 +6084,12 @@ Matrix-based Rank Adaptation (MoRA) is a technique used in information retrieval
 Introduction to Relational Reasoning in Neural Networks
 
 Relational reasoning is a fundamental aspect of human intelligence, allowing us to understand and manipulate relationships between entities. This slideshow explores how we can implement a simple neural network module for relational reasoning using Python, enabling machines to perform similar tasks.
+
+## RNN and LSTM for Stock Price Prediction
+
+Understanding RNN Architecture for Time Series
+
+In recurrent neural networks, hidden states propagate temporal dependencies through sequential data processing, enabling the network to learn patterns across different time steps while maintaining contextual information.
 
 ## Fractal Dimension Analysis of Images using Python
 
@@ -6421,6 +6468,12 @@ Introduction to Vector Databases
 
 Vector databases are specialized systems designed to store, index, and query high-dimensional vectors. These vectors are mathematical representations of data points, capturing the semantic essence of information. Unlike traditional databases that focus on structured data, vector databases excel at handling complex, multidimensional data, making them ideal for similarity searches and AI-driven applications.
 
+## Principal Component Analysis  in Python
+
+Introduction to Principal Component Analysis
+
+Principal Component Analysis (PCA) is a dimensionality reduction technique that transforms high-dimensional data into a lower-dimensional space while preserving as much variance as possible. It identifies the directions (principal components) along which the data varies the most.
+
 ## Introduction to Precision-Recall Curve in Python
 
 Introduction to Precision-Recall Curve
@@ -6526,6 +6579,12 @@ Embeddings are dense vector representations of words, sentences, or documents in
 MagMax: An Introduction to Seamless Continual Learning
 
 MagMax is a novel approach to continual learning that leverages model merging techniques. It aims to address the challenge of catastrophic forgetting in neural networks by allowing models to learn new tasks without forgetting previously learned information.
+
+## Alternatives to Cluttered Bar Plots
+
+Why Bar Plots Can Be Problematic
+
+Bar plots, while popular, can become ineffective when dealing with large datasets or multiple categories. When visualizing data with numerous variables or time series, bar plots often result in cramped, overlapping bars that hinder data interpretation and analysis.
 
 ## Monkey Patching in Python Dynamically Extending Behavior
 
@@ -6765,6 +6824,12 @@ Introduction to Building an Interactive Chatbot App
 
 In this tutorial, we'll explore how to build an interactive chatbot app using Groq's Language Models (LLMs) and Streamlit, a Python library for creating user-friendly web applications. We'll cover the necessary steps to set up the environment, integrate Groq's LLMs, and create a user interface with Streamlit.
 
+## Pandas Inplace Operations Myths and Realities
+
+Understanding Inplace Operations in Pandas
+
+The common belief that inplace operations in Pandas are more efficient is incorrect. While many developers expect these operations to modify DataFrames without creating copies and thus save memory and time, the reality is quite different. Let's explore why this assumption is wrong and what actually happens under the hood.
+
 ## Breast Cancer Survival Prediction with Machine Learning
 
 Introduction to Breast Cancer Survival Prediction
@@ -6776,6 +6841,12 @@ Breast cancer survival prediction using gene expression and clinical data is a c
 Introduction to Data Science Techniques
 
 Data science employs various techniques to analyze and predict outcomes from data. Three fundamental approaches are classification, clustering, and regression. These methods allow us to categorize data, identify patterns, and make predictions based on relationships within the data. Throughout this presentation, we'll explore each technique with Python code examples and practical applications.
+
+## Understanding Concatenation and Input in Python
+
+String Concatenation Basics
+
+When we join two or more strings together in Python, we call this concatenation. It's similar to linking chains together, where each chain represents a string. The most common way to concatenate strings is using the + operator.
 
 ## Exponentially Weighted Moving Averages in Deep Learning with Python
 
@@ -7637,6 +7708,12 @@ Variables in Python are dynamically typed and can change types during execution.
 Introduction to LangChain, FAISS, and CTransformers
 
 LangChain is a framework for developing applications powered by language models. It provides tools to integrate with various data sources and enables complex reasoning capabilities. FAISS (Facebook AI Similarity Search) is a library for efficient similarity search and clustering of dense vectors. CTransformers is a Python binding for the Transformer models implemented in C/C++, offering high-performance inference capabilities.
+
+## Mastering NER for Documents with Multiple Entities
+
+Understanding NER with Data Enrichment
+
+Natural Entity Recognition (NER) becomes more reliable when combined with data enrichment techniques. This approach helps overcome common challenges in extracting specific entities from documents containing multiple similar entities, such as addresses. The process involves using NER for initial entity detection and data enrichment for refinement and validation.
 
 ## Understanding Padding in Convolutional Neural Networks
 
@@ -8506,6 +8583,12 @@ Introduction to Local-First Text-to-SQL
 
 Local-first Text-to-SQL is an approach that focuses on processing natural language queries into SQL statements directly on the user's device. This method enhances privacy, reduces latency, and allows for offline functionality. Let's explore how to implement this using Python.
 
+## Understanding SQL's Execution Order
+
+SQL as a Declarative Language
+
+SQL operates on a principle of describing what you want, rather than spelling out each computational step. This design philosophy makes SQL unique among programming languages - you declare your desired outcome, and the SQL engine determines the most efficient path to achieve it.
+
 ## Denoising Diffusion Probabilistic Models in Python
 
 Introduction to Denoising Diffusion Probabilistic Models
@@ -9094,6 +9177,12 @@ Fine-tuning is the process of adapting a pre-trained language model to a specifi
 Introduction to Object-Oriented Programming (OOP)
 
 Object-Oriented Programming is a programming paradigm that organizes code into objects, which are instances of classes. OOP focuses on the concept of objects that contain data and code, emphasizing the relationships between objects to design and structure programs.
+
+## Exploring Python Virtual Environments
+
+Understanding Virtual Environments
+
+A virtual environment in Python represents an isolated working space that maintains its own independent set of Python packages and dependencies. This isolation ensures that projects remain self-contained, preventing conflicts between different projects' requirements and the global Python installation.
 
 ## Label Smoothing Technique for Regularizing ML Models in Python
 
