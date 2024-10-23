@@ -1211,6 +1211,12 @@ Introduction to Polynomial Functions
 
 Polynomial functions are fundamental mathematical constructs that appear in various fields, from algebra to calculus. In this presentation, we'll explore polynomial functions using Python, demonstrating how to create, manipulate, and analyze them programmatically.
 
+## Choosing the Right Categorical Encoding Technique
+
+Understanding Label Encoding
+
+Label encoding transforms categorical variables into numerical values by assigning unique integers to each category. This method preserves memory efficiency and works well with ordinal data where categories have a natural order.
+
 ## Methods to Improve Machine Learning Accuracy Evaluation
 
 Introduction to Accuracy Evaluation in Machine Learning
@@ -2292,6 +2298,12 @@ Overfitting and Underfitting in Deep Learning
 
 Overfitting and underfitting are common challenges in machine learning models. Overfitting occurs when a model learns the training data too well, including noise and outliers, leading to poor generalization on new data. Underfitting happens when a model is too simple to capture the underlying patterns in the data. In this presentation, we'll explore techniques to address these issues in deep learning using Python.
 
+## Regression Analysis Algorithms in Python
+
+Linear Regression Fundamentals
+
+Linear regression remains the most widely used algorithm for regression analysis, forming the foundation for many advanced techniques. It models relationships between dependent and independent variables through a linear approach.
+
 ## Comparing Classic Time Series Models vs. LLMs
 
 Introduction to Time Series Forecasting
@@ -2768,6 +2780,12 @@ Introduction to Feature Scaling
 
 Feature scaling is a crucial preprocessing step in machine learning that transforms the attributes of a dataset to a common scale. This process ensures that all features contribute equally to the model's learning process, preventing features with larger magnitudes from dominating those with smaller ranges. By standardizing the input features, we can significantly improve the performance and convergence of many machine learning algorithms.
 
+## Measuring Data Drift with KL Divergence
+
+KL Divergence Foundation
+
+KL divergence measures the relative entropy between two probability distributions, quantifying how one distribution differs from a reference distribution in statistical modeling and machine learning.
+
 ## PyTorch Tutorial Building Neural Networks with Python
 
 Introduction to PyTorch
@@ -3066,6 +3084,12 @@ Artificial Neural Networks (ANNs) and Recurrent Neural Networks (RNNs) are two f
 Introduction to Optimizers in Deep Learning
 
 Optimizers play a crucial role in training deep neural networks. They are algorithms or methods used to adjust the attributes of the neural network, such as weights and learning rate, to minimize the loss function. This slideshow will explore various optimization techniques, including Momentum-based Gradient Descent, Nesterov Accelerated Gradient Descent, Adagrad, RMSProp, and Adam.
+
+## Building a Machine Learning Model
+
+Data Preparation and Loading 
+
+Advanced data preprocessing techniques including handling missing values, feature scaling, and categorical encoding using pandas and scikit-learn libraries for preparing machine learning datasets.
 
 ## Mastering Python Memory Management! Profiling and Optimization
 
@@ -4397,6 +4421,12 @@ The `continue` statement is a powerful tool in Python loops that allows you to s
 Introduction to Dense, Sparse, and Mixture of Experts
 
 Dense, sparse, and mixture of experts are different architectures used in Large Language Models (LLMs). Each has its own strengths and use cases. This presentation will explore these architectures, their differences, and when to use each one.
+
+## 5 Text Chunking Strategies for RAG
+
+Fixed-Size Text Chunking Implementation
+
+This implementation demonstrates a basic fixed-size chunking strategy using character count. The chunk\_text function splits documents into segments of specified size while preserving word boundaries to maintain readability.
 
 ## Recurrent Neural Network Regularization in Python
 
@@ -6806,6 +6836,12 @@ Introduction to LLMs and Inductive Reasoning
 
 Large Language Models (LLMs) have revolutionized natural language processing, demonstrating remarkable capabilities in various tasks. Recent studies suggest that LLMs excel at inductive reasoning, a cognitive process of drawing general conclusions from specific observations. This discovery challenges our understanding of AI's capabilities and opens new avenues for research and application.
 
+## Top Authentication Mechanisms for Secure Digital Interactions
+
+Basic User Authentication
+
+A secure user authentication system using password hashing with salt to prevent rainbow table attacks and ensure secure credential storage in a database.
+
 ## Tokens and Tokenization in Large Language Models in Python
 
 Introduction to Tokens and Tokenization in LLMs
@@ -7434,6 +7470,12 @@ The Counter class in Python's collections module is a powerful tool for counting
 Understanding Stable Minima in Univariate ReLU Networks
 
 Stable minima play a crucial role in the generalization capabilities of neural networks. In this presentation, we'll explore how stable minima cannot overfit in univariate ReLU networks and how large step sizes contribute to generalization. We'll use Python to illustrate these concepts and provide practical examples.
+
+## Calculating Metrics from Confusion Matrix
+
+Understanding Confusion Matrix Basics
+
+A confusion matrix is a fundamental tool in machine learning that tabulates predicted versus actual values, enabling evaluation of classification model performance through various derived metrics.
 
 ## Batch and Real-Time Machine Learning Inference with Python
 
@@ -8757,11 +8799,21 @@ Introduction to Regression Analysis
 
 Regression analysis is a powerful statistical method used to model relationships between variables. It's widely applied in various fields, from economics to machine learning. In this presentation, we'll explore two key metrics for evaluating regression models: R-squared and Adjusted R-squared. We'll use Python to demonstrate these concepts.
 
+## Machine Learning Lifecycle in Python
+
+Data Collection in Machine Learning
+
+The foundation of any machine learning project begins with gathering relevant data. High-quality data collection is crucial for model performance. Data can be structured (tables, spreadsheets) or unstructured (images, text, audio). The collection process should focus on obtaining diverse, representative samples that capture the full spectrum of scenarios the model will encounter.
+
 ## Structured Output in LLM Applications
 
 Introduction to Structured Output in LLM Applications
 
 Structured output in Large Language Model (LLM) applications refers to the process of generating organized, predictable responses that follow a specific format. This approach enhances the usability and interpretability of LLM outputs, making them more suitable for downstream tasks and integration with other systems.
+
+## Gradient Boosting Overfitting and Learning Rate
+
+Learning Rate Impact on Gradient Boosting A smaller learning rate in gradient boosting reduces overfitting by making conservative updates to the model in each iteration, allowing for better generalization performance at the cost of increased training time.
 
 ## Hash Tables in Machine Learning with Python
 
@@ -9577,6 +9629,12 @@ Model evaluation metrics are essential tools in data science for assessing the p
 Introduction to Ergodic Theory
 
 Ergodic theory is a branch of mathematics that studies dynamical systems with an invariant measure and related problems. It focuses on the long-term average behavior of systems evolving in time. This field has applications in statistical mechanics, number theory, and information theory.
+
+## Pandas Inplace Operations Misconceptions and Realities
+
+Understanding Inplace Operations in Pandas
+
+Inplace operations in Pandas are commonly misunderstood regarding their performance implications. They don't actually modify data structures in place but create temporary copies with additional overhead.
 
 ## NumPy Broadcasting Simplifying Python Code
 
