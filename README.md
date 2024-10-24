@@ -324,6 +324,12 @@ Introduction to Geometric Hypergraph Neural Networks
 
 Geometric Hypergraph Neural Networks (GHNNs) are a novel class of neural networks designed to process complex relational data represented as hypergraphs. These networks extend traditional graph neural networks to capture higher-order relationships between entities, making them particularly useful for applications in molecular biology, social network analysis, and recommendation systems.
 
+## Correlation Methods for Data-Driven Decisions
+
+Pearson Correlation Implementation
+
+The Pearson correlation coefficient measures the strength and direction of linear relationships between continuous variables, commonly used in financial analysis. This implementation demonstrates calculation from scratch, leveraging numpy for efficient array operations.
+
 ## Naive Bayes Classifier in Python
 
 Introduction to Naive Bayes
@@ -976,6 +982,12 @@ Multi-class classification is a task where we predict one of several possible cl
 Introduction to Major Forms of Machine Learning
 
 Machine Learning (ML) is a rapidly evolving field with various approaches to teaching computers how to learn from data. This presentation covers eight major forms of learning in ML, each with its unique characteristics and applications.
+
+## Evaluating Model Generalization with Cross-Validation
+
+Introduction to Cross-Validation
+
+Cross-validation is a statistical method used to assess model performance by partitioning data into training and testing sets. It helps evaluate how well a model generalizes to unseen data and reduces overfitting by providing multiple evaluation rounds with different data splits.
 
 ## Implementing Recurrent Neural Networks in Python
 
@@ -4410,6 +4422,12 @@ Discrete distributions are probability distributions that describe random variab
 
 Convolutional Neural Networks (CNNs) CNNs are a type of deep neural network designed to process data with a grid-like topology, such as images. They are particularly effective for tasks like image recognition, object detection, and image segmentation. Code Example:
 
+## Pandas Inplace Operations Expectations vs. Reality
+
+Understanding Pandas Inplace Operations
+
+The inplace parameter in Pandas operations is commonly misunderstood. While developers expect it to modify data structures directly without creating copies, the reality is more complex. Inplace operations actually create temporary copies before assignment, potentially impacting performance.
+
 ## Mastering Python Loops with the `continue` Statement
 
 The Power of the `continue` Statement
@@ -4729,6 +4747,12 @@ Python provides built-in functions for dynamic attribute manipulation: getattr()
 Balancing Accuracy and Interpretability in Machine Learning
 
 In machine learning, achieving high accuracy is often the primary goal. However, interpretability is equally important, especially in critical domains like healthcare and finance. This presentation explores the trade-offs between accuracy and interpretability, and demonstrates techniques to balance both using Python.
+
+## Fundamentals of Data Analysis with Python
+
+Data Loading and Initial Exploration
+
+Data analysis begins with loading datasets efficiently into pandas DataFrames, which provide powerful tools for exploration. Understanding the structure, data types, and basic statistics of your dataset forms the foundation for deeper analysis.
 
 ## Euclidean Distance Pitfalls in Python Visualizations
 
@@ -7458,6 +7482,12 @@ Vector databases are specialized systems designed to store and efficiently query
 Introduction to XGBoost Regression
 
 XGBoost (Extreme Gradient Boosting) is a powerful machine learning algorithm for regression tasks. It's an optimized implementation of gradient boosting that offers high performance and accuracy.
+
+## Evaluating Generative AI Challenges and Approaches
+
+Implementing Groundedness Scorer
+
+A groundedness scorer evaluates how well AI-generated content aligns with source material by comparing semantic similarity and fact verification. This implementation uses transformer embeddings and cosine similarity for robust comparison.
 
 ## The Counter class in Python
 
