@@ -54,6 +54,12 @@ Understanding User-Defined Aggregate Functions (UDAFs) in Python
 
 User-Defined Aggregate Functions (UDAFs) in Python allow developers to create custom functions that summarize data according to specific needs. These functions extend beyond built-in aggregates like sum or count, enabling more flexible and tailored data analysis.
 
+## Leveraging Graph-Based Knowledge for Informed Retrieval-Augmented Generation
+
+Understanding Graph RAG Architecture
+
+Graph RAG extends traditional retrieval-augmented generation by incorporating graph-based knowledge representations. This architecture enables contextual understanding through entity relationships, allowing for more nuanced and comprehensive information retrieval compared to simple vector similarity approaches.
+
 ## Graph ML Applications in Tech! Google, Pinterest, Netflix
 
 Graph Machine Learning in Tech Industry
@@ -269,6 +275,12 @@ Leonhard Euler, a Swiss mathematician and physicist, revolutionized multiple fie
 Introduction to Performance Metrics in Regression
 
 Performance metrics in regression are essential tools for evaluating the accuracy and effectiveness of our predictive models. These metrics help us understand how well our model's predictions align with the actual observed values. In this presentation, we'll explore various performance metrics commonly used in regression analysis, their significance, and how to implement them using Python.
+
+## Poisson Regression for Modeling Count Data
+
+Understanding Poisson Distribution Fundamentals
+
+The Poisson distribution models the probability of events occurring in fixed intervals of time or space. It's particularly useful for count data where events are independent and occur at a constant average rate, making it ideal for rare event modeling.
 
 ## Explaining Model Convergence in Python
 
@@ -656,6 +668,12 @@ Understanding Duplicates in Pandas
 
 Duplicates in Pandas DataFrames can significantly impact data analysis by skewing results and leading to incorrect conclusions. This presentation will explore methods to identify and remove duplicates, ensuring data integrity and accuracy in your analysis.
 
+## Docker Container Lifecycle Management
+
+Docker Container Lifecycle Management
+
+Docker containers follow a well-defined lifecycle from creation to termination. Understanding container states and transitions is crucial for effective container orchestration and management in production environments. The lifecycle API enables programmatic control over containers.
+
 ## Mastering Tuples in Python
 
 Introduction to Tuples in Python
@@ -988,6 +1006,12 @@ Machine Learning (ML) is a rapidly evolving field with various approaches to tea
 Introduction to Cross-Validation
 
 Cross-validation is a statistical method used to assess model performance by partitioning data into training and testing sets. It helps evaluate how well a model generalizes to unseen data and reduces overfitting by providing multiple evaluation rounds with different data splits.
+
+## Exploring the Power of ReLU in Deep Learning
+
+Understanding ReLU Implementation
+
+The ReLU activation function transforms input by maintaining positive values and zeroing negative ones. This fundamental operation enables neural networks to learn non-linear patterns effectively while maintaining computational efficiency through simple mathematical operations.
 
 ## Implementing Recurrent Neural Networks in Python
 
@@ -1999,6 +2023,12 @@ Introduction to MuZero
 
 MuZero is a general-purpose algorithm developed by DeepMind for planning in environments with unknown dynamics. It combines the strengths of model-based and model-free reinforcement learning approaches, allowing it to excel in both perfect information games like chess and Go, as well as visually complex domains like Atari games.
 
+## Interactive Data Visualization with Matplotlib
+
+Interactive Line Plot with Click Events
+
+Creating interactive visualizations enhances data exploration by allowing users to interact directly with plots. This implementation demonstrates how to capture mouse clicks on a line plot and display coordinates, enabling detailed examination of specific data points.
+
 ## Streamlining PyTorch Training Loops
 
 Introduction to Skorch
@@ -2562,6 +2592,12 @@ Introduction to Logistic Regression
 
 Logistic Regression is a fundamental statistical method used for binary classification problems. It models the probability of an instance belonging to a particular class. Despite its name, logistic regression is used for classification, not regression.
 
+## Understanding Abstract Base Classes (ABCs) in Python
+
+Introduction to Abstract Base Classes
+
+Abstract Base Classes (ABCs) provide a way to define interfaces in Python, enforcing a contract that derived classes must fulfill. They act as a blueprint for other classes, establishing a set of methods and properties that concrete implementations must provide.
+
 ## Introducing Foundation Agents The Next Frontier in AI Decision-Making
 
 What are Foundation Agents?
@@ -2714,6 +2750,12 @@ Transfer learning is a machine learning technique where a model developed for on
 Introduction to Mamba-2 and Structured State Space Models
 
 Mamba-2 is an innovative architecture built upon the foundation of Structured State Space Models (S4). These models offer a flexible framework for sequence modeling, combining the strengths of recurrent neural networks and transformers. In this presentation, we'll explore the key concepts, implementation details, and practical applications of Mamba-2.
+
+## Using @override to Ensure Proper Method Overriding in Python
+
+Introduction to @override Decorator
+
+The @override decorator is a built-in feature introduced in Python 3.12 that helps catch bugs by ensuring methods intended to override superclass methods actually do override them. This static type checking prevents common inheritance-related errors.
 
 ## Pitfalls of Machine Learning Classification Models
 
@@ -3108,6 +3150,12 @@ Advanced data preprocessing techniques including handling missing values, featur
 Memory Management in Python
 
 Python's memory management is automatic, but understanding its intricacies can help optimize your code. This presentation will cover profiling techniques and optimization strategies to help you master memory management in Python.
+
+## Addressing Bias and Improving Model Performance
+
+Understanding Class Imbalance
+
+Class imbalance occurs when the distribution of classes in a dataset is significantly skewed. This fundamental challenge in machine learning can severely impact model performance, particularly in critical applications like fraud detection or medical diagnosis where minority classes are often the most important.
 
 ## Top 10 Ensemble Methods in Data Science
 
@@ -4470,6 +4518,12 @@ Introduction to Sentiment Analysis
 
 Sentiment Analysis is a natural language processing technique used to determine the emotional tone behind a piece of text. It's widely used in social media monitoring, customer feedback analysis, and market research. This slideshow will cover various methods of sentiment analysis, from basic to advanced, using Python.
 
+## Techniques for Handling Multicollinearity
+
+Understanding Multicollinearity
+
+Multicollinearity occurs when independent variables in a regression model are highly correlated with each other, potentially leading to unstable and unreliable estimates of the regression coefficients. This phenomenon can significantly impact model interpretation and predictions.
+
 ## Introduction to Topological Deep Learning in Python
 
 Introduction to Topological Deep Learning
@@ -4657,6 +4711,12 @@ Measurement levels are fundamental ways of categorizing different types of data 
 Filling NaN Values in a DataFrame
 
 To fill all blank (NaN) values in a DataFrame with zero using Python, we can use the fillna() method. This method is part of the pandas library, which provides powerful data manipulation tools for Python.
+
+## Correlation Analysis in Python
+
+Understanding Correlation Fundamentals
+
+Correlation analysis measures the strength and direction of relationships between variables in statistical data. The concept is fundamental in data science for identifying patterns, making predictions, and understanding variable dependencies in complex datasets.
 
 ## Explaining Leave-One-Out Cross-Validation with Python
 
@@ -5177,6 +5237,12 @@ Introduction to "The Count of Monte Cristo"
 
 This presentation explores Alexandre Dumas' classic novel "The Count of Monte Cristo" through the lens of Python programming. We'll examine key events and themes from the book, proposing innovative Python approaches to analyze and understand the story's complexities. Our journey will take us through optimization algorithms, cryptography, network analysis, and more, offering a fresh perspective on this timeless tale of betrayal and revenge.
 
+## Avoiding Bad Coding Practices in Data Science
+
+Configuration Management Using YAML
+
+Configuration management is crucial for maintaining clean, scalable code in data science projects. Using YAML files to store parameters, model configurations, and data paths enables easier maintenance and reproducibility while eliminating hardcoded values throughout the codebase.
+
 ## Explaining Neural Network Architecture and Training
 
 Introduction to Neural Networks
@@ -5456,6 +5522,12 @@ Introduction to Transformers and Self-Attention
 
 The Transformer architecture, introduced in the "Attention Is All You Need" paper, revolutionized natural language processing. At its core lies the self-attention mechanism, which allows the model to weigh the importance of different words in a sentence when processing each word. This slideshow will explore the self-attention mechanism and its implementation using Python.
 
+## Efficient Data Extraction with Python
+
+Data Extraction with Pandas
+
+Pandas provides robust functionality for reading structured data from various file formats. Its read\_csv() function offers extensive customization through parameters like delimiter, encoding, and handling of missing values, making it ideal for processing large CSV datasets efficiently.
+
 ## Ensemble Learning Techniques in Python
 
 Introduction to Ensemble Learning in Sequence
@@ -5491,6 +5563,12 @@ Linear regression is a fundamental statistical technique used to model the relat
 Understanding Merging in Pandas
 
 Merging in Pandas is often misunderstood, but it's a powerful tool for combining datasets. It allows you to join DataFrames based on common columns or indices, similar to SQL joins. Let's explore the different types of merges and their applications.
+
+## Marginal Likelihoods and Bayes Factors for Bayesian Model Comparison
+
+Marginal Likelihood Fundamentals
+
+The marginal likelihood represents the probability of observing data under a specific model by integrating over all possible parameter values. This fundamental concept forms the backbone of Bayesian model comparison and selection methods in statistical inference.
 
 ## Choosing the Right Statistical Test for Your Data
 
@@ -5951,6 +6029,12 @@ Introduction to SQL and PySpark
 
 Data manipulation and analysis can be performed using both SQL and PySpark. These technologies serve similar purposes but operate differently. SQL is a standard language for relational databases, while PySpark is a Python API for Apache Spark, designed for big data processing.
 
+## Why You Should Use isinstance() Instead of type() for Type Checking in Python
+
+Understanding type() Limitations
+
+The type() function in Python returns the exact type of an object, but this rigid approach breaks polymorphism and inheritance principles. When working with derived classes or multiple valid types, type() comparisons fail to recognize valid subclass instances.
+
 ## Building a Gradient Descent Optimizer from Scratch in Python
 
 Introduction to Gradient Descent
@@ -6011,6 +6095,12 @@ Introduction to Distributed Model Training with TensorFlow
 
 Distributed model training is a technique used to train machine learning models across multiple devices or machines. This approach is particularly useful for large datasets or complex models that would be time-consuming or impossible to train on a single device. TensorFlow, a popular open-source machine learning framework, provides robust support for distributed training.
 
+## Transforming Language AI with LangGraph
+
+Introduction to LangGraph Architecture
+
+LangGraph represents a sophisticated framework for constructing complex language model applications through directed acyclic graphs (DAGs). It enables developers to create stateful, multi-step reasoning chains while maintaining modularity and reusability across components.
+
 ## Building Linear Discriminant Analysis without Libs in Python
 
 Introduction to Linear Discriminant Analysis (LDA)
@@ -6040,6 +6130,12 @@ Monte Carlo simulation is a powerful statistical technique used to model complex
 Introduction to NLP and Short Text Analysis
 
 Natural Language Processing (NLP) is a field of artificial intelligence that focuses on the interaction between computers and human language. Short text analysis is a crucial subset of NLP, dealing with brief pieces of text such as tweets, product reviews, or chat messages. This slideshow will explore various machine learning techniques for analyzing short texts using Python.
+
+## Logistic Distribution Probability Regression and Neural Networks
+
+Introduction to Logistic Distribution
+
+The logistic distribution is a continuous probability distribution characterized by its location parameter μ and scale parameter s. Its probability density function forms a symmetric curve similar to the normal distribution but with heavier tails. Understanding its implementation is crucial for various statistical applications.
 
 ## Feature selection preprocessing
 
@@ -6554,6 +6650,12 @@ Version Control for Machine Learning Projects
 
 Version control is essential for managing ML projects effectively. While Data Version Control (DVC) is a powerful tool, simpler approaches can sometimes be more appropriate. Let's explore various versioning strategies for ML projects, considering their pros and cons.
 
+## Structuring Chat Training Data
+
+Preparing Chat Training Data Structure
+
+The foundation of chat model fine-tuning lies in properly structuring conversation data. This involves organizing messages into clear roles and maintaining consistent formatting throughout the dataset. The data structure must follow OpenAI's JSONL format specifications.
+
 ## Explaining Regularization in Machine Learning Loss Functions
 
 The Origin of Regularization in Loss Functions
@@ -6701,6 +6803,12 @@ Fluid dynamics is the study of fluid motion, including liquids and gases. The Na
 Introduction to Gradient Descent
 
 Gradient Descent is a fundamental optimization algorithm in machine learning used to minimize a cost function and improve model performance. It iteratively adjusts model parameters to find the optimal solution. This process transforms initial random points in parameter space into powerful predictions.
+
+## Docker Cheat Sheet for Python Developers
+
+Basic Docker Commands in Python
+
+Docker SDK for Python enables programmatic control of containers through intuitive APIs. This approach provides automation capabilities for container lifecycle management, allowing systematic deployment and monitoring of containerized applications through Python scripts.
 
 ## Behind the Scenes of Generative Adversarial Networks (GANs)
 
@@ -7990,6 +8098,12 @@ Introduction to Structured LLM Outputs
 
 Structured LLM outputs allow us to generate specific formats of text from language models, making it easier to parse and use the results in various applications. This approach enhances the usability of LLM responses in tasks requiring structured data.
 
+## Removing Duplicates from a List while Preserving Order
+
+Understanding OrderedDict Basics
+
+OrderedDict is a dictionary subclass that maintains the order of key-value pairs based on when they were inserted. Unlike regular dictionaries prior to Python 3.7, OrderedDict guarantees order preservation, making it ideal for removing duplicates while maintaining sequence.
+
 ## Exploring Float32, Float16, and BFloat16 for Deep Learning in Python
 
 Understanding Float32, Float16, and BFloat16 in Deep Learning
@@ -8037,6 +8151,12 @@ Masked Attention is a key component of transformer-based models, particularly in
 Introduction to Logging in Python
 
 Logging is a powerful tool for tracking events in your Python programs. It offers significant advantages over using print() statements for debugging and monitoring.
+
+## Speeding Up Python Programs with Short-Circuit Evaluation
+
+Understanding Short-Circuit Evaluation in Python
+
+Short-circuit evaluation is a fundamental optimization technique in programming where the second argument of a logical operation is only evaluated if the first argument does not suffice to determine the final result, significantly improving performance in complex operations.
 
 ## Introduction to Fine-tuning Large Language Models (LLMs) Using Python
 
