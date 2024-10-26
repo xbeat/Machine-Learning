@@ -586,6 +586,12 @@ Introduction to Graph Theory
 
 Graph Theory is a branch of mathematics that studies the relationships between objects. It has numerous applications in computer science, networking, and social sciences.
 
+## Django Project Setup and Virtual Environment
+
+Django Project Setup and Virtual Environment
+
+Creating a new Django project requires proper isolation through virtual environments and initial configuration. This ensures dependency management and prevents conflicts between different projects while maintaining a clean development environment.
+
 ## Second-Order Equations in Machine Learning Algorithms Using Python
 
 Introduction to Second-Order Equations in Machine Learning and AI
@@ -1981,6 +1987,12 @@ Introduction to Docker and Python Integration
 
 Docker is a containerization platform that simplifies application deployment and management. This slideshow will cover the basics of integrating Python applications with Docker, making it easier to build, ship, and run Python applications consistently across different environments.
 
+## Walkthrough of Neural Network Training Process
+
+Neural Network Architecture Overview
+
+Constructing a neural network using objects and arrays to establish the foundational building blocks of deep learning. This implementation focuses on creating a modular structure with layers, allowing flexible network configurations through weight matrices and bias vectors.
+
 ## Detecting Anomalies and Outliers in Data
 
 Flag Outliers
@@ -2010,6 +2022,12 @@ Clustering is an unsupervised learning technique used to group similar data poin
 The Importance of Assumptions in Machine Learning
 
 In machine learning, assumptions play a crucial role in model development and performance. They shape our understanding of the problem, guide our choice of algorithms, and influence how we interpret results. Recognizing and listing these assumptions is a critical step in the ML pipeline, as it helps us identify potential biases, limitations, and areas for improvement.
+
+## The Role of Kernels in Support Vector Machines
+
+The Kernel Function Fundamentals
+
+The kernel function in Support Vector Machines enables the transformation of input data into a higher-dimensional feature space without explicitly computing the transformation, known as the "kernel trick". This allows SVMs to find nonlinear decision boundaries efficiently.
 
 ## Optimizing Neural Network Training with Learning Rate Control
 
@@ -2598,6 +2616,12 @@ Introduction to Abstract Base Classes
 
 Abstract Base Classes (ABCs) provide a way to define interfaces in Python, enforcing a contract that derived classes must fulfill. They act as a blueprint for other classes, establishing a set of methods and properties that concrete implementations must provide.
 
+## Embedding Layers Transforming Text into Machine-Readable Vectors
+
+Word to Vector Basics
+
+An embedding layer transforms discrete word tokens into continuous vector spaces, enabling mathematical operations on text data. The fundamental process involves mapping each word to a unique index and then to a dense vector representation.
+
 ## Introducing Foundation Agents The Next Frontier in AI Decision-Making
 
 What are Foundation Agents?
@@ -2660,6 +2684,12 @@ Artificial Intelligence (AI) and Machine Learning (ML) are often used interchang
 Introduction to Python Pandas
 
 Pandas is a powerful Python library for data manipulation and analysis. It provides data structures like DataFrames and Series, which allow efficient handling of structured data. Pandas is built on top of NumPy and integrates well with other scientific computing libraries in Python.
+
+## Mastering Python Function Parameter Order
+
+Understanding Parameter Order Fundamentals
+
+Parameter order in Python functions follows strict rules that affect how arguments are processed and matched during function calls. Understanding these rules is crucial for writing flexible and maintainable code that handles arguments correctly.
 
 ## Extending ANOVA Beyond the Basics
 
@@ -3472,6 +3502,12 @@ Independent variables are features used as input to predict an outcome. They are
 Introduction to Pix2TeX
 
 Pix2TeX is a powerful Python library that converts images containing mathematical equations into LaTeX code. This tool bridges the gap between handwritten or printed equations and their digital representation, making it easier for researchers, students, and professionals to digitize mathematical content.
+
+## Lists and List Functions in Python
+
+Creating Lists in Python
+
+Lists serve as fundamental data structures in Python, offering a mutable and ordered sequence of elements. They can store heterogeneous data types, making them versatile for various programming applications. Understanding list creation and basic operations forms the foundation for advanced data manipulation.
 
 ## Boosting Machine Learning Efficiency with Vectorization
 
@@ -5366,6 +5402,12 @@ What is an Iteration in Neural Networks?
 
 An iteration in neural networks refers to one complete pass through the entire training dataset, including both forward and backward propagation. It's a fundamental concept in the training process, where the network learns from data by repeatedly adjusting its weights and biases.
 
+## Leveraging Python Type Annotations
+
+Type Annotations Fundamentals
+
+Python's type annotations provide a way to explicitly declare types for variables, function parameters, and return values. This helps catch type-related bugs early in development and makes code more maintainable by clearly documenting expected types.
+
 ## Advanced Handling Missing Data in Python
 
 Introduction to Missing Data
@@ -6017,6 +6059,12 @@ Introduction to Knowledge Graphs
 
 Knowledge graphs are structured representations of information that capture relationships between entities. They form the backbone of many modern information systems, enabling efficient data retrieval and inference. In this presentation, we'll explore how to work with knowledge graphs using Python.
 
+## Python Lists vs Tuples When to Use Which
+
+Introduction to Python Lists and Tuples
+
+Lists and tuples represent fundamental sequence data types in Python, each serving distinct purposes in programming. Lists offer mutable sequences allowing modification after creation, while tuples provide immutable sequences that cannot be changed once defined, leading to different performance characteristics.
+
 ## Techniques for Compressing Large Language Models in Python
 
 Introduction to LLM Model Compression
@@ -6246,6 +6294,12 @@ In recurrent neural networks, hidden states propagate temporal dependencies thro
 Introduction to Fractal Dimension of Images
 
 Fractal dimension is a measure of complexity that quantifies how a pattern's detail changes with scale. In image analysis, it can reveal intricate structures not apparent to the naked eye. This concept is particularly useful in fields like medical imaging, texture analysis, and pattern recognition.
+
+## Mastering Data Types for Effective Statistical Analysis
+
+Understanding Data Types and Their Statistical Properties
+
+Statistical analysis requires proper understanding of variable types - categorical, ordinal, and continuous data. Different types demand specific statistical approaches and visualizations. This code demonstrates how to identify, analyze and visualize different data types using Python's pandas and seaborn libraries.
 
 ## Dynamic Mode Decomposition in Python for Complex Systems
 
@@ -6791,6 +6845,12 @@ Code:
 Introduction to Relational Recurrent Neural Networks
 
 Relational Recurrent Neural Networks (R2N2) are an extension of traditional RNNs that incorporate relational reasoning capabilities. They excel at processing sequences of structured data and learning relationships between entities. This architecture combines the temporal processing power of RNNs with the ability to model complex relationships.
+
+## Emphasizing Key Visualization Details
+
+Understanding Matplotlib's Zoom Indicator
+
+The indicate\_inset\_zoom function in Matplotlib enables creation of magnified views of specific plot regions. This powerful visualization technique helps emphasize important details by creating a secondary axes that displays a zoomed portion of the main plot while maintaining context.
 
 ## Fluid Dynamics with Navier-Stokes Equations in Python
 
@@ -8549,6 +8609,12 @@ Introduction to Pride and Prejudice
 
 "Pride and Prejudice" is Jane Austen's beloved novel about the Bennet family in Regency-era England. This presentation will explore key events and themes from the book using innovative Python applications, providing a unique perspective on the classic tale of love, social class, and personal growth.
 
+## Pandas DataFrame Memory Layout and Efficient Iteration
+
+Understanding DataFrame Memory Layout
+
+The fundamental structure of Pandas DataFrame follows a column-major order where data is stored contiguously in memory by columns rather than rows. This architectural decision significantly impacts performance when accessing or manipulating data, especially during iterations.
+
 ## Depth-First and Breadth-First Search Algorithms in Python
 
 Introduction to Graph Traversal
@@ -8596,6 +8662,12 @@ Loss functions are fundamental in machine learning, guiding model optimization. 
 Introduction to Self-Attention Networks
 
 Self-Attention Networks are a fundamental component of modern deep learning architectures, particularly in natural language processing. They allow models to weigh the importance of different parts of the input data dynamically, leading to more effective learning of complex relationships.
+
+## Optimizers in Deep Learning Navigating the Path to Precision
+
+Understanding Gradient Descent
+
+Gradient descent forms the foundation of optimization in deep learning, acting as an iterative algorithm that minimizes the loss function by updating parameters in the opposite direction of the gradient. The process repeats until convergence or a specified number of iterations.
 
 ## Pros and Cons of Gradient Boosting in Python
 
@@ -9681,6 +9753,12 @@ Introduction to Ensemble Learning
 
 Ensemble learning is a powerful machine learning technique that combines multiple models to improve overall performance. By leveraging the strengths of various weak learners, ensemble methods create a strong collective learner. This approach often yields better predictions and more robust models compared to individual algorithms.
 
+## When Feature Scaling Matters in Machine Learning
+
+Understanding Feature Scaling Fundamentals
+
+Feature scaling transforms data into a specific range, typically \[0,1\] or \[-1,1\], to normalize the influence of features with different magnitudes. This process involves mathematical transformations that preserve relative relationships while standardizing scale differences between variables.
+
 ## Fundamental Topics of LLM Fine-tuning
 
 Introduction to LLM Fine-tuning
@@ -9857,6 +9935,12 @@ The first step in the RAG process involves gathering diverse data from various s
 Introduction to Statistics for Data Science
 
 Statistics plays a crucial role in data science, providing the foundation for understanding and interpreting data. This slideshow will cover key statistical concepts and their implementation in Python, focusing on practical applications for data scientists.
+
+## Identifying and Mitigating Outlier Impacts in Data Analysis
+
+Understanding Outliers Through Statistical Measures
+
+Statistical measures like z-scores and interquartile ranges provide robust methods for detecting outliers in datasets. These approaches quantify how far data points deviate from central tendencies, enabling systematic identification of anomalous values.
 
 ## Raincloud Plots Visualizing Data Distributions in Python
 
