@@ -282,6 +282,12 @@ Understanding Poisson Distribution Fundamentals
 
 The Poisson distribution models the probability of events occurring in fixed intervals of time or space. It's particularly useful for count data where events are independent and occur at a constant average rate, making it ideal for rare event modeling.
 
+## Discover Efficient FIne-Tuning for Large Language Model
+
+LoRA Architecture Overview
+
+Low-Rank Adaptation (LoRA) reduces the number of trainable parameters by expressing weight updates through low-rank decomposition. This approach enables efficient fine-tuning by learning two small matrices that capture essential adaptations while keeping the original model frozen.
+
 ## Explaining Model Convergence in Python
 
 Model Convergence in Machine Learning
@@ -1288,6 +1294,12 @@ Outliers are data points that significantly differ from other observations in a 
 Core Components of Agent Decision-Making in LangChain
 
 LangChain is a framework for developing applications powered by language models. In the context of agent decision-making, it provides several core components that work together to create intelligent agents capable of reasoning and taking actions. These components include the language model, memory, tools, and the agent itself.
+
+## Using isinstance() for Cleaner More Efficient Python Code
+
+Understanding type() Function in Python
+
+The type() function returns the exact class type of an object without considering inheritance relationships. It performs strict type checking by comparing the type directly, making it useful for scenarios requiring precise type validation.
 
 ## Linear Mixed Models in Python
 
@@ -2941,6 +2953,12 @@ Physics Informed Neural Networks (PINNs) are a novel approach that combines the 
 What are Diffusion Models?
 
 Diffusion models are a class of generative models that learn to gradually denoise data. They start with pure noise and iteratively refine it into high-quality samples. This process mimics the reverse of a diffusion process, where data is progressively corrupted with noise.
+
+## Exploring Linked Lists in Python
+
+Node Class Implementation
+
+A linked list fundamentally begins with the Node class, representing individual elements in the list. Each node contains two essential components: the data value and a reference to the next node, forming the building blocks of our linked list structure.
 
 ## Kolmogorov Complexity and Algorithmic Randomness in Python
 
@@ -4754,6 +4772,12 @@ The Single Responsibility Principle states that a class should have only one rea
 
 In this example, the `Book` class is responsible for holding book data, while the `BookPersistence` class handles the persistence of book data. Each class has a single responsibility, promoting code organization and maintainability.
 
+## Efficient Fuzzy Duplicate Detection in Python
+
+Understanding Fuzzy Duplicates
+
+The concept of fuzzy duplicates extends beyond exact matches, encompassing records that are semantically identical but contain variations due to typos, formatting differences, or missing data. This fundamental understanding is crucial for developing efficient deduplication strategies.
+
 ## The time complexity of 10 popular ML algorithms
 
 Time Complexity of Popular ML Algorithms
@@ -5315,6 +5339,12 @@ Introduction to Neural Networks
 
 Neural networks are computational models inspired by the human brain. They consist of interconnected nodes (neurons) organized in layers, designed to recognize patterns and solve complex problems.
 
+## Using Self Type Annotations in Python
+
+Self Type Annotation Basics
+
+The Self type annotation in Python provides a way to indicate that a method returns an instance of its own class. This pattern is particularly useful in builder patterns and method chaining, enhancing code readability and type safety.
+
 ## Vector Embeddings The AI's Secret to Comparing Anything
 
 Vector Embeddings: The Magic Behind AI Comparisons
@@ -5374,6 +5404,12 @@ Image transformations are powerful techniques used to modify digital images. Ope
 Understanding Pandas' apply() Method
 
 The Pandas apply() method is often misunderstood and misused. Contrary to common belief, it is not a vectorized operation but rather a wrapper around a Python for-loop. This means it doesn't offer inherent optimization and runs at native Python speed. Let's examine its behavior and compare it with alternative methods.
+
+## Dockerfile and Docker Compose
+
+Dockerfile Basics with Python
+
+A Dockerfile is a text document containing instructions to build a Docker image automatically. For Python applications, it defines the base image, working directory, dependency installations, and commands to run the application.
 
 ## Thought-Augmented Reasoning with Buffer of Thoughts with Python
 
@@ -5663,6 +5699,12 @@ Imbalanced classification is a common problem in machine learning where one clas
 Introduction to Confusion Matrix
 
 A confusion matrix is a fundamental tool in machine learning for evaluating classification models. It provides a tabular summary of the model's predictions compared to the actual outcomes, allowing us to assess various performance metrics and identify areas for improvement.
+
+## Computational Intelligence for Early Infertility Detection
+
+Dataset Preprocessing for Fetal Ultrasound
+
+The initial phase involves loading and preprocessing ultrasound images using OpenCV and NumPy. The process includes resizing images to a standard dimension, normalizing pixel values, and implementing basic data augmentation techniques for enhanced model training.
 
 ## Open-Source Tools for Scaling Testing and Deploying LLMs
 
@@ -6445,6 +6487,12 @@ Earth's Rotation and Surface Speed
 
 This presentation explores the problem of calculating the estimated speed at various latitudes due to Earth's rotation. We'll develop a mathematical approach to solve this problem, considering the Earth's shape and rotation rate.
 
+## Customizing Subclass Behavior with __init_subclass__ in Python
+
+Understanding **init\_subclass** in Python
+
+Class parameterization during inheritance is a powerful feature introduced in Python 3.6 through **init\_subclass**. This method allows parent classes to customize subclass creation behavior by intercepting and modifying the subclass definition process, providing a cleaner alternative to metaclasses.
+
 ## Recursive Introspection for Large Language Models
 
 Introduction to RISE for LLMs
@@ -6960,6 +7008,12 @@ Understanding RAG Techniques
 
 Retrieval-Augmented Generation (RAG) is a powerful approach in AI that combines information retrieval with text generation. However, the field is rapidly evolving beyond the standard RAG technique. This presentation explores six advanced RAG techniques that are reshaping how we access, validate, and utilize information efficiently.
 
+## Exploring Django's Authentication System
+
+Django Authentication System Overview
+
+Django's authentication system is a robust framework that handles user accounts, groups, permissions, and cookie-based user sessions. It seamlessly integrates with Django's built-in views and forms, providing a secure foundation for user management in web applications.
+
 ## Effective Python Presentation with Explanatory Code
 
 The Importance of Data Quality in AI
@@ -7087,6 +7141,12 @@ In this tutorial, we'll explore how to build an interactive chatbot app using Gr
 Understanding Inplace Operations in Pandas
 
 The common belief that inplace operations in Pandas are more efficient is incorrect. While many developers expect these operations to modify DataFrames without creating copies and thus save memory and time, the reality is quite different. Let's explore why this assumption is wrong and what actually happens under the hood.
+
+## Django Two-Factor Authentication for Secure User Login
+
+Django Two-Factor Authentication Setup
+
+Django two-factor authentication enhances security by requiring users to provide additional verification beyond passwords. The django-two-factor-auth package integrates seamlessly with Django's authentication system, providing a robust foundation for implementing 2FA in web applications.
 
 ## Breast Cancer Survival Prediction with Machine Learning
 
@@ -8009,6 +8069,12 @@ Understanding Padding in Convolutional Neural Networks (CNNs)
 
 Padding is a crucial concept in CNNs that involves adding extra pixels around the input image before applying convolutions. This technique helps preserve spatial dimensions and extract features from the edges of images. Let's explore padding with a simple example:
 
+## Pair Elements from Lists with zip()
+
+Basic Zip Operation
+
+The zip() function elegantly combines multiple iterables into tuples, offering a more pythonic and readable approach compared to traditional indexing. This fundamental operation demonstrates how zip creates pairs from corresponding elements of input sequences.
+
 ## Introduction to Calculus III in Python
 
 Introduction to Calculus III in Python 
@@ -8320,6 +8386,12 @@ Introduction to Data Wrangling with Pandas
 
 Data wrangling is the process of cleaning, structuring, and enriching raw data into a desired format for better decision making in less time. Pandas is a powerful Python library that provides high-performance, easy-to-use data structures and data analysis tools for handling structured data.
 
+## Data Cleaning with Python and SQL
+
+Data Quality Assessment Using Python and SQL
+
+Data quality assessment is a crucial first step in any data cleaning pipeline. By connecting Python to SQL databases, we can efficiently analyze data distributions, identify missing values, and detect anomalies across large datasets systematically.
+
 ## Optimizing Algorithms with Memoization
 
 Understanding Memoization
@@ -8626,6 +8698,12 @@ Quantization is a technique that reduces the precision of model weights and acti
 ## Introduction to Flask-SQLAlchemy
 
 Introduction to Flask-SQLAlchemy Flask-SQLAlchemy is an extension for Flask that adds support for SQLAlchemy, a Python SQL toolkit and Object-Relational Mapper (ORM). It simplifies the process of working with databases in Flask applications.
+
+## Dynamic Code Flexibility with importlib and getattr
+
+Dynamic Module Loading Fundamentals
+
+Dynamic module loading in Python enables runtime flexibility by allowing modules to be imported based on runtime conditions rather than static imports. This fundamental concept leverages importlib.import\_module to load modules programmatically and getattr to access their attributes.
 
 ## Principal Geodesic Analysis with Python
 
@@ -9716,6 +9794,12 @@ A simple regression model is a statistical method used to analyze the relationsh
 Introduction to Statistical Methods in Machine Learning
 
 Statistical methods form the backbone of many machine learning algorithms. They provide the mathematical foundation for understanding data patterns, making predictions, and drawing insights. In this presentation, we'll explore key statistical concepts and their application in machine learning using Python.
+
+## Overcoming K-Means Limitations with DBSCAN Clustering
+
+Understanding DBSCAN Core Concepts
+
+DBSCAN (Density-Based Spatial Clustering of Applications with Noise) revolutionizes clustering by identifying arbitrary-shaped clusters through density-connected points. Unlike k-means, it requires no predefined cluster count and naturally handles noise points through density-based connectivity analysis.
 
 ## Explaining P-Value in Data Science with Python
 
