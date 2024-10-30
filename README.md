@@ -648,6 +648,12 @@ Opening a File
 
 Python's file handling capabilities allow you to interact with files on your system. To begin working with a file, you need to open it using the `open()` function. This function takes two main arguments: the file name and the mode in which you want to open the file. The mode determines whether you can read from or write to the file.
 
+## Introduction to Neural Networks and Deep Learning
+
+Neural Network Fundamentals
+
+A neural network is a computational model inspired by biological neurons. The fundamental building block is the perceptron, which takes multiple inputs, applies weights, adds a bias, and produces an output through an activation function. This implementation demonstrates a basic perceptron class.
+
 ## Harnessing K-means Clustering for Advanced Data Analysis in Python
 
 Introduction to K-means Clustering
@@ -742,6 +748,12 @@ Introduction to Gradients
 
 Gradients are fundamental to deep learning, representing the direction of steepest increase in a function. They are crucial for optimizing neural networks through backpropagation.
 
+## Resetting DataFrame Index in Python
+
+Basic DataFrame Index Reset
+
+The reset\_index() method in pandas allows you to reset the index of a DataFrame back to a default integer index, starting from 0. This is particularly useful when you've filtered, sorted, or manipulated your data and want to restore sequential numbering.
+
 ## Python Raw Strings and Recursion
 
 Introduction to Raw Strings 
@@ -794,6 +806,12 @@ Ensemble methods combine multiple models to create a more robust and accurate pr
 Introduction to Python Generators and Iterators
 
 Generators and iterators are powerful features in Python that allow for efficient handling of large datasets and creation of custom sequences. They provide a way to generate values on-the-fly, saving memory and improving performance. This presentation will explore these concepts, their implementation, and practical applications.
+
+## Enhancing Regression Models with Quantile Analysis
+
+Understanding Quantile Regression Fundamentals
+
+Quantile regression extends beyond traditional mean-based regression by modeling the relationship between predictors and different quantiles of the response variable. This enables capturing the full conditional distribution rather than just the central tendency, providing richer insights into variable relationships.
 
 ## Spatial-Temporal Normality Learning for Time Series Anomaly Detection
 
@@ -1445,6 +1463,12 @@ Understanding Multicollinearity in Regression
 
 Multicollinearity occurs when independent variables in a regression model are highly correlated with each other. This can lead to unstable and unreliable coefficient estimates, making it difficult to interpret the impact of individual predictors on the dependent variable.
 
+## 17 Python Interview Questions for Data Science
+
+Python Dictionary Deep Dive
+
+A dictionary is a mutable, unordered collection of key-value pairs in Python. It provides constant-time complexity for basic operations and serves as the foundation for many data structures. Dictionaries are hash tables under the hood, enabling efficient data retrieval and modification.
+
 ## Gated Recurrent Units (GRUs) in Deep Learning with Python
 
 Introduction to Gated Recurrent Units (GRUs)
@@ -1492,6 +1516,12 @@ Neural networks and decision trees are both powerful machine learning algorithms
 Feature Selection Using Information Gain/Mutual Information
 
 Feature selection is a crucial step in machine learning that helps identify the most relevant features for a given task. Information Gain and Mutual Information are powerful techniques used to measure the importance of features. This presentation will explore these concepts and their implementation in Python.
+
+## Leveraging Python Descriptors for Robust Attribute Management
+
+Understanding Python Descriptors
+
+Descriptors are a powerful feature in Python that provide a way to customize attribute access in classes. They enable fine-grained control over how attributes are accessed, modified, and managed through special methods, reducing code redundancy and improving maintainability.
 
 ## Dependency Inversion Principle in Python
 
@@ -1636,6 +1666,12 @@ Cross-validation is a powerful technique used to assess how well a machine learn
 Introduction to Pearson Correlation
 
 Pearson correlation, also known as Pearson's r, is a statistical measure that quantifies the strength and direction of the linear relationship between two continuous variables. It ranges from -1 to +1, where -1 indicates a perfect negative correlation, +1 indicates a perfect positive correlation, and 0 indicates no linear correlation.
+
+## Knowledge Graph Enhanced Language Agents for Relevant Recommendations
+
+Knowledge Graph Foundations
+
+Knowledge graphs serve as the backbone of KGLA systems, representing entities and relationships in a structured format. We'll implement a basic knowledge graph structure using Python dictionaries and custom classes to model nodes and edges.
 
 ## BOND Aligning LLMs with Best-of-N Distillation
 
@@ -1805,6 +1841,12 @@ Decision Trees vs. Random Forests: What's Best for You?
 
 Decision trees and random forests are both powerful machine learning algorithms used for classification and regression tasks. While they share some similarities, they have distinct characteristics that make them suitable for different scenarios. This presentation will explore the key differences between these algorithms, their strengths and weaknesses, and help you decide which one is best for your specific use case.
 
+## Resolving Contractions in Python Text Processing
+
+Understanding Contractions in Text Processing
+
+Natural language processing often requires handling contractions effectively. Contractions can introduce ambiguity and complexity when tokenizing or analyzing text. The contractions library provides a robust solution for expanding contracted forms into their full word representations.
+
 ## Batch Normalizations Impact on Learning Rate
 
 Introduction to Batch Normalization
@@ -1828,6 +1870,12 @@ The field of Artificial Intelligence (AI) has been revolutionized by Python libr
 Random Forest Foundation
 
 Random Forest operates on the principle of ensemble learning by constructing multiple decision trees during training. Each tree is built using a bootstrap sample of the training data, introducing randomness through bagging (Bootstrap Aggregating) to create diverse trees.
+
+## Implementing Stacks in Python
+
+Stack Implementation Fundamentals
+
+A stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle, where elements are added and removed from the same end. This implementation demonstrates the core operations push, pop, and peek using Python's built-in list as the underlying container.
 
 ## Reinforcement Learning and Q-Learning Mathematical Foundations and Python Implementation
 
@@ -2197,6 +2245,12 @@ PyGWalker is a powerful Python library that brings a Tableau-style interface to 
 Understanding Regression and Outliers
 
 Regression models are powerful tools for predicting numerical values, but they often struggle with outliers. Outliers are data points that significantly differ from other observations, potentially skewing the model's performance. Let's explore this concept with a simple linear regression example.
+
+## Building a LangGraph Agent with Graph Memory
+
+LangGraph Agent Architecture Overview
+
+A LangGraph Agent combines natural language processing with graph neural networks to create an intelligent system capable of maintaining contextual memory through graph structures. The core architecture consists of an encoder, graph memory module, and decoder working in concert.
 
 ## Importance of Testing in Software Development
 
@@ -3611,6 +3665,12 @@ Types of Hypotheses
 
 Hypotheses are fundamental to scientific inquiry and statistical analysis. They serve as testable predictions about the relationships between variables. Let's explore the two main types of hypotheses used in statistical testing.
 
+## Unlocking AI-Driven Insights with Table Augmented Generation
+
+Understanding Table Augmented Generation (TAG) Architecture
+
+Table Augmented Generation combines neural networks with structured data processing to enhance query understanding and response generation. The architecture integrates embedding layers, attention mechanisms, and SQL query generation components to create a robust system for data analysis.
+
 ## Enhancing LLMs with Graph Reasoning
 
 Introduction to Graph Reasoning with LLMs (GReaL)
@@ -4745,6 +4805,12 @@ In Python, ing objects can be more complex than it seems. This presentation will
 Introduction to Differential Analysis on Complex Manifolds
 
 Differential analysis on complex manifolds is a branch of mathematics that combines complex analysis, differential geometry, and topology. It studies the properties of complex-valued functions on complex manifolds, which are spaces that locally resemble complex Euclidean space. This field has applications in theoretical physics, particularly in string theory and quantum field theory.
+
+## Bayesian Optimization for ML Hyperparameter Tuning
+
+Bayesian Optimization Fundamentals
+
+Bayesian optimization provides a sophisticated approach to hyperparameter tuning by modeling the objective function probabilistically. It constructs a surrogate model using Gaussian Processes to approximate the relationship between hyperparameters and model performance.
 
 ## Comprehensive Python Data Visualization Slideshow
 
@@ -6697,6 +6763,12 @@ Introduction to Iteration of Rational Functions
 
 Iteration of rational functions is a powerful technique in mathematics with applications in various fields, including dynamical systems and computational methods. A rational function is a function of the form f(x) = P(x) / Q(x), where P and Q are polynomials.
 
+## Vertical DataFrame Concatenation with pd.concat()
+
+Understanding DataFrame Concatenation with pd.concat()
+
+The pandas concat() function is the primary tool for vertically combining DataFrames, allowing row-wise concatenation using axis=0. This operation is essential for merging multiple datasets while preserving column structure and maintaining data integrity.
+
 ## Improving Unsatisfactory Model Performance with Python
 
 Model Performance Evaluation
@@ -6970,11 +7042,23 @@ Introduction to Geometric Measure Theory
 
 Geometric Measure Theory (GMT) is a field of mathematics that extends classical measure theory to geometric settings. It provides tools for analyzing complex geometric structures and their properties. This slide introduces the concept and its significance in various mathematical and practical applications.
 
+## Hypothesis Testing with Python Fundamentals and Concepts
+
+Hypothesis Testing Fundamentals
+
+Statistical hypothesis testing provides a framework for making decisions about populations based on sample data. It involves formulating null and alternative hypotheses, choosing a significance level, calculating test statistics, and making conclusions based on probability values.
+
 ## Advanced Clustering Techniques in Machine Learning in Python
 
 Introduction to Advanced Clustering Techniques
 
 Clustering is an unsupervised machine learning technique that groups similar data points together. Advanced clustering techniques go beyond the traditional methods like K-Means and provide more robust and flexible solutions for complex data structures. In this presentation, we will explore various advanced clustering techniques, including Hierarchical Clustering, Density-Based Clustering, Grid-Based Clustering, Model-Based Clustering, Spectral Clustering, Fuzzy Clustering, and Ensemble Clustering, with Python implementations.
+
+## Exploring Python's Static Typing Features
+
+Type Hints Basics in Python
+
+Python's type hinting system, introduced in Python 3.5 with PEP 484, provides a way to explicitly specify the expected types of function parameters, return values, and variables. This foundation enables better code documentation and allows static type checkers to catch potential errors before runtime.
 
 ## Stokes Theorem for Unlocking Complex Data Patterns in ML and AI Using Python
 
@@ -7735,6 +7819,12 @@ Unlocking Efficiency with Asynchronous Programming in Python
 
 Asynchronous programming in Python allows developers to write concurrent code that can handle multiple tasks efficiently. This paradigm is particularly useful for I/O-bound operations, where the program spends significant time waiting for external resources. By utilizing async/await patterns, we can create responsive applications that perform multiple operations simultaneously without blocking the main execution thread.
 
+## Simple Monte Carlo Integration and Importance Sampling In Bayesian inference
+
+Understanding Monte Carlo Integration Basics
+
+Monte Carlo integration approximates definite integrals using random sampling, particularly useful for high-dimensional problems in Bayesian inference. The method leverages the law of large numbers to estimate integrals by averaging random samples from a probability distribution.
+
 ## Lipschitz Constant in Neural Networks
 
 Introduction to Lipschitz Constant
@@ -8332,6 +8422,12 @@ Introduction to Random Forest and XGBoost
 
 Random Forest and XGBoost are powerful ensemble learning algorithms used in machine learning. Both methods combine multiple decision trees to create robust predictive models. This presentation will explore their similarities, differences, and implementation in Python.
 
+## Hopfield Network for Handwritten Digit Reconstruction
+
+Hopfield Network Fundamentals
+
+A Hopfield Network is a recurrent artificial neural network with binary threshold nodes and symmetric weights between nodes. It functions as a content-addressable memory system capable of converging to stored patterns when presented with noisy or incomplete versions of those patterns.
+
 ## Generating Structured Outputs with Language Models Using Python
 
 Introduction to Structured LLM Outputs
@@ -8783,6 +8879,12 @@ Building Flexible Software
 
 Flexible software is crucial in today's dynamic environments. It adapts to changing requirements and user needs, ensuring longevity and relevance. This presentation explores various techniques and principles for creating flexible software using Python.
 
+## Iterating with Python's Range Function
+
+Basic Range Function Implementation
+
+The range() function is fundamental to Python iteration, enabling precise control over loop sequences. It generates an immutable sequence of numbers based on specified parameters, making it essential for controlled iterations in algorithms and data processing tasks.
+
 ## Automated Financial Data Analysis Workflow
 
 Introduction to Automated Account Analysis This presentation outlines a comprehensive workflow for analyzing financial accounts using artificial intelligence and Python. We'll start with uploading a balance sheet to an AI chatbot, then move through data extraction, formatting, and finally to in-depth analysis using custom Python code.
@@ -8928,6 +9030,12 @@ Machine Learning (ML) and Neural Networks (NN) are both subfields of Artificial 
 Dimension Reduction: Beyond PCA
 
 Dimension reduction is a crucial technique in data science and machine learning, especially when dealing with high-dimensional datasets. While Principal Component Analysis (PCA) is a popular method, it has limitations when working with extremely high-dimensional data. This presentation explores an alternative approach: Sparse Random Projection, which can reduce dimensions more efficiently than PCA without compromising accuracy.
+
+## Mastering Software Development Methodologies
+
+Test-Driven Development in Python
+
+Test-Driven Development emphasizes writing tests before implementation, following the red-green-refactor cycle. This methodology ensures code reliability and maintainability by defining expected behavior upfront through test cases, particularly crucial in complex systems.
 
 ## Gradient Descent for Neural Networks in Python
 
@@ -10307,6 +10415,12 @@ Introduction to Physics with Python "Exploring Physics with Python" This slide d
 Introduction to Small Datasets
 
 Small datasets are a common challenge in machine learning. Despite their limitations, there are various strategies to effectively work with them. This presentation will explore these solutions, addressing misconceptions and providing practical approaches to overcome the challenges posed by limited data.
+
+## Streamlining Conditions with all() and any()
+
+Understanding all() Function Basics
+
+The all() function in Python evaluates whether every element in an iterable is True, returning a single boolean value. This powerful built-in function eliminates the need for explicit loops when checking conditions across sequences, making code more concise and maintainable.
 
 ## Improving Model Accuracy Through Feature Selection
 
