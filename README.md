@@ -648,6 +648,12 @@ Opening a File
 
 Python's file handling capabilities allow you to interact with files on your system. To begin working with a file, you need to open it using the `open()` function. This function takes two main arguments: the file name and the mode in which you want to open the file. The mode determines whether you can read from or write to the file.
 
+## Retrieval Augmented Generation (RAG) in Large Language Models
+
+RAG Components Implementation
+
+A comprehensive implementation of core RAG system components including document loading, text chunking, and embedding generation using modern Python libraries. This foundation demonstrates the essential building blocks for creating a retrieval-augmented generation system.
+
 ## Introduction to Neural Networks and Deep Learning
 
 Neural Network Fundamentals
@@ -1036,6 +1042,12 @@ Python's memory management is a crucial aspect of the language that often goes u
 The Disappearing Act
 
 Reproducibility Problem Keep a log of actions when the bug appears to recreate conditions
+
+## Linear Regression Implementation from Scratch
+
+Linear Regression Implementation from Scratch
+
+Linear regression forms the foundation of predictive modeling by establishing relationships between variables through a linear equation. This implementation demonstrates how to create a basic linear regression model using only NumPy, emphasizing the underlying mathematical concepts.
 
 ## Evaluating Multi-Class Classification Models in Python
 
@@ -6245,6 +6257,12 @@ What is Learning Rate?
 
 Learning rate is a crucial hyperparameter in deep learning that determines the step size at each iteration while moving toward a minimum of the loss function. It controls how quickly or slowly a neural network model learns from the data.
 
+## Exploratory Data Analysis (EDA) Cheat Sheet
+
+Data Loading and Initial Inspection
+
+Understanding your dataset begins with proper loading and initial inspection. This involves reading data from various formats, checking basic properties like shape, data types, and missing values. Pandas provides comprehensive tools for these fundamental EDA tasks.
+
 ## Converting Podcasts to Searchable Chat with Groq, Whisper, and PineCone
 
 Introduction to Podcast-to-Chat Conversion
@@ -6382,6 +6400,12 @@ Linear Discriminant Analysis (LDA) is a dimensionality reduction and classificat
 KMeans Clustering Optimization
 
 KMeans clustering is a popular unsupervised learning algorithm used for partitioning data into K clusters. While effective, it can be computationally expensive for large datasets. This presentation explores an optimization technique using approximate nearest neighbors to significantly speed up the KMeans algorithm.
+
+## Cross-Validation Techniques for Reliable Model Prediction
+
+Cross-Validation Fundamentals
+
+Cross-validation is a statistical method for assessing model performance and generalization ability by partitioning data into training and testing sets. This implementation demonstrates the basic framework for performing cross-validation using scikit-learn compatible estimators.
 
 ## Stacking Ensemble Learning with Python
 
@@ -6919,6 +6943,12 @@ Introduction to Precision-Recall Curve
 The Precision-Recall Curve is a powerful evaluation metric used in machine learning, particularly in classification tasks. It provides a way to assess the performance of a binary classifier by visualizing the trade-off between precision and recall at different classification thresholds.
 
 Code:
+
+## Enhancing Function Flexibility with kwargs
+
+Understanding \*\*kwargs Basics
+
+The \*\*kwargs syntax allows functions to accept arbitrary keyword arguments as a dictionary, providing flexibility in handling varying numbers of parameters. This pattern enables dynamic parameter passing without modifying the function signature, making code more maintainable and adaptable.
 
 ## The Math Behind Neural Network Learning Backpropagation
 
@@ -10429,6 +10459,12 @@ Python's import system is a powerful mechanism that allows you to organize and r
 Introduction to Univariate Analysis of Continuous Variables
 
 Univariate analysis is a fundamental statistical method that focuses on examining and describing a single variable at a time. For continuous variables, this analysis involves understanding the distribution, central tendency, and spread of the data. Python, with its rich ecosystem of libraries, provides powerful tools for conducting univariate analysis efficiently.
+
+## A Guide to Caching Strategies
+
+Cache Through Implementation - Read Pattern
+
+A cache-through read pattern ensures data consistency by first checking the cache for requested data. If not found, it retrieves from the database and updates the cache atomically, providing subsequent reads with cached data while maintaining synchronization between storage layers.
 
 ## Optimizing Transformer Models with KV Cache and Advanced Techniques
 
