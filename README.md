@@ -372,6 +372,12 @@ Understanding Outliers in Python
 
 Outliers are data points that significantly differ from other observations in a dataset. They can greatly impact statistical analyses and machine learning models. In this presentation, we'll explore how to identify, visualize, and handle outliers using Python.
 
+## Regression Analysis Fundamentals and Application
+
+Understanding Linear Regression Fundamentals
+
+Linear regression serves as a foundational statistical method for modeling relationships between variables. It establishes a linear relationship between dependent and independent variables by finding the best-fitting line through data points, minimizing the sum of squared residuals.
+
 ## Weights and Biases in Neural Networks in Python
 
 Introduction to Weights and Biases in Neural Networks
@@ -1811,6 +1817,12 @@ Format Restrictions in LLMs
 
 Format restrictions in Large Language Models (LLMs) refer to constraints placed on the input or output of these models. These constraints can significantly impact the performance and capabilities of LLMs.
 
+## Data Mesh vs. Data Fabric Comparing Modern Data Architectures
+
+Understanding Data Mesh Architecture
+
+Data Mesh represents a paradigm shift in data architecture, emphasizing domain-driven ownership and data as a product. This implementation demonstrates how to create a basic domain-driven data pipeline using Python's dataclasses for domain modeling and type safety.
+
 ## Understanding ROC Curve AUC
 
 Understanding ROC AUC
@@ -2495,6 +2507,12 @@ Time series forecasting is a crucial technique in data science, used to predict 
 Z-Test for Proportions in Statistics
 
 The Z-test for proportions is a statistical method used to compare observed proportions to expected proportions or to compare two proportions from different populations. This test is particularly useful when dealing with large sample sizes and binary outcomes. Throughout this presentation, we'll explore the concept, its applications, and how to implement it using Python.
+
+## Escape Sequences in Python Practical Code Examples
+
+Introduction to Escape Sequences
+
+Escape sequences in Python are special character combinations beginning with a backslash that represent unique characters or actions within strings. They enable programmers to include characters that would otherwise be difficult or impossible to represent directly in code.
 
 ## Understanding Outliers in Machine Learning with Python
 
@@ -5690,6 +5708,12 @@ Introduction to LangChain
 
 LangChain is a framework for building applications with large language models (LLMs). It provides abstractions for working with LLMs, data retrieval, and combining various components for advanced use cases.
 
+## Leveraging Learning Curves in Machine Learning
+
+Understanding Learning Curves
+
+Learning curves are essential diagnostic tools in machine learning that plot model performance against training dataset size. They help identify underfitting, overfitting, and determine if additional training data would benefit model performance by showing the relationship between training and validation metrics.
+
 ## Applications of LLM-Based Agents in Business
 
 Introduction to LLM-Based Agents
@@ -7676,6 +7700,12 @@ Introduction to Tropical Algebra
 
 Tropical algebra is a branch of mathematics that operates on the max-plus semiring. It has applications in various fields, including optimization, graph theory, and dynamic systems. Let's explore the basics of tropical algebra using Python.
 
+## Understanding Skewness in Data Visualization
+
+Understanding Skewness in Data Analysis
+
+Skewness measures the asymmetry of a probability distribution, indicating whether data leans left or right. In statistical analysis, understanding skewness helps identify outliers, assess data normality, and make informed decisions about data transformations and modeling approaches.
+
 ## Avoiding Pitfalls of Random Splitting in Machine Learning
 
 Random Splitting in Machine Learning: A Cautionary Tale
@@ -8150,6 +8180,12 @@ Back propagation is a fundamental algorithm in training neural networks. It's th
 Gradient Descent
 
 Gradient Descent is an optimization algorithm used to minimize a function by iteratively moving in the direction of steepest descent. In data science, it's commonly used to train machine learning models by updating parameters to minimize the cost function.
+
+## Handling Outliers in Data From Z-Scores to Visualization
+
+Understanding Z-Scores for Outlier Detection
+
+Z-scores represent the number of standard deviations a data point lies from the mean. This statistical measure helps identify potential outliers by quantifying how extreme each value is relative to the overall distribution, with values beyond ±3 typically considered outliers.
 
 ## Context-Independent Word Embeddings in Python
 
@@ -8673,6 +8709,12 @@ The AI Pyramid represents the layers of technologies and concepts that make Arti
 Deep Learning Titans: TensorFlow vs. PyTorch
 
 TensorFlow and PyTorch are two of the most popular deep learning frameworks in the world of artificial intelligence and machine learning. Both offer powerful tools for building and training neural networks, but they have different philosophies and strengths. In this presentation, we'll explore the key features, similarities, and differences between these two titans of deep learning.
+
+## Visual Encoding Fundamentals for Data Visualization
+
+Visual Encoding Foundations in Python
+
+Data visualization requires systematic mapping between data attributes and visual properties. Understanding how to programmatically implement these mappings forms the foundation for creating effective visualizations that leverage human perceptual capabilities.
 
 ## Automated Design of Intelligent Agents with Python
 
@@ -10511,6 +10553,12 @@ When comparing strings in Python, it's crucial to understand the difference betw
 Introduction to Optimizers in Deep Learning
 
 Optimizers are algorithms used to adjust the parameters of neural networks during training. They aim to minimize the loss function and improve the model's performance. Let's start with a simple example of how an optimizer works:
+
+## Sorted() vs list.sort() in Python
+
+Basic Differences Between sorted() and list.sort()
+
+The sorted() function and list.sort() method represent two distinct approaches to sorting in Python. While both utilize TimSort algorithm internally, they differ fundamentally in how they handle the original data structure and return values, impacting memory usage and code design.
 
 ## Mini-Batching with In-Memory Datasets in Python
 
