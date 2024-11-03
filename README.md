@@ -586,6 +586,12 @@ APIs are indeed the backbone of modern systems, enabling seamless interaction be
 
 Would you like me to explain or break down this code?
 
+## Navigating Local Minima and Saddle Points in Deep Learning
+
+Understanding Local Minima and Saddle Points
+
+Neural networks' loss landscapes are highly complex multidimensional surfaces. Understanding the topology of these surfaces helps grasp optimization challenges. Let's visualize a simple 2D case to demonstrate local minima versus saddle points.
+
 ## K-Means Clustering Algorithm Explained
 
 K-Means Implementation from Scratch
@@ -1631,6 +1637,12 @@ Introduction to Surreal Numbers and Cohomology Theory in Machine Learning
 
 Surreal numbers and cohomology theory are advanced mathematical concepts that have found applications in machine learning. This presentation explores their fundamental principles and demonstrates how they can be utilized in Python to enhance machine learning algorithms and data analysis techniques.
 
+## Merging Dictionaries in Python
+
+Merging Dictionaries with dict.update()
+
+The update() method is the traditional way to merge dictionaries in Python, but it modifies the original dictionary. This approach demonstrates why we need alternative methods for non-destructive dictionary merging, as it alters the first dictionary by adding or updating its key-value pairs.
+
 ## Explaining Self-Attention in Transformers
 
 Self-Attention in Transformers
@@ -2363,6 +2375,12 @@ Kolmogorov-Arnold Networks (KANs) are a class of neural networks inspired by the
 Understanding Non-Normality Tests
 
 Non-normality tests are statistical tools used to assess whether a given dataset deviates from a normal distribution. It's crucial to understand that these tests cannot prove normality; they can only indicate whether the data is compatible enough with a normal distribution or deviates significantly from it. This distinction is important because normality is a theoretical pattern, and failing to reject the null hypothesis is always a Type II error.
+
+## Pandas Powerful Python Data Wrangling
+
+DataFrame Creation and Basic Operations
+
+Pandas provides powerful DataFrame structures for handling tabular data efficiently. DataFrames can be created from various data sources including dictionaries, lists, and external files, offering a flexible foundation for data manipulation and analysis.
 
 ## Vanishing and Exploding Gradient Problems in Python
 
@@ -4064,6 +4082,12 @@ Introduction to Analytics Frameworks
 
 Analytics frameworks provide a structured approach to data analysis, enabling data scientists to extract meaningful insights from complex datasets. These frameworks encompass various methodologies, tools, and best practices that guide the entire analytics process, from data collection to interpretation and decision-making.
 
+## 10 Powerful Python One-Liners for Data Science
+
+Efficient Missing Data Handling
+
+Data scientists frequently encounter missing values in datasets. This one-liner leverages pandas' powerful methods to identify, visualize and handle null values efficiently across multiple columns while maintaining data integrity through intelligent imputation strategies.
+
 ## Mastering AI with Fine-Tuning Large Language Models
 
 Understanding Fine-Tuning Large Language Models
@@ -5054,6 +5078,12 @@ Balancing Accuracy and Interpretability in Machine Learning
 
 In machine learning, achieving high accuracy is often the primary goal. However, interpretability is equally important, especially in critical domains like healthcare and finance. This presentation explores the trade-offs between accuracy and interpretability, and demonstrates techniques to balance both using Python.
 
+## Comparing TensorFlow and PyTorch for AI Engineering
+
+Understanding TensorFlow Core Components
+
+TensorFlow's core components form the foundation of deep learning operations, focusing on tensor manipulations, automatic differentiation, and computational graph construction. The framework enables efficient mathematical operations through its eager execution mode while maintaining compatibility with graph mode for production deployment.
+
 ## Fundamentals of Data Analysis with Python
 
 Data Loading and Initial Exploration
@@ -5259,6 +5289,12 @@ Weakly differentiable functions are a generalization of differentiable functions
 Introduction to Statistics in Data Science
 
 Statistics forms the foundation of data science and machine learning. It provides the tools to analyze, interpret, and draw meaningful insights from data. This book aims to introduce key statistical concepts essential for aspiring data scientists and machine learning practitioners.
+
+## Attention Mechanism in Transformer Models
+
+Attention Mechanism Fundamentals
+
+The attention mechanism forms the core of transformer architectures by computing relevance scores between input elements. It enables models to dynamically focus on different parts of the input sequence by learning weights that represent the importance of relationships between tokens.
 
 ## Exploring Correlations in Machine Learning Using Python
 
@@ -5995,6 +6031,12 @@ Git Essentials Introduction
 
 Git is a distributed version control system that helps developers manage and track changes in their codebase. It allows for efficient collaboration, branching, and merging of code. This slideshow will cover essential Git commands and concepts, with practical Python examples to illustrate their usage.
 
+## Shared vs Independent Lists in Python
+
+Understanding List References in Python
+
+List references in Python represent a fundamental concept where multiple variable names can point to the same underlying list object in memory, following Python's object-oriented nature where variables act as references rather than independent containers.
+
 ## Sigmoid Activation Function in Python
 
 Introduction to Sigmoid Activation Function
@@ -6654,6 +6696,12 @@ Principal Component Analysis (PCA) and Kernel PCA are dimensionality reduction t
 Introduction to Commutative Banach Algebras
 
 Commutative Banach algebras are fundamental structures in functional analysis, combining algebraic and topological properties. They are Banach spaces equipped with a commutative multiplication operation that is compatible with the norm. Let's explore this concept with a simple Python example:
+
+## Interpreting Machine Learning Models with Partial Dependence Plots
+
+Understanding Partial Dependence Plots
+
+Partial Dependence Plots (PDP) visualize the marginal effect of a feature on model predictions while accounting for the average effect of other features. This statistical technique helps interpret complex machine learning models by showing how predictions change when varying one or two features while keeping others constant.
 
 ## CatBoost for Wind Power Generation Prediction
 
@@ -8698,6 +8746,12 @@ Introduction to Long Short-Term Memory (LSTM)
 
 Long Short-Term Memory (LSTM) is a type of recurrent neural network architecture designed to address the vanishing gradient problem in traditional RNNs. LSTMs are particularly effective for time series analysis and prediction due to their ability to capture long-term dependencies in sequential data.
 
+## Mastering Decision Trees with ID3 and Scikit-Learn
+
+Understanding Decision Trees and ID3 Algorithm
+
+Decision trees are hierarchical structures that make decisions through sequential splits based on features. The ID3 algorithm builds trees by selecting the best feature at each node using information gain, maximizing the purity of resulting subsets through entropy calculations.
+
 ## The AI Pyramid Layers of Fascinating AI Technologies
 
 What Makes AI So Interesting?
@@ -9440,6 +9494,12 @@ Regression analysis is a powerful statistical method used to model relationships
 Data Collection in Machine Learning
 
 The foundation of any machine learning project begins with gathering relevant data. High-quality data collection is crucial for model performance. Data can be structured (tables, spreadsheets) or unstructured (images, text, audio). The collection process should focus on obtaining diverse, representative samples that capture the full spectrum of scenarios the model will encounter.
+
+## Rigorous Unit Testing for LLM Outputs with DeepEval
+
+Introduction to DeepEval Framework
+
+DeepEval is a Python framework designed specifically for rigorous testing of Large Language Model outputs. It extends traditional unit testing paradigms to handle the unique challenges of evaluating LLM responses, including semantic similarity, factual accuracy, and consistency checks.
 
 ## Structured Output in LLM Applications
 
