@@ -2101,6 +2101,12 @@ Introduction to Object Counting in Videos
 
 Object counting in videos is a crucial task in computer vision that involves automatically identifying and quantifying specific objects or entities within video sequences. This process has numerous applications, from traffic monitoring to wildlife population studies. In this presentation, we'll explore how to implement object counting using machine learning techniques in Python.
 
+## Differences in Standard Deviation Calculations Pandas vs NumPy
+
+Understanding Standard Deviation Differences
+
+Statistical computations in Python can yield different results depending on the library used. The key distinction between NumPy and Pandas lies in their default behavior regarding degrees of freedom (ddof) parameter when calculating standard deviation.
+
 ## Principal Component Analysis (PCA) in Python
 
 Introduction to Principal Component Analysis (PCA)
@@ -2299,6 +2305,12 @@ A LangGraph Agent combines natural language processing with graph neural network
 Why Programmers Should Write Tests
 
 Writing tests is a crucial practice in software development. It helps catch bugs early, ensures code quality, and provides confidence during refactoring. Tests serve as living documentation and aid in faster debugging. Let's explore these benefits in detail with practical examples.
+
+## Hyperparameter Tuning Techniques in Python
+
+Grid Search Cross-Validation
+
+Grid search systematically works through multiple combinations of parameter tunes, cross validates each combination and then provides the best one. It's an exhaustive searching through a manually specified subset of the hyperparameter space of a learning algorithm.
 
 ## Machine Learning Lifecycle with Python
 
@@ -3325,6 +3337,18 @@ Introduction to N-point Crossover
 
 N-point crossover is a genetic algorithm technique used to create new offspring by combining genetic information from two parents. It involves selecting N points along the chromosome and alternating segments between the parents to create new combinations.
 
+## Simplifying Complex Data with Principal Component Analysis
+
+Understanding PCA Mathematics
+
+Principal Component Analysis relies on fundamental linear algebra concepts to transform data. The core mathematical foundation involves computing the covariance matrix, eigenvalues, and eigenvectors to identify directions of maximum variance in the dataset.
+
+## Basics of LangChain's LangGraph
+
+Introduction to LangGraph Core Components
+
+LangGraph serves as an extension of LangChain, enabling the creation of multi-agent systems through graph-based workflows. It provides a structured approach to designing complex agent interactions using nodes and edges, where each node represents a distinct processing state and edges define valid state transitions.
+
 ## Neural Networks for Solving Differential Equations in Python
 
 Introduction to Neural Networks for Solving Differential Equations
@@ -4333,6 +4357,12 @@ Clustering is a fundamental technique in unsupervised machine learning that grou
 Introduction to MLflow and LLMs
 
 MLflow is an open-source platform designed to manage the entire machine learning lifecycle, from experimentation to deployment. Large Language Models (LLMs) are advanced AI models capable of understanding and generating human-like text. This presentation explores how to leverage MLflow to streamline the development and deployment of LLMs using Python, enhancing efficiency in machine learning workflows.
+
+## Accelerate Pandas with Parallel Processing
+
+Introduction to Pandas Parallelization
+
+Parallel processing in Pandas leverages multiple CPU cores to significantly accelerate data operations. The pandarallel library seamlessly integrates with existing Pandas code, allowing for easy parallelization of apply, map, and other operations without complex multiprocessing implementation.
 
 ## Bounded Analytic Functions in Python
 
@@ -7289,6 +7319,12 @@ Retrieval-Augmented Generation (RAG) is a powerful approach in AI that combines 
 Django Authentication System Overview
 
 Django's authentication system is a robust framework that handles user accounts, groups, permissions, and cookie-based user sessions. It seamlessly integrates with Django's built-in views and forms, providing a secure foundation for user management in web applications.
+
+## Modeling Decision-Making with Linear Ballistic Accumulator
+
+Linear Ballistic Accumulator Fundamentals
+
+The Linear Ballistic Accumulator (LBA) represents a mathematical framework for modeling decision-making processes where evidence accumulates linearly and independently for multiple response options. Each accumulator races towards a decision boundary without within-trial noise.
 
 ## Effective Python Presentation with Explanatory Code
 
@@ -10508,6 +10544,12 @@ Compressing Mixture of Experts Models
 
 Mixture of Experts (MoE) models have gained popularity in natural language processing due to their ability to handle complex tasks efficiently. However, these models often require significant computational resources. This presentation explores techniques for compressing MoE models using Python, focusing on practical implementations and real-world applications.
 
+## Gradient Descent Fundamentals in Python
+
+Understanding Loss Functions in Gradient Descent
+
+The Mean Squared Error (MSE) loss function measures the average squared difference between predicted and actual values. For linear regression, it quantifies how far our predictions deviate from ground truth, providing a differentiable metric we can optimize.
+
 ## Common Machine Learning Techniques for Text Analysis in Python
 
 Text Analysis with Machine Learning in Python
@@ -10583,6 +10625,12 @@ Introduction to Physics with Python "Exploring Physics with Python" This slide d
 Introduction to Small Datasets
 
 Small datasets are a common challenge in machine learning. Despite their limitations, there are various strategies to effectively work with them. This presentation will explore these solutions, addressing misconceptions and providing practical approaches to overcome the challenges posed by limited data.
+
+## Efficient Categorical Feature Handling with CatBoost
+
+CatBoost Fundamentals
+
+CatBoost leverages ordered target statistics to handle categorical features efficiently while preventing target leakage. This implementation demonstrates the basic setup and training of a CatBoost model, showcasing its automatic categorical feature processing capabilities.
 
 ## Streamlining Conditions with all() and any()
 
