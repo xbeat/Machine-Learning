@@ -228,6 +228,12 @@ Introduction to Early Stopping in Machine Learning
 
 Early stopping is a regularization technique used in machine learning to prevent overfitting. It involves monitoring the model's performance on a validation set during training and stopping the process when the performance begins to degrade. This method helps to find the optimal point where the model generalizes well without overfitting to the training data.
 
+## Calculating Precision from Confusion Matrix in Machine Learning
+
+Confusion Matrix Fundamentals
+
+A confusion matrix serves as the foundation for calculating precision and other key performance metrics in binary classification. It represents a structured layout of true positives (TP), true negatives (TN), false positives (FP), and false negatives (FN) predictions made by a machine learning model.
+
 ## Calculating Raptor 2 Engines Needed to Alter Earth Rotation
 
 Earth's Rotation and SpaceX's Raptor 2 Engines
@@ -2173,6 +2179,12 @@ The Kernel Function Fundamentals
 
 The kernel function in Support Vector Machines enables the transformation of input data into a higher-dimensional feature space without explicitly computing the transformation, known as the "kernel trick". This allows SVMs to find nonlinear decision boundaries efficiently.
 
+## 4 Ways to Test ML Models in Production
+
+A/B Testing Implementation for ML Models
+
+A/B testing is a statistical methodology for comparing two ML models by randomly routing production traffic between them. This implementation demonstrates how to create a request router that distributes incoming requests between legacy and candidate models with configurable traffic allocation.
+
 ## Optimizing Neural Network Training with Learning Rate Control
 
 Learning Rate Control in Neural Networks
@@ -2366,6 +2378,12 @@ Introduction to Cayley-Hamilton Theorem
 
 The Cayley-Hamilton theorem is a fundamental result in linear algebra that relates a square matrix to its characteristic polynomial. In the context of neural networks, this theorem can be leveraged to optimize the training process and improve the network's performance.
 
+## Stochastic Gradient Descent Outperforms Batch Gradient Descent
+
+Introduction to Gradient Descent Optimization
+
+Gradient descent optimization serves as the backbone of machine learning model training, where the algorithm iteratively adjusts parameters to minimize the loss function. The mathematical foundation relies on computing partial derivatives to determine the steepest descent direction.
+
 ## Marketing Analytics Fundamentals with Python
 
 Introduction Marketing Analytics Fundamentals with Python Welcome to this TikTok series, where we'll explore the fundamentals of marketing analytics using the powerful Python programming language.
@@ -2405,6 +2423,12 @@ Gradient problems are fundamental challenges in training deep neural networks. T
 Multi-class Regression with Python
 
 Multi-class regression is an extension of binary classification where we predict one of several possible outcomes. Unlike classification, regression predicts continuous values. In multi-class regression, we predict multiple continuous target variables simultaneously. This technique is useful when dealing with complex problems that require predicting multiple related outputs.
+
+## Transformers Revolutionizing Natural Language Processing
+
+Input Embedding and Tokenization
+
+The first step in implementing a Transformer is converting text into numerical representations. We'll create a basic tokenizer and embedder that transforms input sequences into dense vectors while preserving positional information through sinusoidal encoding.
 
 ## NLP Models for Sentiment Analysis in Python
 
@@ -3761,6 +3785,12 @@ Introduction to Graph Reasoning with LLMs (GReaL)
 
 Graph Reasoning with LLMs (GReaL) is an innovative approach to enhance the capabilities of Large Language Models (LLMs) by leveraging graph structures. This method aims to address common challenges faced by LLMs, such as hallucinations and outdated information, by grounding their knowledge in structured graph data.
 
+## Exploring Loss Landscapes in Machine Learning
+
+Understanding Loss Landscapes
+
+The loss landscape represents the error surface over which optimization occurs during neural network training. It's a high-dimensional space where each dimension corresponds to a model parameter, making visualization and interpretation challenging for deep neural networks.
+
 ## Key Concepts of Database Sharding with Python
 
 Introduction to Database Sharding
@@ -3950,6 +3980,12 @@ Introduction to GPipe
 
 GPipe is a scalable pipeline parallelism library for training large deep neural networks. It enables efficient training of models that are too large to fit on a single accelerator by partitioning the model across multiple devices and leveraging pipeline parallelism.
 
+## Explaining Self-Attention and Masked Self-Attention in Transformers
+
+Understanding Self-Attention Mechanism
+
+Self-attention enables a model to weigh the importance of different words in a sequence by computing attention scores between all pairs of words. This fundamental mechanism allows the model to capture long-range dependencies and contextual relationships within the input sequence.
+
 ## Active Shape Model for Face Image Generation
 
 Introduction to Active Shape Models (ASM)
@@ -4045,6 +4081,12 @@ In machine learning, finding the right balance between model complexity and gene
 Introduction to Model Explainability
 
 Model explainability is crucial in machine learning, allowing us to understand and interpret the decisions made by complex models. This guide will explore various techniques and tools for explaining models using Python.
+
+## Transformers The Dominant AI Architecture for Sequential Tasks
+
+Understanding Recurrent Neural Networks (RNN)
+
+Recurrent Neural Networks represent a fundamental architecture in deep learning designed to process sequential data by maintaining an internal state (memory) that gets updated with each input in the sequence, making them particularly suitable for tasks like time series prediction and natural language processing.
 
 ## Convolutional Neural Networks and Kernels in Python
 
@@ -4657,6 +4699,12 @@ Deep Learning is a subset of Machine Learning that uses neural networks with mul
 Introduction to Ensemble Methods
 
 Ensemble methods in machine learning combine multiple models to improve predictive performance and robustness. Two popular ensemble techniques are Boosting and Bagging. Boosting focuses on iteratively improving weak models, while Bagging reduces variance by creating multiple models from random subsets of the data.
+
+## Choosing the Right Classification Metric
+
+Understanding G-Mean for Balanced Classification
+
+G-Mean (Geometric Mean) measures classification performance when both classes are equally important by calculating the geometric mean of class-wise accuracies. This metric excels at evaluating models on imbalanced datasets where traditional accuracy may be misleading.
 
 ## Harnessing Python and AI for Big Data Analytics
 
@@ -6034,6 +6082,12 @@ Introduction to General Topology
 
 General Topology is a branch of mathematics that deals with the study of spaces and their properties. In Python, we can represent topological spaces using sets and functions.
 
+## Time Series Analysis for Better Decisions
+
+Time Series Fundamentals in Python
+
+Time series analysis begins with understanding the basic components of temporal data structures. We'll explore how to create, manipulate and visualize time series data using pandas, focusing on essential data handling techniques for temporal analysis.
+
 ## Elementary Linear Algebra with Python Applications
 
 Introduction to Vectors
@@ -7108,6 +7162,12 @@ Introduction to Neural Scaling
 
 Neural scaling refers to the practice of increasing the size and complexity of neural networks to improve their performance. This concept has gained significant attention in recent years as researchers have found that larger models often lead to better results across various tasks.
 
+## Concept Drift vs. Data Drift in Machine Learning
+
+Understanding Concept Drift Detection
+
+Concept drift detection requires monitoring changes in the relationship between features and target variables over time. This implementation demonstrates a basic statistical approach using a sliding window to detect significant changes in prediction error patterns.
+
 ## Ultimate Cheatcode to Feature Engineering
 
 Introduction to Feature Engineering
@@ -8023,6 +8083,12 @@ Introduction to Measures of Dispersion
 
 Measures of dispersion describe how spread out a dataset is. They complement measures of central tendency by providing information about the variability of data points. In this presentation, we'll explore various measures of dispersion and how to calculate them using Python.
 
+## Principal Curves for Nonlinear Data Analysis
+
+Understanding Principal Curves with Simple Datasets
+
+Principal curves provide a nonlinear generalization of principal components analysis, offering a smooth, self-consistent curve that passes through the middle of a data distribution. The implementation starts with synthetic data generation and visualization to understand the concept.
+
 ## Architecture of Recurrent Neural Networks in Python
 
 Introduction to Recurrent Neural Networks (RNNs)
@@ -8142,6 +8208,12 @@ FractalNet is a novel architecture proposed as an alternative to residual neural
 Introduction to Bitwise Operations in OpenCV
 
 Bitwise operations are fundamental tools in image processing and computer vision. In OpenCV, these operations allow us to manipulate individual bits of an image, enabling tasks such as masking, feature extraction, and image composition. This slideshow will explore how to master bitwise operations using OpenCV and Python.
+
+## Default Aggregation in Pandas Pivot Tables
+
+Default Aggregation in Pandas Pivot Tables
+
+The default aggregation function in pd.pivot\_table() is numpy's mean function. This behavior calculates the average of all values when multiple entries exist for the same combination of index and column values in the pivot table operation.
 
 ## Matrix Operations in Python
 
@@ -9818,6 +9890,12 @@ In today's digital age, the spread of misinformation has become a significant co
 Ordinal Regression in Python
 
 Ordinal regression is a statistical method used when the dependent variable is ordinal, meaning it has categories with a natural order. This type of regression is crucial for analyzing data where the outcome has a clear ranking but the distances between categories may not be equal. In this presentation, we'll explore different approaches to ordinal regression using Python, focusing on practical implementations and real-world applications.
+
+## Preventing Overfitting with Early Stopping in XGBoost
+
+Understanding Early Stopping in XGBoost
+
+Early stopping is a regularization technique that prevents overfitting by monitoring the model's performance on a validation dataset during training. When the performance stops improving for a specified number of rounds, the training process terminates, preserving the optimal model state.
 
 ## Modeling Viral App Feature Adoption Using Python
 
