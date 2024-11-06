@@ -24,6 +24,12 @@ Introduction to Optimizers in Deep Learning
 
 Optimizers play a crucial role in training deep learning models by adjusting the model's parameters in the direction that minimizes the loss function. Nadam is an optimizer that combines the advantages of two popular optimizers, Nesterov Accelerated Gradient (NAG) and Adaptive Moment Estimation (Adam), to provide faster convergence and better generalization.
 
+## Components of a Confusion Matrix in Binary Classification
+
+Understanding Confusion Matrix Components
+
+The confusion matrix serves as a fundamental evaluation metric in binary classification, comprising four essential components that measure the alignment between predicted and actual values. These components form the basis for calculating crucial performance metrics in machine learning models.
+
 ## Introduction to Model Theory with Python
 
 Introduction to Model Theory
@@ -419,6 +425,12 @@ The Receiver Operating Characteristic (ROC) curve and Area Under the Curve (AUC)
 Probability Distributions in Data Science
 
 Probability distributions are fundamental concepts in statistics and data science. They describe the likelihood of different outcomes in a random event or experiment. Understanding these distributions is crucial for data analysis, machine learning, and statistical inference. Let's explore some of the most common probability distributions and their applications.
+
+## Finding Column-wise Minimums in 2D Arrays
+
+Understanding Column-wise Minimum in NumPy Arrays
+
+NumPy provides efficient vectorized operations for finding minimum values across specified axes in multi-dimensional arrays. The axis parameter determines whether operations are performed row-wise (axis=1) or column-wise (axis=0), making array manipulation highly efficient.
 
 ## Dunder Methods in Python
 
@@ -1715,6 +1727,12 @@ Introduction to BOND: Best-of-N Distillation
 
 BOND is a technique for aligning Large Language Models (LLMs) with human preferences. It uses a novel approach called Best-of-N Distillation to improve the quality and consistency of LLM outputs. This method generates multiple responses and selects the best one based on a reward model, effectively distilling the knowledge into a more focused and aligned model.
 
+## Accelerating KMeans Clustering with Approximate Nearest Neighbors
+
+Understanding Traditional KMeans Implementation
+
+The K-means clustering algorithm partitions n observations into k clusters by iteratively assigning points to their nearest centroid and updating centroids based on mean positions. This vanilla implementation showcases the core algorithm's inefficiencies in nearest neighbor search.
+
 ## Building Effective AI with Domain Expertise and Python
 
 The Role of Domain Expertise in AI Development
@@ -1798,6 +1816,12 @@ EfficientRAG is an advanced technique for enhancing multi-hop question answering
 Introduction to Convolution
 
 Convolution is a fundamental operation in image processing and deep learning. It involves sliding a small matrix (filter) over an input image to produce a feature map. This process helps in detecting various features like edges, textures, and patterns.
+
+## Automating Software Deployment with CICD Pipelines
+
+Setting Up a Basic CI/CD Pipeline with GitHub Actions
+
+GitHub Actions provides a robust framework for automating software workflows. This implementation demonstrates creating a basic CI/CD pipeline that automatically runs tests and deploys a Python application when changes are pushed to the main branch.
 
 ## Deep Learning Hyperparameter Tuning and Regularization in Python
 
@@ -2094,6 +2118,12 @@ Data wrangling is the process of cleaning, structuring, and enriching raw data i
 Unit Testing
 
 Unit testing is a fundamental practice in software development that focuses on testing individual components or functions of a system in isolation. It helps ensure that each unit of code performs as expected before integration with other parts of the system.
+
+## Initializing Weights in Deep Learning
+
+Xavier Weight Initialization
+
+Xavier initialization is a crucial method for deep neural networks that helps maintain consistent variance of activations across layers. It sets initial weights by drawing from a distribution with zero mean and variance scaled by the number of input and output connections.
 
 ## Combinatorics Fundamentals
 
@@ -2429,6 +2459,12 @@ Multi-class regression is an extension of binary classification where we predict
 Input Embedding and Tokenization
 
 The first step in implementing a Transformer is converting text into numerical representations. We'll create a basic tokenizer and embedder that transforms input sequences into dense vectors while preserving positional information through sinusoidal encoding.
+
+## Python args and kwargs Explained with Code Examples
+
+Understanding \*args Parameter
+
+The \*args parameter allows functions to accept an arbitrary number of positional arguments by packing them into a tuple. This powerful feature enables flexible function definitions where the exact number of input arguments is unknown at design time.
 
 ## NLP Models for Sentiment Analysis in Python
 
@@ -5876,6 +5912,12 @@ Introduction to Predictive Modeling
 
 Predictive modeling is a statistical technique used to forecast future outcomes based on historical data. It involves analyzing patterns in existing data to make informed predictions about future events or behaviors. In this slideshow, we'll explore how to implement predictive models using Python, a versatile programming language with powerful libraries for data analysis and machine learning.
 
+## Minimum Changes to Make Binary Strings Beautiful
+
+Introduction to Binary String Beauty
+
+A binary string is considered beautiful when each pair of adjacent characters is identical. This concept is fundamental in string manipulation and has applications in data encoding, error detection, and pattern recognition. The goal is to find the minimum changes needed.
+
 ## Introduction to Aggregate and Transform Functions in Apache Spark
 
 Introduction to Aggregate and Transform Functions in Apache Spark
@@ -6365,6 +6407,12 @@ Introduction to Knowledge Distillation in Large Language Models
 
 Knowledge distillation is a technique used to transfer knowledge from a large, complex model (teacher) to a smaller, more efficient model (student). This process aims to compress the knowledge of the teacher model into a more compact form while maintaining performance. In the context of Large Language Models (LLMs), knowledge distillation can help create smaller, faster models suitable for deployment in resource-constrained environments.
 
+## Self-Attention vs. Cross-Attention in Deep Learning
+
+Understanding Self-Attention Implementation
+
+Self-attention allows tokens in a sequence to weigh the importance of other tokens when encoding meaning. This fundamental mechanism enables models to capture dependencies between different positions in the sequence through trainable query, key, and value matrices.
+
 ## Evaluating Regression Model Metrics in Python
 
 Evaluating Regression Model Performance
@@ -6661,6 +6709,12 @@ What is the Machine Learning Problem?
 
 Machine learning problems typically involve tasks where a system learns patterns from data to make predictions or decisions. These problems can range from classification and regression to clustering and anomaly detection.
 
+## Time Shifting Techniques in Pandas
+
+Basic Time Series Manipulation in Pandas
+
+Time series data manipulation in pandas requires understanding of datetime indexing and basic operations. The DatetimeIndex serves as the foundation for time-based operations, enabling efficient data analysis and transformation of temporal datasets.
+
 ## Probabilistic Models in Python
 
 Introduction to Probabilistic Models
@@ -6672,6 +6726,12 @@ Probabilistic models are mathematical frameworks that use probability theory to 
 Introduction to Matrix-based Rank Adaptation (MoRA)
 
 Matrix-based Rank Adaptation (MoRA) is a technique used in information retrieval (IR) to improve the ranking of search results by incorporating term-term similarity information. It aims to enhance the performance of traditional vector space models by incorporating term-term co-occurrence data into the ranking process.
+
+## Comparing Software Development Life Cycle Models
+
+Waterfall Model Implementation
+
+The Waterfall model represents a linear sequential software development approach where each phase must be completed before moving to the next. This implementation demonstrates a project management system that enforces the strict phase progression characteristic of the Waterfall methodology.
 
 ## A Simple Neural Network Module for Relational Reasoning
 
@@ -8379,6 +8439,12 @@ Introduction to Genetic Algorithms and Image Combination
 
 Genetic algorithms are optimization techniques inspired by natural selection. In the context of image combination, they can be used to evolve and blend multiple images into a single, unique result. This process involves encoding image properties as genes, creating a population of potential solutions, and iteratively improving them through selection, crossover, and mutation operations.
 
+## Increase Code Efficiency by using Dictionary Comprehensions
+
+Dictionary Comprehension Basics
+
+Dictionary comprehensions provide a concise way to create dictionaries using a single-line expression. They follow a similar syntax to list comprehensions but use curly braces and require both a key and value expression, separated by a colon, making code more readable and maintainable.
+
 ## Elementary Functional Analysis with Python
 
 Introduction to Elementary Functional Analysis
@@ -8631,6 +8697,12 @@ Maximum Likelihood Estimation is a statistical method used to estimate the param
 Introduction to Data Structures and Algorithms for AI
 
 Data Structures and Algorithms (DSA) form the backbone of efficient AI systems. They enable us to organize, store, and process data effectively, which is crucial for developing intelligent algorithms. This presentation will explore key DSA concepts relevant to AI, with a focus on Python implementations.
+
+## Python Loan Risk Analysis Using Exploratory Data Analysis
+
+Loading and Initial Data Exploration
+
+In loan risk analysis, the first crucial step is loading and examining the dataset structure. We'll use pandas to read the loan data and perform initial exploration to understand the basic characteristics of our dataset, including data types and missing values.
 
 ## Exploring the P vs NP Problem with Python
 
@@ -8910,6 +8982,12 @@ Output:
 1     Bob   30    London
 2  Charlie  35     Paris
 ```
+
+## Implementing a Queue Data Structure in Python
+
+Queue Implementation from Scratch
+
+A Queue data structure implemented using Python lists, demonstrating the fundamental FIFO (First-In-First-Out) principle. This implementation showcases the core operations: enqueue (adding elements) and dequeue (removing elements), with size tracking and empty state verification.
 
 ## Third-Order Derivative Tensors in AI and ML
 
