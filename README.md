@@ -1811,6 +1811,12 @@ Introduction to EfficientRAG
 
 EfficientRAG is an advanced technique for enhancing multi-hop question answering (QA) in Large Language Models (LLMs) using Python. This method combines Retrieval-Augmented Generation (RAG) with efficient algorithms to improve the accuracy and speed of complex queries that require multiple steps of reasoning.
 
+## Handling Missing Data Strategies for MCAR MAR and MNAR
+
+Understanding Missing Data Patterns
+
+Missing data mechanisms fundamentally shape our imputation strategy choices. We'll explore how to detect MCAR, MAR, and MNAR patterns using statistical tests and visualization techniques that guide subsequent handling approaches.
+
 ## Convolution, Filters, and Feature Maps in Python
 
 Introduction to Convolution
@@ -4598,6 +4604,12 @@ Understanding Decision Trees and Feature Importance
 
 Decision trees are powerful machine learning models that make decisions based on a series of questions about the input features. Feature importance in decision trees quantifies how much each feature contributes to the model's predictions. This concept is crucial for understanding the model's behavior and identifying the most influential features in the dataset.
 
+## Understanding Decision Tree Limitations
+
+Understanding Decision Tree Limitations
+
+Traditional decision trees suffer from axis-parallel splits, meaning they can only create rectangular decision boundaries by splitting features along vertical or horizontal lines. This fundamental limitation makes them struggle with diagonal or non-linear decision boundaries.
+
 ## Multilingual Sentence Encoding with PyTorch
 
 Introduction to Multilingual Universal Sentence Encoder (mUSE)
@@ -5876,6 +5888,12 @@ Understanding Data Drift Detection
 
 Data drift represents the change in data distribution over time that can degrade model performance. Detection requires comparing probability distributions between a reference dataset and production data using statistical measures to quantify the magnitude of drift.
 
+## Early Stopping Preventing Overfitting in Machine Learning
+
+Understanding Early Stopping Core Concepts
+
+Early stopping serves as a regularization technique that monitors model performance during training by evaluating a validation set after each epoch. When the validation error starts to increase while training error continues to decrease, it indicates potential overfitting.
+
 ## Avoid Multiple Function Calls with Tuple Unpacking
 
 Understanding Tuple Unpacking in Python
@@ -6235,6 +6253,12 @@ Introduction to the Donut Dilemma
 
 This slide introduces our intriguing problem: How long would it take someone to eat 2400 donuts? We'll approach this seemingly whimsical question with mathematical rigor, breaking it down into manageable components and using Python to model our solution. This problem is part of our series "Finding Patterns in Pointless Problems using Python," where we apply serious analytical techniques to lighthearted scenarios.
 
+## Data Cleansing and Transformation for Machine Learning
+
+Data Loading and Initial Assessment
+
+Data preparation begins with loading and assessing the raw data to understand its structure, identify potential issues, and plan the necessary cleaning steps. This fundamental process establishes the foundation for all subsequent data preprocessing tasks in machine learning workflows.
+
 ## Architectural Design Patterns in Python
 
 Architectural Design Patterns in Python
@@ -6460,6 +6484,12 @@ Learning rate is a crucial hyperparameter in deep learning that determines the s
 Data Loading and Initial Inspection
 
 Understanding your dataset begins with proper loading and initial inspection. This involves reading data from various formats, checking basic properties like shape, data types, and missing values. Pandas provides comprehensive tools for these fundamental EDA tasks.
+
+## Implementing Binary Tree Traversal Techniques
+
+Binary Tree Implementation Fundamentals
+
+A binary tree is a hierarchical data structure composed of nodes, where each node contains a value and has up to two children nodes - left and right. This implementation creates the foundation for more complex tree operations and traversals.
 
 ## Converting Podcasts to Searchable Chat with Groq, Whisper, and PineCone
 
@@ -6714,6 +6744,12 @@ Machine learning problems typically involve tasks where a system learns patterns
 Basic Time Series Manipulation in Pandas
 
 Time series data manipulation in pandas requires understanding of datetime indexing and basic operations. The DatetimeIndex serves as the foundation for time-based operations, enabling efficient data analysis and transformation of temporal datasets.
+
+## Advanced Deep Learning Design Patterns and Optimization in Python
+
+Custom Neural Network Architecture
+
+Building a neural network from scratch provides deep understanding of backpropagation mechanics and gradient flow. This implementation demonstrates fundamental matrix operations and activation functions using only NumPy, establishing core concepts for advanced architectures.
 
 ## Probabilistic Models in Python
 
@@ -7171,6 +7207,12 @@ The \*\*kwargs syntax allows functions to accept arbitrary keyword arguments as 
 Introduction to Backpropagation
 
 Backpropagation is a fundamental algorithm in training artificial neural networks. It's used to calculate gradients of the loss function with respect to the network's weights, enabling efficient optimization. This process allows neural networks to learn from their errors and improve their performance over time.
+
+## Simplify Finding Most Common Elements with Counter
+
+Introduction to Python's Counter
+
+The Counter class from Python's collections module provides an elegant way to count hashable objects. It creates a dictionary subclass for counting hashable objects, where elements are stored as dictionary keys and their counts as dictionary values.
 
 ## Feature scaling is NOT always necessary
 
@@ -8293,6 +8335,12 @@ Tensor Creation
 
 In PyTorch, tensors are the fundamental data structures used for computations. Here's how to create a tensor from a Python list or array. Code Example:
 
+## Addressing Hallucinations in Large Language Models
+
+Understanding Intrinsic Hallucinations in LLMs
+
+Neural networks often exhibit intrinsic hallucinations due to knowledge gaps in their training data. We can simulate this behavior by creating a simplified neural network that demonstrates how confidence scores may not correlate with factual accuracy.
+
 ## Neural Hierarchical Interpolation for Time Series Forecasting Using Python
 
 Title: Introduction to Neural Hierarchical Interpolation for Time Series
@@ -8466,6 +8514,12 @@ ETL (Extract, Transform, Load), ELT (Extract, Load, Transform), and EtLT (Extrac
 Introduction to LLM Evaluation Metrics
 
 Large Language Models (LLMs) have revolutionized natural language processing tasks. To assess their performance, researchers and practitioners use various evaluation metrics. This presentation covers 30 common metrics, their applications, and implementations.
+
+## Evaluating Classification Model Performance Metrics
+
+Understanding Confusion Matrix Components
+
+The confusion matrix provides essential information about a model's classification performance by organizing predictions into four fundamental categories: True Positives (TP), True Negatives (TN), False Positives (FP), and False Negatives (FN). This organization enables comprehensive performance analysis.
 
 ## Decision Trees, Random Forests, and Gradient Boosting in Python
 
@@ -10188,6 +10242,12 @@ Code:
 
 Caption: This code defines a function `simpson` that takes a function `f`, the integration limits `a` and `b`, and the number of subintervals `n`. It calculates the approximation of the integral using Simpson's Rule.
 
+## Smoothing Time Series Data with Gaussian Filters
+
+Gaussian Filter Fundamentals
+
+The Gaussian filter is a crucial tool in time series analysis that applies a weighted moving average using the normal distribution. It effectively reduces noise while preserving underlying trends by giving more weight to nearby points and less weight to distant ones.
+
 ## Webhooks vs. Polling Enabling Real-Time Communication
 
 What is a Webhook?
@@ -10560,6 +10620,12 @@ Introduction to Cross-Validation Bias in Unsupervised Preprocessing
 
 Cross-validation is a widely used technique for model evaluation and selection. However, when combined with unsupervised preprocessing, it can lead to biased results. This presentation explores the potential pitfalls and solutions to this problem.
 
+## Generating Realistic Fake Data with Faker Python
+
+Introduction to Faker Package
+
+Faker is a Python library that generates realistic fake data for testing and development purposes. It provides a comprehensive set of methods to create synthetic data while maintaining data consistency and relationships, making it invaluable for database seeding and API testing scenarios.
+
 ## Self-Attention and Cross-Attention in Transformers with Python
 
 Introduction to Self-Attention & Cross-Attention
@@ -10841,6 +10907,12 @@ Feature scaling is a crucial preprocessing step in machine learning that transfo
 Introduction to Filter by Difference Method
 
 The Filter by Difference method is a robust statistical approach for detecting and removing outliers in time series data by analyzing the relative differences between consecutive points. This technique preserves data structure while effectively identifying anomalous variations.
+
+## Raincloud Plots Revealing Hidden Data Distributions
+
+Understanding Data Distribution Visualization Challenges
+
+Traditional visualization methods like histograms and box plots can mask important patterns in data distributions. Box plots may show identical statistics for drastically different distributions, while histograms are highly sensitive to bin selection, potentially obscuring underlying patterns.
 
 ## Simplify Python Code with defaultdict
 
