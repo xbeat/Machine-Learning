@@ -2282,6 +2282,12 @@ Introduction to Recency, Frequency, Magnitude (RFM) Analysis
 
 RFM analysis is a customer segmentation technique used in marketing and customer relationship management. It evaluates customers based on three key metrics: Recency (how recently they made a purchase), Frequency (how often they make purchases), and Magnitude (how much they spend). This powerful tool helps businesses understand customer behavior and tailor their marketing strategies accordingly.
 
+## Python Enums Keys Values and Items with LRU Cache
+
+Introduction to Python Enums
+
+Enumerations in Python provide a way to create a set of symbolic names bound to unique constant values. They help prevent bugs by ensuring type safety and providing meaningful names for discrete values rather than using magic numbers or strings.
+
 ## Classification Metrics for Machine Learning Models
 
 Understanding Classification Metrics
@@ -3977,6 +3983,12 @@ Introduction to Sensitivity Matrices
 
 Sensitivity matrices play a crucial role in understanding how changes in input parameters affect the output of machine learning models. They provide valuable insights into model behavior and help in optimization and feature selection processes.
 
+## Reinforcement Learning for Sequential Decision-Making
+
+Introduction to Reinforcement Learning
+
+Reinforcement learning is a machine learning paradigm focused on training agents to make sequences of decisions. The agent learns to map situations to actions while maximizing a numerical reward signal through interaction with an environment over time.
+
 ## Model Capacity in Machine Learning with Python
 
 Understanding Model Capacity in Machine Learning
@@ -4177,6 +4189,12 @@ Backpropagation is a fundamental algorithm used in training neural networks. It'
 Introduction to Neural Networks
 
 Neural networks are computational models inspired by the human brain. They consist of interconnected nodes (neurons) that process and transmit information. Neural networks can learn from data to perform tasks like classification and regression.
+
+## Streamlining PyTorch with Fabric
+
+Introduction to PyTorch Fabric
+
+PyTorch Fabric represents a revolutionary approach to distributed training, combining PyTorch's flexibility with Lightning's simplified distributed features. It enables seamless scaling from single-device training to multi-device distributed environments while maintaining clean, maintainable code structure.
 
 ## Avoiding Overfitting in Machine Learning with Python
 
@@ -5036,6 +5054,12 @@ Introduction to Data Processing Acceleration
 
 Data processing acceleration involves optimizing techniques to handle large datasets efficiently. Python offers various libraries and methods to speed up data manipulation and analysis.
 
+## Transformers and Attention Mechanisms in Large Language Models
+
+Understanding Attention Mechanism Fundamentals
+
+The attention mechanism enables neural networks to selectively focus on specific parts of the input sequence when generating output. This fundamental concept allows models to assign different importance weights to different elements, dramatically improving performance in sequence-to-sequence tasks.
+
 ## Why Transformers Don't Have Vanishing Gradients
 
 Understanding Transformers vs RNNs
@@ -5053,6 +5077,12 @@ Support Vector Machines (SVMs) are powerful supervised learning models used for 
 What is Normal Distribution?
 
 The Normal Distribution, also known as the Gaussian distribution, is a symmetrical, bell-shaped curve that represents the probability distribution of many natural phenomena. It's characterized by its mean (μ) and standard deviation (σ), which determine the center and spread of the distribution, respectively.
+
+## Understanding APIs The Bridge Between Client and Server
+
+API Core Components and Setup
+
+Modern APIs frequently require secure authentication, proper request formatting, and efficient response handling. A robust API client class encapsulates these core functionalities while providing a clean interface for making requests and processing responses.
 
 ## State-of-the-Art Machine Vision and Learning Techniques in Python
 
@@ -5912,6 +5942,12 @@ Introduction to Supervised Learning
 
 Supervised learning is a fundamental machine learning paradigm where algorithms learn from labeled training data to make predictions or decisions. This approach involves training a model on input-output pairs, allowing it to generalize patterns and apply them to new, unseen data.
 
+## Gaussian Filters for Smoothing Time Series Data
+
+Understanding Gaussian Filters for Time Series
+
+The Gaussian filter is a fundamental smoothing technique that applies a weighted average using the normal distribution. It's particularly effective for reducing noise while preserving underlying trends in time series data, making it invaluable for signal processing and data analysis.
+
 ## Matrix Factorization in Machine Learning
 
 Matrix Factorization in Machine Learning and AI
@@ -6180,6 +6216,12 @@ Git is a distributed version control system that helps developers manage and tra
 Understanding List References in Python
 
 List references in Python represent a fundamental concept where multiple variable names can point to the same underlying list object in memory, following Python's object-oriented nature where variables act as references rather than independent containers.
+
+## Exploring Python's String Manipulation Methods
+
+String Basics and Formatting
+
+String manipulation forms the foundation of text processing in Python. The language provides robust built-in methods for handling strings, from basic concatenation to advanced formatting techniques using f-strings and the format() method, enabling precise control over text representation.
 
 ## Sigmoid Activation Function in Python
 
@@ -6900,6 +6942,12 @@ Advanced Machine Learning Models are sophisticated algorithms that can learn com
 Multi-Scale Context Aggregation by Dilated Convolutions
 
 Multi-scale context aggregation is a technique used in deep learning to capture information at different scales. Dilated convolutions, also known as atrous convolutions, are a key component of this approach. They allow for expanding the receptive field without increasing the number of parameters or computational cost.
+
+## Intuition Behind Neural Network Dropout
+
+Understanding Dropout Implementation
+
+Neural network dropout is a regularization technique that helps prevent overfitting by randomly deactivating neurons during training. The implementation requires careful handling of activation scaling to maintain consistent expected values between training and inference phases.
 
 ## Python String Methods startswith() and endswith()
 
@@ -8421,6 +8469,12 @@ Introduction to POSE (Positional Skip-wisE) Technique
 
 POSE is an innovative approach in natural language processing that enhances the efficiency of transformer models. It reduces computational complexity by selectively attending to certain positions in the input sequence, allowing for faster processing of long sequences.
 
+## Correlation Pitfalls Avoiding Misleading Statistics
+
+Understanding Correlation Pitfalls
+
+Correlation coefficients can be deceptive when analyzing relationships between variables. While a correlation value provides a single numeric measure of association, it can mask underlying patterns, non-linear relationships, and be significantly influenced by outliers in the dataset.
+
 ## Feature Engineering for Machine Learning in Python
 
 Introduction to Feature Engineering
@@ -9868,6 +9922,12 @@ Supervised and unsupervised learning are two fundamental paradigms in machine le
 Introduction to Sampling in Statistics
 
 Sampling is a fundamental concept in statistics that involves selecting a subset of individuals from a larger population to make inferences about the entire population. This process is crucial for conducting research, surveys, and data analysis when it's impractical or impossible to study every member of a population. In this presentation, we'll explore various sampling techniques and their implementation using Python.
+
+## Convolutional Neural Network Fundamentals
+
+CNN Basic Architecture Implementation
+
+A convolutional neural network implementation focusing on the fundamental building blocks using NumPy. This base architecture demonstrates the core concepts of convolution operations, activation functions, and forward propagation through multiple layers.
 
 ## Pointer Networks in Python
 
