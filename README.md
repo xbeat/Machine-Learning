@@ -36,6 +36,12 @@ Introduction to Model Theory
 
 Model theory is a branch of mathematical logic that studies the relationships between formal languages and their interpretations, or models. It provides a framework for understanding the semantics of mathematical structures and their properties. In this presentation, we'll explore key concepts of model theory using Python to illustrate these ideas.
 
+## Python Web Security Essentials
+
+Security Fundamentals in Python
+
+Security in Python web development begins with understanding core principles of input validation, sanitization, and secure data handling. Modern web applications face sophisticated attack vectors requiring robust defensive programming practices implemented from the ground up.
+
 ## Comparing Physics Informed Neural Networks (PINN) and Finite Element Method (FEM) in Python
 
 Introduction to Physics Informed Neural Networks (PINN) and Finite Element Method (FEM)
@@ -982,6 +988,12 @@ Data imbalance occurs when class distributions in a dataset are significantly sk
 Introduction to Embeddings
 
 Embeddings are dense vector representations of discrete entities, such as words or sentences, in a continuous vector space. They capture semantic relationships and similarities between entities. In this presentation, we'll explore how to build an embeddings model from scratch using Python.
+
+## Attention Mechanisms in Language Models
+
+Understanding Self-Attention Mechanism
+
+Self-attention forms the foundational building block of modern transformer architectures, enabling models to weigh the importance of different words in a sequence dynamically. The mechanism computes attention scores through query, key, and value matrices multiplication, followed by softmax normalization.
 
 ## Understanding Machine Learning Algorithms and Time Complexity in Python
 
@@ -3869,6 +3881,12 @@ Comprehensive Testing with pytest & HTTPX
 
 Testing is crucial for ensuring the reliability and correctness of FastAPI applications. Pytest and HTTPX are powerful tools for writing and executing tests. Let's explore how to use them effectively.
 
+## Top 5 Common Python Errors and How to Fix Them
+
+IndexError and List Manipulation
+
+Understanding IndexError is crucial in Python as it occurs when trying to access list indices that don't exist. This common error typically happens when iterating through sequences or accessing array elements beyond their bounds, especially in data processing pipelines.
+
 ## Time-Series Analysis with PySpark Window Functions
 
 Introduction to Window Functions in PySpark
@@ -4202,6 +4220,12 @@ Understanding Overfitting in Machine Learning
 
 Overfitting occurs when a machine learning model learns the training data too well, capturing noise and specific data points rather than general patterns. This leads to poor generalization on unseen data. Let's explore this concept with Python examples.
 
+## Understanding Confusion Matrices in Machine Learning
+
+Introduction to Confusion Matrix
+
+A confusion matrix is a fundamental evaluation metric in machine learning that tabulates the performance of a classification model by comparing predicted labels against actual labels, enabling the calculation of key performance indicators like accuracy, precision, recall, and F1-score.
+
 ## Mastering Analytics Frameworks with Python
 
 Introduction to Analytics Frameworks
@@ -4383,6 +4407,12 @@ Orthogonal vectors are fundamental concepts in linear algebra and geometry. They
 Saddle Points in Deep Learning
 
 Saddle points are critical points in the loss landscape of neural networks where the gradient is zero, but they are neither local minima nor maxima. They play a significant role in deep learning optimization and can impact the training process of neural networks.
+
+## Visualizing Hyperplanes in Support Vector Machines
+
+Understanding 1D Hyperplanes
+
+In one-dimensional space, a hyperplane is simply a point that divides the line into two regions. This fundamental concept forms the basis for understanding higher-dimensional hyperplanes in Support Vector Machines, where the goal is to find the optimal separating point between classes.
 
 ## VGG Networks in Python
 
@@ -6967,6 +6997,12 @@ Understanding **init\_subclass** in Python
 
 Class parameterization during inheritance is a powerful feature introduced in Python 3.6 through **init\_subclass**. This method allows parent classes to customize subclass creation behavior by intercepting and modifying the subclass definition process, providing a cleaner alternative to metaclasses.
 
+## Docker Components Explained
+
+Docker Image Handling with Python
+
+The Docker SDK for Python provides a high-level API to interact with Docker images programmatically. This implementation demonstrates connecting to Docker daemon, listing available images, and performing basic image operations using the docker-py library.
+
 ## Recursive Introspection for Large Language Models
 
 Introduction to RISE for LLMs
@@ -8788,6 +8824,12 @@ Introduction to Control System Theory
 
 Control system theory is a fundamental aspect of engineering that deals with the behavior of dynamical systems. It focuses on how systems respond to inputs and how to design controllers to achieve desired outputs. This slide introduces the basic concepts of control systems using a simple temperature control example.
 
+## Improving RAG Pipelines with Low-Latency Rerankers
+
+Understanding RAG Pipeline Components
+
+A Retrieval Augmented Generation (RAG) pipeline combines vector database retrieval with language model generation. The core components include document chunking, embedding generation, and semantic search to retrieve relevant context before generating responses.
+
 ## Visualizing Galois Theory with Python
 
 Introduction to Galois Theory
@@ -9337,7 +9379,9 @@ The range() function is fundamental to Python iteration, enabling precise contro
 
 ## Automated Financial Data Analysis Workflow
 
-Introduction to Automated Account Analysis This presentation outlines a comprehensive workflow for analyzing financial accounts using artificial intelligence and Python. We'll start with uploading a balance sheet to an AI chatbot, then move through data extraction, formatting, and finally to in-depth analysis using custom Python code.
+Introduction to Automated Account Analysis
+
+This presentation outlines a comprehensive workflow for analyzing financial accounts using artificial intelligence and Python. We'll start with uploading a balance sheet to an AI chatbot, then move through data extraction, formatting, and finally to in-depth analysis using custom Python code.
 
 ## Explaining L2 Regularization in Machine Learning with Python
 
@@ -9430,6 +9474,18 @@ Gradient Boosting is an ensemble learning technique that combines weak learners 
 Introduction to Tree-Based Models
 
 Tree-based models are powerful machine learning techniques used for both classification and regression tasks. They work by partitioning the feature space into regions and making predictions based on these partitions. In this slideshow, we'll explore how to improve your tree-based modeling skills using Python.
+
+## Visualizing PCA Relationships with Scatter Plots
+
+Fundamentals of PCA Visualization
+
+Principal Component Analysis (PCA) dimensionality reduction commonly uses scatter plots to visualize relationships between principal components. These plots reveal patterns, clusters, and variance explained by the first two or three components, which typically capture the most significant data variation.
+
+## 3D Graphics Foundations Rendering Triangles in Python
+
+Understanding 3D Coordinate Systems in Python
+
+The foundation of 3D graphics begins with understanding coordinate systems. In computer graphics, we represent points in 3D space using vectors containing X, Y, and Z coordinates. Python's numpy library provides efficient tools for handling these coordinate systems.
 
 ## Variational Lossy Autoencoder in Python
 
@@ -10496,6 +10552,12 @@ Backpropagation is a fundamental algorithm in neural networks that calculates gr
 Introduction to Searching Algorithms
 
 Searching algorithms are fundamental techniques used to find specific items within a collection of data. In Python, these algorithms play a crucial role in efficiently locating elements in various data structures such as lists, arrays, and dictionaries. Understanding and implementing these algorithms is essential for writing optimized code and improving overall program performance.
+
+## Top 10 Must-Have Django Packages
+
+Django PayPal Integration Fundamentals
+
+Django-paypal simplifies e-commerce integration by providing robust PayPal payment processing capabilities. The package supports both PayPal Standard and Express Checkout methods, enabling secure transaction handling with comprehensive IPN (Instant Payment Notification) support for real-time payment verification.
 
 ## Visualizing Machine Learning Insights
 
