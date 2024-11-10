@@ -518,6 +518,12 @@ Solving Systems of Equations with Python
 
 In this series, we'll explore how to use Python to solve systems of linear and non-linear equations. Solving such systems has numerous applications in various fields like physics, engineering, economics, and more.
 
+## Python's Dynamic Variable Declaration
+
+Variable Declaration Basics in Python
+
+Python's dynamic typing system allows variables to be created without explicit type declarations, unlike statically typed languages. This fundamental difference enables rapid development and flexibility in data manipulation, while still maintaining type safety through runtime type checking.
+
 ## Retrieval Techniques in RAG Sparse and Dense Vector Tools
 
 Retrieval Techniques in RAG: Sparse and Dense Vector Tools
@@ -1991,6 +1997,12 @@ Introduction to Weights in Machine Learning
 
 Weights are fundamental components in machine learning models, serving as the parameters that the model learns during training. They determine the strength of connections between inputs and outputs, playing a crucial role in the model's decision-making process.
 
+## Machine Learning Classification Metrics with Python
+
+Understanding Classification Metrics Fundamentals
+
+Classification metrics form the foundation for evaluating machine learning model performance. These metrics help quantify how well a model can distinguish between different classes, measuring various aspects of predictive accuracy through statistical calculations derived from the confusion matrix.
+
 ## Boosting Models with Python Decision Trees
 
 Introduction to Boosting Models
@@ -2142,6 +2154,12 @@ Unit testing is a fundamental practice in software development that focuses on t
 Xavier Weight Initialization
 
 Xavier initialization is a crucial method for deep neural networks that helps maintain consistent variance of activations across layers. It sets initial weights by drawing from a distribution with zero mean and variance scaled by the number of input and output connections.
+
+## Regression Model Evaluation Metrics in Python
+
+Mean Squared Error (MSE) Implementation
+
+Mean Squared Error serves as a fundamental metric in regression analysis, measuring the average squared difference between predicted and actual values. It penalizes larger errors more heavily due to the squared term, making it particularly sensitive to outliers in the dataset.
 
 ## Combinatorics Fundamentals
 
@@ -2760,6 +2778,12 @@ Understanding Probability Distributions
 
 Probability distributions are mathematical functions that describe the likelihood of different outcomes in a random event. They are fundamental to statistics and data science, helping us model uncertainty and make predictions. In this presentation, we'll explore key probability distributions and how to work with them using Python.
 
+## Attention Mechanism in Language Models
+
+Understanding Attention Mathematics
+
+The attention mechanism calculates weighted importance scores between input elements using queries, keys, and values. These weights determine how much focus each element should receive, enabling the model to identify relevant relationships in sequences.
+
 ## Unified Multimodal Transformer Model in Python
 
 Introduction to Unified Multimodal Transformers
@@ -3353,6 +3377,12 @@ Building a Neural Network from Scratch for MNIST
 
 In this presentation, we'll explore the process of creating a neural network from the ground up and applying it to the MNIST dataset. We'll cover data preparation, network architecture, training, and evaluation, all implemented in Python. This hands-on approach will provide insights into the inner workings of neural networks and their application to real-world problems.
 
+## Understanding Confusion Matrix in Machine Learning
+
+Understanding Confusion Matrix Fundamentals
+
+A confusion matrix is a fundamental evaluation metric in machine learning that displays the performance of a classification model by comparing predicted versus actual class labels. It provides a detailed breakdown of correct and incorrect predictions across all classes.
+
 ## Understanding and Mitigating Data Drift in ML Production
 
 Data Drift in ML Production
@@ -3647,6 +3677,12 @@ Auto-Document Retrieval: The Future of RAG
 
 Auto-Document Retrieval is an advanced technique that enhances Retrieval-Augmented Generation (RAG) systems. It autonomously selects and retrieves relevant documents from large datasets, improving the quality and relevance of generated content. This approach combines the power of machine learning with efficient information retrieval methods to create more accurate and context-aware AI-generated responses.
 
+## Understanding Activation Functions in Neural Networks
+
+Understanding Basic Activation Functions
+
+Neural networks require non-linear activation functions to model complex patterns. We'll implement the classical sigmoid and tanh functions from scratch, examining their mathematical properties and behavior across different input ranges.
+
 ## Heap Data Structure in Python
 
 Introduction to Heaps
@@ -3684,6 +3720,12 @@ t-Distributed Stochastic Neighbor Embedding (t-SNE) is a machine learning algori
 Introduction to Statistical Learning
 
 Statistical learning refers to a vast set of tools for understanding data. It has led to fascinating advances in fields ranging from biology to astrophysics to marketing and beyond. In this slideshow, we will explore the fundamental concepts and techniques of statistical learning using Python.
+
+## Solving the Traveling Salesman Problem
+
+Foundations of TSP Representation
+
+A fundamental aspect of solving the Traveling Salesman Problem is representing cities and distances efficiently. We implement a City class to store coordinates and calculate Euclidean distances, forming the basis for our optimization algorithms.
 
 ## Autoencoders for Manifold Dimension Discovery in Python
 
@@ -3827,6 +3869,12 @@ Introduction to Python Strings
 
 Python strings are sequences of characters, enclosed in single or double quotes. They are immutable, meaning their contents cannot be changed after creation. Strings are versatile and essential for text manipulation in Python.
 
+## Mastering Deep Learning with PyTorch
+
+PyTorch Fundamentals - Tensors and Operations
+
+PyTorch's fundamental building block is the tensor, a multi-dimensional array optimized for deep learning computations. Understanding tensor operations, including creation, manipulation, and mathematical transformations, is essential for developing neural networks efficiently using PyTorch's dynamic computation capabilities.
+
 ## Types of Hypotheses Null and Alternative
 
 Types of Hypotheses
@@ -3868,6 +3916,12 @@ A DataFrame is a 2-dimensional labeled data structure in Pandas, similar to a sp
 Levels of Measurement in Machine Learning
 
 Levels of measurement, also known as scales of measurement, are fundamental concepts in statistics and machine learning. They categorize data based on the properties and constraints of the measurements. Understanding these levels is crucial for selecting appropriate statistical methods and machine learning algorithms. In this presentation, we'll explore the four main levels of measurement: nominal, ordinal, interval, and ratio, along with their applications in Python-based machine learning.
+
+## LSTM Networks for Time Series Forecasting
+
+LSTM Architecture Fundamentals
+
+LSTM networks fundamentally differ from traditional RNNs through their sophisticated gating mechanisms and memory cell structure. The architecture employs three gates: input, forget, and output, working in conjunction with a memory cell to regulate information flow through the network.
 
 ## Implementing Python Data Structures Without External Libraries
 
@@ -4033,6 +4087,12 @@ Output:
 1   JANE SMITH    jane@example.com
 2  BOB JOHNSON     bob@example.com
 ```
+
+## Advanced Pandas Data Manipulation Techniques
+
+Advanced DataFrame Creation Techniques
+
+Exploring sophisticated methods for DataFrame construction in Pandas, focusing on complex data structures and memory-efficient implementations. We'll examine various approaches to create DataFrames from different data sources while optimizing performance.
 
 ## Building a Custom Deep Learning Framework in Python
 
@@ -4323,6 +4383,12 @@ Diffusion models are a class of generative models that learn to gradually denois
 ## Polars A Beginners Guide to the Python Dataframe Library
 
 Introduction to Polars Polars is a fast and efficient DataFrame library for Python, written in Rust. It provides a user-friendly interface similar to pandas but with better performance and memory efficiency.
+
+## Predictive Modeling with AutoML in Python
+
+Introduction to H2O AutoML
+
+H2O AutoML is a powerful automated machine learning library that automates the process of building and comparing multiple machine learning models. It handles data preprocessing, feature engineering, model selection, and hyperparameter tuning automatically while providing extensive customization options.
 
 ## Exploring LLM Embeddings with Python
 
@@ -5781,6 +5847,12 @@ Cloud Load Balancing: An Overview
 
 Cloud load balancing distributes incoming network traffic across multiple servers to ensure no single server becomes overwhelmed. This process optimizes resource utilization, maximizes throughput, and minimizes response time.
 
+## Mastering Deep Learning Codebases for Beginners
+
+Understanding the Research Context
+
+Deep learning codebases require systematic analysis starting with the research paper itself. The first step involves extracting key architectural decisions, mathematical foundations, and implementation choices that will guide our code exploration. Here's how to systematically parse research papers.
+
 ## Python 3.13's JIT Compiler A Performance Boost
 
 Python 3.13 and the JIT Compiler
@@ -6277,6 +6349,12 @@ Introduction to Precision-Recall Plots
 
 Precision-Recall plots are powerful tools for evaluating the performance of classification models. They provide insights into the trade-off between precision and recall, helping data scientists and machine learning engineers to choose the best model for their specific use case. This presentation will explore the concept, implementation, and interpretation of Precision-Recall plots using Python.
 
+## Django REST Framework Serialization Fundamentals
+
+Basic Serializer Implementation
+
+The Django Rest Framework serializer acts as a converter between Python objects and JSON/XML formats. It provides validation, data formatting, and model instance creation capabilities. Serializers define the structure and rules for data transformation.
+
 ## Advantages of Weighted Averaging in Ensemble Models
 
 Weighted Average in Ensemble Models
@@ -6288,6 +6366,12 @@ Ensemble models combine multiple base models to improve prediction accuracy and 
 Cross-Validation in Machine Learning
 
 Cross-validation is a statistical method used to estimate the skill of machine learning models. It's particularly useful for assessing how the results of a statistical analysis will generalize to an independent data set. Let's explore this concept with Python examples.
+
+## Generative Modeling on Data Manifolds
+
+Differential Geometry Foundations
+
+The mathematical foundation of Riemannian Flow Matching requires understanding differential geometry concepts. We'll implement basic geometric operations and manifold calculations using Python's numerical computing capabilities.
 
 ## Mastering Brownian Motion in Python
 
@@ -6574,6 +6658,12 @@ This slideshow will guide you through the process of converting multiple audio p
 Log Loss: Understanding the Fundamental Metric in Classification
 
 Log loss, also known as logarithmic loss or cross-entropy loss, is a crucial metric in machine learning, particularly for classification problems. It measures the performance of a classification model where the prediction output is a probability value between 0 and 1. The goal is to minimize the log loss, as lower values indicate better predictions.
+
+## Avoiding Mutable Default Arguments in Python Functions
+
+Understanding Mutable Default Arguments
+
+Default arguments in Python functions that use mutable objects like lists or dictionaries can lead to unexpected behavior because these defaults are created once when the function is defined, not each time it's called. This fundamental behavior requires careful consideration during implementation.
 
 ## Handling Imbalanced Datasets in Tabular Classification
 
@@ -6943,6 +7033,12 @@ Introduction to KernelPCA and PCA
 
 Principal Component Analysis (PCA) and Kernel PCA are dimensionality reduction techniques used in machine learning. While PCA is a linear method, KernelPCA extends this concept to non-linear relationships. This presentation will explore the motivation behind using KernelPCA over PCA, providing code examples and practical applications.
 
+## Overcoming Challenges of Zero-Inflated Regression Modeling
+
+Understanding Zero-Inflated Data
+
+Zero-inflated datasets occur when the dependent variable contains more zeros than expected under standard probability distributions. This phenomenon is common in count data across various domains like healthcare claims, ecological surveys, and financial transactions.
+
 ## Commutative Banach Algebra in Python
 
 Introduction to Commutative Banach Algebras
@@ -7135,6 +7231,12 @@ Introduction to Grokked Transformers as Implicit Reasoners
 
 Grokked Transformers are a novel approach to endowing large language models with reasoning capabilities. Unlike traditional methods that explicitly encode rules or knowledge, Grokked Transformers aim to implicitly learn reasoning patterns from data, leveraging the power of transformers to capture complex relationships and dependencies.
 
+## 10 Underrated Python Packages for Data Science
+
+CleanLab - Advanced Data Cleaning
+
+CleanLab is a powerful library for automatically detecting and addressing data quality issues in machine learning datasets. It uses confident learning algorithms to identify label errors, outliers, and systematic noise patterns that could compromise model performance.
+
 ## Strategies for Handling Missing Data Types Using Python
 
 Introduction to Missing Data
@@ -7169,6 +7271,12 @@ Precision: 0.67
 Recall: 0.67
 F1 Score: 0.67
 ```
+
+## Bayes' Theorem The Probabilistic Foundation of Modern Decision-Making
+
+Bayesian Fundamentals
+
+Bayes' theorem provides a mathematical framework for updating probabilities based on new evidence. This implementation demonstrates the core calculation of posterior probabilities using Python, establishing the foundation for more complex Bayesian applications.
 
 ## Generative vs. Discriminative Models in Python
 
@@ -8756,6 +8864,12 @@ Feature Scaling for Outlier-Robust Data Processing
 
 Feature scaling is crucial when dealing with datasets containing outliers. This presentation explores various techniques to scale features effectively, focusing on methods that are resistant to extreme values.
 
+## Replacing Objects in Images with AI
+
+Understanding DALL-E 2 Integration
+
+DALL-E 2's API enables programmatic image generation and manipulation through OpenAI's endpoints. The integration requires proper authentication and request formatting to generate, edit, or manipulate images with specific prompts and parameters.
+
 ## 3 Approaches to Concurrency in Python
 
 Introduction to Concurrency in Python
@@ -9076,6 +9190,12 @@ Introduction to Long Short-Term Memory (LSTM)
 
 Long Short-Term Memory (LSTM) is a type of recurrent neural network architecture designed to address the vanishing gradient problem in traditional RNNs. LSTMs are particularly effective for time series analysis and prediction due to their ability to capture long-term dependencies in sequential data.
 
+## Vanna Adaptive Text-to-SQL Tool
+
+Introduction to Vanna Text-to-SQL
+
+Vanna represents a significant advancement in text-to-SQL technology, utilizing dynamic model adaptation and real-time learning capabilities. Its architecture enables continuous improvement through user interactions, making it particularly valuable for enterprise database environments.
+
 ## Mastering Decision Trees with ID3 and Scikit-Learn
 
 Understanding Decision Trees and ID3 Algorithm
@@ -9258,6 +9378,12 @@ Retrieval-Augmented Generation (RAG) systems combine information retrieval with 
 Understanding Evaluation Metrics
 
 Evaluation metrics are crucial tools in machine learning that help us assess model performance. They provide insights into how well our models are performing and guide us in making improvements. Let's explore some key metrics and their implications.
+
+## L1 Regularization for Feature Selection
+
+Introduction to L1 Regularization (Lasso)
+
+L1 regularization adds the absolute value of coefficients as a penalty term to the loss function, effectively shrinking some coefficients to exactly zero. This property makes Lasso particularly useful for feature selection in high-dimensional datasets where sparsity is desired.
 
 ## Deep Learning Autoencoders in Python
 
@@ -9907,6 +10033,12 @@ Introduction to Named Entity Recognition
 
 Named Entity Recognition (NER) is a natural language processing task that identifies and classifies named entities in text into predefined categories such as person names, organizations, locations, and more. It's a crucial component in various NLP applications, including information extraction, question answering, and text summarization.
 
+## Scatter Plot for PCA Visualization
+
+Introduction to PCA Visualization
+
+Principal Component Analysis (PCA) visualization commonly employs scatter plots to represent relationships between the first two principal components. These plots reveal clustering patterns, outliers, and the overall structure of high-dimensional data projected onto a 2D space.
+
 ## Misleading Box Plots Limitations and Alternatives
 
 Understanding Box Plots
@@ -10048,6 +10180,12 @@ Q\* MCTSr, or Monte Carlo Tree Self-refine, is a theoretical algorithm that comb
 Understanding Encoder-Decoder LLMs
 
 Encoder-decoder architectures are indeed used in large language models (LLMs) for instruction tasks. This misconception likely stems from the prominence of decoder-only models in recent years. Let's explore the landscape of LLM architectures and their applications in instruction tasks.
+
+## Enhancing Random Forests with Differential Attention
+
+Understanding Differential Attention Mechanism
+
+Differential attention mechanism enhances random forest performance by assigning importance weights to features based on their statistical variance. This approach leverages the intuition that features with higher variability contain more discriminative information for classification tasks.
 
 ## Decorating Python Classes
 
@@ -10534,6 +10672,12 @@ Sine and cosine functions, which are periodic and oscillatory in nature, play a 
 Gradient Descent
 
 Gradient descent is an optimization algorithm used to minimize a function by iteratively moving in the direction of steepest descent. It's widely used in machine learning for training models.
+
+## Low-Latency Boost for Context in RAG Pipelines Rerankers
+
+Understanding RAG Pipeline Fundamentals
+
+A Retrieval-Augmented Generation (RAG) pipeline combines vector similarity search with reranking to improve context retrieval. The base implementation uses FAISS for efficient similarity search and transformers for embedding generation, forming the foundation for later reranking enhancements.
 
 ## SelfGoal in Machine Learning with Python
 
