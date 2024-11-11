@@ -444,6 +444,12 @@ Introduction to Dunder Methods in Python
 
 Dunder methods, short for "double underscore" methods, are special methods in Python that allow you to define how objects of a class behave in various situations. These methods are surrounded by double underscores on both sides, hence the name. They are also known as magic methods or special methods. Dunder methods enable you to customize the behavior of your objects, making them more intuitive and powerful.
 
+## Unit Testing in Python with unittest
+
+Setting Up a Basic Unit Test
+
+Python's unittest framework provides a structured way to create test cases by subclassing TestCase. This allows us to define test methods that verify specific functionality using assertion methods to check expected outcomes against actual results.
+
 ## Splitting Arrays for Machine Learning Model Training
 
 Introduction to Array Splitting for Model Training
@@ -467,6 +473,12 @@ Natural Language Processing (NLP) is a crucial field in artificial intelligence,
 Introduction to Diffusion Models
 
 Diffusion models are a class of generative models that have gained significant attention in the field of computer vision and image processing. These models work by gradually adding noise to data and then learning to reverse this process, allowing them to generate high-quality images from noise. This approach has shown remarkable results in various tasks, including image generation, inpainting, and super-resolution.
+
+## Building a Chatbot with FastAPI and Python
+
+Setting Up FastAPI Project Structure
+
+Modern API development requires a well-organized project structure to maintain scalability and separation of concerns. FastAPI follows Python package conventions while enabling easy configuration of routers, middleware, and dependency injection for building robust chatbot applications.
 
 ## Enhancing RAG with Knowledge Graph in Python
 
@@ -1043,11 +1055,23 @@ Introduction to Late Chunking in RAG Workflows
 
 Late Chunking is a technique used to improve the efficiency and accuracy of Retrieval-Augmented Generation (RAG) systems. It involves splitting documents into smaller chunks at query time, rather than during the initial indexing phase. This approach allows for more context-aware and flexible text retrieval, leading to better performance in various natural language processing tasks.
 
+## Calculating Sums in Pandas DataFrames
+
+Basic DataFrame Sum Operations
+
+The pandas sum() function is a versatile method for calculating column-wise or row-wise sums in a DataFrame. It can handle numeric data types while automatically excluding NaN values, making it robust for real-world data analysis scenarios.
+
 ## Encoder-Decoder Architecture for Sequence-to-Sequence Tasks
 
 Introduction to Encoder-Decoder Architecture
 
 Encoder-Decoder Architecture is a fundamental deep learning model designed for sequence-to-sequence tasks. It consists of two main components: an encoder that processes input sequences, and a decoder that generates output sequences. This architecture has revolutionized various fields, including natural language processing and computer vision.
+
+## Essential Statistical Concepts for Data Analysis
+
+Correlation Analysis - Pearson vs Spearman
+
+Statistical correlations measure relationships between variables, with Pearson capturing linear relationships and Spearman handling non-linear monotonic relationships. Understanding their differences enables choosing the appropriate method for your data analysis tasks.
 
 ## Streamlining Data Looping with Python's enumerate()
 
@@ -1138,6 +1162,12 @@ Recurrent Neural Networks are a class of neural networks designed to process seq
 Introduction to Jacobian Matrices
 
 A Jacobian matrix is a fundamental concept in multivariable calculus and linear algebra. It represents the best linear approximation of a differentiable function near a given point. The Jacobian matrix contains all first-order partial derivatives of a vector-valued function.
+
+## 7 Strategies to Scale Your Database
+
+Database Indexing Strategy Implementation
+
+Indexing is a fundamental database optimization technique that creates data structures to improve the speed of data retrieval operations in databases. By analyzing query patterns and implementing appropriate indexes, we can significantly reduce query execution time and optimize resource utilization.
 
 ## Graphical Neural Networks in Python
 
@@ -3158,6 +3188,12 @@ KL Divergence Foundation
 
 KL divergence measures the relative entropy between two probability distributions, quantifying how one distribution differs from a reference distribution in statistical modeling and machine learning.
 
+## High-Dimensional Data with t-SNE
+
+t-SNE Fundamentals
+
+t-SNE (t-Distributed Stochastic Neighbor Embedding) is a powerful dimensionality reduction technique that excels at preserving local structure in high-dimensional data by modeling similar samples as nearby points and dissimilar samples as distant points in the lower-dimensional space.
+
 ## PyTorch Tutorial Building Neural Networks with Python
 
 Introduction to PyTorch
@@ -3400,6 +3436,12 @@ Python's ecosystem is enriched by numerous libraries that extend its capabilitie
 Introduction to Transformer-based Models
 
 Transformer-based models have revolutionized natural language processing. In this presentation, we'll explore T5, BERT, RoBERTa, and DistilBERT, understanding their architecture, use cases, and implementation details.
+
+## Calculus Fundamentals for Python
+
+Limits in Financial Mathematics
+
+The concept of limits forms the foundation for analyzing continuous financial processes. In quantitative finance, limits help evaluate how financial instruments behave as they approach specific conditions, particularly useful in options pricing and risk assessment near expiration dates.
 
 ## Understanding How LLMs Generate Text with Python
 
@@ -3683,6 +3725,12 @@ Understanding Basic Activation Functions
 
 Neural networks require non-linear activation functions to model complex patterns. We'll implement the classical sigmoid and tanh functions from scratch, examining their mathematical properties and behavior across different input ranges.
 
+## Django REST Framework Filtering Techniques
+
+Basic DRF Filtering Setup
+
+Django Rest Framework filtering requires initial configuration and package installation. The django-filter package extends DRF's filtering capabilities by providing a comprehensive set of filter types and customization options for building flexible API endpoints.
+
 ## Heap Data Structure in Python
 
 Introduction to Heaps
@@ -3726,6 +3774,12 @@ Statistical learning refers to a vast set of tools for understanding data. It ha
 Foundations of TSP Representation
 
 A fundamental aspect of solving the Traveling Salesman Problem is representing cities and distances efficiently. We implement a City class to store coordinates and calculate Euclidean distances, forming the basis for our optimization algorithms.
+
+## Generative vs Discriminative Machine Learning Models
+
+Fundamentals of Discriminative Models
+
+Discriminative models directly learn the mapping between input features and output labels by modeling the conditional probability P(Y|X). These models focus on finding decision boundaries that effectively separate different classes, making them particularly suited for classification tasks.
 
 ## Autoencoders for Manifold Dimension Discovery in Python
 
@@ -5092,7 +5146,9 @@ Data modeling is the process of creating a conceptual representation of data and
 
 ## Beginners Guide to Real Analysis in Python
 
-Introduction to Real Analysis in Python This slideshow covers fundamental real analysis concepts and their implementation in Python. Real analysis deals with the theoretical foundations of calculus, such as limits, continuity, differentiation, and integration of functions.
+Introduction to Real Analysis in Python
+
+This slideshow covers fundamental real analysis concepts and their implementation in Python. Real analysis deals with the theoretical foundations of calculus, such as limits, continuity, differentiation, and integration of functions.
 
 ## Exploring Conditional Probability with Python
 
@@ -5335,6 +5391,12 @@ In machine learning, achieving high accuracy is often the primary goal. However,
 Understanding TensorFlow Core Components
 
 TensorFlow's core components form the foundation of deep learning operations, focusing on tensor manipulations, automatic differentiation, and computational graph construction. The framework enables efficient mathematical operations through its eager execution mode while maintaining compatibility with graph mode for production deployment.
+
+## Understanding the Transformer Architecture of Large Language Models
+
+Transformer Architecture Implementation
+
+The transformer architecture forms the backbone of modern LLMs, utilizing self-attention mechanisms to process sequential data. This implementation demonstrates the core components including multi-head attention, positional encoding, and feed-forward networks in a clean, modular approach.
 
 ## Fundamentals of Data Analysis with Python
 
@@ -5771,6 +5833,12 @@ Introduction to Neural Networks
 
 Neural networks are computational models inspired by the human brain. They consist of interconnected nodes (neurons) that process and transmit information. In this presentation, we'll build a neural network from scratch using Python.
 
+## Exploring the Advantages of ADAM Optimizer for Deep Learning
+
+ADAM Optimizer Fundamentals
+
+The ADAM optimizer combines momentum and RMSprop approaches to provide adaptive learning rates for each parameter. It maintains both first and second moment estimates of gradients, enabling efficient parameter updates while accounting for both gradient magnitude and variance.
+
 ## The Principle of Occam's Razor in Machine Learning
 
 Understanding RNNs and Occam's Razor
@@ -5878,6 +5946,12 @@ The Pandas apply() method is often misunderstood and misused. Contrary to common
 Dockerfile Basics with Python
 
 A Dockerfile is a text document containing instructions to build a Docker image automatically. For Python applications, it defines the base image, working directory, dependency installations, and commands to run the application.
+
+## Integrating YOLO OCR and AI Agents for Document Organization
+
+Understanding YOLO Architecture for Document Detection
+
+The YOLO (You Only Look Once) architecture revolutionizes document detection by treating it as a regression problem, directly predicting bounding boxes and class probabilities through a single neural network evaluation, enabling real-time processing of document images with high accuracy.
 
 ## Thought-Augmented Reasoning with Buffer of Thoughts with Python
 
@@ -6563,6 +6637,12 @@ Universal Approximation Theorem and Neural Networks
 
 The Universal Approximation Theorem is a fundamental concept in neural networks, stating that a feedforward network with a single hidden layer containing a finite number of neurons can approximate continuous functions on compact subsets of R^n, under mild assumptions on the activation function. This theorem provides the theoretical foundation for the effectiveness of neural networks in various applications.
 
+## Semantic Chunking for Intelligent Document Processing
+
+Introduction to Semantic Text Chunking
+
+Semantic chunking transforms document processing by intelligently segmenting text based on meaning rather than arbitrary character counts. This implementation demonstrates the core concept using natural language processing techniques to identify coherent boundaries.
+
 ## Top 5 Deployment Strategies
 
 Big Bang Deployment
@@ -7231,6 +7311,12 @@ Introduction to Grokked Transformers as Implicit Reasoners
 
 Grokked Transformers are a novel approach to endowing large language models with reasoning capabilities. Unlike traditional methods that explicitly encode rules or knowledge, Grokked Transformers aim to implicitly learn reasoning patterns from data, leveraging the power of transformers to capture complex relationships and dependencies.
 
+## 7 Essential Python Packages for Finance
+
+The Power of QuantLib in Python
+
+QuantLib is a comprehensive quantitative finance library providing tools for derivatives pricing, fixed income analysis, and risk management. Its Python wrapper, QuantLib-Python, enables sophisticated financial modeling with object-oriented design patterns and industry-standard algorithms.
+
 ## 10 Underrated Python Packages for Data Science
 
 CleanLab - Advanced Data Cleaning
@@ -7656,6 +7742,12 @@ The Coffee Automaton: Exploring Complexity in Closed Systems
 
 The Coffee Automaton is a conceptual model used to study the emergence and decay of complexity in closed systems. This model draws inspiration from the process of brewing and consuming coffee, serving as an analogy for more complex systems in nature and society.
 
+## Mastering Support Vector Machines for Classification and Regression
+
+SVM Mathematical Foundations
+
+Support Vector Machines rely on fundamental mathematical principles to find the optimal hyperplane separating data classes. The primary objective is maximizing the margin between classes while minimizing classification errors through quadratic optimization with linear constraints.
+
 ## Probability in Machine Learning with Python
 
 Introduction to Probability in Machine Learning
@@ -7685,6 +7777,12 @@ The Linear Ballistic Accumulator (LBA) represents a mathematical framework for m
 The Importance of Data Quality in AI
 
 "Garbage in, garbage out" is a well-known phrase in AI, emphasizing the critical role of data quality. While this principle holds some truth, it's an oversimplification. High-quality data is indeed crucial, but it's not the only factor determining AI success. Let's explore a more nuanced view of data quality and its impact on AI systems.
+
+## 9 Essential Python Command Line Flags
+
+The -m Flag for Module Execution
+
+The -m flag allows executing modules as scripts directly from the command line, enabling clean module imports and proper package handling. This approach is particularly useful for running test suites, profiling code, or executing utility scripts within packages.
 
 ## The Evolving Landscape of AI Frameworks
 
@@ -9704,6 +9802,12 @@ Confidence intervals provide a range of values that likely contain the true popu
 Introduction to Transformers
 
 Transformers have revolutionized natural language processing and machine learning. Introduced in the paper "Attention Is All You Need" by Vaswani et al., they replaced recurrent models with attention-based architectures. This new approach dramatically improved performance on various NLP tasks and has since become the foundation for many state-of-the-art language models.
+
+## Supervised vs. Unsupervised Learning Decoding the Aha Moments
+
+Understanding Supervised Learning Implementation
+
+Supervised learning requires labeled data to train models that can make predictions. We'll implement a simple linear regression model from scratch to demonstrate the core concepts of supervised learning, including gradient descent optimization.
 
 ## Deep Speech 2 Python-Powered Speech Recognition
 
