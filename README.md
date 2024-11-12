@@ -120,6 +120,12 @@ Introduction to Boosting in Model Training
 
 Boosting is an ensemble learning technique that combines multiple weak learners to create a strong predictive model. It focuses on iteratively improving model performance by giving more weight to misclassified instances. Let's explore how boosting works with Python examples.
 
+## Unsupervised Anomaly Detection Methods
+
+Isolation Forest Algorithm
+
+Isolation Forest is a powerful unsupervised anomaly detection method based on the principle that anomalies are easier to isolate than normal data points. It randomly selects a feature and splits data between minimum and maximum values, creating isolation trees where anomalies require fewer splits.
+
 ## Implementing Neural Networks! Beyond the Code
 
 GPU Memory Optimization in Neural Networks
@@ -2063,6 +2069,12 @@ Introduction to Numba
 
 Numba is a just-in-time compiler for Python that can significantly speed up numerical and scientific Python code. It works by translating Python functions to optimized machine code at runtime using the industry-standard LLVM compiler library.
 
+## Simplify Code with Combined Exceptions
+
+Understanding Combined Exception Handling
+
+Exception handling in Python allows grouping multiple exceptions into a single except block, reducing code redundancy and improving readability. This approach maintains functionality while simplifying error management through the strategic combination of related exceptions.
+
 ## Hierarchical Clustering in Python
 
 Introduction to Hierarchical Clustering
@@ -2718,6 +2730,12 @@ Introduction to Matplotlib
 
 Matplotlib is a powerful plotting library for Python, widely used for creating static, animated, and interactive visualizations. It provides a MATLAB-like interface and can produce publication-quality figures in various formats.
 
+## Choosing Between NumPy and Pandas for Python Data Processing
+
+NumPy Fundamentals - Array Operations
+
+NumPy arrays provide efficient storage and operations for numerical data through contiguous memory allocation. Unlike Python lists, NumPy arrays enforce homogeneous data types, enabling vectorized operations that significantly boost computational performance for mathematical calculations.
+
 ## Keras Model Train in Python, Predict in C++
 
 Introduction to Keras
@@ -2927,6 +2945,12 @@ Logistic Regression is a fundamental statistical method used for binary classifi
 Introduction to Abstract Base Classes
 
 Abstract Base Classes (ABCs) provide a way to define interfaces in Python, enforcing a contract that derived classes must fulfill. They act as a blueprint for other classes, establishing a set of methods and properties that concrete implementations must provide.
+
+## Understanding Optimizers in Neural Networks
+
+Understanding Basic Gradient Descent
+
+Gradient descent forms the foundation of optimization in neural networks. It iteratively adjusts parameters by computing gradients of the loss function with respect to model parameters, moving in the direction that reduces the loss most rapidly.
 
 ## Embedding Layers Transforming Text into Machine-Readable Vectors
 
@@ -3572,6 +3596,12 @@ Code:
 Model Comparison: CNN Architectures
 
 Two 2-layer CNN models were trained on the CIFAR-10 dataset, resulting in different accuracies. Model A achieved 70% accuracy, while Model B reached 74%. This difference is not due to hyperparameter tuning, suggesting that other factors are at play. Let's explore the possible reasons for this performance gap.
+
+## Running Open-Source LLMs Locally with Ollama
+
+Setting Up Local Environment for Ollama
+
+The first step involves configuring the Python environment to interact with Ollama's API endpoints. This allows seamless communication between Python applications and locally running LLMs through HTTP requests, enabling both synchronous and asynchronous operations.
 
 ## Introduction to GGML and GGUF for Efficient LLM Inference
 
@@ -5483,6 +5513,12 @@ Code:
 Graph-Based Zero-Shot Learning and Contrastive Learning
 
 Graph-based zero-shot learning and contrastive learning are two powerful techniques in machine learning. This presentation explores their intersection and demonstrates how they can be combined using Python to create more robust and versatile models.
+
+## Fundamentals of Neural Networks
+
+Neural Network Fundamentals
+
+Neural networks consist of interconnected layers of artificial neurons that process information through weighted connections. Each neuron receives inputs, applies weights and biases, and produces an output through an activation function, mimicking biological neural systems in a simplified mathematical form.
 
 ## Challenges and Applications of Dynamic Mode Decomposition
 
@@ -9512,6 +9548,12 @@ Retrieval-Augmented Generation (RAG) systems are not the plug-and-play solution 
 Introduction to Softmax Activation Function
 
 The Softmax activation function is a crucial component in neural networks, particularly for multi-class classification problems. It transforms a vector of real numbers into a probability distribution, where each value represents the likelihood of belonging to a specific class.
+
+## Attention Mechanisms in Machine Learning
+
+Attention Mechanism Fundamentals
+
+The attention mechanism allows neural networks to dynamically focus on relevant parts of input sequences by assigning importance weights to different elements, enabling more effective processing of sequential data compared to traditional RNN approaches.
 
 ## Customizing Loss Functions for Precise Machine Learning Models
 
