@@ -2215,6 +2215,12 @@ Introduction to Modern Fourier Analysis
 
 Modern Fourier Analysis is a powerful mathematical technique used to decompose complex signals into simpler, periodic components. It has applications in signal processing, image compression, and data analysis.
 
+## Optimizing Diffusion Models for Faster Generation
+
+Introduction to DPM-Solver Architecture
+
+The DPM-Solver framework revolutionizes diffusion model sampling by implementing a high-order numerical solver based on differential equations theory. It dramatically reduces the number of function evaluations needed while maintaining generation quality through sophisticated mathematical optimization.
+
 ## Enhancing LLM Context with Recursive Summarization Using Python
 
 Introduction to LLM Context Enhancement
@@ -3005,6 +3011,12 @@ Logistic Regression is a fundamental statistical method used for binary classifi
 Introduction to Abstract Base Classes
 
 Abstract Base Classes (ABCs) provide a way to define interfaces in Python, enforcing a contract that derived classes must fulfill. They act as a blueprint for other classes, establishing a set of methods and properties that concrete implementations must provide.
+
+## Feature Scaling Methods in Machine Learning
+
+Understanding Feature Scaling Methods
+
+Feature scaling is a crucial preprocessing step in machine learning that transforms numerical features to a similar scale, improving model performance and convergence. The main techniques include normalization, standardization, and robust scaling.
 
 ## Understanding Optimizers in Neural Networks
 
@@ -6525,6 +6537,12 @@ Vector 1: [1, 2, 3]
 Vector 2: [4 5 6]
 ```
 
+## Exploring Machine Learning with Linear Regression
+
+Understanding Linear Regression Fundamentals
+
+Linear regression serves as the cornerstone of predictive modeling, establishing relationships between dependent and independent variables through a linear equation. This mathematical framework enables us to model real-world relationships and make predictions based on historical data patterns.
+
 ## Evaluating NBA Players Using Physical and Statistical Characteristics
 
 Introduction to NBA Player Evaluation
@@ -8985,6 +9003,12 @@ Introduction to LLM Evaluation Metrics
 
 Large Language Models (LLMs) have revolutionized natural language processing tasks. To assess their performance, researchers and practitioners use various evaluation metrics. This presentation covers 30 common metrics, their applications, and implementations.
 
+## The Importance of Tokenization in NLP
+
+Basic Text Tokenization
+
+Text tokenization forms the foundation of NLP by splitting raw text into individual tokens. This process transforms unstructured text data into a sequence of meaningful units that can be processed by machine learning models, enabling fundamental natural language understanding tasks.
+
 ## Evaluating Classification Model Performance Metrics
 
 Understanding Confusion Matrix Components
@@ -10123,6 +10147,12 @@ Clustered Data and Linear Models: Avoiding the Traps
 
 Clustered data occurs when observations are grouped into distinct categories or clusters. Linear models, while powerful, can lead to incorrect conclusions when applied naively to clustered data. This presentation explores the challenges and solutions for handling clustered data in linear modeling using Python.
 
+## Efficient LLM Fine-Tuning with LoRA
+
+LoRA Implementation Fundamentals
+
+Low-Rank Adaptation fundamentally works by decomposing weight updates into smaller matrices through SVD-like decomposition, enabling efficient fine-tuning while maintaining model quality. The implementation starts with basic matrix operations to demonstrate the core concept.
+
 ## Introduction to Game Graphs in AI using Python
 
 Introduction to Game Graphs in AI
@@ -10506,6 +10536,12 @@ Ordinary Least Squares (OLS) regression is a fundamental statistical method used
 Introduction to K-Means Clustering
 
 K-Means is a popular unsupervised machine learning algorithm used for clustering data points into groups based on similarity. This animation explores the step-by-step process of K-Means, providing an intuitive understanding of how it works.
+
+## Mastering DataFrames with .describe()
+
+Introduction to DataFrame.describe()
+
+The describe() method provides a comprehensive statistical summary of numerical columns in a DataFrame, including count, mean, standard deviation, minimum, and quartile values. This method is essential for quick exploratory data analysis and understanding data distribution patterns.
 
 ## Python KV Caching Efficient Data Storage and Retrieval
 
@@ -10903,6 +10939,12 @@ The learning rate is a crucial hyperparameter in deep learning models that deter
 Introduction to Graph Neural Networks for Research Paper Categorization
 
 Graph Neural Networks (GNNs) have emerged as a powerful tool for analyzing and categorizing research papers. By representing papers and their relationships as nodes and edges in a graph, GNNs can capture complex patterns and dependencies, leading to more accurate categorization.
+
+## Machine Learning Algorithms Handwritten Notes
+
+Introduction to Machine Learning
+
+Machine learning is a subset of artificial intelligence that enables systems to learn and improve from experience without explicit programming. It uses statistical techniques to allow computers to find hidden patterns in data and make intelligent decisions based on these patterns.
 
 ## Comparing Ensemble Methods! Boosting, Bagging, and Stacking
 
