@@ -2450,6 +2450,12 @@ Understanding the Confusion Matrix
 
 The confusion matrix is a fundamental tool in machine learning for evaluating classification models. It provides a tabular summary of a model's performance by comparing predicted classes against actual classes.
 
+## Overfitting in Machine Learning
+
+Understanding Overfitting in Machine Learning
+
+Overfitting occurs when a machine learning model learns the training data too perfectly, including its noise and outliers, resulting in poor generalization to new, unseen data. This phenomenon is characterized by high training accuracy but significantly lower test accuracy.
+
 ## Matrices in Data Science Organizing and Analyzing Large Datasets
 
 Matrices in Data Science
@@ -2885,6 +2891,12 @@ The Leaky Rectified Linear Unit (Leaky ReLU) is an activation function in neural
 Introduction to Data Augmentation in NLP
 
 Data augmentation is a technique used to increase the diversity and size of training data by creating modified versions of existing data. In Natural Language Processing (NLP), this helps build more robust models that can generalize better to unseen data.
+
+## Linear Algebra Fundamentals for Quant Finance and ML
+
+Vectors and Vector Operations in NumPy
+
+Linear algebra operations in quantitative finance start with vectors representing asset returns, prices, or risk factors. NumPy provides efficient tools for vector calculations essential in portfolio management and risk analysis through its ndarray object and vectorized operations.
 
 ## Master Probability Distributions with Python
 
@@ -4079,6 +4091,12 @@ Introduction to Pandas DataFrame
 
 A DataFrame is a 2-dimensional labeled data structure in Pandas, similar to a spreadsheet or SQL table. It's the most commonly used Pandas object, capable of holding various data types in columns.
 
+## Exploring the Building Blocks of Modern AI
+
+Multi-layer Perceptron Implementation
+
+A Multi-layer Perceptron forms the foundation of modern neural networks, implementing forward and backward propagation to learn patterns in data through adjustable weights and biases. This implementation demonstrates a basic MLP for binary classification with one hidden layer.
+
 ## Levels of Measurement in Machine Learning with Python
 
 Levels of Measurement in Machine Learning
@@ -5264,6 +5282,12 @@ Adversarial attacks are techniques used to manipulate input data, often images, 
 
 Welcome to this TikTok series on Python fundamentals! Python is a popular, versatile, and beginner-friendly programming language. In this series, we'll cover the basics to help you get started.
 
+## Exploring Python Dictionary Methods
+
+Dictionary Clear Method
+
+The clear() method efficiently removes all items from a dictionary, resulting in an empty dictionary. This operation is performed in-place, meaning it modifies the original dictionary rather than creating a new one, which is memory efficient for large dictionaries.
+
 ## Building a Generative Neural Network from Scratch in Python
 
 Introduction to Generative Neural Networks
@@ -6255,6 +6279,12 @@ Data drift represents the change in data distribution over time that can degrade
 Understanding Early Stopping Core Concepts
 
 Early stopping serves as a regularization technique that monitors model performance during training by evaluating a validation set after each epoch. When the validation error starts to increase while training error continues to decrease, it indicates potential overfitting.
+
+## 6 Types of Clustering Algorithms Beyond K-Means
+
+Centroid-Based Clustering Overview
+
+K-means clustering revolutionized data partitioning by iteratively assigning data points to their nearest centroids and updating centroid positions. This fundamental approach minimizes within-cluster variance through an expectation-maximization process, making it computationally efficient for large datasets.
 
 ## Avoid Multiple Function Calls with Tuple Unpacking
 
