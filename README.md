@@ -3093,6 +3093,12 @@ Introduction to Regular Expressions Regular expressions (regex) are sequences of
 Introduction to Finite State Machines (FSMs) 
 A Finite State Machine (FSM) is a computational model used to design systems that can be in one of a finite number of states. It transitions from one state to another based on specific inputs or events. FSMs are widely used in various domains, including computer science, electronics, and linguistics.
 
+## Building Multi-Agent Nested Chatbots with AutoGen
+
+Setting Up AutoGen Environment
+
+AutoGen requires specific configurations and dependencies to enable multi-agent interactions. The initialization process includes setting up authentication, configuring agent personalities, and establishing communication protocols for nested conversations.
+
 ## Hyperparameter Optimization Techniques in Machine Learning
 
 Grid Search Cross-Validation
@@ -3533,6 +3539,12 @@ Understanding Confusion Matrix Fundamentals
 
 A confusion matrix is a fundamental evaluation metric in machine learning that displays the performance of a classification model by comparing predicted versus actual class labels. It provides a detailed breakdown of correct and incorrect predictions across all classes.
 
+## Calculating Confusion Matrix Metrics
+
+Understanding Confusion Matrix
+
+In binary classification, a confusion matrix is a 2x2 table that visualizes the performance of a model by comparing predicted values against actual values. It forms the foundation for calculating key metrics like accuracy, precision, recall, and F1-score.
+
 ## Understanding and Mitigating Data Drift in ML Production
 
 Data Drift in ML Production
@@ -3600,6 +3612,12 @@ NumPy, a fundamental library for scientific computing in Python, offers powerful
 Introduction to Advanced Time Series Analysis
 
 Time series analysis is a crucial technique for understanding and predicting sequential data. This presentation explores advanced methods using TensorFlow, Fourier Transforms, and Cohomology Groups. We'll dive into practical examples and code snippets to illustrate these concepts.
+
+## Weight and Bias Fundamentals for Deep Learning
+
+Understanding Neural Network Weight Initialization
+
+Neural network weights and biases are critical parameters that determine how input signals are transformed through the network. Proper initialization of these parameters is crucial for successful model training, as it affects gradient flow and convergence speed during backpropagation.
 
 ## Implementing N-Point Crossover in Python
 
@@ -4024,6 +4042,12 @@ Independent variables are features used as input to predict an outcome. They are
 Introduction to Pix2TeX
 
 Pix2TeX is a powerful Python library that converts images containing mathematical equations into LaTeX code. This tool bridges the gap between handwritten or printed equations and their digital representation, making it easier for researchers, students, and professionals to digitize mathematical content.
+
+## Intuition for Eigenvalues and Eigenvectors
+
+Linear Transformations Fundamentals
+
+Linear transformations represent mappings between vector spaces that preserve vector addition and scalar multiplication. In machine learning, understanding these transformations is crucial as they form the foundation for understanding how neural networks manipulate data through weight matrices.
 
 ## 20 Essential Python OOP Magic Methods
 
@@ -6997,6 +7021,12 @@ Understanding type() Limitations
 
 The type() function in Python returns the exact type of an object, but this rigid approach breaks polymorphism and inheritance principles. When working with derived classes or multiple valid types, type() comparisons fail to recognize valid subclass instances.
 
+## Understanding Support Vector Machines (SVM) for AI Classification
+
+Support Vector Machine Implementation from Scratch
+
+Support Vector Machine (SVM) is a powerful supervised learning algorithm that creates an optimal hyperplane to separate data points into distinct classes while maximizing the margin between them, ensuring robust classification performance and generalization capabilities.
+
 ## Building a Gradient Descent Optimizer from Scratch in Python
 
 Introduction to Gradient Descent
@@ -8425,6 +8455,12 @@ Classification models are a fundamental part of machine learning, used to predic
 The Underscore in Python
 
 The underscore (\_) in Python is a versatile symbol with multiple uses. This presentation focuses on its role as a throwaway or placeholder variable, a powerful technique for improving code readability and efficiency.
+
+## Optimizing Language Model Prompts
+
+Introduction to LLM Optimization Methods
+
+Neural networks form the backbone of modern language models, requiring careful optimization across multiple dimensions including architecture, training data, and inference parameters. The optimization process involves mathematical foundations combined with practical engineering approaches.
 
 ## Cross-Entropy in Python
 
@@ -9872,6 +9908,12 @@ Code:
 The Lifetime Ticket Conundrum
 
 In 1987, Steve Rothstein purchased a lifetime American Airlines ticket for $250,000. This ticket allowed him unlimited travel, which he used extensively, even flying to other countries just for lunch. The airline company claims this ended up costing them $21 million. Our task is to estimate how many flights Rothstein took to accumulate such a significant cost.
+
+## Building LLMs from Scratch Python Practical Code Examples
+
+Neural Network Foundations
+
+Neural networks form the backbone of modern deep learning, starting with the fundamental building blocks. The key components include weights, biases, activation functions, and forward propagation that transform input data through layers to produce meaningful outputs.
 
 ## Visualizing Pride and Prejudice with Python
 
@@ -11602,6 +11644,12 @@ The timeit module in Python is a powerful tool for measuring the execution time 
 Introduction to Compact Lie Groups
 
 Compact Lie groups are fundamental structures in mathematics and physics, combining the properties of compactness and differentiability. They play a crucial role in various fields, including quantum mechanics, particle physics, and differential geometry. In this presentation, we'll explore the basics of compact Lie groups and their applications, using Python to illustrate key concepts.
+
+## Savage-Dickey Ratio for Bayesian Model Comparison
+
+Introduction to Savage-Dickey Ratio
+
+The Savage-Dickey ratio provides an efficient method for computing Bayes factors in nested model comparison scenarios, where one model is a special case of another. This implementation demonstrates the basic framework for calculating the ratio using probability density estimation.
 
 ## Spark Window Functions for Time-Series Analysis in PySpark
 
