@@ -1433,6 +1433,12 @@ Introduction to Outliers
 
 Outliers are data points that significantly differ from other observations in a dataset. They can occur due to various reasons such as measurement errors, data entry mistakes, or genuine anomalies. Detecting and handling outliers is crucial for maintaining data quality and ensuring accurate analysis results.
 
+## Exception Handling Patterns in Python
+
+Basic Exception Handling Structure
+
+Exception handling in Python provides a robust mechanism for dealing with runtime errors through try-except blocks. This fundamental pattern allows developers to gracefully handle errors without program termination, maintaining application stability and user experience.
+
 ## Core Components of Agent Decision-Making in LangChain
 
 Core Components of Agent Decision-Making in LangChain
@@ -1661,6 +1667,12 @@ Time Shifting in Pandas
 
 Time shifting is a powerful feature in pandas that allows you to manipulate and analyze time series data efficiently. It enables you to shift index labels forward or backward, creating new time-based perspectives on your data. This slideshow will guide you through the concepts and practical applications of time shifting in pandas using Python.
 
+## Class-Based Decorators in Python
+
+Introduction to Class-Based Decorators
+
+Class-based decorators represent an advanced implementation pattern in Python that allows classes to modify or enhance the behavior of functions or methods. Unlike function decorators, class decorators maintain state and provide a more object-oriented approach to extending functionality.
+
 ## Temperature's Role in Language Model Output
 
 Understanding Temperature in Language Models
@@ -1750,6 +1762,12 @@ The update() method is the traditional way to merge dictionaries in Python, but 
 Self-Attention in Transformers
 
 Self-attention is a key mechanism in Transformer models, allowing the model to weigh the importance of different parts of the input sequence when processing each element. It enables the model to capture contextual relationships within the data.
+
+## Variational Autoencoders Generative Models with Deep Learning
+
+Understanding VAE Architecture
+
+A Variational Autoencoder combines probabilistic inference with neural networks, creating a powerful generative model. The architecture consists of an encoder network that maps input data to a latent distribution and a decoder network that reconstructs the input from sampled latent vectors.
 
 ## Exploring NeuralForecast Using Python
 
@@ -2086,6 +2104,12 @@ Weights are fundamental components in machine learning models, serving as the pa
 Understanding Classification Metrics Fundamentals
 
 Classification metrics form the foundation for evaluating machine learning model performance. These metrics help quantify how well a model can distinguish between different classes, measuring various aspects of predictive accuracy through statistical calculations derived from the confusion matrix.
+
+## Addressing Class Imbalance in Machine Learning
+
+Understanding Class Imbalance
+
+Class imbalance occurs when dataset classes have significantly different sample sizes, affecting model performance. We'll implement a basic data analysis function to detect and quantify imbalance using standard metrics like class distribution and imbalance ratio.
 
 ## Boosting Models with Python Decision Trees
 
@@ -2747,6 +2771,12 @@ The query method in pandas provides a powerful and efficient way to filter DataF
 Introduction to Time Series Forecasting
 
 Time series forecasting is a crucial technique in data science, used to predict future values based on historical data. This presentation compares classic models like Long Short-Term Memory (LSTM) and Recurrent Neural Networks (RNN) with Large Language Models (LLMs) for time series forecasting using Python.
+
+## Loss Functions for Machine Learning Algorithms
+
+Mean Squared Error Loss
+
+Mean Squared Error (MSE) represents the average squared difference between predicted and actual values, making it particularly effective for regression problems where outliers need significant penalization. It's differentiable and convex, ensuring convergence to global minimum during optimization.
 
 ## Z-Test for Proportions in Python
 
@@ -3625,6 +3655,12 @@ Introduction to N-point Crossover
 
 N-point crossover is a genetic algorithm technique used to create new offspring by combining genetic information from two parents. It involves selecting N points along the chromosome and alternating segments between the parents to create new combinations.
 
+## First-Class Functions and Key Concepts in Python
+
+First-Class Functions Fundamentals
+
+In Python, functions are first-class objects, meaning they can be assigned to variables, passed as arguments to other functions, returned from functions, and stored in data structures. This fundamental concept enables powerful functional programming paradigms and flexible code design.
+
 ## Implementing Hodrick-Prescott Filter for Technical Analysis in Python
 
 Understanding the Hodrick-Prescott Filter
@@ -3875,6 +3911,12 @@ Basic DRF Filtering Setup
 
 Django Rest Framework filtering requires initial configuration and package installation. The django-filter package extends DRF's filtering capabilities by providing a comprehensive set of filter types and customization options for building flexible API endpoints.
 
+## Organizing Python Code with Modules and Imports
+
+Basic Module Structure
+
+Python modules serve as the fundamental building blocks for organizing code into reusable components. They encapsulate related functions, classes, and variables while providing a namespace that prevents naming conflicts between different parts of a larger application.
+
 ## Heap Data Structure in Python
 
 Introduction to Heaps
@@ -3960,6 +4002,12 @@ Ensemble methods are powerful machine learning techniques that combine multiple 
 Introduction to Ensemble Learning
 
 Ensemble learning is a powerful machine learning technique that combines multiple models to improve prediction accuracy and robustness. This approach leverages the diversity of different models to overcome individual weaknesses and produce superior results. In this presentation, we'll explore various ensemble learning algorithms and their implementation in Python.
+
+## Exploring Distance Metrics in K-Nearest Neighbors
+
+Understanding Distance Metrics in KNN
+
+In K-Nearest Neighbors, distance metrics play a crucial role in determining the similarity between data points. The most commonly used distance metric is Euclidean distance, which calculates the straight-line distance between two points in n-dimensional space using the Pythagorean theorem.
 
 ## Attention Mechanism in Python
 
@@ -4115,6 +4163,12 @@ Introduction to Pandas DataFrame
 
 A DataFrame is a 2-dimensional labeled data structure in Pandas, similar to a spreadsheet or SQL table. It's the most commonly used Pandas object, capable of holding various data types in columns.
 
+## Test-Driven Development in Python
+
+Test-Driven Development Fundamentals
+
+Test-Driven Development (TDD) is a software development methodology where tests are written before the actual code implementation. This approach ensures that code meets requirements from the start and maintains high test coverage throughout development.
+
 ## Exploring the Building Blocks of Modern AI
 
 Multi-layer Perceptron Implementation
@@ -4156,6 +4210,12 @@ Understanding IndexError is crucial in Python as it occurs when trying to access
 Introduction to Window Functions in PySpark
 
 Window functions are powerful tools for performing calculations across a set of rows that are related to the current row. In time-series analysis, they allow us to compute moving averages, running totals, and other time-based aggregations efficiently. This slideshow will explore how to leverage window functions for time-series analysis in PySpark using Python.
+
+## Optimization Algorithms Beyond Gradient Descent
+
+Newton's Method - Beyond Gradient Descent
+
+Newton's method is an advanced optimization algorithm that utilizes second-order derivatives to find optimal parameters more efficiently than gradient descent. It approximates the objective function locally using a quadratic function and finds its minimum analytically.
 
 ## The Dark Side of Cross-Validation in Python
 
@@ -4844,6 +4904,12 @@ Introduction to LLM-based Text-to-SQL Integration
 
 Text-to-SQL integration using Large Language Models (LLMs) is a powerful approach to bridge natural language queries with database operations. This technology allows users to interact with databases using everyday language, making data access more intuitive and accessible. In this presentation, we'll explore how to integrate LLM-based solutions into text-to-SQL systems using Python, covering key concepts, techniques, and practical implementations.
 
+## Mastering Python Logging with Multiple Destinations
+
+Understanding Python Logging Fundamentals
+
+The Python logging module provides a flexible framework for generating log messages with different severity levels. Understanding the basic configuration and logging levels is essential for implementing effective logging strategies in applications.
+
 ## Comparing K-Means and Gaussian Mixture Models for Clustering in Python
 
 Introduction to Clustering Algorithms
@@ -5386,6 +5452,12 @@ Size-encoded Heatmap
 
 Size-encoded heatmaps improve upon traditional heatmaps by adding a size component to each cell. This enhancement makes it easier to interpret exact values and reduces visual clutter, especially for values close to zero. The technique is particularly useful when dealing with datasets where both color and size can convey meaningful information.
 
+## Magic Methods and Operator Overloading in Python
+
+Introduction to Magic Methods
+
+Magic methods, also known as dunder methods (double underscore), form the foundation of Python's data model, enabling operator overloading and customization of object behavior. They define how objects respond to operators, attribute access, and built-in functions, making Python's syntax more intuitive and expressive.
+
 ## How to Create Custom Exception in Python
 
 Understanding Custom Exceptions
@@ -5481,6 +5553,12 @@ Measurement levels are fundamental ways of categorizing different types of data 
 Filling NaN Values in a DataFrame
 
 To fill all blank (NaN) values in a DataFrame with zero using Python, we can use the fillna() method. This method is part of the pandas library, which provides powerful data manipulation tools for Python.
+
+## Observer Pattern in Python Practical Implementation
+
+Observer Pattern Fundamentals
+
+The Observer pattern enables a subscription mechanism where multiple objects (observers) monitor changes in another object (subject). This fundamental design pattern is crucial for implementing event handling systems and maintaining loose coupling between components.
 
 ## Correlation Analysis in Python
 
@@ -6189,6 +6267,12 @@ Feature engineering is the process of transforming raw data into features that b
 
 Code:
 
+## Advanced Python Function Arguments args and kwargs
+
+Understanding \*args in Python
+
+The \*args parameter in Python functions enables accepting variable-length positional arguments, allowing functions to handle an arbitrary number of inputs. This powerful feature provides flexibility when the exact number of arguments is unknown at design time.
+
 ## Fundamental Python Concepts
 
 Introduction to Python 
@@ -6280,6 +6364,12 @@ AI Hallucination Mitigation Strategies
 
 AI hallucinations are incorrect or nonsensical outputs generated by AI models. This presentation explores strategies to mitigate these issues, ensuring more reliable and accurate AI-generated content.
 
+## Unit Testing with Python's unittest Framework
+
+Setting Up Basic Unit Tests
+
+Unit testing in Python leverages the unittest module, which provides a rich set of tools for constructing and running tests. The TestCase class serves as the foundation for creating test cases, offering various assertion methods to validate expected outcomes against actual results.
+
 ## Building a Custom LangChain QnA Agent with Wikipedia Using Python
 
 Introduction to LangChain
@@ -6309,6 +6399,12 @@ Data drift represents the change in data distribution over time that can degrade
 Understanding Early Stopping Core Concepts
 
 Early stopping serves as a regularization technique that monitors model performance during training by evaluating a validation set after each epoch. When the validation error starts to increase while training error continues to decrease, it indicates potential overfitting.
+
+## Exploring Linear Regression for Predictive Modeling
+
+Understanding Linear Regression Fundamentals
+
+Linear regression forms the backbone of predictive modeling by establishing relationships between variables through a linear equation. The fundamental concept involves finding the best-fitting line that minimizes the sum of squared residuals between predicted and actual values.
 
 ## 6 Types of Clustering Algorithms Beyond K-Means
 
@@ -6711,6 +6807,12 @@ Introduction to the Donut Dilemma
 
 This slide introduces our intriguing problem: How long would it take someone to eat 2400 donuts? We'll approach this seemingly whimsical question with mathematical rigor, breaking it down into manageable components and using Python to model our solution. This problem is part of our series "Finding Patterns in Pointless Problems using Python," where we apply serious analytical techniques to lighthearted scenarios.
 
+## Logging Configuration and Handlers in Python
+
+Basic Logging Configuration
+
+The logging module in Python provides a flexible framework for generating log messages with different severity levels. Understanding the basic configuration is essential for implementing robust logging systems in production applications.
+
 ## Data Cleansing and Transformation for Machine Learning
 
 Data Loading and Initial Assessment
@@ -7056,6 +7158,12 @@ Word tokenization is a fundamental process in natural language processing (NLP) 
 Introduction to Credit Card Fraud Detection
 
 Credit card fraud is a significant problem for financial institutions and consumers alike. Machine learning techniques, particularly autoencoders, can be powerful tools for detecting fraudulent transactions. This presentation will explore how to implement an autoencoder using Python to detect credit card fraud.
+
+## Comparing Transformer Models for Sentiment Analysis
+
+Transformer Architecture for Sentiment Analysis
+
+The Transformer architecture revolutionized NLP by introducing self-attention mechanisms that capture contextual relationships between words. This fundamental architecture serves as the backbone for modern sentiment analysis models, enabling them to understand complex emotional nuances in text data through parallel processing of sequences.
 
 ## Exploring the Infinite Mathematics, Philosophy, and Python
 
@@ -7520,6 +7628,12 @@ Python is a versatile, high-level programming language known for its simplicity 
 Introduction to CUDA Programming with Python
 
 CUDA (Compute Unified Device Architecture) is a parallel computing platform and programming model developed by NVIDIA for general computing on graphical processing units (GPUs). This slideshow will introduce you to CUDA programming using Python, focusing on practical examples and actionable code.
+
+## Factory Design Patterns in Python
+
+Factory Method Pattern Fundamentals
+
+The Factory Method Pattern is a creational design pattern that provides an interface for creating objects but allows subclasses to alter the type of objects that will be created. This pattern promotes loose coupling by eliminating the need to bind application-specific classes into the code.
 
 ## Hypothesis Testing for Means vs. Normality Tests in Python
 
@@ -8492,6 +8606,12 @@ Method Chaining in Python
 
 Method chaining is a programming technique that allows multiple method calls to be chained together in a single statement. This approach can lead to more concise and readable code, especially when performing a series of operations on an object.
 
+## Python Object-Oriented Programming Properties and Attributes
+
+Understanding Python Class Attributes
+
+Class attributes in Python belong to the class itself, shared across all instances, providing memory efficiency and serving as a powerful tool for maintaining state across multiple objects of the same class. They differ fundamentally from instance attributes in both scope and lifetime.
+
 ## Tropical Algebra for Dynamic Systems in Python
 
 Introduction to Tropical Algebra
@@ -8898,6 +9018,12 @@ Neural networks often exhibit intrinsic hallucinations due to knowledge gaps in 
 Title: Introduction to Neural Hierarchical Interpolation for Time Series
 
 Neural Hierarchical Interpolation is a powerful technique for modeling and forecasting complex time series data. It combines the strengths of neural networks with hierarchical structures to capture both short-term and long-term patterns in temporal data. This approach is particularly useful for handling irregularly sampled or missing data points in time series.
+
+## Generator Functions and Iteration Patterns in Python
+
+Introduction to Generator Functions
+
+Generator functions in Python provide a memory-efficient way to work with large sequences of data by yielding values one at a time rather than storing them all in memory. This fundamental concept revolutionizes how we handle large datasets and infinite sequences.
 
 ## Minimizing Neural Network Weight Description Length with Python
 
@@ -9429,6 +9555,12 @@ Spectral clustering is a powerful technique for unsupervised learning that lever
 Introduction to Fine-tuning and Prompt Engineering
 
 Fine-tuning and prompt engineering are two approaches to adapt large language models for specific tasks. Fine-tuning involves retraining the model on task-specific data, while prompt engineering focuses on crafting effective input prompts. This presentation will explore both techniques, their applications, and provide practical examples using Python.
+
+## Essential Python for Data Science
+
+Statistical Fundamentals in Python
+
+The foundation of data science rests on statistical measures that help us understand data distribution, central tendency, and dispersion. These metrics form the basis for more complex analyses and machine learning algorithms, making them crucial for any data scientist.
 
 ## Extended Mind Transformers for Long Context NLP in Python
 
@@ -10922,6 +11054,12 @@ A webhook is a mechanism for real-time communication between systems. It allows 
 Understanding Object Detection Models
 
 Object detection models like YOLO and Faster R-CNN are widely used for identifying and localizing objects in images. These models typically process input images to generate low-resolution feature maps, which are then used to predict bounding boxes and object classes. Let's explore how these models work with a simple example.
+
+## Python Decorators Basic and Advanced Usage
+
+Understanding Python Decorators
+
+A decorator is a design pattern in Python that allows modifying the behavior of functions or classes without directly changing their source code. Decorators provide a clean and elegant way to wrap additional functionality around existing code, following the principle of separation of concerns.
 
 ## Strategies to Address Overfitting in Neural Networks
 
