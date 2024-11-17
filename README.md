@@ -8468,8 +8468,6 @@ Introduction to Cross-Entropy
 
 Cross-entropy is a widely used loss function in machine learning, particularly in classification problems. It measures the performance of a model by comparing the predicted probability distribution with the actual distribution. A lower cross-entropy value indicates a better model performance.
 
-Code:
-
 ## Explaining Overfitting in Machine Learning Models with Python
 
 Understanding Overfitting in Machine Learning Models
