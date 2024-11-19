@@ -636,6 +636,12 @@ Introduction to Cosine Similarity Loss
 
 Cosine Similarity Loss is a popular metric in machine learning, particularly in natural language processing and recommendation systems. It measures the cosine of the angle between two non-zero vectors, providing a value between -1 and 1. While widely used, it has several hidden pitfalls that can lead to unexpected results.
 
+## Re-ranking in Retrieval-Augmented Generation
+
+Initial Document Retrieval with BM25
+
+BM25 serves as a foundational retrieval algorithm in RAG systems, implementing a probabilistic scoring function that ranks documents based on query term appearances. This implementation demonstrates a basic BM25 retriever using pure Python for educational purposes.
+
 ## Building Efficient APIs with Python
 
 APIs and System Integration
@@ -1139,6 +1145,12 @@ The Disappearing Act
 
 Reproducibility Problem Keep a log of actions when the bug appears to recreate conditions
 
+## Handling Dropout Regularization in Neural Networks
+
+Introduction to Dropout
+
+Dropout is a regularization technique that helps prevent overfitting in neural networks by randomly deactivating a proportion of neurons during training. This forces the network to learn more robust features that are useful in conjunction with many different random subsets of neurons.
+
 ## Linear Regression Implementation from Scratch
 
 Linear Regression Implementation from Scratch
@@ -1244,6 +1256,12 @@ Cross-validation is a statistical method used to evaluate machine learning model
 Introduction to Adaptive Neural Networks with Stochastic Synapses
 
 Adaptive Neural Networks with Stochastic Synapses are an advanced form of artificial neural networks that incorporate randomness into their synaptic connections. This approach aims to improve generalization and robustness in machine learning models. In this presentation, we'll explore the concept, implementation, and applications of these networks using Python.
+
+## Handling Imbalanced Data with Reweighting
+
+Understanding Data Imbalance
+
+Data imbalance occurs when class distributions are significantly skewed, commonly seen in fraud detection, medical diagnosis, and recommendation systems. Initial assessment involves calculating class ratios and visualizing distributions to determine appropriate handling strategies.
 
 ## Correlation Regression and Curve Fitting in Machine Learning with Python
 
@@ -1996,6 +2014,12 @@ A binary tree is a hierarchical data structure where each node has at most two c
 Format Restrictions in LLMs
 
 Format restrictions in Large Language Models (LLMs) refer to constraints placed on the input or output of these models. These constraints can significantly impact the performance and capabilities of LLMs.
+
+## Exploring Python Docstring Formats
+
+Python Docstring Basics - reStructuredText Style
+
+The reStructuredText (reST) docstring format, originally developed for Python documentation, uses a semantic markup syntax to define documentation elements. It's the default format recognized by Sphinx and provides rich features for creating detailed API documentation.
 
 ## Data Mesh vs. Data Fabric Comparing Modern Data Architectures
 
@@ -4704,6 +4728,12 @@ Introduction to Reinforcement Learning
 
 Reinforcement Learning (RL) is a type of machine learning where an agent learns to make decisions by interacting with an environment. The agent receives rewards or penalties based on its actions, aiming to maximize cumulative rewards over time. RL is inspired by behavioral psychology and has applications in various fields, from robotics to game playing.
 
+## Python Error Handling LBYL vs EAFP Approaches
+
+Understanding LBYL vs EAFP Programming Paradigms
+
+Python offers two main approaches to handling potential errors: Look Before You Leap (LBYL) and Easier to Ask for Forgiveness than Permission (EAFP). These paradigms represent fundamentally different philosophies in error handling and code design.
+
 ## Step-by-Step Diffusion Models and Flow Matching in Python
 
 Introduction to Step-by-Step Diffusion Models
@@ -4713,6 +4743,12 @@ Diffusion models are a class of generative models that learn to gradually denois
 ## Polars A Beginners Guide to the Python Dataframe Library
 
 Introduction to Polars Polars is a fast and efficient DataFrame library for Python, written in Rust. It provides a user-friendly interface similar to pandas but with better performance and memory efficiency.
+
+## Correlation vs Causation Understanding the Difference
+
+Understanding Correlation
+
+Correlation measures the statistical relationship between two variables, indicating how they move together. It quantifies the strength and direction of their linear relationship, producing values between -1 and +1, where -1 indicates perfect negative correlation and +1 perfect positive correlation.
 
 ## Predictive Modeling with AutoML in Python
 
@@ -4779,6 +4815,12 @@ Multiple Linear Regression (MLR) is a statistical technique used to model the re
 Introduction to Machine Learning
 
 Machine Learning is a subset of Artificial Intelligence that focuses on developing algorithms and models that enable computers to learn from data and improve their performance on specific tasks without being explicitly programmed. In this presentation, we'll explore the three main types of machine learning: Supervised, Unsupervised, and Reinforcement Learning, with a focus on implementing these concepts using Python.
+
+## Transformer Architecture for Efficient LLM Processing
+
+Self-Attention Mechanism Implementation
+
+The self-attention mechanism calculates attention scores between all pairs of input tokens, enabling the model to weigh the importance of different parts of the input sequence dynamically. This implementation demonstrates the core mathematical operations behind self-attention computation.
 
 ## Introduction to Vector Databases for AI and Machine Learning in Python
 
@@ -5710,6 +5752,12 @@ Introduction to Support Vector Machines (SVM)
 
 Support Vector Machines (SVM) are powerful supervised machine learning algorithms used for classification and regression tasks. They work by finding the optimal hyperplane that maximally separates classes in high-dimensional feature spaces. SVMs are particularly effective for handling non-linear problems and high-dimensional data.
 
+## Boost Pandas Performance with np.where()
+
+Understanding apply() vs where() Performance
+
+The fundamental difference between apply() and where() lies in their execution models. While apply() processes data row by row using Python's interpreter, where() leverages NumPy's optimized C-level operations for vectorized computation, resulting in significant performance improvements.
+
 ## Simplifying Python Code with Attribute Functions
 
 Introduction to Python's Attribute Functions
@@ -6388,6 +6436,12 @@ Project Overview: ECG Analysis with Deep Learning
 
 This project focuses on classifying ECG images using advanced deep learning techniques. We'll explore data preparation, model development, and the application of transfer learning to improve classification accuracy for various heart conditions.
 
+## Gradient Descent Fundamentals for Machine Learning
+
+Understanding Gradient Descent Fundamentals
+
+Gradient Descent is an iterative optimization algorithm used to minimize a cost function by updating parameters in the opposite direction of the gradient. It forms the backbone of neural network training by finding local minima through calculating partial derivatives and adjusting weights accordingly.
+
 ## Disabling the Python Global Interpreter Lock (GIL)
 
 Understanding the Global Interpreter Lock (GIL)
@@ -6713,6 +6767,12 @@ Code:
 The Limitations of Normal Distribution
 
 The normal distribution, while widely used, is not always the best model for real-world phenomena. Many natural processes are asymmetric or involve multiplicative effects, which the normal distribution fails to capture accurately.
+
+## Regression Error Metrics with Python Code Examples
+
+Mean Squared Error (MSE)
+
+Mean Squared Error is a fundamental regression metric that measures the average squared difference between predicted and actual values. It heavily penalizes larger errors due to squaring and provides a clear mathematical foundation for optimization in machine learning models.
 
 ## Decoding the Decoder Understanding its Role in Machine Learning Models
 
@@ -7116,6 +7176,12 @@ Understanding your dataset begins with proper loading and initial inspection. Th
 Binary Tree Implementation Fundamentals
 
 A binary tree is a hierarchical data structure composed of nodes, where each node contains a value and has up to two children nodes - left and right. This implementation creates the foundation for more complex tree operations and traversals.
+
+## Attention Mechanism Explained Visually
+
+Attention Mechanism Fundamentals
+
+The attention mechanism revolutionizes sequence processing by enabling models to focus on relevant parts of input data dynamically. It calculates importance scores between elements, allowing the model to weigh different parts of the input differently when producing outputs.
 
 ## Converting Podcasts to Searchable Chat with Groq, Whisper, and PineCone
 
@@ -7954,6 +8020,12 @@ The Global Tournament Puzzle
 
 In this presentation, we'll explore an intriguing mathematical problem: If every person in the world competed in a 1-on-1 tournament, how many times would the ultimate winner need to win? We'll use mathematical reasoning and Python programming to solve this puzzle, uncovering the fascinating relationship between population size and tournament structure.
 
+## Iterating with Python's range() and itertools.count
+
+Understanding Python's range() Function
+
+The range() function is a built-in Python generator that creates an arithmetic progression sequence. It provides memory-efficient iteration by generating values on-demand rather than storing the entire sequence in memory, making it ideal for large sequences.
+
 ## Visualizing the Empirical Rule in Normal Distributions
 
 The Empirical Rule and Normal Distribution
@@ -8325,6 +8397,12 @@ A secure user authentication system using password hashing with salt to prevent 
 Introduction to Tokens and Tokenization in LLMs
 
 Tokenization is a fundamental process in natural language processing, especially for Large Language Models (LLMs). It involves breaking down text into smaller units called tokens. These tokens serve as the basic building blocks for text processing and understanding. Let's explore how tokenization works and its importance in LLMs using Python.
+
+## Simplifying Transformer Models with Python
+
+Tokenization Fundamentals
+
+The tokenization process is fundamental to transformer models, converting raw text into numerical tokens that can be processed. This implementation demonstrates a basic tokenizer using vocabulary building and token mapping techniques.
 
 ## Principal Orthogonal Latent Components Analysis Network (POLCA Net)
 
@@ -9883,6 +9961,12 @@ Introduction to ETL, ELT, and EtLT
 
 Data integration processes are crucial for modern businesses. ETL (Extract, Transform, Load), ELT (Extract, Load, Transform), and EtLT (Extract, small transform, Load, and Transform) are three approaches to handling data integration. Each has its strengths and use cases, which we'll explore in this presentation using Python examples.
 
+## Simplifying Transformer Architecture for Beginners
+
+Transformer Architecture Overview
+
+The transformer architecture revolutionized natural language processing by introducing self-attention mechanisms and parallel processing capabilities. This implementation demonstrates the fundamental building blocks of a transformer model using NumPy for better understanding of the underlying mathematics.
+
 ## Confidence and Prediction Intervals in Data Science
 
 Understanding Confidence and Prediction Intervals
@@ -10194,6 +10278,12 @@ Tree-based models are powerful machine learning techniques used for both classif
 Fundamentals of PCA Visualization
 
 Principal Component Analysis (PCA) dimensionality reduction commonly uses scatter plots to visualize relationships between principal components. These plots reveal patterns, clusters, and variance explained by the first two or three components, which typically capture the most significant data variation.
+
+## Exception Chaining in Python Master the Art of Robust Error Handling
+
+Understanding Exception Chaining Basics
+
+Exception chaining in Python allows developers to maintain the context of original exceptions while raising new ones, creating a traceback chain that preserves valuable debugging information. This mechanism is particularly useful when handling complex error scenarios in production environments.
 
 ## 3D Graphics Foundations Rendering Triangles in Python
 
@@ -11858,6 +11948,12 @@ The timeit module in Python is a powerful tool for measuring the execution time 
 Introduction to Compact Lie Groups
 
 Compact Lie groups are fundamental structures in mathematics and physics, combining the properties of compactness and differentiability. They play a crucial role in various fields, including quantum mechanics, particle physics, and differential geometry. In this presentation, we'll explore the basics of compact Lie groups and their applications, using Python to illustrate key concepts.
+
+## Mastering isinstance() and issubclass() in Python
+
+Understanding isinstance() Fundamentals
+
+The isinstance() function is a crucial Python built-in that checks if an object belongs to a specified class or type. It returns True if the object is an instance of the class or any of its subclasses, making it essential for type checking and polymorphic code.
 
 ## Savage-Dickey Ratio for Bayesian Model Comparison
 
