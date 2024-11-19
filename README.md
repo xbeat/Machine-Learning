@@ -1205,6 +1205,12 @@ Introduction to Handwritten Digit Classification
 
 Handwritten digit classification is a fundamental problem in computer vision and machine learning. It involves teaching a computer to recognize and categorize handwritten digits automatically. This task has numerous real-world applications, from postal code recognition to digitizing historical documents. In this presentation, we'll explore how to build a handwritten digit classifier using TensorFlow and the MNIST dataset.
 
+## Evaluating GANs with Inception Score and FID
+
+Introduction to GAN Evaluation Metrics
+
+The evaluation of Generative Adversarial Networks requires quantitative metrics to assess the quality and diversity of generated samples. Two fundamental metrics emerged as standard: Inception Score (IS) and Fréchet Inception Distance (FID), both leveraging the Inception-v3 network's learned representations.
+
 ## Random Forest Regressor Explained with Python
 
 Introduction to Random Forest Regressor
