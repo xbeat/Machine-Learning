@@ -702,6 +702,12 @@ Second-order equations are crucial in many machine learning and AI algorithms, p
 
 Code:
 
+## Improving Attention in Large Language Models with DIFFTransformer
+
+DIFFTransformer Base Architecture
+
+The DIFFTransformer architecture introduces a novel differential attention mechanism that operates by computing two distinct attention distributions. This approach enables more focused context processing by explicitly modeling both positive and negative attention patterns.
+
 ## Non-Uniform Negative Sampling for Imbalanced Data in Python
 
 Introduction to Non-Uniform Negative Sampling
@@ -938,6 +944,12 @@ Probability theory forms the backbone of many machine learning algorithms, enabl
 Text Generation with Language Models
 
 Language models are powerful tools for generating text, but the process is not as straightforward as it might seem. These models are trained to predict the probability of the next token in a sequence, but turning these probabilities into coherent text requires careful consideration of various generation strategies.
+
+## Understanding Gradient Descent for AI Model Training
+
+Introduction to Gradient Descent
+
+Gradient descent is an iterative optimization algorithm used to minimize a loss function by iteratively adjusting parameters in the direction of steepest descent. The algorithm calculates partial derivatives to determine which direction leads to the minimum of the function.
 
 ## Calculating Z-Scores with Python
 
@@ -1612,6 +1624,12 @@ Automatic domain adaptation is a crucial technique in natural language processin
 Introduction to Deep Residual Learning
 
 Deep Residual Learning is a revolutionary approach in image recognition that addresses the problem of vanishing gradients in deep neural networks. It introduces the concept of "skip connections" or "shortcut connections" that allow the network to learn residual functions with reference to the layer inputs, rather than learning unreferenced functions.
+
+## 5 Reasons for Feature Selection in Machine Learning
+
+Dimensionality Reduction and Computational Efficiency
+
+Feature selection significantly reduces computational complexity and training time by eliminating irrelevant or redundant features. This process becomes crucial when dealing with high-dimensional datasets where the curse of dimensionality can severely impact model performance and resource utilization.
 
 ## Reducing Multicollinearity in Regression with Python
 
@@ -3137,6 +3155,12 @@ Gradient descent forms the foundation of optimization in neural networks. It ite
 Word to Vector Basics
 
 An embedding layer transforms discrete word tokens into continuous vector spaces, enabling mathematical operations on text data. The fundamental process involves mapping each word to a unique index and then to a dense vector representation.
+
+## Chunking Strategies for Improved RAG Performance
+
+Understanding Text Chunking Fundamentals
+
+Text chunking is a critical preprocessing step in RAG systems that involves breaking down large documents into smaller, meaningful segments. This process enables efficient document retrieval and helps maintain semantic coherence while staying within LLM context windows.
 
 ## Introducing Foundation Agents The Next Frontier in AI Decision-Making
 
@@ -6604,6 +6628,12 @@ Document Understanding Transformer (DUT)
 
 Document Understanding Transformer is a powerful deep learning model designed to comprehend and extract information from various types of documents. It leverages the transformer architecture to process both textual and visual elements, making it particularly effective for tasks involving complex document layouts.
 
+## Mastering ReAct Combining Reasoning and Action in Python
+
+ReAct Framework Core Components
+
+The ReAct framework integrates large language models with action capabilities through a systematic thought-action-observation cycle. This paradigm enables AI agents to reason about their environment, take actions based on that reasoning, and observe the results to inform subsequent decisions.
+
 ## Accelerating RAG with Binary Quantization
 
 Understanding Binary Quantization
@@ -7375,6 +7405,12 @@ Introduction to NLP and Short Text Analysis
 
 Natural Language Processing (NLP) is a field of artificial intelligence that focuses on the interaction between computers and human language. Short text analysis is a crucial subset of NLP, dealing with brief pieces of text such as tweets, product reviews, or chat messages. This slideshow will explore various machine learning techniques for analyzing short texts using Python.
 
+## Top Machine Learning Algorithms Explained
+
+Linear Regression Implementation
+
+Linear regression serves as a foundational predictive modeling algorithm that establishes relationships between dependent and independent variables through a linear equation. The model minimizes the sum of squared residuals between observed and predicted values to find optimal coefficients.
+
 ## Logistic Distribution Probability Regression and Neural Networks
 
 Introduction to Logistic Distribution
@@ -7593,6 +7629,12 @@ Understanding TF-IDF
 
 TF-IDF (Term Frequency-Inverse Document Frequency) is a numerical statistic used to reflect the importance of a word in a document within a collection or corpus. It's widely used in information retrieval and text mining.
 
+## Automating Repetitive Tasks with Large Action Models
+
+Understanding Large Action Models Architecture
+
+Large Action Models represent an evolution in AI architecture, combining transformer-based language understanding with action execution capabilities through a neuro-symbolic framework that enables direct interaction with external systems and APIs while maintaining contextual awareness of tasks and constraints.
+
 ## Motivations for Using KernelPCA over PCA
 
 Introduction to KernelPCA and PCA
@@ -7766,6 +7808,12 @@ kNN (k-Nearest Neighbors) is a simple and intuitive algorithm, but it faces sign
 Introduction to Python
 
 Python is a versatile, high-level programming language known for its simplicity and readability. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming. Python's extensive standard library and third-party packages make it suitable for various applications, from web development to scientific computing.
+
+## Claude-Activation Functions in Neural Networks
+
+Introduction to Activation Functions
+
+Neural networks transform input data through layers of interconnected nodes, with activation functions determining the output of each neuron. These mathematical functions introduce non-linearity, enabling neural networks to learn and approximate complex patterns that simple linear models cannot capture.
 
 ## CUDA Programming with Python
 
@@ -8487,6 +8535,12 @@ Prefetching is a technique used to optimize data access by loading data into mem
 Introduction to Trust Region Method (TRM)
 
 The Trust Region Method is an optimization algorithm used in machine learning and artificial intelligence to find the minimum of a function. It's particularly useful for non-linear optimization problems. TRM works by defining a region around the current point within which it trusts the approximation to be accurate.
+
+## Apriori Algorithm for Association Rule Mining
+
+Apriori Algorithm Overview
+
+The Apriori algorithm is a seminal technique for discovering frequent itemsets and generating association rules in transactional databases. It employs a "bottom-up" approach where frequent subsets are extended one item at a time while pruning candidates using the downward closure property.
 
 ## Anomaly Detection Techniques in Python
 
@@ -9511,6 +9565,12 @@ ImportError is a common exception in Python that occurs when a module or attribu
 Feature Engineering Techniques for Data Scientists
 
 Feature engineering is the process of transforming raw data into meaningful features that enhance machine learning model performance. It involves selecting, manipulating, and creating new features to improve the predictive power of models. This slideshow will cover various feature engineering techniques, including imputation, discretization, categorical encoding, feature splitting, handling outliers, variable transformations, scaling, and feature creation.
+
+## Probability Fundamentals for Machine Learning
+
+Understanding Conditional Probability
+
+Conditional probability forms the foundation of many machine learning algorithms, particularly in classification tasks. It represents the probability of an event occurring given that another event has already occurred, mathematically expressed as P(A|B).
 
 ## Integrating ML Models in FastAPI with Python
 
@@ -10589,6 +10649,12 @@ Introduction to Semi-Implicit Variational Inference (SIVI)
 
 Semi-Implicit Variational Inference (SIVI) is an advanced technique in machine learning that enhances the flexibility of variational approximations. Introduced by Mingzhang Yin and Mingyuan Zhou in their 2018 ICML paper, SIVI addresses limitations of traditional variational inference methods by using a more expressive family of distributions.
 
+## Efficient Knowledge Distillation Techniques
+
+Knowledge Distillation Fundamentals
+
+Knowledge distillation is a model compression technique where a smaller student model learns to mimic the behavior of a larger teacher model. The process involves training the student model to match the soft probability distributions produced by the teacher model rather than hard class labels.
+
 ## Mastering SQL Query Execution Order
 
 SQL Query Execution Order
@@ -10806,6 +10872,12 @@ Gaussian Mixture Models (GMMs) are powerful probabilistic models used for cluste
 Pretraining, Finetuning, and Transfer Learning
 
 Pretraining, finetuning, and transfer learning are essential techniques in machine learning, particularly in deep learning. These methods allow us to leverage knowledge from one task or domain to improve performance on another, often with less data and computational resources. In this presentation, we'll explore each concept, their differences, and how they're implemented using Python.
+
+## Analyzing Time Series Data with Python and Statsmodels
+
+Introduction to Time Series Analysis with Statsmodels
+
+Time series analysis involves studying data points collected over time to identify patterns, trends, and relationships. Statsmodels provides comprehensive tools for time series analysis in Python, offering methods for decomposition, statistical testing, and forecasting with minimal setup required.
 
 ## Currying in Python A Functional Programming Technique
 
@@ -11812,6 +11884,12 @@ Posterior collapse is a phenomenon that can occur in Variational Autoencoders (V
 Introduction to Active Learning in Machine Learning
 
 Active learning is a machine learning approach that interactively queries a user or other information source to label new data points. This method is particularly useful when dealing with unlabeled datasets, as it allows for efficient and targeted labeling of the most informative examples. Active learning aims to achieve high accuracy with a minimal amount of labeled training data, making it a cost-effective solution for many real-world applications.
+
+## Agentic RAG Transforming Customer Support with Retrieval-Augmented Generation
+
+Agentic RAG Architecture Foundation
+
+The foundational architecture of Agentic RAG implements a dynamic agent system that coordinates between knowledge retrieval and response generation. This system utilizes embeddings and vector stores while maintaining contextual awareness throughout the interaction flow.
 
 ## In-Depth Exploration of SVM Polynomial Kernel
 
