@@ -162,6 +162,12 @@ Introduction to Multi-Layer Perceptron (MLP)
 
 A Multi-Layer Perceptron is a type of feedforward artificial neural network. It consists of at least three layers of nodes: an input layer, one or more hidden layers, and an output layer. Each node is a neuron that uses a nonlinear activation function. MLPs are widely used for supervised learning tasks, such as classification and regression.
 
+## Designing Data-Intensive Applications Consistency Tradeoffs
+
+Understanding Synchronous Replication
+
+Synchronous replication ensures strong consistency by waiting for acknowledgment from all replicas before confirming writes. This approach guarantees that all nodes have identical data but introduces latency as the system waits for confirmation from every replica before proceeding.
+
 ## Introduction to Vision-Language Models in Python
 
 Introduction to Vision-Language Models (VLMs)
@@ -2194,6 +2200,12 @@ Hierarchical clustering is an unsupervised machine learning technique used to gr
 Introduction to Artificial Neurons and Local Joint Distributions
 
 Artificial neurons are computational units inspired by biological neurons, forming the foundation of artificial neural networks. In this context, we'll explore how these neurons can model local joint distributions, a crucial concept in probability theory and machine learning.
+
+## Visualizing Time Series Data Patterns
+
+Time Series Data Preprocessing
+
+Time series data often requires careful preprocessing before visualization or analysis. This includes handling missing values, resampling to ensure consistent intervals, and smoothing noisy data. Here we implement essential preprocessing functions for time series analysis.
 
 ## Normalizing and Feature Extraction of 3D Point Clouds
 
@@ -8953,6 +8965,12 @@ What is Regularization?
 
 Regularization is a technique used in machine learning to prevent overfitting and improve the generalization of models. It adds a penalty term to the loss function, discouraging complex models and promoting simpler ones that are less likely to overfit the training data.
 
+## Python File Handling Mastery Key Methods Explained
+
+Basic File Reading Operations
+
+Reading files in Python involves understanding fundamental operations that allow us to extract content efficiently. The read() method loads the entire file content into memory as a single string, making it suitable for smaller files where memory constraints aren't a concern.
+
 ## Manim for Machine Learning in Python
 
 Introduction to Manim for Machine Learning
@@ -10612,6 +10630,12 @@ Python lists are ordered, mutable sequences that store elements of various data 
 Introduction to the Chain Rule in Backpropagation
 
 The chain rule is a fundamental concept in calculus that plays a crucial role in the backpropagation algorithm used to train neural networks. It allows us to compute the gradient of a composite function by breaking it down into simpler parts. In neural networks, this enables us to calculate how each parameter contributes to the overall error and update them accordingly.
+
+## 5 Techniques for Efficient LLM Fine-Tuning
+
+Understanding LoRA Architecture
+
+Low-Rank Adaptation (LoRA) revolutionizes LLM fine-tuning by introducing two matrices A ∈ ℝ^(r×d) and B ∈ ℝ^(d×r) where r << d, significantly reducing trainable parameters while maintaining model performance through low-rank decomposition of weight updates.
 
 ## Median A Robust Measure of Central Tendency
 
