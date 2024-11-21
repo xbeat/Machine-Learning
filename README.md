@@ -1919,6 +1919,12 @@ Statistical Foundations in Python
 
 Statistics provides the mathematical backbone for data science and AI. We'll explore implementing fundamental statistical concepts from scratch, starting with measures of central tendency and dispersion that form the basis of data analysis.
 
+## Key Python List Methods for Manipulation
+
+Basic List Manipulation with append() and insert()
+
+The append() method efficiently adds elements to the end of a list with O(1) time complexity, while insert() places elements at specific positions with O(n) complexity due to shifting existing elements. Understanding these operations is crucial for effective list management.
+
 ## Reinforcement Learning with Python
 
 Introduction to Reinforcement Learning
@@ -2008,6 +2014,12 @@ Inductive biases are fundamental assumptions that machine learning models use to
 Introduction to Many-Shot vs Few-Shot In-Context Learning
 
 In-context learning (ICL) is a crucial aspect of Large Language Models (LLMs). This presentation explores the differences between many-shot and few-shot ICL, focusing on their implementation and practical applications using Python.
+
+## Visual Guide to Bagging and Boosting in Machine Learning
+
+Understanding Bagging in Machine Learning
+
+Bagging, short for Bootstrap Aggregating, is a fundamental ensemble technique that creates multiple training subsets through random sampling with replacement. This method reduces overfitting by training independent models on different data distributions and combining their predictions through averaging or voting mechanisms.
 
 ## Understanding Attention Layers in Neural Networks
 
@@ -2861,6 +2873,12 @@ Time series forecasting is a crucial technique in data science, used to predict 
 Mean Squared Error Loss
 
 Mean Squared Error (MSE) represents the average squared difference between predicted and actual values, making it particularly effective for regression problems where outliers need significant penalization. It's differentiable and convex, ensuring convergence to global minimum during optimization.
+
+## Debunking Pandas Inplace Misconceptions
+
+Understanding Pandas Inplace Operations
+
+The inplace parameter in Pandas operations is commonly misunderstood. While developers expect it to modify data structures without creating copies, the reality is more complex. Inplace operations actually create temporary copies and perform additional checks, potentially impacting performance.
 
 ## Z-Test for Proportions in Python
 
@@ -3775,6 +3793,12 @@ Understanding PCA Mathematics
 
 Principal Component Analysis relies on fundamental linear algebra concepts to transform data. The core mathematical foundation involves computing the covariance matrix, eigenvalues, and eigenvectors to identify directions of maximum variance in the dataset.
 
+## Understanding and Mitigating Data Drift in ML
+
+Understanding Data Drift Fundamentals
+
+Data drift occurs when statistical properties of input features change over time in production environments compared to training data. This fundamental concept is crucial for maintaining model performance and requires continuous monitoring of feature distributions and model predictions.
+
 ## Basics of LangChain's LangGraph
 
 Introduction to LangGraph Core Components
@@ -4342,6 +4366,12 @@ Variable scope determines where in your code a variable can be accessed. Python 
 Introduction to GraphRAG
 
 GraphRAG is an advanced approach to Retrieval-Augmented Generation (RAG) that leverages graph structures to enhance the performance of Large Language Models (LLMs). This method improves upon traditional RAG by capturing complex relationships between information nodes, leading to more accurate and context-aware responses.
+
+## The Exponential Growth of Large Language Models
+
+Model Pruning Fundamentals
+
+Neural network pruning aims to reduce model size by systematically removing weights based on their importance. The gradient-based approach evaluates each parameter's contribution to the loss function through first-order derivatives, enabling identification of non-critical weights for removal.
 
 ## Enhancing RAG Pipelines Key Techniques Using Python
 
@@ -5423,6 +5453,12 @@ Pandas UDFs (User Defined Functions) in PySpark combine the flexibility of Pytho
 Introduction to Algebraic Topology
 
 Algebraic topology is a branch of mathematics that uses algebraic structures to study topological spaces. It provides powerful tools for analyzing the shape and structure of geometric objects.
+
+## Scaling Data-Intensive Applications
+
+Understanding Partitioning Fundamentals
+
+Partitioning data involves breaking large datasets into smaller, more manageable chunks called partitions or shards. This fundamental concept enables horizontal scaling by distributing data and load across multiple machines while maintaining data locality and reducing query latency.
 
 ## Sentiment Analysis Techniques in Python
 
@@ -6598,6 +6634,12 @@ Introduction to Predictive Modeling
 
 Predictive modeling is a statistical technique used to forecast future outcomes based on historical data. It involves analyzing patterns in existing data to make informed predictions about future events or behaviors. In this slideshow, we'll explore how to implement predictive models using Python, a versatile programming language with powerful libraries for data analysis and machine learning.
 
+## Beginner's Guide to Machine Learning with Python
+
+Python Data Structures for Machine Learning
+
+Understanding fundamental data structures is crucial for efficient machine learning implementation. NumPy arrays and Pandas DataFrames form the backbone of data manipulation, offering optimized operations for numerical computations and data analysis in machine learning applications.
+
 ## Minimum Changes to Make Binary Strings Beautiful
 
 Introduction to Binary String Beauty
@@ -7641,6 +7683,12 @@ Introduction to KernelPCA and PCA
 
 Principal Component Analysis (PCA) and Kernel PCA are dimensionality reduction techniques used in machine learning. While PCA is a linear method, KernelPCA extends this concept to non-linear relationships. This presentation will explore the motivation behind using KernelPCA over PCA, providing code examples and practical applications.
 
+## Adaptive Learning Rate Optimization Algorithms
+
+Introduction to Adaptive Learning Rate Algorithms
+
+Adaptive learning rate optimization algorithms automatically adjust the learning rate parameter during training to achieve better convergence. These methods maintain individual learning rates for each parameter, modifying them based on historical gradient information.
+
 ## Overcoming Challenges of Zero-Inflated Regression Modeling
 
 Understanding Zero-Inflated Data
@@ -7862,6 +7910,12 @@ xLSTM, or Extended Long Short-Term Memory, is an advanced variant of the traditi
 Introduction to Grokked Transformers as Implicit Reasoners
 
 Grokked Transformers are a novel approach to endowing large language models with reasoning capabilities. Unlike traditional methods that explicitly encode rules or knowledge, Grokked Transformers aim to implicitly learn reasoning patterns from data, leveraging the power of transformers to capture complex relationships and dependencies.
+
+## Mastering Python Descriptors Unlock Attribute Control
+
+Understanding Descriptors in Python
+
+Descriptors represent a powerful protocol in Python that defines how attribute access is intercepted through special methods. They enable fine-grained control over getting, setting, and deleting attributes, making them invaluable for implementing properties, class methods, and static methods.
 
 ## 7 Essential Python Packages for Finance
 
@@ -8234,6 +8288,12 @@ Stokes' Theorem is a fundamental theorem in vector calculus that relates the cur
 
 Code:
 
+## Modular ML Pipeline Architecture in 3 Phases
+
+Feature Engineering Pipeline Architecture
+
+Feature engineering serves as the foundation of any robust machine learning system. This phase handles data preparation, cleaning, and transformation while maintaining consistency across training and inference. A well-structured feature pipeline ensures reproducibility and efficient feature reuse.
+
 ## Relational Recurrent Neural Networks in Python
 
 Introduction to Relational Recurrent Neural Networks
@@ -8517,6 +8577,12 @@ Exponentially Weighted Moving Averages (EWMA) are a powerful technique used in d
 Introduction to the Central Limit Theorem
 
 The Central Limit Theorem (CLT) is a fundamental concept in probability theory and statistics. It states that the distribution of sample means approximates a normal distribution as the sample size becomes larger, regardless of the population's original distribution. This theorem forms the basis for many statistical inferences and is crucial in understanding confidence intervals and hypothesis testing.
+
+## Ensemble Learning Combining Models for Robust Predictions
+
+Introduction to Ensemble Learning Fundamentals
+
+Ensemble learning combines multiple models to create a more robust prediction system. This fundamental approach leverages the concept of model aggregation, where individual weak learners collaborate to form a stronger predictive model that outperforms single models in accuracy and reliability.
 
 ## Handling Imbalanced Data in Machine Learning with Python
 
@@ -9036,6 +9102,12 @@ Manim is a powerful animation library in Python, originally created by Grant San
 Unlocking Efficiency with Asynchronous Programming in Python
 
 Asynchronous programming in Python allows developers to write concurrent code that can handle multiple tasks efficiently. This paradigm is particularly useful for I/O-bound operations, where the program spends significant time waiting for external resources. By utilizing async/await patterns, we can create responsive applications that perform multiple operations simultaneously without blocking the main execution thread.
+
+## Towards Unified Multi-Modal AI Systems
+
+Introduction to Mixture-of-Transformers Architecture
+
+The Mixture-of-Transformers (MoT) architecture represents a breakthrough in multi-modal AI by introducing modality-specific transformer blocks that process different types of input data independently before combining their representations through a global attention mechanism. This fundamental restructuring enables efficient processing of heterogeneous data types.
 
 ## Simple Monte Carlo Integration and Importance Sampling In Bayesian inference
 
@@ -9572,6 +9644,12 @@ Understanding Conditional Probability
 
 Conditional probability forms the foundation of many machine learning algorithms, particularly in classification tasks. It represents the probability of an event occurring given that another event has already occurred, mathematically expressed as P(A|B).
 
+## Building an Agentic Mesh for Autonomous Agents
+
+Agent Directory Implementation with ChromaDB
+
+The Agent Directory serves as a foundational component for the Agentic Mesh, enabling efficient storage and retrieval of agent metadata. ChromaDB provides persistent vector storage with efficient similarity search capabilities for agent discovery.
+
 ## Integrating ML Models in FastAPI with Python
 
 Introduction to ML Model Integration in FastAPI
@@ -9615,6 +9693,12 @@ YOLO (You Only Look Once) is a state-of-the-art, real-time object detection syst
 Introduction to Linear Regression Assumptions
 
 Linear regression is a fundamental statistical technique used to model the relationship between variables. To ensure the validity and reliability of our model, we need to test five key assumptions. These assumptions form the foundation for accurate predictions and meaningful interpretations of our results.
+
+## Optimizing SQL Joins with Table Size Awareness
+
+Table Size Impact on Join Performance
+
+Join operations in SQL databases are computationally intensive, with performance heavily dependent on table sizes. Understanding how table order affects distributed hash joins enables optimization through strategic placement of larger tables on the left side, reducing memory requirements for hash table creation.
 
 ## Training Custom Tokenizers with Hugging Face Transformers in Python
 
@@ -9729,6 +9813,12 @@ Random Forest and XGBoost are powerful ensemble learning algorithms used in mach
 Understanding Dropout Mechanism
 
 Dropout is a regularization technique that prevents neural networks from overfitting by randomly deactivating neurons during training with a predetermined probability p. Each neuron has a chance of being temporarily removed, forcing the network to learn more robust features.
+
+## Python String Fundamentals Enhance Your Coding Skills
+
+String Creation and Assignment
+
+String creation in Python offers multiple approaches for declaring and initializing string variables. Understanding the fundamental syntax differences between single quotes, double quotes, and triple quotes enables developers to handle text data effectively while maintaining code readability.
 
 ## Hopfield Network for Handwritten Digit Reconstruction
 
@@ -10891,6 +10981,12 @@ Introduction to Supervised and Unsupervised Learning
 
 Supervised and unsupervised learning are two fundamental paradigms in machine learning. Supervised learning uses labeled data to train models, while unsupervised learning discovers patterns in unlabeled data. This slideshow explores their differences, applications, and implementations using Python.
 
+## Optimizing Data Type Conversions in Pandas with astype()
+
+Understanding Data Type Conversion in Pandas
+
+Data type conversion is a critical operation in data preprocessing that impacts memory usage and computational efficiency. The astype() method in Pandas enables explicit conversion of column data types, ensuring data integrity and optimal performance in downstream analysis.
+
 ## Sampling in Statistics with Python
 
 Introduction to Sampling in Statistics
@@ -11212,6 +11308,12 @@ Interactive rebase is particularly useful for:
 Introduction to Fine-tuning T5-small for RAG (Retrieval-Augmented Generation)
 
 Fine-tuning is the process of adapting a pre-trained language model to a specific task or domain. In this case, we will fine-tune the T5-small model, a variant of the T5 (Text-to-Text Transfer Transformer) model, to excel at RAG, which combines retrieval and generation for open-domain question answering.
+
+## Bayesian Information Criterion for Model Selection
+
+Introduction to BIC Implementation
+
+The Bayesian Information Criterion provides a mathematical framework for model selection based on the trade-off between model complexity and goodness of fit. This implementation demonstrates the fundamental BIC calculation for a simple linear regression model.
 
 ## Comprehensive OOP Concepts and Python Applications
 
@@ -11690,6 +11792,12 @@ Kolmogorov Arnold Networks (KAN) and Multi-Layer Perceptron (MLP) are two differ
 Introduction to Retrieval-Augmented Language Models
 
 Retrieval-Augmented Language Models (RALMs) combine the power of large language models with external knowledge retrieval. This approach allows models to access and incorporate relevant information from vast databases, enhancing their ability to generate accurate and contextually appropriate responses.
+
+## Beginner's Guide to Python for Data Science and Machine Learning
+
+Loading and Examining Data with Pandas
+
+Pandas is a powerful data manipulation library that provides essential tools for data analysis. The first step in any data science project is loading and examining your dataset to understand its structure, size, and basic characteristics.
 
 ## Cross-Validation Bias in Unsupervised Preprocessing with Python
 
