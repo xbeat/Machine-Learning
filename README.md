@@ -438,6 +438,12 @@ Bias in Stochastic Gradient Descent (SGD)
 
 Stochastic Gradient Descent is a fundamental optimization algorithm in machine learning. While it's highly effective, it can introduce bias in the training process. This bias can affect model performance and generalization. Let's explore the nature of this bias and its implications.
 
+## Concurrency Control in Databases
+
+Understanding Database Transactions and ACID Properties
+
+A database transaction represents a unit of work that must be executed atomically, ensuring data consistency. ACID properties (Atomicity, Consistency, Isolation, Durability) form the foundation of reliable transaction processing in concurrent database operations.
+
 ## Explaining ROC Curve and AUC in Model Evaluation with Python
 
 Introduction to ROC Curve and AUC
@@ -1817,6 +1823,12 @@ Self-Attention in Transformers
 
 Self-attention is a key mechanism in Transformer models, allowing the model to weigh the importance of different parts of the input sequence when processing each element. It enables the model to capture contextual relationships within the data.
 
+## Mastering Dimensionality Reduction with Principal Component Analysis
+
+Introduction to Principal Component Analysis
+
+Principal Component Analysis (PCA) is a dimensionality reduction technique that transforms high-dimensional data into a new coordinate system where features are uncorrelated. The first principal component captures the direction of maximum variance, with subsequent components orthogonal to previous ones.
+
 ## Variational Autoencoders Generative Models with Deep Learning
 
 Understanding VAE Architecture
@@ -1960,6 +1972,12 @@ Random splitting is a crucial technique in machine learning for dividing dataset
 Introduction to Vector Embeddings
 
 Vector embeddings are numerical representations of data in a high-dimensional space. They capture semantic relationships between objects, making them crucial for various machine learning tasks.
+
+## Weight Initialization Techniques in Deep Learning
+
+Weight Initialization Fundamentals
+
+Deep learning models are highly sensitive to initial weight values. A proper initialization scheme helps prevent vanishing/exploding gradients and ensures efficient training. Let's implement basic random initialization methods to understand their impact on neural network training.
 
 ## Comprehensive Python Testing Strategies
 
@@ -2653,6 +2671,12 @@ XGBoost (Extreme Gradient Boosting) is a powerful machine learning algorithm tha
 Introduction to Multiple-class Logistic Regression
 
 Multiple-class Logistic Regression extends binary logistic regression to handle classification problems with more than two classes. It's a powerful technique for predicting categorical outcomes when there are multiple possible classes. This method is widely used in various fields, including natural language processing, image recognition, and medical diagnosis.
+
+## Differences Between Pretraining Finetuning and Transfer Learning
+
+Introduction to Pretraining
+
+Pretraining is a fundamental technique in machine learning where a model is trained on a large dataset to learn general features and patterns before being adapted for specific tasks. This initial training phase creates a robust foundation of learned representations.
 
 ## Enhancing AI Efficiency with Chunking
 
@@ -6251,6 +6275,12 @@ What is Forward Elimination?
 
 Forward Elimination is a crucial step in solving systems of linear equations using Gaussian elimination. It's a systematic process of transforming a matrix into row echelon form by eliminating variables from equations.
 
+## Evaluating Machine Learning Models with AUC-ROC
+
+Area Under ROC Curve (AUC-ROC) - Core Concept
+
+The Area Under the Receiver Operating Characteristic curve represents the probability that a randomly chosen positive instance is ranked higher than a randomly chosen negative instance. It's particularly valuable for imbalanced classification problems and threshold-independent evaluation.
+
 ## Enhancing Data Visualizations with Seaborn in Python
 
 Introduction to Seaborn
@@ -7387,6 +7417,12 @@ Introduction to Knowledge Graphs
 
 Knowledge graphs are structured representations of information that capture relationships between entities. They form the backbone of many modern information systems, enabling efficient data retrieval and inference. In this presentation, we'll explore how to work with knowledge graphs using Python.
 
+## Strategies for Handling Imbalanced Datasets
+
+Understanding Class Imbalance
+
+The fundamental challenge in imbalanced datasets occurs when one class significantly outnumbers others, leading to biased model predictions. This slide demonstrates how to identify and quantify imbalance ratios in classification problems using Python's scientific computing tools.
+
 ## Python Lists vs Tuples When to Use Which
 
 Introduction to Python Lists and Tuples
@@ -7512,6 +7548,12 @@ Cross-validation is a statistical method for assessing model performance and gen
 Introduction to Stacking in Ensemble Learning
 
 Stacking, also known as stacked generalization, is an ensemble learning technique that combines multiple models to improve prediction accuracy. It leverages the strengths of various base models by training a meta-model on their outputs. This approach often yields better performance than individual models or simple averaging methods.
+
+## Discover Complex Types in Python
+
+Understanding Complex Types in Python
+
+Complex types in Python extend beyond basic data structures by allowing explicit type hints and annotations. This modern approach to Python programming enables better code organization, enhanced IDE support, and improved debugging capabilities through static type checking.
 
 ## Estimating Portfolio Losses with Python's Monte Carlo Simulation
 
@@ -8250,6 +8292,12 @@ Introduction to Feature Engineering
 
 Feature engineering is the process of transforming raw data into meaningful features that can improve machine learning model performance. It's a crucial step in the data science pipeline, often making the difference between mediocre and excellent models.
 
+## Concept and Data Drift in Machine Learning
+
+Understanding Data Drift Detection
+
+Data drift detection requires statistical methods to monitor changes in feature distributions over time. We'll implement a basic drift detector using Kolmogorov-Smirnov test to compare distributions between training and current data windows, with visualization capabilities.
+
 ## Methods for Matrix Multiplication in Python with NumPy
 
 3 Ways to Perform Matrix Multiplication in Python using NumPy
@@ -8425,6 +8473,12 @@ Data drift occurs when the distribution of input data for a machine learning mod
 Loss vs. Cost Functions in Machine Learning
 
 Loss and cost functions are fundamental concepts in machine learning, guiding the learning process of algorithms. While often used interchangeably, they have subtle differences. Loss functions typically measure the error for a single training example, while cost functions aggregate the loss over the entire training dataset. Understanding these functions is crucial for developing effective machine learning models.
+
+## Regularization in Deep Learning Intuition and Mathematics
+
+Understanding Regularization Mathematics
+
+Regularization in deep learning is fundamentally about adding constraints to the optimization objective. The core mathematical concept involves modifying the loss function by adding a penalty term that discourages complex models through weight magnitude control.
 
 ## Evaluating Model Fit with Python
 
@@ -9343,6 +9397,12 @@ Physical Interpretations in Machine Learning
 
 Physical interpretations and intuitions of equations are indeed crucial in Machine Learning and Data Science. They help us understand complex concepts, recognize patterns, and gain deeper insights into our data and models. Let's explore this topic through a series of examples and visualizations.
 
+## Bayes' Theorem in Machine Learning
+
+Understanding Bayes' Theorem Fundamentals
+
+Bayes' theorem provides a mathematical framework for updating probabilities based on new evidence. In machine learning, it forms the foundation for probabilistic reasoning and allows us to quantify uncertainty in predictions by calculating posterior probabilities from prior knowledge and observed data.
+
 ## Improving Long Context LLMs with Writing in the Margins
 
 Introduction to Writing in the Margins (WiM)
@@ -9769,6 +9829,12 @@ Feature scaling is crucial when dealing with datasets containing outliers. This 
 Understanding DALL-E 2 Integration
 
 DALL-E 2's API enables programmatic image generation and manipulation through OpenAI's endpoints. The integration requires proper authentication and request formatting to generate, edit, or manipulate images with specific prompts and parameters.
+
+## Recommendation Systems Collaborative Filtering Fundamentals
+
+Collaborative Filtering Fundamentals
+
+Collaborative filtering is the most widely used recommendation system approach, leveraging user-item interactions to identify patterns and similarities. It assumes that users who agreed in their evaluation of certain items are likely to agree again in the future.
 
 ## 3 Approaches to Concurrency in Python
 
@@ -10339,6 +10405,12 @@ The Reality of RAG Systems
 
 Retrieval-Augmented Generation (RAG) systems are not the plug-and-play solution many expect. While they offer exciting possibilities for utilizing Large Language Models (LLMs) with external knowledge, implementing them effectively requires careful consideration and optimization at every step.
 
+## Efficient Pair Generation with itertools.combinations
+
+Introduction to itertools.combinations
+
+The itertools.combinations function provides an efficient way to generate all possible combinations of a specified length from an iterable. This powerful tool eliminates the need for complex nested loops and manual index tracking, making code more readable and maintainable.
+
 ## Softmax Activation Function in Neural Networks with Python
 
 Introduction to Softmax Activation Function
@@ -10676,6 +10748,12 @@ Classification models are powerful tools in machine learning, but they can somet
 Classifying Complex Data in Machine Learning
 
 Machine learning classification involves assigning categories to input data. Complex data often requires sophisticated techniques to extract meaningful features and build accurate models. This slideshow explores various aspects of classifying complex data using Python, focusing on practical examples and code implementations.
+
+## Mastering Feature Discretization for Non-Linear Modeling
+
+Understanding Feature Discretization
+
+Feature discretization transforms continuous variables into categorical ones through binning. This process enables linear models to capture non-linear patterns by creating discrete boundaries that approximate complex relationships. The transformation typically uses techniques like equal-width or equal-frequency binning.
 
 ## Comparing CSV Files Using Machine Learning in Python
 
@@ -11961,6 +12039,12 @@ Introduction to KAN 2.0: Kolmogorov-Arnold Networks
 
 KAN 2.0, or Kolmogorov-Arnold Networks, represent an innovative approach to machine learning that combines principles from dynamical systems theory and neural networks. These networks are designed to approximate complex functions using a hierarchical structure inspired by the Kolmogorov-Arnold representation theorem.
 
+## Fundamentals of Artificial Intelligence and Neural Networks in Python
+
+Introduction to Artificial Neural Networks
+
+Artificial Neural Networks are computational models inspired by biological neural networks, composed of interconnected processing nodes that transform input data through layers to produce meaningful outputs. These networks form the foundation of modern deep learning systems.
+
 ## Process for Retrieval-Augmented Generation In Python
 
 Data Collection
@@ -12020,6 +12104,12 @@ The idea that increasing the number of hidden layers always improves neural netw
 Introduction to Pandas
 
 Pandas is a powerful open-source Python library for data analysis and manipulation. It provides easy-to-use data structures and data analysis tools for working with structured (tabular, multidimensional, potentially heterogeneous) and time series data.
+
+## Mastering Validation Sets in Machine Learning
+
+Understanding Validation Sets
+
+The validation set approach is a fundamental technique in machine learning that involves partitioning available data into three distinct sets: training, validation, and test sets. This separation enables unbiased model evaluation and hyperparameter tuning while preventing data leakage.
 
 ## Differential Geometry in Machine Learning with Python
 
