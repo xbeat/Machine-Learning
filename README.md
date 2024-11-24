@@ -2612,6 +2612,12 @@ Understanding Regression and Outliers
 
 Regression models are powerful tools for predicting numerical values, but they often struggle with outliers. Outliers are data points that significantly differ from other observations, potentially skewing the model's performance. Let's explore this concept with a simple linear regression example.
 
+## Leveraging Polars for Efficient Data Workflows
+
+Lazy Evaluation in Polars
+
+Polars leverages lazy evaluation to optimize query execution plans before actually processing the data. This approach allows for better memory management and performance optimization by building a computation graph that can be analyzed and optimized before execution.
+
 ## Building a LangGraph Agent with Graph Memory
 
 LangGraph Agent Architecture Overview
@@ -6168,6 +6174,12 @@ Understanding Correlations in Machine Learning and AI
 
 Correlation is a statistical measure that quantifies the relationship between two variables. In machine learning and AI, understanding correlations is crucial for feature selection, data preprocessing, and model evaluation. This slideshow will explore various types of correlations and their applications in ML and AI, providing practical examples and code snippets to illustrate each concept.
 
+## Exploring Python's Fundamental Data Types
+
+Boolean Fundamentals
+
+Python's boolean type represents binary states True and False, forming the foundation of logical operations and control flow. Booleans enable comparison operations, conditional statements, and serve as flags for program state management.
+
 ## Overview of Vertex AI Vector Search with Python
 
 Introduction to Vertex AI Vector Search
@@ -6372,6 +6384,12 @@ Data augmentation is a powerful technique that enhances model performance by cre
 Introduction to Categorical Variables in Regression
 
 Categorical variables are a common type of data in many real-world scenarios. They represent discrete categories or groups, such as colors, genres, or types of products. When performing regression analysis, handling these variables requires special techniques to incorporate them effectively into our models. This slideshow will explore various methods to work with categorical variables in regression using Python.
+
+## Combining Machine Learning Algorithms for Better Results
+
+Feature Extraction with CNN and SVM Classifier
+
+This implementation demonstrates how to extract features from images using a pre-trained CNN (ResNet50) and feed them into an SVM classifier. The CNN acts as a feature extractor while the SVM performs the final classification task, combining deep learning with traditional ML.
 
 ## Understanding and Addressing Class Imbalance
 
@@ -6832,6 +6850,12 @@ Introduction to Ensemble Learning in Sequence
 
 Ensemble learning is a powerful technique that combines multiple models to improve prediction accuracy and robustness. In this presentation, we'll focus on sequential ensemble methods using Python, where models are trained one after another, each learning from the errors of its predecessors.
 
+## Leveraging LLMs for Unlabeled Data Categorization
+
+Zero-Shot Classification with LLMs
+
+Zero-shot learning enables classification of unlabeled data without prior training by leveraging pre-trained language models through carefully crafted prompts. This approach utilizes the semantic understanding inherent in large language models to categorize text into arbitrary classes.
+
 ## Explaining LSTM Networks in Deep Learning with Python
 
 Introduction to Long Short-Term Memory (LSTM) Networks
@@ -6919,6 +6943,12 @@ Retrieval-Augmented Generation (RAG) is a powerful technique that combines the s
 Introduction to BINNs and PINNs
 
 Boundary Integrated Neural Networks (BINNs) and Physics Informed Neural Networks (PINNs) are advanced machine learning techniques used to solve differential equations and model complex physical systems. These approaches combine the power of neural networks with domain-specific knowledge to improve accuracy and efficiency in scientific computing.
+
+## Mastering Machine Learning Foundations
+
+Linear Algebra Foundations for Machine Learning
+
+Linear algebra forms the mathematical backbone of machine learning algorithms. Understanding vector spaces, transformations, and matrix operations is crucial for implementing efficient ML solutions from scratch. We'll start with vector operations and gradually build complexity.
 
 ## Vector Quantized Variational Auto-Encoder (VQ-VAE) using Python
 
@@ -7320,6 +7350,12 @@ Regression models are essential tools in predictive analytics. To ensure their e
 Introduction to Clustering and Outlier Detection
 
 Clustering algorithms are powerful tools in data analysis, capable of grouping similar data points together while also identifying outliers or noise points. This presentation explores how clustering algorithms, particularly DBSCAN (Density-Based Spatial Clustering of Applications with Noise), can be used to detect outliers in datasets using Python.
+
+## Mastering Data Manipulation with Pandas
+
+Data Manipulation with Pandas DataFrame
+
+The pandas DataFrame is a two-dimensional labeled data structure that provides powerful data manipulation capabilities. It allows for efficient handling of structured data through operations like filtering, grouping, merging, and reshaping while maintaining data integrity and column-wise operations.
 
 ## Variance Inflation Factor (VIF) and Regression Diagnostics in Python
 
@@ -8191,6 +8227,12 @@ Multi-class classification is a common challenge in business problems, often ove
 Introduction to Vector Databases
 
 Vector databases are specialized systems designed to store, index, and query high-dimensional vectors. These vectors are mathematical representations of data points, capturing the semantic essence of information. Unlike traditional databases that focus on structured data, vector databases excel at handling complex, multidimensional data, making them ideal for similarity searches and AI-driven applications.
+
+## String Methods vs Regex Choosing the Right Approach
+
+String Methods - The Basics
+
+String methods in Python provide a straightforward approach to text manipulation. These built-in methods are optimized for common text operations and offer clean, readable syntax for basic string transformations without requiring additional imports or complex pattern matching.
 
 ## Principal Component Analysis  in Python
 
@@ -11033,6 +11075,12 @@ Introduction to DeepEval Framework
 
 DeepEval is a Python framework designed specifically for rigorous testing of Large Language Model outputs. It extends traditional unit testing paradigms to handle the unique challenges of evaluating LLM responses, including semantic similarity, factual accuracy, and consistency checks.
 
+## Confusion Matrix Concepts and Python Examples
+
+Understanding Confusion Matrix Components
+
+A confusion matrix serves as a fundamental evaluation tool in machine learning, particularly for classification tasks. It organizes predictions into four key categories: True Positives (TP), False Positives (FP), True Negatives (TN), and False Negatives (FN), enabling comprehensive model assessment.
+
 ## Structured Output in LLM Applications
 
 Introduction to Structured Output in LLM Applications
@@ -12374,6 +12422,12 @@ The isinstance() function is a crucial Python built-in that checks if an object 
 Introduction to Savage-Dickey Ratio
 
 The Savage-Dickey ratio provides an efficient method for computing Bayes factors in nested model comparison scenarios, where one model is a special case of another. This implementation demonstrates the basic framework for calculating the ratio using probability density estimation.
+
+## Bias-Variance Tradeoff Clearly Explained
+
+Understanding Bias and Variance Components
+
+The bias-variance decomposition mathematically breaks down the prediction error of a machine learning model into its fundamental components. Understanding these components is crucial for diagnosing model performance and making informed decisions about model complexity.
 
 ## Spark Window Functions for Time-Series Analysis in PySpark
 
