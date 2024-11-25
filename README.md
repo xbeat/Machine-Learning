@@ -5048,6 +5048,12 @@ Introduction to Stratified K-Fold Cross-Validation
 
 Stratified K-Fold cross-validation is an essential technique in machine learning for evaluating model performance. It addresses the limitations of simple K-Fold cross-validation by ensuring that each fold maintains the same proportion of samples for each class as in the complete dataset. This method is particularly useful for imbalanced datasets, providing a more robust and reliable estimate of model performance.
 
+## Dimensionality Reduction Techniques for Visualization
+
+Principal Component Analysis (PCA)
+
+Principal Component Analysis is a fundamental dimensionality reduction technique that transforms high-dimensional data into a lower-dimensional space while preserving maximum variance. It works by finding orthogonal directions, called principal components, along which the data shows the highest variation.
+
 ## Physics-Informed Neural Networks for Damped Oscillations
 
 Introduction to Physics-Informed Neural Networks (PINNs)
