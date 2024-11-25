@@ -2027,6 +2027,12 @@ Inductive Biases in Machine Learning
 
 Inductive biases are fundamental assumptions that machine learning models use to generalize from training data to unseen examples. These biases shape how models learn and make predictions, acting as a guide for the learning process. Understanding inductive biases is crucial for selecting appropriate models and interpreting their behavior.
 
+## Discriminative vs. Generative Models A Primer
+
+Understanding Discriminative Models Fundamentals
+
+Discriminative models directly learn the mapping between input features and output labels by modeling conditional probability P(Y|X). They focus on decision boundaries between classes rather than understanding the underlying data distribution, making them efficient for classification tasks.
+
 ## Many-Shot vs Few-Shot In-Context Learning with Python
 
 Introduction to Many-Shot vs Few-Shot In-Context Learning
@@ -2557,6 +2563,12 @@ Machine learning classification models require robust evaluation metrics to asse
 Introduction to Data Pipeline Processes
 
 Data pipeline processes are essential for managing and transforming data in modern data-driven organizations. This presentation will explore three main approaches: ETL, ELT, and EtLT, discussing their characteristics, advantages, and disadvantages.
+
+## Python Concepts and Code Examples for Intermediate to Expert
+
+Bias-Variance Tradeoff in Machine Learning
+
+The bias-variance tradeoff is a fundamental concept in machine learning that describes the relationship between a model's ability to minimize bias (assumptions made about data) and variance (sensitivity to training data variations). Understanding this tradeoff helps optimize model complexity and performance.
 
 ## Calculating the Astronomical Cost of an ISS Wedding Using Python
 
@@ -5794,6 +5806,12 @@ Understanding Fuzzy Duplicates
 
 The concept of fuzzy duplicates extends beyond exact matches, encompassing records that are semantically identical but contain variations due to typos, formatting differences, or missing data. This fundamental understanding is crucial for developing efficient deduplication strategies.
 
+## Improving Semantic Similarity in Question Answering with HyDE
+
+Understanding HyDE Architecture
+
+Traditional RAG systems face semantic similarity challenges between queries and answers. HyDE (Hypothetical Document Embeddings) addresses this by generating synthetic answers first. This implementation demonstrates the core HyDE architecture using transformers and semantic search capabilities.
+
 ## The time complexity of 10 popular ML algorithms
 
 Time Complexity of Popular ML Algorithms
@@ -7380,6 +7398,12 @@ The sklearn.tree.plot\_tree function provides a fundamental way to visualize dec
 Bias-Variance Tradeoff in Machine Learning Models
 
 The bias-variance tradeoff is a fundamental concept in machine learning that describes the relationship between the accuracy of a model on the training data (bias) and its ability to generalize to new, unseen data (variance). This tradeoff arises due to the complexity of the model and the amount of data available for training.
+
+## Introduction to Large Language Models
+
+Understanding LLM Tokenization
+
+Tokenization is the fundamental process of converting raw text into numerical tokens that language models can process. This implementation demonstrates a basic tokenizer using character-level encoding, similar to what more sophisticated models use as their foundation.
 
 ## Strategy Pattern and Stability of Sorting Algorithms in Python
 
@@ -9928,6 +9952,12 @@ What is Regularization?
 
 Regularization is a technique used in machine learning to prevent overfitting by adding a penalty term to the loss function. It helps to reduce the model's complexity and improve its generalization ability. By constraining the model's parameters, regularization ensures that the learned patterns are more robust and less sensitive to noise in the training data.
 
+## Probability & Statistics for Data Science and AI
+
+Probability Distributions in Python
+
+Understanding probability distributions is fundamental to data science and machine learning. They describe the likelihood of different outcomes occurring in a random experiment and form the basis for statistical inference, modeling uncertainty, and making predictions.
+
 ## Akaike's Information Criterion (AIC) for Model Selection
 
 Introduction to Akaike's Information Criterion (AIC)
@@ -10053,6 +10083,12 @@ Structured LLM outputs allow us to generate specific formats of text from langua
 Understanding OrderedDict Basics
 
 OrderedDict is a dictionary subclass that maintains the order of key-value pairs based on when they were inserted. Unlike regular dictionaries prior to Python 3.7, OrderedDict guarantees order preservation, making it ideal for removing duplicates while maintaining sequence.
+
+## Python Template Languages for Dynamic Content
+
+Introduction to Jinja2 Template Language
+
+Jinja2 is a modern and designer-friendly templating language for Python, modeled after Django's template engine. It features powerful automatic HTML escaping, template inheritance, and configurable syntax that makes it highly adaptable for various templating needs.
 
 ## Exploring Float32, Float16, and BFloat16 for Deep Learning in Python
 
@@ -10534,6 +10570,12 @@ Quantization is a technique that reduces the precision of model weights and acti
 ## Introduction to Flask-SQLAlchemy
 
 Introduction to Flask-SQLAlchemy Flask-SQLAlchemy is an extension for Flask that adds support for SQLAlchemy, a Python SQL toolkit and Object-Relational Mapper (ORM). It simplifies the process of working with databases in Flask applications.
+
+## Maintaining Consistency in Distributed Systems
+
+Understanding Distributed Consensus
+
+Distributed consensus ensures all nodes in a system agree on shared state despite failures. Consensus protocols like Raft and Paxos provide formal guarantees for agreement, validity, and termination through leader election and log replication mechanisms.
 
 ## Dynamic Code Flexibility with importlib and getattr
 
@@ -11819,6 +11861,12 @@ Pandas is a powerful Python library for data manipulation and analysis. It provi
 Introduction to Sine and Cosine Functions in Data Analysis
 
 Sine and cosine functions, which are periodic and oscillatory in nature, play a crucial role in various data analysis techniques. These functions are particularly useful in analyzing time-series data, harmonic analysis, frequency domain analysis, and signal processing. This presentation will explore their applications and implementations using Python.
+
+## Cross-Validation Fundamentals with Python
+
+Understanding Cross-Validation Fundamentals
+
+Cross-validation is a statistical method used to assess model performance by partitioning data into training and testing sets. It helps evaluate how well a model generalizes to unseen data and reduces overfitting by utilizing multiple rounds of evaluation on different data subsets.
 
 ## 25 Key Mathematical Definitions for Data Science
 
