@@ -5336,6 +5336,12 @@ Introduction to Transformer-Based Models
 
 Transformer-based models have revolutionized natural language processing (NLP), offering powerful tools for tasks like sentiment analysis. These models use self-attention mechanisms to capture long-range dependencies in text, enabling a deeper understanding of language context and nuances.
 
+## Bernoulli Distribution Probability Modeling Explained
+
+Understanding Bernoulli Distribution
+
+The Bernoulli distribution models binary outcomes where a random variable X can take only two possible values: success (1) with probability p or failure (0) with probability 1-p. This foundational probability distribution serves as the building block for more complex distributions.
+
 ## Understanding BERT A Cornerstone of NLP with Python
 
 Introduction to BERT
@@ -7113,6 +7119,12 @@ Basic Serializer Implementation
 
 The Django Rest Framework serializer acts as a converter between Python objects and JSON/XML formats. It provides validation, data formatting, and model instance creation capabilities. Serializers define the structure and rules for data transformation.
 
+## Improving Question-Answer Semantics with HyDE
+
+Understanding Hypothetical Document Embedding (HyDE)
+
+The HyDE approach revolutionizes traditional RAG systems by addressing the semantic gap between questions and answers through a novel two-step process that leverages language models to generate hypothetical answers before embedding, significantly improving retrieval accuracy.
+
 ## Advantages of Weighted Averaging in Ensemble Models
 
 Weighted Average in Ensemble Models
@@ -8498,6 +8510,12 @@ Introduction to Relational Recurrent Neural Networks
 
 Relational Recurrent Neural Networks (R2N2) are an extension of traditional RNNs that incorporate relational reasoning capabilities. They excel at processing sequences of structured data and learning relationships between entities. This architecture combines the temporal processing power of RNNs with the ability to model complex relationships.
 
+## Regression and Classification Loss Functions Cheat Sheet
+
+Mean Bias Error (MBE) - Fundamental Regression Loss
+
+Mean Bias Error provides insights into the systematic over or underestimation in regression models by calculating the average difference between predicted and actual values. While rarely used as a primary training objective, it serves as a crucial diagnostic tool for model bias assessment.
+
 ## Emphasizing Key Visualization Details
 
 Understanding Matplotlib's Zoom Indicator
@@ -8990,6 +9008,12 @@ Introduction to Neuro-Vector-Symbolic Architectures (NVSA)
 
 Neuro-Vector-Symbolic Architectures (NVSA) combine neural networks with vector symbolic architectures, aiming to bridge the gap between connectionist and symbolic AI approaches. This fusion allows for more powerful and flexible reasoning capabilities in artificial intelligence systems.
 
+## Reasons to Migrate from Pandas to FireDucks
+
+Understanding FireDucks as a Pandas Drop-in Replacement
+
+FireDucks represents a revolutionary advancement in data manipulation frameworks, offering seamless compatibility with existing Pandas code while delivering significant performance improvements through its multi-core architecture and lazy evaluation strategy. The migration process requires minimal code changes.
+
 ## Document Summarization with Python
 
 Introduction to Document Summarization
@@ -9457,6 +9481,12 @@ Understanding Attention Mechanism Fundamentals
 
 The attention mechanism revolutionizes how neural networks process sequential data by implementing a dynamic weighting system. It enables models to selectively focus on different parts of the input sequence when generating each element of the output sequence, similar to how humans pay attention to specific details.
 
+## Efficient Value Transformation in Pandas replace() vs apply()
+
+Understanding replace() vs apply() Methods
+
+The replace() method in pandas provides a more intuitive and performant way to transform values in DataFrames compared to apply(). While apply() processes data row-by-row using custom functions, replace() performs vectorized operations using direct value mappings, making it significantly faster for large datasets.
+
 ## Revamping E-commerce with Machine Learning in Python
 
 Introduction to Machine Learning for E-commerce
@@ -9474,6 +9504,12 @@ Physical interpretations and intuitions of equations are indeed crucial in Machi
 Understanding Bayes' Theorem Fundamentals
 
 Bayes' theorem provides a mathematical framework for updating probabilities based on new evidence. In machine learning, it forms the foundation for probabilistic reasoning and allows us to quantify uncertainty in predictions by calculating posterior probabilities from prior knowledge and observed data.
+
+## Automating Excel with Python
+
+Excel File Creation and Basic Operations
+
+Python's openpyxl library provides comprehensive tools for Excel automation, allowing creation of workbooks, sheets manipulation, and cell operations. The library supports both reading and writing capabilities while maintaining Excel's native formatting and functionality.
 
 ## Improving Long Context LLMs with Writing in the Margins
 
@@ -11269,6 +11305,12 @@ Understanding Data Type Conversion in Pandas
 
 Data type conversion is a critical operation in data preprocessing that impacts memory usage and computational efficiency. The astype() method in Pandas enables explicit conversion of column data types, ensuring data integrity and optimal performance in downstream analysis.
 
+## Understanding Kubernetes Pod Configuration
+
+Pod Configuration Structure
+
+Kubernetes Pod configurations follow a hierarchical YAML structure that defines container specifications, volumes, and runtime behaviors. The structure begins with apiVersion and kind declarations, followed by metadata and spec sections that contain the core pod definitions.
+
 ## Sampling in Statistics with Python
 
 Introduction to Sampling in Statistics
@@ -11708,6 +11750,12 @@ A decorator is a design pattern in Python that allows modifying the behavior of 
 Understanding Overfitting in Neural Networks
 
 Overfitting occurs when a neural network learns the training data too well, including noise and outliers, leading to poor generalization on unseen data. This phenomenon is characterized by high accuracy on the training set but significantly lower performance on the test set.
+
+## Advantages of Support Vector Machines for Robust Classification
+
+Maximum Margin Classification
+
+Support Vector Machines (SVM) establish optimal decision boundaries by maximizing the margin between classes, creating a robust separator that enhances generalization. The margin represents the distance between the hyperplane and the nearest data points from each class, called support vectors.
 
 ## Image Segmentation using K-means Clustering in Python
 
