@@ -2684,6 +2684,12 @@ Introduction to XGBoost for Time Series Forecasting
 
 XGBoost (Extreme Gradient Boosting) is a powerful machine learning algorithm that can be used for time series forecasting. It is a gradient boosting algorithm that builds an ensemble of decision trees to make accurate predictions.
 
+## Python's Interpreted Nature and Default Argument Traps
+
+The Default Argument Trap
+
+Default arguments in Python are evaluated at function definition time, not during execution. This behavior can lead to unexpected results when using mutable objects like lists or dictionaries as default arguments, potentially causing data persistence between function calls.
+
 ## Multiclass Logistic Regression in Python
 
 Introduction to Multiple-class Logistic Regression
@@ -9794,6 +9800,12 @@ Swarm architecture implements a foundational multi-agent system where agents ope
 Introduction to Vision Transformer (ViT)
 
 The Vision Transformer (ViT) is a groundbreaking model that applies the Transformer architecture, originally designed for natural language processing, to computer vision tasks. It treats images as sequences of patches, enabling the model to capture global dependencies and achieve state-of-the-art performance on various image classification benchmarks.
+
+## Comprehensive Guide to Python List Methods
+
+Python List Append Method
+
+The append() method adds a single element to the end of a list. This operation modifies the list in-place and returns None. Time complexity is O(1) amortized since Python lists are dynamically allocated arrays that occasionally need resizing.
 
 ## Normalizing vs. Scaling in Python
 
