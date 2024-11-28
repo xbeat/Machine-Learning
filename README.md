@@ -11275,7 +11275,9 @@ Structured output in Large Language Model (LLM) applications refers to the proce
 
 ## Gradient Boosting Overfitting and Learning Rate
 
-Learning Rate Impact on Gradient Boosting A smaller learning rate in gradient boosting reduces overfitting by making conservative updates to the model in each iteration, allowing for better generalization performance at the cost of increased training time.
+Learning Rate Impact on Gradient Boosting
+
+A smaller learning rate in gradient boosting reduces overfitting by making conservative updates to the model in each iteration, allowing for better generalization performance at the cost of increased training time.
 
 ## Hash Tables in Machine Learning with Python
 
