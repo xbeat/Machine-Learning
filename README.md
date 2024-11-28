@@ -3252,6 +3252,12 @@ Understanding Text Chunking Fundamentals
 
 Text chunking is a critical preprocessing step in RAG systems that involves breaking down large documents into smaller, meaningful segments. This process enables efficient document retrieval and helps maintain semantic coherence while staying within LLM context windows.
 
+## Exploring the Perceptron Binary Classification with Deep Learning
+
+Perceptron Fundamentals
+
+The perceptron is a fundamental building block of neural networks, implementing linear binary classification. It takes input features, applies weights, adds a bias term, and produces a binary output through a step activation function. This implementation demonstrates the core perceptron structure.
+
 ## Introducing Foundation Agents The Next Frontier in AI Decision-Making
 
 What are Foundation Agents?
@@ -4318,6 +4324,12 @@ Linear regression and quantile regression are two powerful statistical technique
 Introduction to RMSprop Optimizer
 
 RMSprop (Root Mean Square Propagation) is an adaptive learning rate optimization algorithm designed to address the diminishing learning rates in AdaGrad. It was proposed by Geoffrey Hinton in 2012 and has since become a popular choice for training neural networks.
+
+## Distributed Systems Understanding Two-Phase Commit
+
+Understanding Two-Phase Commit Protocol
+
+The Two-Phase Commit (2PC) protocol is a distributed algorithm that ensures atomic transaction commitment across multiple nodes in a distributed system. It coordinates all participating processes that take part in a distributed atomic transaction to either commit or abort the transaction.
 
 ## 11 Types of Variables in Python Datasets
 
@@ -5515,6 +5527,12 @@ Mean Bias Error (MBE) captures the average bias in predictions. It's rarely used
 Log Transform: Eliminating Skewness in Data
 
 Log transformation is a powerful technique used to handle skewed data distributions. It can help normalize data, reduce the impact of outliers, and make patterns more apparent. This slideshow will explore how to implement log transforms using Python, with practical examples and code snippets.
+
+## Pitfalls of Zero Initialization in Machine Learning Models
+
+Understanding Zero Initialization Problems
+
+Neural networks initialized with zero weights exhibit symmetric learning patterns across all neurons, leading to identical gradients during backpropagation. This phenomenon prevents effective feature learning since each neuron receives the same update signal, making the network unable to detect distinct patterns.
 
 ## Kernel Activation Networks Flexible Neural Architectures
 
@@ -8175,6 +8193,12 @@ Introduction to xLSTM
 
 xLSTM, or Extended Long Short-Term Memory, is an advanced variant of the traditional LSTM architecture. It aims to enhance the capability of LSTM networks to capture and process long-range dependencies in sequential data. xLSTM introduces additional gating mechanisms and memory cells to improve information flow and gradient propagation.
 
+## Merging Dictionaries in Python 4 Techniques
+
+Dictionary Merging with Update() Method
+
+The update() method provides a straightforward way to merge dictionaries in Python by modifying the original dictionary. This method adds key-value pairs from one dictionary to another, overwriting duplicate keys with values from the second dictionary.
+
 ## Grokked Transformers as Implicit Reasoners Using Python
 
 Introduction to Grokked Transformers as Implicit Reasoners
@@ -8192,6 +8216,12 @@ Descriptors represent a powerful protocol in Python that defines how attribute a
 The Power of QuantLib in Python
 
 QuantLib is a comprehensive quantitative finance library providing tools for derivatives pricing, fixed income analysis, and risk management. Its Python wrapper, QuantLib-Python, enables sophisticated financial modeling with object-oriented design patterns and industry-standard algorithms.
+
+## Visualizing Dense Data with Hexbin Plots
+
+Introduction to Hexbin Plots
+
+Hexbin plots offer superior visualization for dense scatter plots by aggregating data points into hexagonal bins. The color intensity of each hexagon represents the density of points within that region, providing clearer insights into data distribution patterns compared to traditional scatter plots.
 
 ## 10 Underrated Python Packages for Data Science
 
@@ -8901,6 +8931,12 @@ Ensemble learning combines multiple models to create a more robust prediction sy
 Imbalanced Data in Machine Learning
 
 Imbalanced data occurs when one class significantly outnumbers the other(s) in a dataset. This common problem can lead to biased models that perform poorly on minority classes. In this presentation, we'll explore various techniques to handle imbalanced data using Python, focusing on practical implementations and real-world applications.
+
+## Ultimate EDA CheatCodes
+
+Data Loading and Initial Exploration
+
+The foundation of any EDA begins with efficiently loading data and performing initial checks. This involves reading various file formats, checking basic statistics, and understanding the dataset's structure using pandas and numpy libraries.
 
 ## Python Prefetching for Efficient Handling of Huge Data Sets
 
@@ -11372,6 +11408,12 @@ Object detection is the process of identifying and locating objects within an im
 Introduction to Matryoshka Representation Learning
 
 Matryoshka Representation Learning (MRL) is an innovative approach in machine learning that focuses on creating nested representations of data. This technique is inspired by the Russian Matryoshka dolls, where smaller dolls are nested inside larger ones. In MRL, representations are organized in a hierarchical structure, allowing for efficient and flexible learning across multiple scales.
+
+## Boost DataFrame Filtering Speed with isin()
+
+Understanding DataFrame Filtering Mechanisms
+
+Pandas DataFrame filtering operations utilize boolean indexing under the hood, where each condition creates a boolean mask. Understanding the internal workings helps optimize filtering performance for large datasets through vectorized operations.
 
 ## Gaussian Mixture Model
 
