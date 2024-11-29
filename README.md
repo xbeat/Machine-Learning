@@ -4565,6 +4565,12 @@ Vector Spaces in Linear Algebra
 
 Vector spaces form the foundation of linear algebra. They are sets of vectors that can be added together and multiplied by scalars. Let's explore a simple vector space using Python.
 
+## Importance of Proper Neural Network Initialization
+
+Understanding Neural Network Weight Initialization
+
+Neural network initialization is crucial for model convergence and training stability. Zero initialization creates symmetry problems where neurons receive identical gradients, leading to ineffective learning. Proper initialization breaks this symmetry and enables distinct feature learning across neurons.
+
 ## RAG vs. Fine-Tuning! Choosing the Right Approach for LLMs
 
 Introduction to RAG and Fine-Tuning
@@ -4837,6 +4843,12 @@ Backpropagation is a fundamental algorithm used in training neural networks. It'
 Data Leakage - The Silent Model Killer
 
 Data leakage occurs when information from outside the training dataset influences the model development process, leading to overoptimistic performance metrics and poor generalization. This fundamental mistake happens when features contain information about the target that wouldn't be available during real-world predictions.
+
+## Mastering Data Manipulation with Pandas for Machine Learning
+
+Data Loading and Basic Operations in Pandas
+
+Pandas provides efficient methods for loading data from various sources and performing basic operations. Understanding these fundamentals is crucial for any data manipulation task in machine learning pipelines. Let's explore loading CSV files and essential DataFrame operations.
 
 ## Building Neural Networks from Scratch in Python
 
@@ -10687,6 +10699,12 @@ Introduction to Recurrent Neural Networks (RNNs)
 
 Recurrent Neural Networks are a class of neural networks designed to process sequential data. Unlike traditional feedforward networks, RNNs have connections that form cycles, allowing them to maintain an internal state or "memory". This architecture makes them particularly well-suited for tasks involving time series, natural language processing, and other sequence-based problems.
 
+## Implementing Efficient Graph Structures in Python
+
+Graph Representation Using Adjacency Lists
+
+The adjacency list representation of graphs offers an efficient way to store sparse graphs where the number of edges is much less than the maximum possible edges. This implementation provides O(V+E) space complexity, where V is the number of vertices and E is the number of edges.
+
 ## Components of a RAG System
 
 Introduction to RAG Systems
@@ -10980,6 +10998,12 @@ Positional encoding is a crucial component in transformer architectures, enablin
 Introduction to Markov Processes
 
 Markov processes are stochastic models that describe a sequence of possible events where the probability of each event depends solely on the state attained in the previous event. Let's start with a simple example:
+
+## Preventing Overfitting in Machine Learning
+
+Understanding Overfitting Through Polynomial Regression
+
+A practical demonstration of overfitting using polynomial regression helps visualize how increasing model complexity leads to perfect training set performance but poor generalization. This example creates synthetic data and fits polynomials of different degrees.
 
 ## GNN-RAG Graph Neural Retrieval for Large Language Model Reasoning in Python
 
@@ -11432,6 +11456,12 @@ TensorFlow is a powerful open-source library for machine learning and deep learn
 Introduction to Named Entity Recognition
 
 Named Entity Recognition (NER) is a natural language processing task that identifies and classifies named entities in text into predefined categories such as person names, organizations, locations, and more. It's a crucial component in various NLP applications, including information extraction, question answering, and text summarization.
+
+## Designing Reliable Distributed Systems
+
+Understanding Fault Tolerance in Distributed Systems
+
+Fault tolerance is a critical property of distributed systems that ensures continuous operation even when components fail. It involves designing systems that can detect, respond to, and recover from various types of failures while maintaining data consistency and availability.
 
 ## Scatter Plot for PCA Visualization
 
