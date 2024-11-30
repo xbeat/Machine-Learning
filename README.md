@@ -2033,6 +2033,12 @@ Setting Up a Basic CI/CD Pipeline with GitHub Actions
 
 GitHub Actions provides a robust framework for automating software workflows. This implementation demonstrates creating a basic CI/CD pipeline that automatically runs tests and deploys a Python application when changes are pushed to the main branch.
 
+## Implementing Undirected Graphs in Python
+
+Graph Representation Using Adjacency List
+
+An adjacency list representation provides an efficient way to store graph connections by maintaining a dictionary where each vertex maps to a list of its neighbors. This approach optimizes space complexity for sparse graphs compared to adjacency matrices.
+
 ## Deep Learning Hyperparameter Tuning and Regularization in Python
 
 Introduction to Hyperparameter Tuning
@@ -8217,6 +8223,12 @@ Introduction to Activation Functions
 
 Neural networks transform input data through layers of interconnected nodes, with activation functions determining the output of each neuron. These mathematical functions introduce non-linearity, enabling neural networks to learn and approximate complex patterns that simple linear models cannot capture.
 
+## Machine Learning Hyperparameter Tuning
+
+Linear Regression Hyperparameters - Regularization Impact
+
+Linear regression hyperparameters significantly influence model performance through regularization strength (alpha) and penalty type (l1/l2). Understanding these parameters enables proper control of model complexity and prevents overfitting while maintaining predictive accuracy on unseen data.
+
 ## CUDA Programming with Python
 
 Introduction to CUDA Programming with Python
@@ -10378,6 +10390,12 @@ Statistical Fundamentals in Python
 
 The foundation of data science rests on statistical measures that help us understand data distribution, central tendency, and dispersion. These metrics form the basis for more complex analyses and machine learning algorithms, making them crucial for any data scientist.
 
+## Ultimate Feature Engineering Techniques for Data Enthusiasts
+
+Feature Scaling and Normalization
+
+Feature scaling transforms numerical features to a similar scale, preventing certain features from dominating the learning process due to their larger magnitudes. This fundamental technique ensures that machine learning algorithms converge faster and perform optimally, especially for distance-based methods.
+
 ## Extended Mind Transformers for Long Context NLP in Python
 
 Introduction to Extended Mind Transformers
@@ -10596,6 +10614,12 @@ Third-order derivative tensors play a crucial role in advanced machine learning 
 Function Decorators
 
 Function decorators are a powerful feature in Python that allow you to modify or enhance the behavior of functions without changing their source code. They are essentially functions that take another function as an argument and return a new function with added functionality.
+
+## Ensuring Useful AI-Generated Summaries
+
+Implementing G-Eval Framework Base
+
+The G-Eval framework requires a robust foundation to evaluate AI-generated summaries across multiple dimensions. This implementation creates the core evaluation class with methods to handle basic scoring functionality and metric calculations.
 
 ## Hyperparameter Tuning in Machine Learning with Python
 
@@ -12588,6 +12612,12 @@ The Mean Squared Error (MSE) loss function measures the average squared differen
 Text Analysis with Machine Learning in Python
 
 Machine learning techniques have revolutionized text analysis, enabling computers to understand and process human language with remarkable accuracy. This presentation explores common ML methods for text analysis using Python, providing practical examples and code snippets to illustrate key concepts.
+
+## Avoiding Data Leakage in Cross-Validation
+
+Cross-Validation Data Leakage
+
+Data leakage occurs when information from the validation set influences model training, leading to overoptimistic performance estimates. This common pitfall happens when preprocessing steps like scaling or feature selection are performed before splitting the data.
 
 ## Neural Machine Translation with Python
 
