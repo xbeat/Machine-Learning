@@ -2455,6 +2455,12 @@ Introduction to Docker and Python Integration
 
 Docker is a containerization platform that simplifies application deployment and management. This slideshow will cover the basics of integrating Python applications with Docker, making it easier to build, ship, and run Python applications consistently across different environments.
 
+## The AI Powering Blinkit's 5-Minute Delivery
+
+Time Series Analysis with ARIMA for Demand Forecasting
+
+In Blinkit's delivery optimization system, ARIMA (Autoregressive Integrated Moving Average) models analyze historical order data to predict future demand patterns. This implementation demonstrates how to forecast hourly order volumes using ARIMA methodology with seasonal decomposition.
+
 ## Walkthrough of Neural Network Training Process
 
 Neural Network Architecture Overview
@@ -3380,6 +3386,12 @@ Parameter order in Python functions follows strict rules that affect how argumen
 Understanding AN\[C\]OVA and Beyond
 
 AN\[C\]OVA (Analysis of \[Co\]Variance) is commonly used to assess main and interaction effects in the general linear model. However, this concept can be extended to other statistical models, providing a broader perspective on group comparisons and effect analysis.
+
+## Comparing RAG and Fine-Tuned Language Models
+
+Understanding RAG vs Fine-Tuned Models Architecture
+
+The fundamental architectural differences between RAG and fine-tuned models lie in how they process and generate responses. RAG systems employ a retrieval mechanism to fetch relevant context before generation, while fine-tuned models rely on encoded knowledge within their parameters.
 
 ## Forward Algorithm for Hidden Markov Models in Python
 
@@ -5126,6 +5138,12 @@ Introduction to Negative Binomial Regression
 
 Negative Binomial Regression is a statistical model used for count data with overdispersion. It's an extension of Poisson regression that allows for greater variance in the data. This model is particularly useful when dealing with count data where the variance exceeds the mean, a common occurrence in real-world scenarios.
 
+## Vanishing vs. Exploding Gradients
+
+Understanding Vanishing Gradients Through Neural Network Implementation
+
+A fundamental implementation demonstrating vanishing gradients in deep neural networks using sigmoid activation. The network architecture deliberately uses multiple layers with sigmoid to showcase how gradients diminish during backpropagation.
+
 ## Comparing Sankey Diagrams and Bar Plots in Python
 
 Introduction to Sankey Diagrams
@@ -6691,6 +6709,12 @@ Dockerfile Basics with Python
 
 A Dockerfile is a text document containing instructions to build a Docker image automatically. For Python applications, it defines the base image, working directory, dependency installations, and commands to run the application.
 
+## The Power of Word Embeddings in Language Models
+
+Understanding Token Embeddings
+
+Token embeddings form the foundation of modern language models by transforming discrete tokens into continuous vector representations. These dense vectors capture semantic relationships between words in a high-dimensional space, enabling mathematical operations on textual data.
+
 ## Integrating YOLO OCR and AI Agents for Document Organization
 
 Understanding YOLO Architecture for Document Detection
@@ -7392,6 +7416,12 @@ Integral calculus plays a crucial role in various aspects of machine learning an
 Introduction to Multimodal Table Understanding
 
 Multimodal table understanding involves extracting and analyzing information from tables that contain various types of data, including text, numbers, and images. This process combines techniques from computer vision, natural language processing, and data analysis to interpret complex tabular structures.
+
+## Neurons to GenerativeAI Python Concepts and Code
+
+Neural Network Fundamentals
+
+A neural network is a computational model inspired by biological neurons, consisting of interconnected nodes that process and transmit signals. The fundamental building block is the artificial neuron, which takes weighted inputs, applies an activation function, and produces an output.
 
 ## Spark User Defined Functions with Python
 
@@ -8126,6 +8156,12 @@ This presentation explores the problem of calculating the estimated speed at var
 Understanding **init\_subclass** in Python
 
 Class parameterization during inheritance is a powerful feature introduced in Python 3.6 through **init\_subclass**. This method allows parent classes to customize subclass creation behavior by intercepting and modifying the subclass definition process, providing a cleaner alternative to metaclasses.
+
+## Understanding the Role of Epochs in Training Neural Networks
+
+Understanding Epochs in Neural Networks
+
+A fundamental concept in deep learning, epochs represent complete iterations through the training dataset. Each epoch allows the model to see every example once, updating weights through backpropagation to minimize the loss function. Understanding epoch behavior is crucial for achieving optimal model performance.
 
 ## Docker Components Explained
 
@@ -9804,6 +9840,12 @@ Generator functions in Python provide a memory-efficient way to work with large 
 Minimizing Description Length in Neural Networks
 
 Neural networks are powerful but often complex. By minimizing the description length of weights, we can create simpler, more efficient models without sacrificing performance. This approach is rooted in information theory and Occam's razor, favoring simpler explanations. Let's explore how to implement this concept using Python.
+
+## Distributed Training Strategies for Deep Learning
+
+Fundamentals of Distributed Training
+
+Distributed training enables processing large-scale deep learning models across multiple GPU devices by parallelizing computations. This paradigm has become essential for training modern neural networks that exceed single-GPU memory capacity and require significant computational resources.
 
 ## Mathematical Logic with Python
 
