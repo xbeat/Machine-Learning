@@ -426,6 +426,12 @@ Introduction to Euler's Identity
 
 Euler's Identity is a mathematical equation that connects five fundamental constants in a single, elegant expression. It's often considered one of the most beautiful equations in mathematics due to its simplicity and profound implications.
 
+## Polars vs Pandas Memory Efficiency and Performance Advantages
+
+Memory Efficiency Through Arrow Memory Format
+
+Polars leverages Apache Arrow's columnar memory format, enabling zero-copy operations and minimizing memory overhead during data processing. This fundamental architectural difference from Pandas results in significantly reduced memory usage when handling large datasets.
+
 ## Data Cleaning With Python
 
 Introduction to Data Cleaning
@@ -3549,6 +3555,12 @@ Web Authentication Overview
 
 Web authentication is a crucial aspect of modern web applications, ensuring secure access to user accounts and protected resources. This slideshow explores various authentication methods, their implementations, and best practices.
 
+## Reinforcement Learning with Python Code Examples
+
+Fundamentals of Reinforcement Learning
+
+Reinforcement learning operates on the principle of agents learning optimal behavior through interactions with an environment. The agent performs actions, receives rewards or penalties, and updates its policy to maximize cumulative rewards over time. This fundamental concept forms the basis of all RL algorithms.
+
 ## Challenges of Recurrent Neural Networks
 
 Introduction to Recurrent Neural Networks (RNNs)
@@ -4956,6 +4968,12 @@ Introduction to Time Series Modeling with RAG
 
 Time series modeling is a critical component in various applications, from weather forecasting to stock market analysis. This presentation introduces a novel approach using a Retrieval-Augmented Generation (RAG) framework for time series analysis. We'll explore how this method addresses challenges like complex spatio-temporal dependencies and distribution shifts, leveraging a hierarchical, multi-agent architecture to improve predictions on new data.
 
+## Visualizing Trends with Line Charts
+
+Line Chart Fundamentals
+
+Time series visualization requires careful consideration of data preparation and plotting techniques. Line charts excel at showing continuous trends and patterns over time, making them ideal for analyzing temporal relationships in datasets. Understanding the basic implementation sets the foundation for more complex visualizations.
+
 ## Transfer Learning for Computer Vision
 
 Understanding Transfer Learning in Computer Vision
@@ -4986,6 +5004,12 @@ Introduction to Reinforcement Learning
 
 Reinforcement Learning (RL) is a type of machine learning where an agent learns to make decisions by interacting with an environment. The agent receives rewards or penalties based on its actions, aiming to maximize cumulative rewards over time. RL is inspired by behavioral psychology and has applications in various fields, from robotics to game playing.
 
+## Techniques for Fine-Tuning Large Language Models
+
+Implementing LoRA from Scratch
+
+Low-Rank Adaptation (LoRA) reduces the number of trainable parameters by decomposing weight matrices into low-rank approximations. This implementation demonstrates the core mathematics behind LoRA using NumPy, focusing on the fundamental matrix operations and rank decomposition.
+
 ## Python Error Handling LBYL vs EAFP Approaches
 
 Understanding LBYL vs EAFP Programming Paradigms
@@ -5013,6 +5037,12 @@ Introduction to Polars Polars is a fast and efficient DataFrame library for Pyth
 Understanding Correlation
 
 Correlation measures the statistical relationship between two variables, indicating how they move together. It quantifies the strength and direction of their linear relationship, producing values between -1 and +1, where -1 indicates perfect negative correlation and +1 perfect positive correlation.
+
+## Choosing the Right Machine Learning Algorithm for Regression
+
+Regression Analysis Overview
+
+Regression analysis forms the foundation of predictive modeling, enabling us to understand relationships between variables and make quantitative predictions. We'll explore implementing multiple regression techniques using Python's scikit-learn library, focusing on practical implementation with real-world datasets.
 
 ## Predictive Modeling with AutoML in Python
 
@@ -5854,6 +5884,12 @@ Size-encoded Heatmap
 
 Size-encoded heatmaps improve upon traditional heatmaps by adding a size component to each cell. This enhancement makes it easier to interpret exact values and reduces visual clutter, especially for values close to zero. The technique is particularly useful when dealing with datasets where both color and size can convey meaningful information.
 
+## Claude-Streamlining PyTorch with Fabric
+
+Introduction to PyTorch Fabric
+
+PyTorch Fabric represents a revolutionary approach to distributed training, bridging the gap between PyTorch's flexibility and Lightning's simplified distributed capabilities. It enables seamless scaling from single-device training to multi-GPU setups while maintaining pure PyTorch-style control over training loops.
+
 ## Magic Methods and Operator Overloading in Python
 
 Introduction to Magic Methods
@@ -6493,6 +6529,12 @@ Understanding Hallucination in Language Models
 
 Hallucination in language models refers to the phenomenon where the model generates false or nonsensical information that appears plausible but is not grounded in reality or the given context. This is a critical issue in natural language processing, particularly for large language models (LLMs) used in various applications.
 
+## Exploring Vector Embeddings in Language Models
+
+Vector Embedding Fundamentals
+
+Vector embeddings form the foundation of modern language models by transforming discrete tokens into continuous vector spaces. These dense representations capture semantic relationships through learned weights in neural networks, enabling mathematical operations on language.
+
 ## Regression Analysis A Powerful Tool for Data-Driven Insights
 
 Linear Regression Fundamentals
@@ -6885,6 +6927,12 @@ LLM-Based Agents are systems that leverage large language models to plan, reason
 Resource Management Basics
 
 Python's memory management system automatically handles object cleanup through garbage collection, but certain system resources like file handles and network sockets require explicit management to ensure proper release. Understanding the basics of resource handling is crucial for writing robust and leak-free applications.
+
+## SQL vs. Pandas Mastering Data Analysis Tools
+
+Basic Data Loading and Inspection
+
+Data analysis often begins with loading datasets and performing initial inspections. Let's explore how SQL and Pandas handle this fundamental task differently, focusing on their distinct approaches to data importation and preliminary examination of dataset characteristics.
 
 ## Measuring Data Drift with KL Divergence and Wasserstein Distance
 
@@ -8006,6 +8054,12 @@ Data collection is the foundation of any machine learning project. It involves g
 Introduction to Fine-Tuning Large Language Models
 
 Fine-tuning large language models (LLMs) has become a crucial technique in natural language processing. This process involves adapting pre-trained models to specific tasks or domains, improving their performance and efficiency. In this presentation, we'll explore fine-tuning using Parameter-Efficient Fine-Tuning (PEFT) techniques, specifically focusing on Low-Rank Adaptation (LoRA), and evaluate the results using the Rouge score.
+
+## Data Preprocessing Techniques in Machine Learning
+
+StandardScaler Implementation and Applications
+
+StandardScaler transforms features by removing the mean and scaling to unit variance, resulting in a distribution with a mean of 0 and standard deviation of 1. This technique is crucial when features have varying scales and for algorithms sensitive to feature magnitudes like gradient descent-based methods.
 
 ## Introduction to Mixture of Experts (MoE) in Python
 
