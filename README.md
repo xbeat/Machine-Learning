@@ -210,6 +210,12 @@ Introduction to Embedding Models for RAG
 
 Embedding models are crucial for Retrieval-Augmented Generation (RAG) systems, as they convert text into dense vector representations. These vectors capture semantic meaning, enabling efficient similarity searches. Choosing the right embedding model can significantly impact your RAG system's performance. This presentation will guide you through the process of selecting and implementing the best embedding model for your RAG application using Python.
 
+## L1 Regularization for Sparse Models
+
+L1 Regularization Overview
+
+L1 regularization, also known as Lasso (Least Absolute Shrinkage and Selection Operator), adds a penalty term proportional to the absolute values of model coefficients. This technique promotes sparsity by driving some coefficients exactly to zero, effectively performing feature selection during model training.
+
 ## Entropic Distribution Matching for Supervised LLM Fine-tuning
 
 Introduction to Entropic Distribution Matching
@@ -293,6 +299,12 @@ Convolutional Neural Networks (CNNs) are a class of deep learning models primari
 Introduction to Graph Neural Networks (GNNs)
 
 Graph Neural Networks are a class of deep learning models designed to work with graph-structured data. They can capture complex relationships between entities in a graph, making them ideal for tasks like social network analysis, recommendation systems, and molecular property prediction.
+
+## Understanding the Role of ReLU Activation in Neural Networks
+
+Understanding ReLU Activation Function
+
+The Rectified Linear Unit (ReLU) activation function transforms input by outputting zero for negative values and maintaining positive values unchanged. This non-linear transformation enables neural networks to learn complex patterns while avoiding the vanishing gradient problem common in earlier activation functions.
 
 ## Basic Knowledge Graph Tutorial with Python
 
@@ -504,6 +516,12 @@ Introduction to Diffusion Models
 
 Diffusion models are a class of generative models that have gained significant attention in the field of computer vision and image processing. These models work by gradually adding noise to data and then learning to reverse this process, allowing them to generate high-quality images from noise. This approach has shown remarkable results in various tasks, including image generation, inpainting, and super-resolution.
 
+## Implementing Metropolis-Hastings Algorithm in Bayesian Inference
+
+Introduction to Metropolis-Hastings Algorithm
+
+The Metropolis-Hastings algorithm is a powerful Markov Chain Monte Carlo method used to sample from probability distributions where direct sampling is difficult. It generates a sequence of random samples that converge to the desired target distribution through an acceptance-rejection mechanism.
+
 ## Building a Chatbot with FastAPI and Python
 
 Setting Up FastAPI Project Structure
@@ -517,6 +535,12 @@ Introduction to Knowledge Graphs
 Knowledge Graphs are structured representations of real-world entities and their relationships. They provide a powerful way to store, organize, and query complex information, making them ideal for enhancing Retrieval-Augmented Generation (RAG) models.
 
 Code:
+
+## Avoiding Misleading Data Visualizations
+
+Scale Fundamentals and Axes Range Impact
+
+Proper data visualization requires careful consideration of scale selection to maintain data integrity. The choice of axis ranges and intervals directly influences how viewers interpret relationships between data points, making it crucial to establish appropriate boundaries that neither exaggerate nor diminish actual trends.
 
 ## NumPy Fundamentals
 
@@ -6306,6 +6330,12 @@ Introduction to Regular Expressions in NLP
 
 Regular expressions (regex) are powerful tools for pattern matching and text manipulation in Natural Language Processing (NLP). They provide a concise and flexible means to identify specific character sequences within larger bodies of text. In Python, the re module offers comprehensive support for working with regex, making it an essential skill for NLP practitioners.
 
+## Accuracy vs. Precision Python Concepts and Examples
+
+Understanding Accuracy and Precision Fundamentals
+
+In measurement theory and data analysis, accuracy refers to how close a measured value is to the true or accepted value, while precision describes the reproducibility of measurements or how close repeated measurements are to each other. These concepts form the foundation of statistical analysis and machine learning evaluation.
+
 ## Multi-Dimensional Data Visualization in Machine Learning with Python
 
 Introduction to Multi-Dimensional Data Visualization
@@ -6606,6 +6636,12 @@ Categorical variables are a common type of data in many real-world scenarios. Th
 Feature Extraction with CNN and SVM Classifier
 
 This implementation demonstrates how to extract features from images using a pre-trained CNN (ResNet50) and feed them into an SVM classifier. The CNN acts as a feature extractor while the SVM performs the final classification task, combining deep learning with traditional ML.
+
+## Evaluating Machine Learning Classification Models
+
+Understanding Classification Metrics
+
+Classification metrics form the foundation of model evaluation in machine learning. These measurements help quantify how well our model can distinguish between different classes, comparing predicted labels against actual values to assess performance. Understanding these metrics is crucial for model selection and optimization.
 
 ## Understanding and Addressing Class Imbalance
 
@@ -10933,6 +10969,12 @@ Introduction to Harmonic Function Theory
 
 Harmonic functions are solutions to Laplace's equation and play a crucial role in many areas of mathematics and physics. They are smooth functions with fascinating properties and applications.
 
+## Efficient Quantization for Large Language Models
+
+Understanding Quantization Basics
+
+Quantization is a technique to reduce model size by mapping floating-point values to lower-precision formats. This process involves determining the optimal mapping between continuous values and their discrete representations while minimizing information loss.
+
 ## Summarizing Long Documents with Python and LLMs
 
 Introduction to Document Summarization with LLMs and LangChain
@@ -12155,6 +12197,12 @@ Understanding Python Decorators
 
 A decorator is a design pattern in Python that allows modifying the behavior of functions or classes without directly changing their source code. Decorators provide a clean and elegant way to wrap additional functionality around existing code, following the principle of separation of concerns.
 
+## Why Boosting Models Use Decision Trees
+
+Understanding Base Learners in Boosting
+
+Boosting algorithms can work with various base learners, not just decision trees. This introductory implementation demonstrates how to create a simple boosting framework that accepts different types of base learners, showing the flexibility of the boosting concept.
+
 ## Strategies to Address Overfitting in Neural Networks
 
 Understanding Overfitting in Neural Networks
@@ -12538,6 +12586,12 @@ Inplace operations in Pandas are commonly misunderstood regarding their performa
 What Is NumPy Broadcasting?
 
 NumPy broadcasting is a powerful mechanism that allows arrays with different shapes to be used in arithmetic operations. It automatically expands arrays to compatible shapes, enabling efficient and concise computations without explicitly reshaping or ing data.
+
+## Understanding Cross-Validation in Python
+
+Understanding Cross-Validation
+
+Cross-validation is a statistical method used to assess model performance by partitioning data into training and testing sets multiple times. It helps evaluate how well a model generalizes to unseen data and reduces overfitting by providing multiple evaluation metrics across different data splits.
 
 ## Comparing Kolmogorov Arnold Networks (KAN) and Multi-Layer Perceptron (MLP) in Python
 
