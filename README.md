@@ -7068,6 +7068,12 @@ Introduction to Hyperbolic Tangent (Tanh) Activation Function
 
 The Hyperbolic Tangent (Tanh) is a popular activation function in neural networks. It's an S-shaped curve that maps input values to output values between -1 and 1. Tanh is often preferred over the logistic sigmoid function because it's zero-centered, which can help in certain neural network architectures.
 
+## Binary Classification Loss Functions
+
+Binary Cross-Entropy Loss Function
+
+Binary cross-entropy loss, also known as log loss, measures the performance of a classification model whose output is a probability value between 0 and 1. It quantifies the difference between predicted probability distributions for binary classification tasks by calculating how uncertain our prediction is compared to the true label.
+
 ## Detecting and Mitigating Model Drift
 
 Understanding Model Drift
@@ -8949,6 +8955,12 @@ Django's authentication system is a robust framework that handles user accounts,
 Linear Ballistic Accumulator Fundamentals
 
 The Linear Ballistic Accumulator (LBA) represents a mathematical framework for modeling decision-making processes where evidence accumulates linearly and independently for multiple response options. Each accumulator races towards a decision boundary without within-trial noise.
+
+## Implementing Gradient Boosting Regressor from Scratch
+
+Understanding Gradient Boosting Core Concepts
+
+Gradient Boosting is an ensemble learning method that builds a strong predictive model by combining multiple weak learners sequentially. Each new model attempts to correct the errors made by the previous models, leading to increasingly accurate predictions through gradient descent optimization.
 
 ## Effective Python Presentation with Explanatory Code
 
