@@ -228,6 +228,12 @@ Introduction to Architecture Patterns
 
 Architecture patterns are essential in software development, providing structure and organization to applications. This presentation will explore MVC, MVP, MVVM, MVVM-C, and VIPER patterns, highlighting their differences and use cases in both iOS and Android development.
 
+## Leveraging super() for Flexible Inheritance in Python
+
+Basic Inheritance with super()
+
+The super() function provides a clean way to access methods from parent classes in Python, enabling proper inheritance chains. It automatically handles method resolution order (MRO) and supports multiple inheritance scenarios elegantly.
+
 ## Visualizing Embeddings and Outliers in Fine-Tuning with Python
 
 Introduction to Embeddings and Outliers in Fine-Tuning
@@ -671,6 +677,12 @@ This code transforms a 2D feature space into a 6D polynomial feature space, incl
 Introduction to String Method Chaining
 
 String method chaining is a powerful Python programming technique that allows multiple string operations to be combined into a single fluent expression. This approach significantly improves code readability and reduces the number of intermediate variables needed while maintaining clear intent.
+
+## Profiling Python Code Execution with NeoLogger's Stopwatch
+
+Introduction to NeoLogger's Stopwatch Class
+
+The Stopwatch class provides precise timing functionality for measuring code execution durations, supporting both cumulative and lap timing modes with microsecond precision. It serves as an essential tool for performance profiling and optimization tasks.
 
 ## Aspect-Based Sentiment Analysis with Python
 
@@ -1356,6 +1368,12 @@ The Equal Scores Paradox is a counterintuitive phenomenon that arises in certain
 Introduction to Difference-in-Differences (DiD)
 
 Difference-in-Differences (DiD) is a statistical method used to estimate the causal effect of a treatment or intervention by comparing the changes in outcomes over time between a treatment group and a control group. This technique is particularly useful when randomized experiments are not feasible or ethical.
+
+## Optimizing NumPy Performance with Thread Configuration
+
+Understanding NumPy Thread Configuration
+
+NumPy's performance heavily depends on its underlying BLAS (Basic Linear Algebra Subprograms) implementation and thread configuration. The three main environment variables that control threading behavior are MKL\_NUM\_THREADS, OPENBLAS\_NUM\_THREADS, and OMP\_NUM\_THREADS, each corresponding to different BLAS backends.
 
 ## Building an Efficient Local Semantic Search System with Python
 
@@ -3323,6 +3341,12 @@ Feature scaling is a crucial preprocessing step in machine learning that transfo
 Understanding Basic Gradient Descent
 
 Gradient descent forms the foundation of optimization in neural networks. It iteratively adjusts parameters by computing gradients of the loss function with respect to model parameters, moving in the direction that reduces the loss most rapidly.
+
+## Accelerate AI Training with Transfer Learning
+
+Understanding Transfer Learning Fundamentals
+
+Transfer learning enables models to leverage knowledge from pre-trained networks, significantly reducing training time and computational resources. This approach allows neural networks to apply learned features from one domain to accelerate learning in another, similar to how humans transfer knowledge between related tasks.
 
 ## Embedding Layers Transforming Text into Machine-Readable Vectors
 
@@ -10883,6 +10907,12 @@ Introduction to Differential Geometry
 
 Differential geometry is a mathematical discipline that uses techniques of differential calculus, integral calculus, linear algebra, and multilinear algebra to study problems in geometry. It deals with smooth shapes and spaces, known as manifolds.
 
+## Using Python's iter() with Sentinel Values
+
+Understanding Python's iter() with Sentinel Values
+
+The iter() function in Python can accept two arguments: a callable object and a sentinel value. When called this way, iter() creates an iterator that repeatedly calls the function until it returns the sentinel value, making it powerful for creating custom iteration patterns.
+
 ## Data Visualization with Python Empowering Analysis
 
 Data Visualization with Python
@@ -11044,6 +11074,12 @@ Quantization is a technique to reduce model size by mapping floating-point value
 Introduction to Document Summarization with LLMs and LangChain
 
 Document summarization is a crucial task in natural language processing that involves condensing large texts into concise, informative summaries. With the advent of Large Language Models (LLMs) and frameworks like LangChain, this process has become more efficient and accurate. In this presentation, we'll explore how to leverage these technologies using Python to create powerful summarization tools.
+
+## Mastering String Manipulation in Python
+
+String Case Manipulation in Python
+
+String case manipulation is a fundamental operation in text processing. Python provides built-in methods for converting text between uppercase and lowercase, enabling efficient string transformations without external libraries or complex algorithms.
 
 ## Leveraging Langchain for Intelligent PDF-Based AI Systems
 
