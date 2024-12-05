@@ -866,6 +866,12 @@ Introduction to Tuples in Python
 
 Tuples are an ordered and immutable sequence type in Python. They are similar to lists but with a key difference: once created, tuples cannot be modified. This immutability makes tuples useful for storing data that shouldn't change, such as coordinates or configuration settings.
 
+## Hyperparameter Tuning in Machine Learning
+
+Hyperparameter Fundamentals in Machine Learning
+
+The distinction between parameters and hyperparameters is fundamental in machine learning. Parameters are learned during training, while hyperparameters control the learning process itself. This implementation demonstrates a basic neural network with configurable hyperparameters.
+
 ## Feature Scaling in Machine Learning Algorithms
 
 Introduction to Feature Scaling in Machine Learning
@@ -920,6 +926,12 @@ Raw strings in Python are literal strings that are prefixed with the letter 'r' 
 The Chessboard and the Grains
 
 The story of the chessboard and grains is an ancient tale that illustrates exponential growth. A king offers a reward to a clever courtier, who asks for one grain of rice on the first square of a chessboard, doubling the amount on each subsequent square. This presentation explores how many years of the world's rice harvest would be needed to fulfill this request.
+
+## Naive Bayes Classification Use Cases
+
+Introduction to Naive Bayes Classification
+
+Naive Bayes classifiers are probabilistic algorithms based on Bayes' theorem, assuming feature independence. They excel in text classification, spam filtering, sentiment analysis, and recommendation systems due to their simplicity and effectiveness with high-dimensional data.
 
 ## Mastering Variables Datasets Using Python
 
@@ -1024,6 +1036,12 @@ Output:
 ```
 Z-score of 6: 0.0
 ```
+
+## Mastering PostgreSQL Fundamentals for Backend Development
+
+PostgreSQL Database Connection with Python
+
+Python's psycopg2 library serves as a robust PostgreSQL adapter, enabling seamless interaction between Python applications and PostgreSQL databases. This fundamental connection setup establishes the foundation for all subsequent database operations and implements crucial error handling mechanisms.
 
 ## Probability of Shiny Female Tyrunt with Python
 
@@ -2009,6 +2027,12 @@ Statistical Foundations in Python
 
 Statistics provides the mathematical backbone for data science and AI. We'll explore implementing fundamental statistical concepts from scratch, starting with measures of central tendency and dispersion that form the basis of data analysis.
 
+## Diagnosing Overfitting in Machine Learning Models
+
+Understanding Overfitting in Machine Learning
+
+In machine learning, high training accuracy coupled with poor test accuracy is a classic symptom of overfitting. This occurs when a model learns the training data too perfectly, memorizing noise and specific patterns that don't generalize well to unseen data.
+
 ## Key Python List Methods for Manipulation
 
 Basic List Manipulation with append() and insert()
@@ -2020,6 +2044,12 @@ The append() method efficiently adds elements to the end of a list with O(1) tim
 Introduction to Reinforcement Learning
 
 Reinforcement Learning (RL) is a type of machine learning where an agent learns to make decisions by interacting with an environment. The agent receives rewards or penalties based on its actions, aiming to maximize cumulative rewards over time. This process mimics how humans and animals learn through trial and error.
+
+## Surprising Vulnerability of Neural Networks to One-Pixel Attacks
+
+Understanding One-Pixel Attacks
+
+Neural networks are surprisingly vulnerable to minimal perturbations in input images. One-pixel attacks represent a fascinating subset of adversarial attacks where modifying just a single pixel can cause state-of-the-art neural networks to misclassify images with high confidence.
 
 ## Non-Parametric Algorithms in Python
 
@@ -2206,6 +2236,12 @@ Chunking is a crucial step in Retrieval-Augmented Generation (RAG) systems, wher
 Custom Managers in Django
 
 Custom managers in Django allow you to extend the default query functionality of models. They provide a way to encapsulate common query patterns and add custom methods to your model's interface.
+
+## Reducing Neural Network Memory Consumption
+
+Understanding Gradient Checkpointing Fundamentals
+
+Gradient checkpointing is a memory optimization technique for training deep neural networks that reduces memory consumption by selectively storing intermediate activations. Instead of keeping all activations in memory during forward pass, it strategically saves checkpoints and recomputes activations when needed during backpropagation.
 
 ## Exploring Lie Groups and Lie Algebras with Python
 
@@ -2825,6 +2861,12 @@ Introduction Marketing Analytics Fundamentals with Python Welcome to this TikTok
 Introduction to Language Translation in Python
 
 Language translation is a complex task that involves converting text from one language to another while preserving meaning and context. In Python, we can create a basic language translator using various approaches. This slideshow will guide you through the process of building a simple translator from scratch, focusing on key concepts and techniques.
+
+## Evaluating Classifier Performance with ROC Curves
+
+Understanding ROC Fundamentals
+
+In binary classification, the Receiver Operating Characteristic (ROC) curve visualizes the trade-off between sensitivity (True Positive Rate) and 1-specificity (False Positive Rate) across various classification thresholds. This fundamental tool helps assess classifier performance independent of class distribution.
 
 ## Adversarial Robustness of Kolmogorov-Arnold Networks
 
@@ -3658,6 +3700,12 @@ Understanding L2 Regularization Implementation
 
 L2 regularization adds a penalty term to the loss function proportional to the squared magnitude of weights. This helps prevent overfitting by constraining the model's capacity and ensuring weights don't grow too large during training, leading to better generalization.
 
+## Optimizing Bin Sizes for Effective Data Visualization
+
+Understanding Histogram Bin Width Fundamentals
+
+In histograms, bin width selection critically impacts data interpretation. The optimal bin width balances granularity and smoothness, revealing underlying patterns while minimizing noise. The Freedman-Diaconis rule provides a robust mathematical approach for determining appropriate bin sizes based on data characteristics.
+
 ## Emotional Rollercoaster of Training Machine Learning Models
 
 Early Stopping Implementation
@@ -4016,6 +4064,12 @@ In Python, functions are first-class objects, meaning they can be assigned to va
 Understanding the Hodrick-Prescott Filter
 
 The Hodrick-Prescott filter is a mathematical tool used to separate a time series into trend and cyclical components by minimizing the sum of squared deviations from trend, subject to a penalty that constrains the second difference of the trend component.
+
+## Optimizing Linear Regression with Gradient Descent
+
+Sum of Squared Residuals (SSR) Fundamentals
+
+The Sum of Squared Residuals represents the cumulative difference between observed values and predicted values in a regression model. It forms the foundation of optimization in linear regression by quantifying prediction errors through squared differences.
 
 ## Simplifying Complex Data with Principal Component Analysis
 
@@ -5752,6 +5806,12 @@ Introduction to Linear Regression with Multiple Variables
 
 Linear regression with multiple variables is an extension of simple linear regression, where we predict a target variable (y) based on multiple input variables (x1, x2, ..., xn). This technique is widely used in various fields, such as finance, economics, and data science, to model and analyze complex relationships between variables.
 
+## Transformer Architecture for Natural Language Processing
+
+Introduction to Transformer Architecture
+
+The Transformer architecture revolutionized natural language processing by introducing self-attention mechanisms, enabling parallel processing of sequential data and capturing long-range dependencies more effectively than traditional RNNs and LSTMs. This fundamental shift in approach has become the backbone of modern language models.
+
 ## Discrete Distributions Python Cheat Sheet
 
 Introduction to Discrete Distributions
@@ -5877,6 +5937,12 @@ Property Graphs are a powerful data model for representing and querying highly c
 Understanding Adversarial Attacks on Neural Networks
 
 Adversarial attacks are techniques used to manipulate input data, often images, to deceive machine learning models, particularly neural networks. These attacks exploit vulnerabilities in AI systems, causing them to misclassify inputs or produce unexpected outputs. This presentation will explore the concept of adversarial attacks, their types, and their implications for AI security.
+
+## 25 Essential Mathematical Concepts for Data Science
+
+Maximum Likelihood Estimation (MLE)
+
+Maximum Likelihood Estimation is a fundamental statistical method used to estimate model parameters by maximizing the likelihood function of observed data. In data science, MLE serves as the theoretical foundation for many machine learning algorithms, particularly in parametric modeling and probabilistic approaches.
 
 ## Introduction to Python
 
@@ -8069,6 +8135,12 @@ Introduction to ReLU Activation Function
 
 The Rectified Linear Unit (ReLU) is a popular activation function in neural networks. It's simple yet effective, helping to solve the vanishing gradient problem. In this presentation, we'll build a ReLU function from scratch in Python.
 
+## Claude-The Role of Kernels in Support Vector Machines
+
+The Kernel Trick Fundamentals
+
+The kernel trick enables Support Vector Machines to operate in high-dimensional feature spaces without explicitly computing the coordinates of data points in that space. This transformation allows SVMs to find nonlinear decision boundaries by implicitly mapping input data to higher dimensions.
+
 ## De-normalized Data for Machine Learning Models in Python
 
 Understanding De-normalized Data
@@ -8890,6 +8962,12 @@ Stokes' Theorem is a fundamental theorem in vector calculus that relates the cur
 
 Code:
 
+## Adam Optimizer Exponentially Weighted Gradients and Squared Gradients
+
+Introduction to Adam Optimizer
+
+Adam (Adaptive Moment Estimation) optimizer combines the advantages of two other optimization algorithms: RMSprop and momentum, maintaining exponentially decaying average of past gradients and squared gradients to adapt learning rates for each parameter.
+
 ## Modular ML Pipeline Architecture in 3 Phases
 
 Feature Engineering Pipeline Architecture
@@ -9151,6 +9229,12 @@ Large Language Models (LLMs) have revolutionized natural language processing, de
 Basic User Authentication
 
 A secure user authentication system using password hashing with salt to prevent rainbow table attacks and ensure secure credential storage in a database.
+
+## Calculus Foundations of Neural Networks
+
+Understanding Gradient Descent in Neural Networks
+
+Gradient descent forms the mathematical foundation of neural network training. It uses calculus to iteratively adjust network parameters by computing partial derivatives of the loss function with respect to each weight and bias, moving parameters in the direction that minimizes error.
 
 ## Tokens and Tokenization in Large Language Models in Python
 
@@ -10242,6 +10326,12 @@ Swarm architecture implements a foundational multi-agent system where agents ope
 Introduction to Vision Transformer (ViT)
 
 The Vision Transformer (ViT) is a groundbreaking model that applies the Transformer architecture, originally designed for natural language processing, to computer vision tasks. It treats images as sequences of patches, enabling the model to capture global dependencies and achieve state-of-the-art performance on various image classification benchmarks.
+
+## Introduction to Supervised and Unsupervised Machine Learning
+
+Introduction to Supervised Learning Classification
+
+Supervised learning classification involves training models to categorize data into predefined classes using labeled examples. This fundamental approach requires preparing training data where each instance has a known target class, enabling the model to learn decision boundaries for future predictions.
 
 ## Comprehensive Guide to Python List Methods
 
@@ -11528,6 +11618,12 @@ Low-Rank Adaptation (LoRA) is a technique for fine-tuning large language models 
 Introduction to Markov Chains
 
 Markov chains are mathematical systems that undergo transitions from one state to another according to certain probabilistic rules. They are named after the Russian mathematician Andrey Markov and have wide-ranging applications in various fields, including predictive analytics.
+
+## Understanding Saddle Points in Deep Learning Optimization
+
+Understanding Saddle Points in Neural Networks
+
+The saddle point phenomenon represents a critical challenge in deep learning optimization where the gradient becomes zero but the point is neither a local minimum nor maximum. This mathematical concept directly impacts neural network training convergence and performance.
 
 ## Best Face Recognition Models in Python
 
@@ -13035,6 +13131,12 @@ Formsets in Django provide a powerful way to handle multiple form instances in a
 Comparing Strings in Python: Identity vs. Equality
 
 When comparing strings in Python, it's crucial to understand the difference between identity and equality. Using the 'is' operator for string comparisons can lead to unexpected results.
+
+## Mastering Machine Learning Algorithms
+
+Linear Regression from Scratch
+
+Linear regression forms the foundation of predictive modeling by establishing relationships between variables. This implementation demonstrates how to build a linear regression model using only NumPy, implementing gradient descent optimization to find the optimal parameters that minimize the mean squared error.
 
 ## Optimizers and Gradient Descent Challenges in Deep Learning
 
