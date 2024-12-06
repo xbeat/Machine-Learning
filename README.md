@@ -60,6 +60,12 @@ Introduction to Bayesian Learning in Nonlinear Multiscale State-Space Models
 
 Bayesian learning in nonlinear multiscale state-space models combines probabilistic inference with complex dynamical systems. This approach allows us to estimate hidden states and parameters in systems that evolve across multiple scales of time and space, while accounting for uncertainties in our observations and model.
 
+## Dropout Preventing Overfitting in Neural Networks
+
+Understanding Dropout - Core Concept
+
+Dropout is a regularization technique that prevents neural networks from overfitting by randomly deactivating a fraction of neurons during training. This forces the network to learn redundant representations and creates more robust feature detection patterns.
+
 ## LLM Alignment Primer using Python
 
 Introduction to LLM Alignment
@@ -2249,6 +2255,12 @@ Introduction to Lie Groups
 
 Lie groups are continuous symmetry groups that play a crucial role in physics and mathematics. They are named after Sophus Lie, who studied their properties in the late 19th century.
 
+## Understanding Zero Padding in Convolutional Neural Networks
+
+Understanding Zero Padding in CNNs
+
+The fundamental concept of zero padding involves augmenting input matrices with zeros around their borders. This process is crucial for maintaining spatial dimensions in convolutional neural networks and preserving edge information during feature extraction.
+
 ## Comparing Decision Trees and Random Forests
 
 Decision Trees vs. Random Forests: What's Best for You?
@@ -2284,6 +2296,12 @@ The field of Artificial Intelligence (AI) has been revolutionized by Python libr
 Random Forest Foundation
 
 Random Forest operates on the principle of ensemble learning by constructing multiple decision trees during training. Each tree is built using a bootstrap sample of the training data, introducing randomness through bagging (Bootstrap Aggregating) to create diverse trees.
+
+## Retrieval-Augmented Generation (RAG) vs. HyDE Revolutionizing Text Generation
+
+Traditional RAG Implementation
+
+A foundational implementation of Retrieval-Augmented Generation using vector embeddings and cosine similarity for document retrieval. This base implementation demonstrates core RAG concepts including document chunking, embedding generation, and similarity-based retrieval.
 
 ## Implementing Stacks in Python
 
@@ -3065,6 +3083,12 @@ The query method in pandas provides a powerful and efficient way to filter DataF
 Introduction to Time Series Forecasting
 
 Time series forecasting is a crucial technique in data science, used to predict future values based on historical data. This presentation compares classic models like Long Short-Term Memory (LSTM) and Recurrent Neural Networks (RNN) with Large Language Models (LLMs) for time series forecasting using Python.
+
+## Mastering Python Decorators
+
+Understanding Python Decorators
+
+Decorators are special functions that modify the behavior of other functions without directly changing their source code. They follow the wrapper pattern, allowing us to extend functionality by taking a function as an argument and returning a modified version of that function.
 
 ## Loss Functions for Machine Learning Algorithms
 
@@ -5160,6 +5184,12 @@ A decision tree is a hierarchical model that makes sequential decisions based on
 
 Introduction to Polars Polars is a fast and efficient DataFrame library for Python, written in Rust. It provides a user-friendly interface similar to pandas but with better performance and memory efficiency.
 
+## Measuring Feature Importance with Shuffle Technique
+
+Understanding Shuffle Feature Importance
+
+Shuffle Feature Importance is a model-agnostic technique that measures feature importance by randomly permuting individual features and observing the impact on model performance. This approach provides insights into feature relevance without requiring model retraining.
+
 ## Correlation vs Causation Understanding the Difference
 
 Understanding Correlation
@@ -5433,6 +5463,12 @@ The vanishing gradient problem is a significant challenge in training deep neura
 Introduction to Dimensionality Reduction
 
 Dimensionality reduction is a crucial technique in data science for simplifying complex datasets while preserving essential information. It helps in visualizing high-dimensional data, reducing computational costs, and mitigating the curse of dimensionality.
+
+## Demystifying the Confusion Matrix
+
+Understanding Confusion Matrix Fundamentals
+
+A confusion matrix is a fundamental tool in machine learning that evaluates binary classification performance by organizing predictions into a 2x2 table. It contrasts actual versus predicted values, providing essential metrics for model evaluation through four key components: True Positives, True Negatives, False Positives, and False Negatives.
 
 ## Introduction to LLM-based Text-to-SQL Integration
 
@@ -5998,6 +6034,12 @@ Understanding Shallow and Deep  in Python
 
 In Python, ing objects can be more complex than it seems. This presentation will explore the concepts of shallow and deep ing, their differences, and how to implement them effectively.
 
+## When to Use and Avoid MAPE Error
+
+Understanding MAPE Basics
+
+Mean Absolute Percentage Error (MAPE) is a fundamental metric in time series forecasting and regression analysis. This implementation demonstrates the basic calculation and interpretation of MAPE using NumPy, handling both single predictions and arrays of forecasts.
+
 ## Differential Analysis on Complex Manifolds with Python
 
 Introduction to Differential Analysis on Complex Manifolds
@@ -6209,6 +6251,12 @@ Transformer models have revolutionized natural language processing and machine l
 Introduction to Safety Alignment in LLMs
 
 Safety alignment in Large Language Models (LLMs) refers to ensuring that AI systems behave in ways that are beneficial and aligned with human values. This is crucial as LLMs become more powerful and influential in various domains.
+
+## Exploring Embeddings and Vector Search
+
+Understanding Embeddings Fundamentals
+
+Embeddings are dense vector representations of data that capture semantic relationships and meaningful features. They transform high-dimensional categorical data into continuous vector spaces where similar items are positioned closer together, enabling efficient similarity computations.
 
 ## AWS VPC Gateway Endpoints Unlocking 96% Cost Savings
 
@@ -7583,6 +7631,12 @@ Introduction to the Donut Dilemma
 
 This slide introduces our intriguing problem: How long would it take someone to eat 2400 donuts? We'll approach this seemingly whimsical question with mathematical rigor, breaking it down into manageable components and using Python to model our solution. This problem is part of our series "Finding Patterns in Pointless Problems using Python," where we apply serious analytical techniques to lighthearted scenarios.
 
+## Reducing Memory Consumption in Neural Network Training
+
+Understanding Memory Usage in Neural Networks
+
+Memory management is crucial in deep learning as neural networks consume significant resources during training. The two primary memory components are static storage for model parameters and dynamic memory allocation during forward and backward passes, with the latter typically being the dominant factor.
+
 ## Logging Configuration and Handlers in Python
 
 Basic Logging Configuration
@@ -8393,6 +8447,12 @@ Understanding **init\_subclass** in Python
 
 Class parameterization during inheritance is a powerful feature introduced in Python 3.6 through **init\_subclass**. This method allows parent classes to customize subclass creation behavior by intercepting and modifying the subclass definition process, providing a cleaner alternative to metaclasses.
 
+## Comparing Machine Learning Techniques Transfer Fine-tuning Multitask Federated
+
+Transfer Learning Basics
+
+Transfer learning enables leveraging knowledge from a pre-trained model to solve a new but related task. This technique is particularly effective when dealing with limited data in the target domain while having access to a model trained on a larger, related dataset.
+
 ## Understanding the Role of Epochs in Training Neural Networks
 
 Understanding Epochs in Neural Networks
@@ -8416,6 +8476,12 @@ RISE (Recursive IntroSpection) is a technique aimed at improving the performance
 Introduction to Time Series Anomaly Detection
 
 Time series anomaly detection is a crucial task in various domains, including IoT, cybersecurity, and industrial monitoring. Spatial-Temporal Normality Learning (STEN) is an advanced technique that combines spatial and temporal information to identify anomalies in time series data. This presentation will explore STEN and its implementation using Python.
+
+## Surprising Boolean Behavior of Empty Lists in Python
+
+Understanding Empty Lists as Truth Values
+
+Python's truth value testing of empty lists exhibits interesting behavior. While an empty list \[\] evaluates to False in boolean contexts, a nested empty list \[\[\]\] is considered True because it contains one element (which happens to be an empty list).
 
 ## Accelerating Deep Learning with Mixed Precision Training
 
@@ -9057,6 +9123,12 @@ Model evaluation is crucial in machine learning to assess how well our predictio
 Introduction Behavior 
 
 Trees and Hierarchical State Machines In this slideshow, we'll explore two powerful techniques for modeling and implementing complex behaviors in Python: Behavior Trees (BTs) and Hierarchical State Machines (HSMs).
+
+## Probability Distributions Cheatsheet
+
+Foundations of Probability Distributions
+
+Probability distributions form the backbone of statistical modeling and machine learning. They describe the likelihood of different outcomes occurring in a random process, providing essential mathematical tools for data analysis, inference, and prediction.
 
 ## Analyzing User Engagement and Churn with Python
 
@@ -10271,6 +10343,12 @@ Functional analysis is a branch of mathematics that studies vector spaces and th
 
 Introduction to Natural Language Toolkit (NLTK) NLTK is a suite of libraries and programs for symbolic and statistical natural language processing (NLP) for the Python programming language. It provides easy-to-use interfaces to over 50 corpora and lexical resources, along with a suite of text processing libraries for classification, tokenization, stemming, tagging, parsing, and semantic reasoning.
 
+## Exploring Neural Network Fundamentals in Python
+
+Neural Network Fundamentals
+
+In neural networks, data flows through layers of interconnected nodes, each applying weights and biases to transform inputs into outputs. The provided code demonstrates a simple linear regression using a neural network with one dense layer, implementing a straightforward relationship Y = 2X.
+
 ## ETL, ELT, and EtLT Processes in Python
 
 Introduction to ETL, ELT, and EtLT
@@ -11297,6 +11375,12 @@ Introduction to Outliers
 
 Outliers are data points that significantly differ from other observations in a dataset. They can arise due to various reasons such as measurement errors, natural variability, or exceptional cases. Identifying and handling outliers is crucial for maintaining data integrity and ensuring accurate analysis results.
 
+## Explaining Generators in Python with Fibonacci
+
+Generator Factory Concept
+
+A generator in Python is a special type of function that allows for lazy evaluation of values, creating elements only when needed. Unlike regular functions that return all values at once, generators yield values one at a time, making them memory-efficient for large sequences.
+
 ## Contrastive Learning with Python
 
 Introduction to Contrastive Learning
@@ -11571,6 +11655,12 @@ Introduction to Denoising Diffusion Probabilistic Models
 
 Denoising Diffusion Probabilistic Models (DDPMs) are a class of generative models that have gained significant attention in recent years. They work by gradually adding noise to data and then learning to reverse this process.
 
+## Machine Learning Fundamentals Hinge Loss and Optimization
+
+Understanding Hinge Loss Implementation
+
+Hinge loss is a fundamental loss function used in Support Vector Machines and other classification tasks. It penalizes predictions based on their distance from the decision boundary, promoting better margin separation between classes. The mathematical formulation enforces a margin while allowing for soft classification boundaries.
+
 ## Introduction to Nonlinear Analysis with Python
 
 Introduction to Nonlinear Analysis
@@ -11838,6 +11928,12 @@ TensorFlow is a powerful open-source library for machine learning and deep learn
 Introduction to Named Entity Recognition
 
 Named Entity Recognition (NER) is a natural language processing task that identifies and classifies named entities in text into predefined categories such as person names, organizations, locations, and more. It's a crucial component in various NLP applications, including information extraction, question answering, and text summarization.
+
+## Avoiding Overfitting in Neural Networks
+
+Understanding Dropout Layer Fundamentals
+
+In neural networks, dropout is a regularization technique that prevents overfitting by randomly deactivating neurons during training with a specified probability p. This forces the network to learn redundant representations and prevents co-adaptation between neurons, leading to more robust feature learning.
 
 ## Designing Reliable Distributed Systems
 
@@ -12478,6 +12574,12 @@ The Lipschitz constant is a measure of how fast a function can change. It's cruc
 Introduction to Scutoids and Surface Area Problem
 
 The scutoid is a fascinating geometric shape discovered in 2018 by scientists studying epithelial cells. It is a three-dimensional shape that resembles a prism with one end capped by a pentagon and the other by a hexagon, with a twist in between. Our problem is to find the surface area of this unique shape. This presentation will explore the mathematical approach to calculating the surface area of a scutoid, breaking down the complex shape into manageable components and using geometry and calculus to solve the problem.
+
+## Neural Networks as Universal Function Approximators
+
+Understanding Neural Networks as Function Approximators
+
+Neural networks fundamentally operate as universal function approximators, capable of learning complex mappings between inputs and outputs through optimization of their internal parameters. The basic structure consists of layers of interconnected nodes that transform input data through nonlinear activation functions.
 
 ## Dimensionality Reduction with Python (PCA)
 
