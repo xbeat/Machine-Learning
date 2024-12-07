@@ -780,6 +780,12 @@ Introduction to Sequence-to-Sequence Models
 
 Sequence-to-Sequence (Seq2Seq) models are a type of neural network architecture designed to transform an input sequence into an output sequence. They are particularly useful for tasks like machine translation, text summarization, and speech recognition.
 
+## Retrieval-Augmented Generation Python Practical Examples
+
+Introduction to RAG Architecture
+
+Retrieval-Augmented Generation (RAG) combines traditional language models with an external knowledge base to generate more accurate and factual responses. The architecture consists of two main components: a retriever that fetches relevant documents and a generator that produces the final output.
+
 ## Comparing Statistical Distances for Detecting Data Drift
 
 Understanding Statistical Distances for Data Drift
@@ -853,6 +859,12 @@ Modular forms are complex-valued functions with specific symmetry properties. Th
 Introduction to Dynamic Price Modelling: Bates Model
 
 The Bates model is an extension of the Heston stochastic volatility model, incorporating jump processes to capture sudden price movements. It's widely used in financial markets for option pricing and risk management, particularly for assets exhibiting both continuous and discontinuous price changes.
+
+## The Power of Python Dictionaries
+
+Basic Dictionary Operations and Initialization
+
+Python dictionaries serve as versatile hash table implementations, offering constant-time complexity for key-based operations. Understanding fundamental dictionary operations is crucial for efficient data manipulation and storage in Python programming, particularly when dealing with structured data representations.
 
 ## Identifying and Removing Duplicates in Pandas
 
@@ -1380,6 +1392,12 @@ Introduction to Correlation
 Correlation measures the strength and direction of the relationship between two variables. It's a fundamental concept in statistics and machine learning, particularly useful in exploratory data analysis and feature selection.
 
 Code:
+
+## Merging Dictionaries Fundamentals in Python
+
+Dictionary Merging Fundamentals
+
+The merging of dictionaries in Python represents a fundamental operation for data structure manipulation. Understanding the core methods for combining dictionaries is essential for efficient data handling and processing in modern Python applications.
 
 ## Exploring the Equal Scores Paradox with Python
 
@@ -8121,6 +8139,12 @@ Introduction to NLP and Short Text Analysis
 
 Natural Language Processing (NLP) is a field of artificial intelligence that focuses on the interaction between computers and human language. Short text analysis is a crucial subset of NLP, dealing with brief pieces of text such as tweets, product reviews, or chat messages. This slideshow will explore various machine learning techniques for analyzing short texts using Python.
 
+## Target Encoding for Categorical Variables in Machine Learning
+
+Understanding Target Encoding Fundamentals
+
+Target encoding represents a sophisticated approach to handling categorical variables by replacing category levels with their corresponding target mean values. This technique effectively reduces dimensionality while preserving statistical relationships between features and the target variable.
+
 ## Top Machine Learning Algorithms Explained
 
 Linear Regression Implementation
@@ -8819,6 +8843,12 @@ Introduction to Precision-Recall Curve
 The Precision-Recall Curve is a powerful evaluation metric used in machine learning, particularly in classification tasks. It provides a way to assess the performance of a binary classifier by visualizing the trade-off between precision and recall at different classification thresholds.
 
 Code:
+
+## Using Bitwise AND to Find Set Intersections in Python
+
+Set Intersection Using Bitwise AND
+
+The bitwise AND operator (&) provides an elegant and efficient way to find common elements between two sets in Python. This operation leverages binary representation of sets internally, making it significantly faster than traditional intersection methods for large datasets.
 
 ## Enhancing Function Flexibility with kwargs
 
@@ -11147,6 +11177,12 @@ Graph Representation Using Adjacency Lists
 
 The adjacency list representation of graphs offers an efficient way to store sparse graphs where the number of edges is much less than the maximum possible edges. This implementation provides O(V+E) space complexity, where V is the number of vertices and E is the number of edges.
 
+## Overcoming Zero-Inflated Regression Challenges
+
+Understanding Zero-Inflated Data
+
+Zero-inflated datasets contain an excessive number of zero values in the target variable, which can significantly impact regression modeling performance. These scenarios commonly occur in real-world applications like count data, healthcare costs, or environmental measurements where zero observations are frequent and meaningful.
+
 ## Components of a RAG System
 
 Introduction to RAG Systems
@@ -11392,6 +11428,12 @@ A generator in Python is a special type of function that allows for lazy evaluat
 Introduction to Contrastive Learning
 
 Contrastive Learning is a machine learning technique that aims to learn representations by comparing similar and dissimilar samples. It's particularly useful in self-supervised learning scenarios where labeled data is scarce. This approach encourages the model to bring similar samples closer in the embedding space while pushing dissimilar samples apart.
+
+## Algorithms for Non-Linear Problems
+
+Introduction to Linear Regression Underfitting
+
+Linear regression is the most basic and commonly used algorithm that tends to underfit when dealing with non-linear problems. It assumes a linear relationship between features and target variables, making it inherently limited in capturing complex patterns in the data.
 
 ## Batch Processing Efficiency in Neural Networks
 
