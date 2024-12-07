@@ -6090,6 +6090,12 @@ Introduction to Two-Way ANOVA
 
 Two-way ANOVA extends one-way ANOVA by examining the influence of two independent categorical variables on a dependent variable. It evaluates main effects of each factor and their interaction effect, providing deeper insights into complex relationships within the data.
 
+## Handling Compressed Data in Python
+
+Understanding Compressed Data Formats in Python
+
+The fundamental challenge with compressed data formats lies in their sequential access nature. Standard compression algorithms like gzip, bzip2, and xz create streams that must be read sequentially, making random access operations computationally expensive and time-consuming for large datasets.
+
 ## How to Create Custom Exception in Python
 
 Understanding Custom Exceptions
