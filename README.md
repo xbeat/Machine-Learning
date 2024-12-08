@@ -5874,7 +5874,9 @@ Discrete distributions are probability distributions that describe random variab
 
 ## Machine Learning Convolutional Neural Network (CNN) and Transfer Learning using Python
 
-Convolutional Neural Networks (CNNs) CNNs are a type of deep neural network designed to process data with a grid-like topology, such as images. They are particularly effective for tasks like image recognition, object detection, and image segmentation. Code Example:
+Convolutional Neural Networks (CNNs)
+
+CNNs are a type of deep neural network designed to process data with a grid-like topology, such as images. They are particularly effective for tasks like image recognition, object detection, and image segmentation. Code Example:
 
 ## Pandas Inplace Operations Expectations vs. Reality
 
