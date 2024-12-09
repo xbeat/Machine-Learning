@@ -5026,6 +5026,12 @@ Understanding Recurrent Neural Networks (RNN)
 
 Recurrent Neural Networks represent a fundamental architecture in deep learning designed to process sequential data by maintaining an internal state (memory) that gets updated with each input in the sequence, making them particularly suitable for tasks like time series prediction and natural language processing.
 
+## Accelerating Dimensionality Reduction Beyond PCA
+
+Understanding PCA Time Complexity
+
+The Principal Component Analysis (PCA) algorithm exhibits computational complexity of O(nm^2 + m^3), where n represents samples and m features. This cubic relationship with dimensionality creates significant performance bottlenecks when dealing with high-dimensional data, making it impractical for datasets with thousands of dimensions.
+
 ## Convolutional Neural Networks and Kernels in Python
 
 The Need for Convolutional Neural Networks
@@ -6747,6 +6753,12 @@ Here's a simple example of logistic regression for medical diagnosis:
 
 This code demonstrates a basic logistic regression model for predicting disease risk based on age and blood pressure.
 
+## How Autoencoders Work for Dimension Reduction
+
+Autoencoder Architecture Fundamentals
+
+An autoencoder is a neural network architecture that learns to compress data into a lower-dimensional representation and then reconstruct it. The network consists of an encoder that maps input to a latent space and a decoder that attempts to reconstruct the original input from this compressed representation.
+
 ## Mastering Complex Types in Python
 
 Understanding Type Annotations in Python
@@ -7780,6 +7792,12 @@ Spark UDFs allow us to extend Spark's built-in functionality by defining custom 
 Introduction to Transformer Models
 
 The Transformer model, introduced in the "Attention Is All You Need" paper, revolutionized natural language processing. It's a neural network architecture that uses self-attention mechanisms to process sequential data, eliminating the need for recurrent or convolutional layers.
+
+## Exploring Popular Distance Measures in Machine Learning
+
+Understanding Euclidean Distance
+
+The Euclidean distance represents the shortest straight-line path between two points in a multi-dimensional space. It's calculated as the square root of the sum of squared differences between corresponding coordinates, making it particularly effective for continuous numerical data in machine learning applications.
 
 ## Basic LangChain Tutorial with Python
 
@@ -11383,6 +11401,12 @@ Introduction to Exploratory Data Analysis (EDA)
 
 Exploratory Data Analysis is a crucial step in the data science process, allowing us to understand the structure, patterns, and characteristics of our dataset before formal modeling. EDA helps us identify trends, detect outliers, and formulate hypotheses about the data.
 
+## Adam Optimizer Combining Momentum and Adaptive Rates
+
+Introduction to Adam Optimizer
+
+Adam (Adaptive Moment Estimation) optimizer combines the benefits of momentum-based and adaptive learning rate methods, specifically integrating RMSprop and momentum. It maintains per-parameter learning rates that are adapted based on estimates of first and second moments of the gradients.
+
 ## Quantization for Efficient Large Language Models
 
 Introduction to Quantization in LLMs
@@ -11472,6 +11496,12 @@ Graph traversal is a fundamental technique in computer science for exploring and
 Introduction to Kernel Density Estimation
 
 Kernel Density Estimation (KDE) is a non-parametric method for estimating the probability density function of a random variable based on a finite data sample. It's a powerful technique used in data analysis and visualization to smooth out the data and reveal underlying patterns.
+
+## Skimpy Comprehensive Data Summarization Tool
+
+Understanding Skimpy's Core Features
+
+Skimpy revolutionizes data analysis by offering comprehensive statistical summaries and visualizations. It extends beyond basic descriptive statistics to provide nuanced insights into data distributions, missing values patterns, and correlations, making it invaluable for exploratory data analysis.
 
 ## Regression Decision Tree in Python
 
@@ -12146,6 +12176,12 @@ Time series analysis involves studying data points collected over time to identi
 Understanding Currying in Python
 
 Currying is a functional programming technique that transforms a function with multiple arguments into a sequence of functions, each taking a single argument. This concept is named after mathematician Haskell Curry and is widely used in functional programming languages. In Python, we can implement currying to create more flexible and reusable code.
+
+## K-means & K-modes for numerical data
+
+K-means Clustering Foundation
+
+The K-means algorithm partitions n observations into k clusters by minimizing within-cluster variances. Each cluster is represented by its centroid, which is the mean of all points assigned to that cluster. The algorithm iteratively assigns points and updates centroids until convergence.
 
 ## Supervised vs Unsupervised Learning in Python
 
