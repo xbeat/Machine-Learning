@@ -7847,6 +7847,12 @@ Introduction to Recurrent Neural Networks (RNNs)
 
 Recurrent Neural Networks are a class of neural networks designed to process sequential data. They maintain an internal state (memory) that allows them to capture temporal dependencies in the input sequence.
 
+## Explainable AI Demystifying Complex Models
+
+Introduction to SHAP Values
+
+SHAP (SHapley Additive exPlanations) values provide a unified measure of feature importance based on game theoretic principles. These values represent the contribution of each feature to the prediction difference from the baseline, calculated by considering all possible feature combinations.
+
 ## Language Modeling in NLP with Python
 
 Introduction to Language Modeling in NLP
