@@ -5796,7 +5796,7 @@ Convolutional operations are fundamental building blocks in neural networks, par
 
 ## My Notes About Neural Network Design in a Comprehensive Way
 
-Title Slide
+My Notes About Neural Network Design in a Comprehensive Way
 
 Neural Network Training: Loss Functions, Activation Functions, and Architecture Design
 
