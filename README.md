@@ -1181,6 +1181,12 @@ Introduction to Embeddings
 
 Embeddings are dense vector representations of discrete entities, such as words or sentences, in a continuous vector space. They capture semantic relationships and similarities between entities. In this presentation, we'll explore how to build an embeddings model from scratch using Python.
 
+## Mastering Linear Regression for Machine Learning
+
+Linear Regression Fundamentals
+
+Linear regression forms the backbone of predictive modeling by establishing relationships between variables through a linear equation. The fundamental concept involves fitting a line that minimizes the distance between predicted and actual values using ordinary least squares optimization.
+
 ## Attention Mechanisms in Language Models
 
 Understanding Self-Attention Mechanism
@@ -3168,6 +3174,12 @@ Linear Regression Fundamentals
 
 Linear regression remains the most widely used algorithm for regression analysis, forming the foundation for many advanced techniques. It models relationships between dependent and independent variables through a linear approach.
 
+## Proving the Central Limit Theorem
+
+Understanding Central Limit Theorem Fundamentals
+
+The Central Limit Theorem is a foundational concept in statistics stating that the sampling distribution of means approaches normality as sample size increases, regardless of the underlying population distribution. This implementation demonstrates basic CLT concepts.
+
 ## Efficient DataFrame Filtering with Pandas Query
 
 Introduction to DataFrame Query Method
@@ -4386,6 +4398,12 @@ While it's true that calculus is a valuable tool in machine learning, it's not e
 Introduction to Random Forests and Decision Trees
 
 Random Forests and Decision Trees are powerful machine learning algorithms used for both classification and regression tasks. These algorithms are popular due to their interpretability, versatility, and ability to handle complex datasets. In this presentation, we'll explore advanced concepts and implementations using Python.
+
+## Overcoming Vanishing Gradients in Deep Neural Networks
+
+Understanding Vanishing Gradients Mathematically
+
+The vanishing gradient problem can be understood through the chain rule of calculus in neural networks. As gradients flow backward through many layers, repeated multiplication of small values causes exponential decrease, particularly with sigmoid and tanh activation functions.
 
 ## Catastrophic Forgetting in Linear Regression Models
 
@@ -5656,6 +5674,12 @@ Introduction to Partial Differential Equations (PDEs)
 
 Partial Differential Equations (PDEs) are equations involving functions of multiple variables and their partial derivatives. They are essential in modeling various physical phenomena.
 
+## Regression Algorithms in Python
+
+Introduction to K-Nearest Neighbors Classification
+
+K-Nearest Neighbors (KNN) is a simple yet powerful non-parametric classification algorithm that makes predictions based on the majority class among the k closest training examples in the feature space, making it fundamentally different from regression-focused algorithms.
+
 ## 15 Common Pandas Polars SQL PySpark Translations
 
 Introduction to Data Processing Libraries
@@ -5691,6 +5715,12 @@ Mixed precision training combines different numerical precisions to optimize mem
 Early Stopping in Neural Networks
 
 Early stopping is a regularization technique used in deep learning to prevent overfitting. It involves monitoring the model's performance on a validation dataset during training and halting the process when the performance begins to degrade. This technique helps the model generalize better to unseen data by preventing it from learning noise in the training set.
+
+## The Importance of Data in Deep Learning
+
+Data Quality Assessment
+
+Data quality assessment is fundamental in deep learning pipelines. This implementation demonstrates how to evaluate dataset characteristics including missing values, statistical distributions, and potential biases that could impact model performance.
 
 ## Efficient Fine-Tuning of Large Language Models with LoRA
 
@@ -9342,6 +9372,12 @@ Loss vs. Cost Functions in Machine Learning
 
 Loss and cost functions are fundamental concepts in machine learning, guiding the learning process of algorithms. While often used interchangeably, they have subtle differences. Loss functions typically measure the error for a single training example, while cost functions aggregate the loss over the entire training dataset. Understanding these functions is crucial for developing effective machine learning models.
 
+## When Gradient Boosting Isn't the Best for Tabular Data
+
+Linear Relationships in Tabular Data
+
+Understanding when linear models outperform gradient boosting requires analyzing feature-target relationships through correlation analysis and visualizations. Linear regression provides interpretable coefficients and faster training when relationships are predominantly linear.
+
 ## Regularization in Deep Learning Intuition and Mathematics
 
 Understanding Regularization Mathematics
@@ -10043,6 +10079,12 @@ Code:
 Introduction to Steering Behaviors
 
 Steering behaviors are algorithms that allow autonomous agents (such as characters in a game) to navigate their environment in a realistic and intelligent way. These behaviors can be combined to create complex and lifelike movement patterns, making them essential for games, simulations, and robotics. In this presentation, we'll explore various steering behaviors and implement them in Python using the Pygame library.
+
+## Attention Mechanism Filtering Noise to Focus on Key Information
+
+Understanding Attention Mechanism Components
+
+The attention mechanism consists of three fundamental components: queries, keys, and values. These elements work together to create weighted relationships between different parts of the input sequence, enabling the model to focus on relevant information dynamically during processing.
 
 ## Linear Independence in AI and ML with Python
 
@@ -11678,6 +11720,12 @@ Regression Decision Trees are a powerful machine learning technique used for pre
 Binary Classification Fundamentals
 
 Binary classification forms the foundation of many machine learning applications, where the goal is to categorize input data into one of two classes. This implementation demonstrates a basic binary classifier using logistic regression from scratch, showcasing the core mathematical principles and probability-based decision making.
+
+## Addressing High Bias in Machine Learning Models
+
+Understanding High Bias in Machine Learning
+
+High bias in machine learning manifests as underfitting, where the model makes oversimplified assumptions about the data relationships. This results in poor performance on both training and test datasets, indicating the model lacks sufficient complexity to capture underlying patterns.
 
 ## Developing AI Technology Literacy! Learn, Unlearn, and Relearn
 
