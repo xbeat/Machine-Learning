@@ -10589,7 +10589,9 @@ Functional analysis is a branch of mathematics that studies vector spaces and th
 
 ## Natural Language Processing with NLTK and Pandas
 
-Introduction to Natural Language Toolkit (NLTK) NLTK is a suite of libraries and programs for symbolic and statistical natural language processing (NLP) for the Python programming language. It provides easy-to-use interfaces to over 50 corpora and lexical resources, along with a suite of text processing libraries for classification, tokenization, stemming, tagging, parsing, and semantic reasoning.
+Introduction to Natural Language Toolkit (NLTK) 
+
+NLTK is a suite of libraries and programs for symbolic and statistical natural language processing (NLP) for the Python programming language. It provides easy-to-use interfaces to over 50 corpora and lexical resources, along with a suite of text processing libraries for classification, tokenization, stemming, tagging, parsing, and semantic reasoning.
 
 ## Exploring Neural Network Fundamentals in Python
 
