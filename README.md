@@ -60,6 +60,12 @@ Introduction to Physics Informed Neural Networks (PINN) and Finite Element Metho
 
 Physics Informed Neural Networks (PINN) and Finite Element Method (FEM) are two powerful approaches for solving complex physical problems. While FEM has been a cornerstone of computational physics for decades, PINNs represent a newer, machine learning-based approach. This slideshow will explore both methods, their strengths, and their applications.
 
+## Batch Normalization Optimizing Deep Neural Network Training
+
+Understanding BatchNorm Mathematics
+
+The mathematical foundation of Batch Normalization involves computing the mean and variance across a mini-batch, then normalizing and applying learnable parameters. This process transforms layer inputs to have standardized statistics, improving training stability and convergence.
+
 ## Bayesian Learning in Nonlinear Multiscale State-Space Models
 
 Introduction to Bayesian Learning in Nonlinear Multiscale State-Space Models
@@ -827,6 +833,12 @@ Statistical distances provide mathematical frameworks for quantifying the differ
 Understanding LLM Refusals and the Motivation for Reducing Them
 
 Large Language Models (LLMs) are powerful tools for generating human-like text, but they can sometimes refuse to engage with certain topics or tasks due to ethical or safety constraints. This phenomenon is known as "refusal," and it can be frustrating for users who need the LLM to complete specific tasks. This slideshow aims to explore techniques for reducing LLM refusals without the need for expensive and time-consuming fine-tuning of the entire model.
+
+## Claude-Optimizing Linear Regression with Gradient Descent
+
+Understanding Sum of Squared Residuals
+
+In linear regression, the Sum of Squared Residuals (SSR) measures the total deviation between predicted and actual values. It serves as our cost function, quantifying how well our model fits the data by summing the squared differences between predicted and observed values.
 
 ## Self-Attention as a Directed Graph in Python
 
@@ -1732,6 +1744,12 @@ The dispersion parameter is a crucial concept in statistical modeling, particula
 Machine Learning vs Statistics
 
 Machine learning and statistics are closely related fields that deal with data analysis and prediction. While statistics focuses on inferring population parameters from sample data, machine learning emphasizes building models that can make accurate predictions on new, unseen data. Machine learning often employs statistical techniques but extends them with more complex algorithms and computational approaches.
+
+## Exploring Activation Functions in Neural Networks
+
+Introduction to Activation Functions
+
+Neural networks transform input data through layers of interconnected nodes, with activation functions determining the output of each neuron. These mathematical functions introduce non-linearity, enabling neural networks to learn and approximate complex patterns that simple linear models cannot capture.
 
 ## Visualizing Jordan Canonical Form in Python
 
@@ -5188,6 +5206,12 @@ Understanding Overfitting in Machine Learning
 
 Overfitting occurs when a machine learning model learns the training data too well, capturing noise and specific data points rather than general patterns. This leads to poor generalization on unseen data. Let's explore this concept with Python examples.
 
+## Memory-Efficient Techniques for Duplicate Removal
+
+Memory-Efficient Duplicate Removal Basics
+
+Memory efficiency in duplicate removal operations is crucial for large datasets. The choice between different methods can significantly impact both memory usage and execution speed. Let's explore the foundational approach using Python's built-in set data structure.
+
 ## Understanding Confusion Matrices in Machine Learning
 
 Introduction to Confusion Matrix
@@ -7125,6 +7149,12 @@ Understanding the Research Context
 
 Deep learning codebases require systematic analysis starting with the research paper itself. The first step involves extracting key architectural decisions, mathematical foundations, and implementation choices that will guide our code exploration. Here's how to systematically parse research papers.
 
+## Manipulating Bits with Python's Bitwise Operators
+
+Understanding Binary and Bitwise Operations in Python
+
+Binary numbers form the foundation of all computer operations, representing data as sequences of 0s and 1s. In Python, integers are stored internally as binary, and bitwise operators allow direct manipulation of these individual bits for low-level operations.
+
 ## Python 3.13's JIT Compiler A Performance Boost
 
 Python 3.13 and the JIT Compiler
@@ -7812,6 +7842,12 @@ Regular expressions (regex) are powerful tools for pattern matching and data ext
 Introduction to Stacking in Machine Learning
 
 Stacking, also known as stacked generalization, is an ensemble learning technique that combines multiple models to improve prediction accuracy. It works by training a meta-model on the predictions of base models, leveraging their strengths and mitigating their weaknesses.
+
+## Discover Activation Functions in Neural Networks
+
+ReLU (Rectified Linear Unit)
+
+The Rectified Linear Unit (ReLU) is one of the most widely used activation functions in modern neural networks. It transforms input by outputting zero for negative values and maintaining the input value for positive inputs, effectively introducing non-linearity while avoiding vanishing gradient problems.
 
 ## Acing the Machine Learning Interview
 
@@ -8809,12 +8845,6 @@ Introduction to Python
 
 Python is a versatile, high-level programming language known for its simplicity and readability. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming. Python's extensive standard library and third-party packages make it suitable for various applications, from web development to scientific computing.
 
-## Claude-Activation Functions in Neural Networks
-
-Introduction to Activation Functions
-
-Neural networks transform input data through layers of interconnected nodes, with activation functions determining the output of each neuron. These mathematical functions introduce non-linearity, enabling neural networks to learn and approximate complex patterns that simple linear models cannot capture.
-
 ## Machine Learning Hyperparameter Tuning
 
 Linear Regression Hyperparameters - Regularization Impact
@@ -9432,6 +9462,12 @@ SVM Mathematical Foundations
 
 Support Vector Machines rely on fundamental mathematical principles to find the optimal hyperplane separating data classes. The primary objective is maximizing the margin between classes while minimizing classification errors through quadratic optimization with linear constraints.
 
+## Top 10 Machine Learning Algorithms
+
+Introduction to Naïve Bayes Classifier
+
+The Naïve Bayes classifier implements Bayes' theorem with strong independence assumptions between features. Despite its simplicity, it often performs remarkably well in real-world situations, particularly in document classification and spam filtering. The algorithm excels in high-dimensional training datasets.
+
 ## Probability in Machine Learning with Python
 
 Introduction to Probability in Machine Learning
@@ -9926,6 +9962,12 @@ Introduction to k-Nearest Neighbours (KNN)
 
 KNN is a simple yet powerful machine learning algorithm used for classification and regression tasks. It works by finding the k closest data points to a given query point and making predictions based on their labels or values.
 
+## Claude-When Gradient Boosting Isn't the Best for Tabular Data
+
+Linear vs Gradient Boosting Comparison
+
+The fundamental distinction between linear models and gradient boosting lies in their ability to capture relationships. While linear models assume straight-line relationships, gradient boosting constructs an ensemble of decision trees that can model complex, non-linear patterns through sequential improvements.
+
 ## Evaluating Classification Models For a Machine Learning in Python
 
 Introduction to Evaluating Classification Models
@@ -10404,6 +10446,12 @@ Machine Learning (ML) has become a game-changer in the e-commerce industry, enab
 Physical Interpretations in Machine Learning
 
 Physical interpretations and intuitions of equations are indeed crucial in Machine Learning and Data Science. They help us understand complex concepts, recognize patterns, and gain deeper insights into our data and models. Let's explore this topic through a series of examples and visualizations.
+
+## List Unpacking in Python
+
+Basic List Unpacking
+
+List unpacking in Python allows extracting individual elements from sequences into separate variables using a simple assignment syntax. This fundamental feature enables cleaner and more readable code by directly mapping sequence items to meaningful variable names during assignment operations.
 
 ## Bayes' Theorem in Machine Learning
 
@@ -10979,6 +11027,12 @@ K-Fold Cross Validation is a statistical method used to estimate the performance
 Introduction to Control System Theory
 
 Control system theory is a fundamental aspect of engineering that deals with the behavior of dynamical systems. It focuses on how systems respond to inputs and how to design controllers to achieve desired outputs. This slide introduces the basic concepts of control systems using a simple temperature control example.
+
+## REST API vs GraphQL Comparing API Design Approaches
+
+Basic REST API Implementation
+
+A foundational implementation of a REST API using Python's Flask framework, demonstrating core HTTP methods for CRUD operations. This example creates a simple API for managing a collection of items with proper request handling and response formatting.
 
 ## Improving RAG Pipelines with Low-Latency Rerankers
 
@@ -13570,6 +13624,12 @@ Introduction to LLM Frameworks
 
 LLM frameworks are essential tools for building AI applications with large language models. This presentation explores three popular frameworks: LangChain, LlamaIndex, and Haystack, comparing their features, use cases, and implementation in Python.
 
+## Perceptron Model and Implementation in Python
+
+Understanding the Perceptron Model
+
+The perceptron is a fundamental building block of neural networks, representing a mathematical model of a biological neuron. It takes multiple input signals, applies weights to them, combines them with a bias term, and produces a binary output through an activation function.
+
 ## Comprehensive Guide to SQL Window Functions with Python
 
 Introduction to Window Functions in SQL
@@ -13711,6 +13771,12 @@ Python dictionaries are ordered collections of key-value pairs. They provide a f
 Introduction to Grid Search
 
 Grid search is a systematic hyperparameter optimization technique that works by exhaustively searching through a predefined set of hyperparameter values. This methodical approach evaluates every possible combination in the search space to find the optimal configuration for a machine learning model.
+
+## Memory-Efficient Duplicate Removal in Python
+
+Memory-Efficient Duplicate Removal Overview
+
+Memory efficiency in duplicate removal operations is critical when dealing with large datasets in Python. The choice of method can significantly impact both memory usage and processing speed, especially when handling millions of records.
 
 ## The Unreasonable Effectiveness of Data and Scaling Laws in Python
 
