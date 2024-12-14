@@ -580,7 +580,9 @@ Proper data visualization requires careful consideration of scale selection to m
 
 ## NumPy Fundamentals
 
+NumPy Fundamentals
 
+Discover the power of NumPy, the essential library for scientific computing in Python.
 
 ## Object-based Image Classification with Python
 
@@ -833,12 +835,6 @@ Statistical distances provide mathematical frameworks for quantifying the differ
 Understanding LLM Refusals and the Motivation for Reducing Them
 
 Large Language Models (LLMs) are powerful tools for generating human-like text, but they can sometimes refuse to engage with certain topics or tasks due to ethical or safety constraints. This phenomenon is known as "refusal," and it can be frustrating for users who need the LLM to complete specific tasks. This slideshow aims to explore techniques for reducing LLM refusals without the need for expensive and time-consuming fine-tuning of the entire model.
-
-## Claude-Optimizing Linear Regression with Gradient Descent
-
-Understanding Sum of Squared Residuals
-
-In linear regression, the Sum of Squared Residuals (SSR) measures the total deviation between predicted and actual values. It serves as our cost function, quantifying how well our model fits the data by summing the squared differences between predicted and observed values.
 
 ## Self-Attention as a Directed Graph in Python
 
@@ -4945,12 +4941,6 @@ Introduction to Mutual Information
 
 Mutual Information (MI) is a measure of the mutual dependence between two variables. It quantifies the amount of information obtained about one random variable by observing another random variable. In machine learning, MI is used for feature selection, dimensionality reduction, and understanding the relationships between variables.
 
-## Claude-Building Multi-Agent Nested Chatbots with AutoGen
-
-Setting Up AutoGen Multi-Agent Environment
-
-The initialization of an AutoGen environment requires careful configuration of multiple agents with specific roles and capabilities. This setup establishes the foundation for nested conversations between AI agents, enabling complex interactions and task delegation.
-
 ## Guide to Comparing Group Means Across Multiple Variables in Python
 
 Introduction to Comparing Group Means
@@ -6283,12 +6273,6 @@ A Banach space is a complete normed vector space. In simpler terms, it's a vecto
 Size-encoded Heatmap
 
 Size-encoded heatmaps improve upon traditional heatmaps by adding a size component to each cell. This enhancement makes it easier to interpret exact values and reduces visual clutter, especially for values close to zero. The technique is particularly useful when dealing with datasets where both color and size can convey meaningful information.
-
-## Claude-Streamlining PyTorch with Fabric
-
-Introduction to PyTorch Fabric
-
-PyTorch Fabric represents a revolutionary approach to distributed training, bridging the gap between PyTorch's flexibility and Lightning's simplified distributed capabilities. It enables seamless scaling from single-device training to multi-GPU setups while maintaining pure PyTorch-style control over training loops.
 
 ## Magic Methods and Operator Overloading in Python
 
@@ -8491,12 +8475,6 @@ Introduction to ReLU Activation Function
 
 The Rectified Linear Unit (ReLU) is a popular activation function in neural networks. It's simple yet effective, helping to solve the vanishing gradient problem. In this presentation, we'll build a ReLU function from scratch in Python.
 
-## Claude-The Role of Kernels in Support Vector Machines
-
-The Kernel Trick Fundamentals
-
-The kernel trick enables Support Vector Machines to operate in high-dimensional feature spaces without explicitly computing the coordinates of data points in that space. This transformation allows SVMs to find nonlinear decision boundaries by implicitly mapping input data to higher dimensions.
-
 ## De-normalized Data for Machine Learning Models in Python
 
 Understanding De-normalized Data
@@ -8628,12 +8606,6 @@ Machine Learning (ML) models require rigorous testing in production environments
 Introduction to Naive Bayes Classifier
 
 Naive Bayes is a probabilistic machine learning algorithm based on Bayes' theorem. It's widely used for classification tasks, particularly in text classification and spam filtering. Despite its simplicity, it can often outperform more sophisticated algorithms, especially with small datasets or high-dimensional feature spaces.
-
-## Claude-Optimization Algorithms Beyond Gradient Descent
-
-Newton's Method - Beyond Gradient Descent
-
-Newton's method is an advanced optimization algorithm that utilizes second-order derivatives to find optimal parameters more efficiently than gradient descent. It approximates the objective function locally using a quadratic function and finds its minimum analytically.
 
 ## Unlocking the Secrets of Model Performance with the Confusion Matrix
 
@@ -9163,12 +9135,6 @@ Feature scaling is a common preprocessing step in machine learning, but it's not
 Version Control for Machine Learning Projects
 
 Version control is essential for managing ML projects effectively. While Data Version Control (DVC) is a powerful tool, simpler approaches can sometimes be more appropriate. Let's explore various versioning strategies for ML projects, considering their pros and cons.
-
-## Claude-Transfer Learning for Convolutional Neural Networks
-
-Understanding Pre-trained CNN Architecture
-
-The foundation of transfer learning in CNNs lies in understanding popular pre-trained architectures like VGG16, ResNet, or Inception. These models have learned hierarchical features from massive datasets, making them valuable starting points for transfer learning applications.
 
 ## Structuring Chat Training Data
 
@@ -10003,12 +9969,6 @@ Distribution theory, developed by Laurent Schwartz, extends the notion of functi
 Introduction to k-Nearest Neighbours (KNN)
 
 KNN is a simple yet powerful machine learning algorithm used for classification and regression tasks. It works by finding the k closest data points to a given query point and making predictions based on their labels or values.
-
-## Claude-When Gradient Boosting Isn't the Best for Tabular Data
-
-Linear vs Gradient Boosting Comparison
-
-The fundamental distinction between linear models and gradient boosting lies in their ability to capture relationships. While linear models assume straight-line relationships, gradient boosting constructs an ensemble of decision trees that can model complex, non-linear patterns through sequential improvements.
 
 ## Evaluating Classification Models For a Machine Learning in Python
 
