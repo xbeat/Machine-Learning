@@ -2527,6 +2527,12 @@ Linear search is a simple search algorithm used to find an element in a list or 
 
 Code:
 
+## K-Means Clustering Visualized Through Travel Themes
+
+Introduction to K-Means Clustering
+
+K-means clustering is an unsupervised machine learning algorithm that partitions n observations into k clusters, where each observation belongs to the cluster with the nearest mean. The algorithm iteratively assigns points to centroids and updates centroid positions until convergence.
+
 ## Exploring the Tsetlin Machine! A Cutting-Edge Classification Algorithm
 
 Introduction to Tsetlin Machines
@@ -3335,6 +3341,12 @@ Cython is a powerful tool for optimizing Python code by converting it to C, resu
 Understanding the Cost Function in Machine Learning
 
 The cost function is a crucial component in machine learning, measuring how well a model's predictions align with actual values. Let's explore the mathematical reasoning behind its formulation and why certain choices were made.
+
+## SQL's Execution Flow
+
+SQL Query Order Processing in Python
+
+SQL's logical processing order differs from its written syntax. Understanding this sequence is crucial for query optimization and debugging. We'll implement a Python class that demonstrates the actual execution flow of SQL operations.
 
 ## Mastering Inheritance and Polymorphism in Python
 
@@ -4374,6 +4386,12 @@ Introduction to BART for Sequence Classification
 BART (Bidirectional and Auto-Regressive Transformers) is a state-of-the-art language model developed by Facebook AI Research. It is a denoising autoencoder for pretraining sequence-to-sequence models, originally proposed for text generation tasks. However, it can also be fine-tuned for sequence classification tasks, where the input sequence is mapped to a class label.
 
 Code:
+
+## Organizing Python Utility Functions with Static Methods
+
+Understanding Static Methods
+
+Static methods serve as utility functions that belong to a class namespace but operate independently of class or instance state. They provide a clean way to organize related functionality without requiring instance creation, making the code more modular and easier to maintain.
 
 ## Deep Extrinsic Manifold Representation for Computer Vision
 
@@ -7163,6 +7181,12 @@ Python 3.13 does not currently exist, and there are no official plans for a JIT 
 
 Instead, let's discuss the current state of Python performance optimization and alternative implementations that do use JIT compilation.
 
+## Softmax Function Explained Transforming Logits to Probabilities
+
+Understanding Softmax Function
+
+The Softmax function transforms a vector of real numbers into a probability distribution, ensuring all values are between 0 and 1 and sum to 1. It's commonly used in machine learning for multi-class classification tasks, converting raw model outputs into interpretable probabilities.
+
 ## Exploring Image Transformations with OpenCV in Python
 
 Introduction to Image Transformations with OpenCV
@@ -8321,6 +8345,12 @@ Introduction to Distributed Model Training with TensorFlow
 
 Distributed model training is a technique used to train machine learning models across multiple devices or machines. This approach is particularly useful for large datasets or complex models that would be time-consuming or impossible to train on a single device. TensorFlow, a popular open-source machine learning framework, provides robust support for distributed training.
 
+## Understanding Machine Learning Distances
+
+Euclidean Distance Implementation
+
+The Euclidean distance represents the straight-line distance between two points in n-dimensional space. It's calculated as the square root of the sum of squared differences between corresponding elements. This metric is fundamental in k-means clustering and KNN algorithms.
+
 ## Transforming Language AI with LangGraph
 
 Introduction to LangGraph Architecture
@@ -8344,6 +8374,12 @@ KMeans clustering is a popular unsupervised learning algorithm used for partitio
 Cross-Validation Fundamentals
 
 Cross-validation is a statistical method for assessing model performance and generalization ability by partitioning data into training and testing sets. This implementation demonstrates the basic framework for performing cross-validation using scikit-learn compatible estimators.
+
+## Estimating Causal Impact of Late Deliveries on Customer Satisfaction
+
+Understanding Propensity Score Matching Fundamentals
+
+Propensity Score Matching (PSM) estimates treatment effects by creating matched pairs of treated and control subjects with similar characteristics. The propensity score represents the probability of receiving treatment based on observed covariates, helping reduce selection bias in observational studies.
 
 ## Stacking Ensemble Learning with Python
 
@@ -9913,6 +9949,12 @@ The tempfile module in Python provides a robust and secure way to create tempora
 Introduction to Common Hypothesis Tests
 
 Hypothesis testing is a fundamental tool in statistical analysis, allowing researchers to make inferences about populations based on sample data. This presentation will cover five common hypothesis tests: T-Test, ANOVA, Chi-Squared Test, F-Test, and Z-Test. We'll explore their uses, assumptions, and implementation in Python.
+
+## Understanding the Gini Index From Inequality to Machine Learning
+
+Understanding Gini Index Fundamentals
+
+The Gini Index serves as both an inequality measure and a classification metric in machine learning. In its statistical form, it quantifies the disparity between perfect equality and actual distribution, widely used in economics and now adapted for decision tree algorithms.
 
 ## Exploring Neuro-Vector-Symbolic Architectures in Python
 
@@ -12735,6 +12777,12 @@ Introduction to LoRA and Its Variants
 
 LoRA (Low-Rank Adaptation) is a technique for fine-tuning large language models efficiently. This slideshow explores various LoRA variants, their implementations, and practical applications using Python. We'll cover the basics of LoRA, its advantages, and dive into different variations that have emerged to address specific challenges in model adaptation.
 
+## Semantic vs. Vector Search in Python
+
+Understanding Semantic Search Fundamentals
+
+Semantic search focuses on understanding the meaning and intent behind search queries rather than exact keyword matching. It leverages natural language processing techniques to comprehend context, synonyms, and relationships between words to deliver more relevant search results.
+
 ## Introduction to LSTM with Batch Normalization in Python
 
 Introduction to LSTM with Batch Normalization
@@ -13466,6 +13514,12 @@ Introduction to Dynamic Mode Decomposition (DMD)
 
 Dynamic Mode Decomposition (DMD) is a powerful data-driven method for analyzing complex dynamical systems. It extracts spatiotemporal coherent structures from high-dimensional data, providing insights into the system's behavior and evolution over time.
 
+## Efficient Asynchronous Socket Programming with asyncio in Python
+
+Asynchronous Socket Programming Fundamentals
+
+Understanding asynchronous socket programming requires grasping how asyncio manages non-blocking I/O operations. The asyncio library provides high-level APIs for handling network connections through coroutines, enabling efficient concurrent execution without threading overhead.
+
 ## Limitations of Silhouette Score in Clustering Evaluation
 
 Introduction to Clustering Evaluation
@@ -13647,6 +13701,12 @@ Python's import system is a powerful mechanism that allows you to organize and r
 Graph Data Structure Fundamentals
 
 A graph is a non-linear data structure consisting of vertices (nodes) and edges connecting these vertices. In Python, we can implement a graph using adjacency lists, where each vertex maintains a list of its adjacent vertices, providing an efficient representation for sparse graphs.
+
+## Feedforward Neural Network Fundamentals
+
+Neural Network Fundamentals and Architecture
+
+In feedforward neural networks, information flows unidirectionally from input to output layers through hidden layers. Each neuron receives inputs, applies weights, adds a bias term, and processes the result through an activation function to produce an output signal.
 
 ## Univariate Analysis of Continuous Variables in Python
 
