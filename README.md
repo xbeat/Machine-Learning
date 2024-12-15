@@ -1801,6 +1801,12 @@ Introduction to Exception Handling in Python
 
 Exception handling is a crucial aspect of writing robust Python code. It allows developers to gracefully manage errors and unexpected situations that may occur during program execution. Python provides a structured approach to handle exceptions using the try, except, else, and finally blocks. This slideshow will explore these concepts, their usage, and practical examples to help you master exception handling in Python.
 
+## Importance of Big O Notation for Data Scientists
+
+Time Complexity Fundamentals in Data Science
+
+Time complexity analysis is fundamental to writing efficient data science code. Understanding Big O notation helps data scientists evaluate algorithmic efficiency, particularly crucial when dealing with large datasets where performance impacts are magnified exponentially.
+
 ## Non-Linearity in Deep Learning with Python
 
 Introduction to Non-Linearity in Deep Learning
@@ -2794,6 +2800,12 @@ Condensing a Random Forest into a Single Decision Tree
 
 Condensing a random forest model into a single decision tree is a technique used to simplify complex ensemble models while retaining their predictive power. This process involves extracting the most important features and decision rules from the forest to create a more interpretable model.
 
+## Extending LLM Capabilities with Tool Calling
+
+Tool Calling Fundamentals
+
+Tool calling enables Large Language Models to interact with external functions and APIs, extending their capabilities beyond text generation. This architectural pattern allows LLMs to recognize when they need external assistance and orchestrate the execution of specialized tools to accomplish complex tasks.
+
 ## Essential Python Data Types
 
 Python Numbers - Core Numeric Types
@@ -3265,6 +3277,12 @@ ProcessPoolExecutor is a powerful tool in Python's concurrent.futures module. It
 Understanding Vanishing and Exploding Gradients
 
 Vanishing and exploding gradients are common problems in training deep neural networks. They occur during backpropagation when gradients become extremely small or large, hindering the network's ability to learn effectively. This presentation will explore these issues, their causes, and potential solutions.
+
+## Understanding Vector Databases Fundamentals and Applications
+
+Vector Space Fundamentals
+
+Vector databases operate on the principle of vector spaces where data points are represented as high-dimensional vectors. Understanding the mathematical foundation of vector spaces is crucial for implementing vector database operations efficiently using numerical computations and distance metrics.
 
 ## Understanding R-squared and Adjusted R-squared in Regression Models
 
@@ -6430,6 +6448,12 @@ Introduction to Stem-Leaf Plots
 
 A stem-leaf plot is a statistical method for organizing and displaying numerical data. It provides a visual representation of the distribution of data, making it easier to identify patterns, clusters, and outliers. This plot is particularly useful for smaller datasets and can help in understanding the shape and spread of the data.
 
+## Custom Exception Handling for ML Pipelines
+
+Custom Exception Hierarchy for ML Pipelines
+
+Exception handling in machine learning requires specialized error types to handle data processing, model training, and inference failures. Creating a custom exception hierarchy allows precise error identification and appropriate handling strategies.
+
 ## Ensemble Learning! Blending Models in Python
 
 Introduction to Ensemble Learning and Blending
@@ -9458,6 +9482,12 @@ The Coffee Automaton: Exploring Complexity in Closed Systems
 
 The Coffee Automaton is a conceptual model used to study the emergence and decay of complexity in closed systems. This model draws inspiration from the process of brewing and consuming coffee, serving as an analogy for more complex systems in nature and society.
 
+## Bagging in Ensemble Learning
+
+Understanding Bagging in Ensemble Learning
+
+Bagging (Bootstrap Aggregating) is a fundamental ensemble learning technique that creates multiple training datasets through bootstrap sampling, training individual models on these samples, and combining their predictions to reduce overfitting and variance in the final model's predictions.
+
 ## Mastering Support Vector Machines for Classification and Regression
 
 SVM Mathematical Foundations
@@ -10280,6 +10310,12 @@ Reading files in Python involves understanding fundamental operations that allow
 Introduction to Manim for Machine Learning
 
 Manim is a powerful animation library in Python, originally created by Grant Sanderson (3Blue1Brown) for mathematical animations. It has since evolved to become a versatile tool for creating high-quality animations, particularly useful in visualizing machine learning concepts. This slideshow will explore how Manim can be used to illustrate and explain various machine learning algorithms and concepts.
+
+## Understanding the Range of R-squared in Regression
+
+Understanding R-squared Range
+
+R-squared, also known as the coefficient of determination, measures the proportion of variance in the dependent variable explained by independent variables in regression analysis. The value ranges from 0 to 1, where 0 indicates no fit and 1 indicates perfect fit.
 
 ## Boosting Python Efficiency with Asynchronous Programming
 
@@ -12658,6 +12694,12 @@ Feature encoding is a crucial step in data preprocessing for machine learning. I
 Introduction to Computational Graphs in Machine Learning
 
 Computational graphs are powerful tools for representing and optimizing complex mathematical operations in machine learning. They form the backbone of modern deep learning frameworks, allowing efficient computation and automatic differentiation. In this presentation, we'll explore the concept of computational graphs and their implementation using Python.
+
+## Understanding Neural Network Math with Python
+
+Neural Network Fundamentals
+
+In artificial neural networks, neurons are the basic computational units that process input signals through weighted connections. Each neuron receives multiple inputs, applies weights, adds a bias term, and processes the result through an activation function to produce an output signal.
 
 ## Practical Limitations of KMeans Clustering
 
