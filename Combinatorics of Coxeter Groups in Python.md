@@ -1,0 +1,371 @@
+## Combinatorics of Coxeter Groups in Python
+
+Slide 1: Introduction to Coxeter Groups
+
+Coxeter groups are mathematical structures that describe symmetries in geometric spaces. They are named after H.S.M. Coxeter and have applications in various fields, including algebra, geometry, and combinatorics.
+
+```python
+import networkx as nx
+import matplotlib.pyplot as plt
+
+def create_coxeter_diagram(matrix):
+    G = nx.Graph()
+    n = len(matrix)
+    for i in range(n):
+        for j in range(i+1, n):
+            if matrix[i][j] != 2:
+                G.add_edge(i, j, weight=matrix[i][j])
+    
+    pos = nx.spring_layout(G)
+    nx.draw(G, pos, with_labels=True, node_color='lightblue', node_size=500)
+    edge_labels = nx.get_edge_attributes(G, 'weight')
+    nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels)
+    
+    plt.title("Coxeter Diagram")
+    plt.axis('off')
+    plt.show()
+
+# Example: Coxeter matrix for A3 group
+A3_matrix = [
+    [1, 3, 2],
+    [3, 1, 3],
+    [2, 3, 1]
+]
+
+create_coxeter_diagram(A3_matrix)
+```
+
+Slide 2: Coxeter Matrix and Diagrams
+
+A Coxeter group is defined by its Coxeter matrix, which encodes the relations between generators. The Coxeter diagram visually represents these relations.
+
+```python
+def print_coxeter_matrix(matrix):
+    n = len(matrix)
+    print("Coxeter Matrix:")
+    for row in matrix:
+        print(" ".join(f"{x:2d}" for x in row))
+
+# Example: Coxeter matrix for B3 group
+B3_matrix = [
+    [1, 4, 2],
+    [4, 1, 3],
+    [2, 3, 1]
+]
+
+print_coxeter_matrix(B3_matrix)
+create_coxeter_diagram(B3_matrix)
+```
+
+Slide 3: Generating Words in Coxeter Groups
+
+Words in Coxeter groups are sequences of generators. We can generate all words up to a certain length using recursive algorithms.
+
+```python
+def generate_words(generators, max_length):
+    words = [[]]
+    for _ in range(max_length):
+        new_words = []
+        for word in words:
+            for gen in generators:
+                new_word = word + [gen]
+                if len(new_word) < 2 or new_word[-1] != new_word[-2]:
+                    new_words.append(new_word)
+        words.extend(new_words)
+    return words
+
+generators = ['s1', 's2', 's3']
+max_length = 3
+words = generate_words(generators, max_length)
+
+print(f"Words of length up to {max_length}:")
+for word in words:
+    print("".join(word))
+```
+
+Slide 4: Word Reduction in Coxeter Groups
+
+Word reduction is a fundamental operation in Coxeter groups. It involves applying relations to simplify words.
+
+```python
+def reduce_word(word, relations):
+    reduced = True
+    while reduced:
+        reduced = False
+        for i in range(len(word) - 1):
+            for relation in relations:
+                if word[i:i+len(relation[0])] == relation[0]:
+                    word = word[:i] + relation[1] + word[i+len(relation[0]):]
+                    reduced = True
+                    break
+            if reduced:
+                break
+    return word
+
+# Example: A2 group relations
+relations = [
+    (['s1', 's1'], []),
+    (['s2', 's2'], []),
+    (['s1', 's2', 's1'], ['s2', 's1', 's2'])
+]
+
+word = ['s1', 's2', 's1', 's2', 's1']
+reduced_word = reduce_word(word, relations)
+
+print("Original word:", "".join(word))
+print("Reduced word:", "".join(reduced_word))
+```
+
+Slide 5: Bruhat Order
+
+The Bruhat order is a partial order on the elements of a Coxeter group, which plays a crucial role in the study of Schubert varieties and Kazhdan-Lusztig polynomials.
+
+```python
+def subword(u, w):
+    i, j = 0, 0
+    while i < len(u) and j < len(w):
+        if u[i] == w[j]:
+            i += 1
+        j += 1
+    return i == len(u)
+
+def bruhat_order(words):
+    order = {}
+    for w in words:
+        order[tuple(w)] = set()
+        for u in words:
+            if len(u) <= len(w) and subword(u, w):
+                order[tuple(w)].add(tuple(u))
+    return order
+
+words = generate_words(['s1', 's2'], 2)
+bruhat = bruhat_order(words)
+
+for w, smaller in bruhat.items():
+    print(f"{w}: {smaller}")
+```
+
+Slide 6: Length Function
+
+The length function on a Coxeter group measures the minimal number of generators needed to express an element.
+
+```python
+def length(word, relations):
+    reduced = reduce_word(word, relations)
+    return len(reduced)
+
+# Example: A2 group relations
+relations = [
+    (['s1', 's1'], []),
+    (['s2', 's2'], []),
+    (['s1', 's2', 's1'], ['s2', 's1', 's2'])
+]
+
+words = [
+    ['s1'],
+    ['s1', 's2'],
+    ['s1', 's2', 's1'],
+    ['s1', 's2', 's1', 's2']
+]
+
+for word in words:
+    print(f"Length of {''.join(word)}: {length(word, relations)}")
+```
+
+Slide 7: Parabolic Subgroups
+
+Parabolic subgroups are important substructures of Coxeter groups, obtained by considering only a subset of the generators.
+
+```python
+def parabolic_subgroup(generators, subset):
+    return [w for w in generate_words(generators, len(generators)) if set(w).issubset(subset)]
+
+generators = ['s1', 's2', 's3']
+subset = {'s1', 's2'}
+
+subgroup = parabolic_subgroup(generators, subset)
+print(f"Parabolic subgroup generated by {subset}:")
+for word in subgroup:
+    print("".join(word))
+```
+
+Slide 8: Longest Element
+
+The longest element is a unique element of maximal length in finite Coxeter groups, playing a special role in many contexts.
+
+```python
+def longest_element(generators, relations):
+    words = generate_words(generators, len(generators) ** 2)
+    return max(words, key=lambda w: length(w, relations))
+
+# Example: A3 group relations
+relations = [
+    (['s1', 's1'], []),
+    (['s2', 's2'], []),
+    (['s3', 's3'], []),
+    (['s1', 's2', 's1'], ['s2', 's1', 's2']),
+    (['s2', 's3', 's2'], ['s3', 's2', 's3']),
+    (['s1', 's3'], ['s3', 's1'])
+]
+
+generators = ['s1', 's2', 's3']
+longest = longest_element(generators, relations)
+
+print("Longest element:", "".join(longest))
+print("Length:", length(longest, relations))
+```
+
+Slide 9: Weak Order
+
+The weak order is another partial order on Coxeter groups, based on subwords of reduced expressions.
+
+```python
+def weak_order(words, relations):
+    order = {}
+    for w in words:
+        order[tuple(w)] = set()
+        for i in range(len(w)):
+            u = w[:i] + w[i+1:]
+            if length(u, relations) < length(w, relations):
+                order[tuple(w)].add(tuple(u))
+    return order
+
+generators = ['s1', 's2']
+words = generate_words(generators, 3)
+weak = weak_order(words, relations)
+
+for w, smaller in weak.items():
+    print(f"{w}: {smaller}")
+```
+
+Slide 10: Counting Elements
+
+Counting elements in Coxeter groups involves generating functions and can be done efficiently using recurrence relations.
+
+```python
+def count_elements(generators, max_length):
+    counts = [1]  # Empty word
+    for n in range(1, max_length + 1):
+        count = len(generators) * counts[-1]
+        for i in range(n - 1):
+            count -= len(generators) * counts[i]
+        counts.append(count)
+    return counts
+
+generators = ['s1', 's2', 's3']
+max_length = 10
+counts = count_elements(generators, max_length)
+
+for n, count in enumerate(counts):
+    print(f"Elements of length {n}: {count}")
+```
+
+Slide 11: Kazhdan-Lusztig Polynomials
+
+Kazhdan-Lusztig polynomials are important invariants associated with pairs of elements in the Bruhat order of a Coxeter group.
+
+```python
+from sympy import symbols, expand
+
+def kl_polynomial(u, w, bruhat_order):
+    if u == w:
+        return 1
+    if u not in bruhat_order[w]:
+        return 0
+    
+    q = symbols('q')
+    P = 1
+    for v in bruhat_order[w]:
+        if u in bruhat_order[v]:
+            P -= q ** ((len(w) - len(v)) // 2) * kl_polynomial(u, v, bruhat_order)
+    
+    return expand(P)
+
+generators = ['s1', 's2']
+words = generate_words(generators, 3)
+bruhat = bruhat_order(words)
+
+u = tuple(['s1'])
+w = tuple(['s1', 's2', 's1'])
+
+print(f"KL polynomial P_{u},{w} = {kl_polynomial(u, w, bruhat)}")
+```
+
+Slide 12: Real-Life Example: Crystallography
+
+Coxeter groups are used in crystallography to describe symmetries of crystal structures. Here's an example of generating symmetry operations for a cubic crystal.
+
+```python
+import numpy as np
+
+def generate_cubic_symmetries():
+    # Generators for cubic symmetry group (Oh)
+    generators = [
+        np.array([[0, 1, 0], [-1, 0, 0], [0, 0, 1]]),  # 90° rotation around z
+        np.array([[1, 0, 0], [0, 0, 1], [0, -1, 0]]),  # 90° rotation around x
+        np.array([[-1, 0, 0], [0, -1, 0], [0, 0, 1]])  # Mirror reflection in xy-plane
+    ]
+    
+    symmetries = [np.eye(3)]
+    for _ in range(3):  # Iterate to generate all 48 symmetry operations
+        new_symmetries = []
+        for sym in symmetries:
+            for gen in generators:
+                new_sym = sym @ gen
+                if not any(np.allclose(new_sym, s) for s in symmetries):
+                    new_symmetries.append(new_sym)
+        symmetries.extend(new_symmetries)
+    
+    return symmetries
+
+cubic_symmetries = generate_cubic_symmetries()
+print(f"Number of symmetry operations: {len(cubic_symmetries)}")
+print("Example symmetry operation:")
+print(cubic_symmetries[1])
+```
+
+Slide 13: Real-Life Example: Error-Correcting Codes
+
+Coxeter groups, particularly the Weyl groups, are used in the construction of certain error-correcting codes. Here's an example of generating a simple code based on the A2 Coxeter group.
+
+```python
+def generate_a2_code():
+    # Generators for A2 group
+    s1 = lambda x, y: (y, x)
+    s2 = lambda x, y: (x, y-x)
+    
+    codewords = set([(0, 0)])
+    for _ in range(2):  # Apply generators twice
+        new_codewords = set()
+        for x, y in codewords:
+            new_codewords.add(s1(x, y))
+            new_codewords.add(s2(x, y))
+        codewords.update(new_codewords)
+    
+    return sorted(codewords)
+
+code = generate_a2_code()
+print("A2-based code:")
+for codeword in code:
+    print(codeword)
+
+# Simple encoding function
+def encode(message, code):
+    return code[message % len(code)]
+
+# Example usage
+message = 4
+encoded = encode(message, code)
+print(f"Encoded message {message}: {encoded}")
+```
+
+Slide 14: Additional Resources
+
+For further exploration of Combinatorics of Coxeter Groups, consider the following resources:
+
+1. Björner, A., & Brenti, F. (2005). Combinatorics of Coxeter Groups. Springer. ArXiv: [https://arxiv.org/abs/math/0503457](https://arxiv.org/abs/math/0503457)
+2. Humphreys, J. E. (1990). Reflection Groups and Coxeter Groups. Cambridge University Press.
+3. Reading, N. (2007). Clusters, Coxeter-sortable elements and noncrossing partitions. ArXiv: [https://arxiv.org/abs/math/0507186](https://arxiv.org/abs/math/0507186)
+
+These resources provide in-depth coverage of the topic and can help deepen your understanding of Coxeter groups and their combinatorial aspects.
+
