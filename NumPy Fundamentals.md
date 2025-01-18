@@ -33,7 +33,7 @@ print(random_array)
 
 random_array = np.random.rand(1,10) # Gives an random array of desired size 1x10 and random values
 print(random_array) #Ex) [[0.94200759 0.78812449 0.22936564 0.30757089 0.28442394 0.49795422
-  0.38306793 0.85061234 0.91607897 0.54049652]]
+# 0.38306793 0.85061234 0.91607897 0.54049652]]
 
 random_int = np.random.randint( 1,100)
 print(random_int)  # Output will be a random integer between 1 and 99
