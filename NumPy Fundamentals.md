@@ -8,7 +8,7 @@ Slide 2: What is NumPy? NumPy is a powerful library for numerical computing in P
 import numpy as np
 ```
 
-Slide 3: Creating NumPy Arrays NumPy arrays can be created from Python lists or using special functions. Code Example:
+Slide 3: NumPy arrays can be created from Python lists or using special functions. Code Example:
 
 ```python
 # From a Python list
@@ -224,3 +224,22 @@ plt.plot(x, y)
 plt.show()
 # Displays a line plot using the NumPy arrays x and y
 ```
+ Slide 15: Indexing rows, columns, sub-matrices:
+ ```python
+m =  np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+m[0,2] # Outputs 7 (item index (1,3) for mathematiicans)
+
+m[[0,2]] # Will retrieve the first and third rows:
+# Output = [[1, 2, 3],
+#           [7, 8, 9]]
+
+m = [: , [1,2]] # Will retrive second and third columns:
+#Output = [[2, 3],
+#          [4, 5],
+#          [8, 9]]
+
+m[[0,2]][:,[1,2]] #Outputs a sub-matrix with first and third rows and second and third columns:
+# Output = [[2, 3],
+#           [8, 9]] 
+```
+ 
