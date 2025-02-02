@@ -185,13 +185,13 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 ```python
 def fit_polynomial_regression(X_train, y_train, X_test, y_test, degrees):  
-train_errors = []  
-test_errors = []  
+  train_errors = []  
+  test_errors = []  
 
 for degree in degrees:  
-poly_features = PolynomialFeatures(degree=degree, include_bias=False)  
-X_train_poly = poly_features.fit_transform(X_train)  
-X_test_poly = poly_features.transform(X_test)  
+  poly_features = PolynomialFeatures(degree=degree, include_bias=False)  
+  X_train_poly = poly_features.fit_transform(X_train)  
+  X_test_poly = poly_features.transform(X_test)  
 
 model = LinearRegression()  
 model.fit(X_train_poly, y_train)  
@@ -249,20 +249,20 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 ```python
 def fit_polynomial_regression(X_train, y_train, X_test, y_test, degree):  
-poly_features = PolynomialFeatures(degree=degree, include_bias=False)  
-X_train_poly = poly_features.fit_transform(X_train)  
-X_test_poly = poly_features.transform(X_test)  
-
-model = LinearRegression()  
-model.fit(X_train_poly, y_train)  
-
-train_pred = model.predict(X_train_poly)  
-test_pred = model.predict(X_test_poly)  
-
-train_mse = mean_squared_error(y_train, train_pred)  
-test_mse = mean_squared_error(y_test, test_pred)  
-
-return model, poly_features, train_mse, test_mse  
+  poly_features = PolynomialFeatures(degree=degree, include_bias=False)  
+  X_train_poly = poly_features.fit_transform(X_train)  
+  X_test_poly = poly_features.transform(X_test)  
+  
+  model = LinearRegression()  
+  model.fit(X_train_poly, y_train)  
+  
+  train_pred = model.predict(X_train_poly)  
+  test_pred = model.predict(X_test_poly)  
+  
+  train_mse = mean_squared_error(y_train, train_pred)  
+  test_mse = mean_squared_error(y_test, test_pred)  
+  
+  return model, poly_features, train_mse, test_mse  
 ```
 
 #### Example 3  
@@ -297,42 +297,42 @@ plt.show()
 from sklearn.linear_model import Ridge  
 
 def fit_polynomial_regression_with_regularization(X_train, y_train, X_test, y_test, degree, alpha):  
-poly_features = PolynomialFeatures(degree=degree, include_bias=False)  
-X_train_poly = poly_features.fit_transform(X_train)  
-X_test_poly = poly_features.transform(X_test)  
+  poly_features = PolynomialFeatures(degree=degree, include_bias=False)  
+  X_train_poly = poly_features.fit_transform(X_train)  
+  X_test_poly = poly_features.transform(X_test)  
 
-model = Ridge(alpha=alpha)  
-model.fit(X_train_poly, y_train)  
-
-train_pred = model.predict(X_train_poly)  
-test_pred = model.predict(X_test_poly)  
-
-train_mse = mean_squared_error(y_train, train_pred)  
-test_mse = mean_squared_error(y_test, test_pred)  
-
-return model, poly_features, train_mse, test_mse  
-
+  model = Ridge(alpha=alpha)  
+  model.fit(X_train_poly, y_train)  
+  
+  train_pred = model.predict(X_train_poly)  
+  test_pred = model.predict(X_test_poly)  
+  
+  train_mse = mean_squared_error(y_train, train_pred)  
+  test_mse = mean_squared_error(y_test, test_pred)  
+  
+  return model, poly_features, train_mse, test_mse  
+  
 # Fit regularized models  
 alphas = [0, 0.1, 1]  
 degree = 15  
 plt.figure(figsize=(15, 5))  
 
 for i, alpha in enumerate(alphas):  
-model, poly_features, train_mse, test_mse = fit_polynomial_regression_with_regularization(X_train, y_train, X_test, y_test, degree, alpha)  
+  model, poly_features, train_mse, test_mse = fit_polynomial_regression_with_regularization(X_train, y_train, X_test, y_test, degree, alpha)  
 
-X_plot = np.linspace(0, 5, 100).reshape(-1, 1)  
-X_plot_poly = poly_features.transform(X_plot)  
-y_plot = model.predict(X_plot_poly)  
-
-plt.subplot(1, 3, i+1)  
-plt.scatter(X_train, y_train, color='b', label='Training data')  
-plt.scatter(X_test, y_test, color='r', label='Test data')  
-plt.plot(X_plot, y_plot, color='g', label='Model prediction')  
-plt.title(f'Degree {degree} Polynomial, Alpha: {alpha}\nTrain MSE: {train_mse:.4f}, Test MSE: {test_mse:.4f}')  
-plt.xlabel('X')  
-plt.ylabel('y')  
-plt.legend()  
-
+  X_plot = np.linspace(0, 5, 100).reshape(-1, 1)  
+  X_plot_poly = poly_features.transform(X_plot)  
+  y_plot = model.predict(X_plot_poly)  
+  
+  plt.subplot(1, 3, i+1)  
+  plt.scatter(X_train, y_train, color='b', label='Training data')  
+  plt.scatter(X_test, y_test, color='r', label='Test data')  
+  plt.plot(X_plot, y_plot, color='g', label='Model prediction')  
+  plt.title(f'Degree {degree} Polynomial, Alpha: {alpha}\nTrain MSE: {train_mse:.4f}, Test MSE: {test_mse:.4f}')  
+  plt.xlabel('X')  
+  plt.ylabel('y')  
+  plt.legend()  
+  
 plt.tight_layout()  
 plt.show()  
 ```
