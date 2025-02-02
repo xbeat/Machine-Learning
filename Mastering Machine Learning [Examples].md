@@ -188,24 +188,24 @@ def fit_polynomial_regression(X_train, y_train, X_test, y_test, degrees):
   train_errors = []  
   test_errors = []  
 
-for degree in degrees:  
-  poly_features = PolynomialFeatures(degree=degree, include_bias=False)  
-  X_train_poly = poly_features.fit_transform(X_train)  
-  X_test_poly = poly_features.transform(X_test)  
-
-model = LinearRegression()  
-model.fit(X_train_poly, y_train)  
-
-train_pred = model.predict(X_train_poly)  
-test_pred = model.predict(X_test_poly)  
-
-train_error = mean_squared_error(y_train, train_pred)  
-test_error = mean_squared_error(y_test, test_pred)  
-
-train_errors.append(train_error)  
-test_errors.append(test_error)  
-
-return train_errors, test_errors  
+  for degree in degrees:  
+    poly_features = PolynomialFeatures(degree=degree, include_bias=False)  
+    X_train_poly = poly_features.fit_transform(X_train)  
+    X_test_poly = poly_features.transform(X_test)  
+  
+    model = LinearRegression()  
+    model.fit(X_train_poly, y_train)  
+    
+    train_pred = model.predict(X_train_poly)  
+    test_pred = model.predict(X_test_poly)  
+    
+    train_error = mean_squared_error(y_train, train_pred)  
+    test_error = mean_squared_error(y_test, test_pred)  
+    
+    train_errors.append(train_error)  
+    test_errors.append(test_error)  
+  
+  return train_errors, test_errors  
 ```
 
 #### Example 3  
