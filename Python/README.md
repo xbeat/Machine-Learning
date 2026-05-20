@@ -1,39 +1,34 @@
-# Python
+# 🐍 Python
 
-> **511 articles** on Python programming — from core language features to advanced patterns, performance, and best practices.
-
-Part of the [xbe.at](https://xbe.at) knowledge base. ← [Back to index](../README.md)
+> **511 articles** covering everything from Python fundamentals to cutting-edge ML implementations — concise tutorials with working code.
 
 ---
 
-## What's inside
+## 📂 Subfolders
 
-### Language fundamentals
-- OOP: magic methods, dataclasses, `@override`, type hints, `isinstance()`
-- Functions: `args`/`kwargs`, lambda, decorators, generators, iterators, comprehensions
-- Built-ins: `iter()` with sentinel values, `zip()`, `all()`, `any()`, `Counter`, `itertools`
-
-### Concurrency & performance
-- Threading, multiprocessing, `asyncio`, `concurrent.futures`
-- Accelerating code with Numba, Cython, vectorization
-- Memory management: weak references, reference cycles, garbage collection
-
-### Best practices
-- Naming conventions, f-strings vs concatenation, logging vs `print()`
-- Avoiding mutable defaults, avoiding `apply()` in Pandas
-- Command-line flags, virtual environments, packaging
-
-### Applied Python
-- Functional programming, architectural patterns, behavior trees
-- Building APIs, Telegram bots, Excel automation, PDF manipulation
-- Testing with `unittest` and `pytest`
+| Folder | Topics |
+|--------|--------|
+| [🔤 Core-Language](Core-Language/) | Syntax, namespaces, builtins, pattern matching, recursion |
+| [🏛️ OOP-and-Design-Patterns](OOP-and-Design-Patterns/) | Classes, magic methods, metaclasses, design patterns |
+| [⚡ Functional-and-Itertools](Functional-and-Itertools/) | Lambdas, map/filter, generators, itertools, functools |
+| [🗂️ Data-Structures-and-Algorithms](Data-Structures-and-Algorithms/) | Lists, dicts, trees, graphs, sorting, complexity |
+| [🚀 Performance-and-Concurrency](Performance-and-Concurrency/) | async/await, threading, multiprocessing, Numba, JIT |
+| [🌐 Web-APIs-and-Automation](Web-APIs-and-Automation/) | FastAPI, Flask, requests, scraping, automation |
+| [🧪 Testing-and-Best-Practices](Testing-and-Best-Practices/) | pytest, TDD, type hints, linting, clean code |
+| [🤖 Python-for-ML-and-AI](Python-for-ML-and-AI/) | Optimizers, classifiers, embeddings, attention, time series |
+| [🔬 Scientific-and-Math-Computing](Scientific-and-Math-Computing/) | Abstract algebra, Lie groups, fluid dynamics, signal processing |
 
 ---
 
-## Highlights
+## ⭐ Popular Articles
 
-- *20 Essential Python OOP Magic Methods*
-- *Advanced Functional Programming in Python*
-- *3 Approaches to Concurrency in Python*
-- *Accelerating Python with Numba*
-- *Building Production-Grade AI Apps with PydanticAI*
+- [20 Essential Python OOP Magic Methods](OOP-and-Design-Patterns/20%20Essential%20Python%20OOP%20Magic%20Methods.md)
+- [3 Approaches to Concurrency in Python](Performance-and-Concurrency/3%20Approaches%20to%20Concurrency%20in%20Python.md)
+- [Advanced Functional Programming in Python](Functional-and-Itertools/Advanced%20Functional%20Programming%20in%20Python.md)
+- [Building Production-Grade AI Apps with PydanticAI](Python-for-ML-and-AI/Building%20Production-Grade%20AI%20Apps%20with%20PydanticAI.md)
+- [Disabling the Python Global Interpreter Lock (GIL)](Performance-and-Concurrency/Disabling%20the%20Python%20Global%20Interpreter%20Lock%20(GIL).md)
+- [Exception Handling Patterns in Python](Testing-and-Best-Practices/Exception%20Handling%20Patterns%20in%20Python.md)
+
+---
+
+*Part of the [Machine Learning Hub](../README.md)*

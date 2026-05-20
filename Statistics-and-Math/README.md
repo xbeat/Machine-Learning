@@ -1,51 +1,28 @@
-# Statistics and Mathematics
+# 📊 Statistics & Mathematics
 
-> **138 articles** on the mathematical foundations of machine learning — statistics, probability, linear algebra, calculus, and advanced math.
-
-Part of the [xbe.at](https://xbe.at) knowledge base. ← [Back to index](../README.md)
+> **139 articles** on the mathematical foundations of machine learning — probability, linear algebra, calculus, and statistical inference.
 
 ---
 
-## What's inside
+## 📂 Subfolders
 
-### Statistics & probability
-- Probability theory, distributions: Bernoulli, Gaussian, Poisson, Binomial
-- Hypothesis testing: t-test, z-test, chi-square, ANOVA
-- Confidence intervals, p-values, statistical power
-- Bayesian vs frequentist statistics
-- Causal inference, correlation vs causation
-
-### Linear algebra
-- Matrices, eigenvalues, eigenvectors, singular value decomposition
-- Four fundamental subspaces, Jordan canonical form
-- Linear algebra applications in data science
-
-### Calculus & optimization
-- Derivatives, gradients, Hessians
-- Integral calculus, multivariable calculus (Calculus III)
-- Partial differential equations, ordinary differential equations
-- Convex optimization, Lagrange multipliers
-
-### Advanced mathematics
-- Real analysis, complex analysis
-- Algebraic topology, Riemannian geometry, manifolds
-- Galois theory, scheme theory, projective curves
-- Ergodic theory, Fourier analysis
-- Number theory, combinatorics
-
-### Applied to ML
-- Information theory: entropy, mutual information, KL divergence
-- Model selection: AIC, BIC
-- MLE, expectation maximization (EM)
-- Hidden Markov Models, Viterbi algorithm
-- Data drift: Wasserstein distance, KL divergence
+| Folder | Topics |
+|--------|--------|
+| [🎲 Probability-and-Distributions](Probability-and-Distributions/) | Bayes, distributions, sampling, Monte Carlo |
+| [🔬 Statistical-Inference](Statistical-Inference/) | Hypothesis testing, confidence intervals, ANOVA, p-values |
+| [🔢 Linear-Algebra-and-Matrices](Linear-Algebra-and-Matrices/) | Vectors, eigenvalues, matrix decompositions, tensors |
+| [∫ Calculus-and-Analysis](Calculus-and-Analysis/) | Derivatives, integrals, optimization, real analysis |
+| [📈 Time-Series-and-Stochastic](Time-Series-and-Stochastic/) | ARIMA, stationarity, stochastic processes, forecasting |
 
 ---
 
-## Highlights
+## ⭐ Popular Articles
 
-- *25 Essential Mathematical Concepts for Data Science*
-- *Bayes' Theorem: The Probabilistic Foundation of Modern Decision-Making*
-- *Why Calculus is Essential for Machine Learning*
-- *Advanced Linear Algebra for Data Science*
-- *Bayesian vs Frequentist Statistics: Key Concepts and Applications*
+- [Information Theory and Density Analysis in Python](Probability-and-Distributions/Information%20Theory%20and%20Density%20Analysis%20in%20Python.md)
+- [Bayesian Statistics with Python](Probability-and-Distributions/Bayesian%20Statistics%20with%20Python.md)
+- [Linear Algebra Fundamentals for Machine Learning](Linear-Algebra-and-Matrices/Linear%20Algebra%20Fundamentals%20for%20Machine%20Learning.md)
+- [Time Series Analysis and Forecasting in Python](Time-Series-and-Stochastic/Time%20Series%20Analysis%20and%20Forecasting%20in%20Python.md)
+
+---
+
+*Part of the [Machine Learning Hub](../README.md)*

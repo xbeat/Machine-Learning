@@ -1,50 +1,28 @@
-# NLP and Transformers
+# 💬 NLP & Transformers
 
-> **118 articles** on natural language processing, transformer architectures, and language model fundamentals.
-
-Part of the [xbe.at](https://xbe.at) knowledge base. ← [Back to index](../README.md)
+> **119 articles** on natural language processing, transformer architectures, BERT-family models, and multimodal AI.
 
 ---
 
-## What's inside
+## 📂 Subfolders
 
-### NLP fundamentals
-- Text preprocessing: tokenization, stemming, lemmatization
-- Bag of Words, TF-IDF, n-grams
-- Named entity recognition (NER), POS tagging
-- Sentiment analysis, aspect-based sentiment analysis
-- Text classification, sequence labeling
-
-### Word & sentence representations
-- Word embeddings: Word2Vec, GloVe, FastText
-- Context-independent vs contextual embeddings
-- Sentence embeddings, multilingual encoding
-- Text vectorization methods
-
-### Transformer architecture
-- Attention mechanism (self-attention, masked, cross-attention)
-- Encoder-decoder architecture, Seq2Seq models
-- Positional encoding, layer normalization
-- *Attention Is All You Need* — explained with code
-
-### Pre-trained models
-- BERT: fine-tuning, question answering, classification
-- BART: sequence classification, summarization
-- T5, DistilBERT, RoBERTa, and variants
-- Comparing transformer models for NLP tasks
-
-### Tools & libraries
-- NLTK vs spaCy comparison
-- Hugging Face Transformers
-- Speech recognition: Deep Speech 2
-- OCR with Document Understanding Transformer
+| Folder | Topics |
+|--------|--------|
+| [⚙️ Transformer-Architecture](Transformer-Architecture/) | Attention mechanisms, positional encoding, encoder-decoder |
+| [🔤 BERT-and-Language-Models](BERT-and-Language-Models/) | BERT, GPT, RoBERTa, tokenization, pre-training |
+| [📝 NLP-Core](NLP-Core/) | Tokenization, POS tagging, NER, text classification |
+| [👁️ Vision-and-Multimodal](Vision-and-Multimodal/) | ViT, CLIP, multimodal models, vision-language |
+| [🎯 Fine-Tuning-and-Adaptation](Fine-Tuning-and-Adaptation/) | LoRA, MoRA, parameter-efficient fine-tuning |
 
 ---
 
-## Highlights
+## ⭐ Popular Articles
 
-- *17 Fascinating Transformer Facts*
-- *Attention is All You Need in Python*
-- *BERT for Question Answering*
-- *Efficient Fine-Tuning of Language Models with LoRA and MoRA*
-- *Dualformer: Combining Fast and Slow Reasoning in Transformers*
+- [Self-Attention Mechanism in Transformers](Transformer-Architecture/Self-Attention%20Mechanism%20in%20Transformers.md)
+- [BERT for Text Classification in Python](BERT-and-Language-Models/BERT%20for%20Text%20Classification%20in%20Python.md)
+- [Named Entity Recognition with spaCy](NLP-Core/Named%20Entity%20Recognition%20with%20spaCy.md)
+- [Vision Transformers (ViT) in Python](Vision-and-Multimodal/Vision%20Transformers%20(ViT)%20in%20Python.md)
+
+---
+
+*Part of the [Machine Learning Hub](../README.md)*
