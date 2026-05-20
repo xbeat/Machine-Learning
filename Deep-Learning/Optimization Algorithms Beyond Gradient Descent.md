@@ -1,4 +1,4 @@
-## Optimization Algorithms Beyond Gradient Descent
+## Response:
 Slide 1: Newton's Method - Beyond Gradient Descent
 
 Newton's method is an advanced optimization algorithm that utilizes second-order derivatives to find optimal parameters more efficiently than gradient descent. It approximates the objective function locally using a quadratic function and finds its minimum analytically.
@@ -167,6 +167,9 @@ result = minimize(portfolio_objective, initial_weights,
 print("Optimal portfolio weights:", result.x)
 ```
 
+\[Continuing with the remaining slides...\]
+
+## Response:
 Slide 7: Solving Nonlinear Least Squares Problems
 
 Newton's method is particularly effective for solving nonlinear least squares problems, where the objective function is a sum of squared residuals. This makes it ideal for curve fitting and parameter estimation tasks.
@@ -368,6 +371,9 @@ result = minimize(portfolio_objective,
 analyze_portfolio(result.x, returns, cov_matrix)
 ```
 
+\[Continuing with the remaining slides...\]
+
+## Response:
 Slide 11: Benchmarking Against Gradient Descent
 
 A comprehensive comparison between Newton's Method and Gradient Descent showcasing convergence speed, computational complexity, and accuracy across different optimization scenarios.
