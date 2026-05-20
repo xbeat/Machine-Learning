@@ -1,370 +1,395 @@
-## Optimizing Linear Regression with Gradient Descent
-Slide 1: Sum of Squared Residuals (SSR) Fundamentals
+## Response:
+Slide 1: Understanding Sum of Squared Residuals
 
-The Sum of Squared Residuals represents the cumulative difference between observed values and predicted values in a regression model. It forms the foundation of optimization in linear regression by quantifying prediction errors through squared differences.
+In linear regression, the Sum of Squared Residuals (SSR) measures the total deviation between predicted and actual values. It serves as our cost function, quantifying how well our model fits the data by summing the squared differences between predicted and observed values.
 
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
 
 def calculate_ssr(X, y, slope, intercept):
-    # Calculate predicted values
+    # Calculate predicted values using current parameters
     y_pred = slope * X + intercept
-    # Calculate residuals and square them
+    # Calculate residuals (differences between actual and predicted)
     residuals = y - y_pred
-    ssr = np.sum(residuals ** 2)
-    return ssr, y_pred
+    # Return sum of squared residuals
+    return np.sum(residuals**2)
 
-# Generate sample data
-np.random.seed(42)
-X = np.linspace(0, 10, 100)
-y = 2 * X + 1 + np.random.normal(0, 1, 100)
-
-# Calculate SSR for specific parameters
-slope, intercept = 2.5, 0.5
-ssr, y_pred = calculate_ssr(X, y, slope, intercept)
-print(f"SSR for slope={slope}, intercept={intercept}: {ssr:.2f}")
+# Example usage
+X = np.array([1, 2, 3, 4, 5])
+y = np.array([2.1, 3.8, 6.2, 7.8, 9.3])
+ssr = calculate_ssr(X, y, slope=2, intercept=0)
+print(f"Sum of Squared Residuals: {ssr:.2f}")
 ```
 
-Slide 2: Cost Function Implementation
+Slide 2: Partial Derivatives for Gradient Descent
 
-The cost function quantifies how well our model fits the data by calculating the average squared difference between predictions and actual values. We implement it using vectorized operations for efficiency.
+Understanding partial derivatives is crucial for gradient descent as they indicate the direction of steepest descent for each parameter. We compute these derivatives with respect to both slope and intercept to determine how to adjust our parameters.
 
 ```python
-def cost_function(X, y, theta):
-    """
-    X: Input features (with column of 1s prepended)
-    y: Target values
-    theta: Parameters [intercept, slope]
-    """
-    m = len(y)
-    predictions = X.dot(theta)
-    cost = (1/(2*m)) * np.sum((predictions - y) ** 2)
-    return cost
+def compute_gradients(X, y, slope, intercept):
+    # Compute predictions
+    y_pred = slope * X + intercept
+    
+    # Partial derivative with respect to slope
+    d_slope = -2 * np.sum(X * (y - y_pred))
+    
+    # Partial derivative with respect to intercept
+    d_intercept = -2 * np.sum(y - y_pred)
+    
+    return d_slope, d_intercept
 
-# Prepare data
-X_b = np.c_[np.ones((len(X), 1)), X]
-theta = np.array([intercept, slope])
-cost = cost_function(X_b, y, theta)
-print(f"Cost function value: {cost:.4f}")
+# Example usage
+X = np.array([1, 2, 3, 4, 5])
+y = np.array([2.1, 3.8, 6.2, 7.8, 9.3])
+d_slope, d_intercept = compute_gradients(X, y, slope=2, intercept=0)
+print(f"Gradient for slope: {d_slope:.4f}")
+print(f"Gradient for intercept: {d_intercept:.4f}")
 ```
 
-Slide 3: Gradient Computation
+Slide 3: Implementation of Basic Gradient Descent
 
-Understanding how to compute gradients is crucial for implementing gradient descent. The gradient represents the direction of steepest ascent in the parameter space of our cost function.
-
-```python
-def compute_gradients(X, y, theta):
-    """
-    Computes partial derivatives of cost function
-    Returns gradient vector for both parameters
-    """
-    m = len(y)
-    predictions = X.dot(theta)
-    errors = predictions - y
-    gradients = (1/m) * X.T.dot(errors)
-    return gradients
-
-# Calculate gradients
-gradients = compute_gradients(X_b, y, theta)
-print(f"Gradients [intercept, slope]: {gradients}")
-```
-
-Slide 4: Implementing Gradient Descent
-
-The gradient descent algorithm iteratively updates parameters in the opposite direction of the gradient, scaled by a learning rate, to minimize the cost function and find optimal parameters.
+The gradient descent algorithm iteratively updates parameters by moving in the direction opposite to the gradient. The learning rate controls the size of these steps, while the number of iterations determines how long the optimization runs.
 
 ```python
-def gradient_descent(X, y, theta, learning_rate=0.01, iterations=1000):
-    m = len(y)
-    cost_history = []
-    theta_history = []
+def gradient_descent(X, y, learning_rate=0.01, n_iterations=1000):
+    # Initialize parameters
+    slope = 0
+    intercept = 0
     
-    for i in range(iterations):
-        prediction = X.dot(theta)
-        error = prediction - y
-        gradients = (1/m) * X.T.dot(error)
-        theta = theta - learning_rate * gradients
-        
-        cost = (1/(2*m)) * np.sum(error ** 2)
-        cost_history.append(cost)
-        theta_history.append(theta.copy())
-        
-    return theta, cost_history, theta_history
-
-# Run gradient descent
-initial_theta = np.random.randn(2)
-theta_final, cost_history, theta_history = gradient_descent(X_b, y, initial_theta)
-print(f"Final parameters: {theta_final}")
-```
-
-Slide 5: Learning Rate Optimization
-
-The learning rate significantly impacts convergence speed and stability. Too large values cause overshooting, while too small values result in slow convergence. We implement adaptive learning rate adjustment.
-
-```python
-def adaptive_gradient_descent(X, y, theta, initial_lr=0.01, decay=0.95):
-    m = len(y)
-    learning_rate = initial_lr
-    cost_history = []
+    # Store history for visualization
+    history = []
     
-    for epoch in range(1000):
-        gradients = compute_gradients(X, y, theta)
-        theta = theta - learning_rate * gradients
-        
-        # Adaptive learning rate
-        learning_rate *= decay
-        
-        cost = cost_function(X, y, theta)
-        cost_history.append(cost)
-        
-        if epoch > 0 and abs(cost_history[-1] - cost_history[-2]) < 1e-7:
-            break
-            
-    return theta, cost_history
-
-# Run adaptive gradient descent
-theta_adaptive, cost_history = adaptive_gradient_descent(X_b, y, initial_theta)
-print(f"Optimized parameters: {theta_adaptive}")
-```
-
-Slide 6: Real-world Data Preprocessing
-
-Data preprocessing is crucial for gradient descent optimization. We implement robust scaling and outlier handling techniques using a real estate dataset to demonstrate practical application.
-
-```python
-def preprocess_data(X, y):
-    # Remove outliers using IQR method
-    Q1 = np.percentile(y, 25)
-    Q3 = np.percentile(y, 75)
-    IQR = Q3 - Q1
-    mask = (y >= Q1 - 1.5 * IQR) & (y <= Q3 + 1.5 * IQR)
-    
-    X_cleaned = X[mask]
-    y_cleaned = y[mask]
-    
-    # Feature scaling
-    X_scaled = (X_cleaned - X_cleaned.mean()) / X_cleaned.std()
-    y_scaled = (y_cleaned - y_cleaned.mean()) / y_cleaned.std()
-    
-    return X_scaled, y_scaled
-
-# Example with real estate data
-prices = np.array([245000, 312000, 279000, 308000, 199000, 219000, 405000])
-sizes = np.array([1400, 1600, 1550, 1800, 1250, 1300, 2200])
-
-X_scaled, y_scaled = preprocess_data(sizes, prices)
-print("Scaled features shape:", X_scaled.shape)
-print("Scaled target shape:", y_scaled.shape)
-```
-
-Slide 7: Mini-batch Gradient Descent Implementation
-
-Mini-batch gradient descent offers a compromise between batch and stochastic gradient descent, providing better convergence stability while maintaining computational efficiency.
-
-```python
-def minibatch_gradient_descent(X, y, theta, batch_size=32, epochs=100, lr=0.01):
-    m = len(y)
-    cost_history = []
-    
-    for epoch in range(epochs):
-        indices = np.random.permutation(m)
-        X_shuffled = X[indices]
-        y_shuffled = y[indices]
-        
-        for i in range(0, m, batch_size):
-            X_batch = X_shuffled[i:i+batch_size]
-            y_batch = y_shuffled[i:i+batch_size]
-            
-            gradients = compute_gradients(X_batch, y_batch, theta)
-            theta = theta - lr * gradients
-            
-        cost = cost_function(X, y, theta)
-        cost_history.append(cost)
-    
-    return theta, cost_history
-
-# Run mini-batch gradient descent
-theta_mini, cost_history_mini = minibatch_gradient_descent(X_b, y, initial_theta)
-print(f"Final parameters (mini-batch): {theta_mini}")
-```
-
-Slide 8: Momentum-based Gradient Descent
-
-Momentum helps accelerate gradient descent by accumulating past gradients, enabling faster convergence and better navigation of ravines in the loss landscape.
-
-```python
-def momentum_gradient_descent(X, y, theta, lr=0.01, beta=0.9, epochs=100):
-    velocity = np.zeros_like(theta)
-    cost_history = []
-    
-    for epoch in range(epochs):
-        gradients = compute_gradients(X, y, theta)
-        
-        # Update velocity
-        velocity = beta * velocity + (1 - beta) * gradients
+    for i in range(n_iterations):
+        # Compute gradients
+        d_slope, d_intercept = compute_gradients(X, y, slope, intercept)
         
         # Update parameters
-        theta = theta - lr * velocity
+        slope -= learning_rate * d_slope
+        intercept -= learning_rate * d_intercept
         
-        cost = cost_function(X, y, theta)
-        cost_history.append(cost)
+        # Store current state
+        history.append((slope, intercept, calculate_ssr(X, y, slope, intercept)))
     
-    return theta, cost_history
+    return slope, intercept, history
 
-# Apply momentum-based gradient descent
-theta_momentum, cost_history_momentum = momentum_gradient_descent(X_b, y, initial_theta)
-print(f"Final parameters (momentum): {theta_momentum}")
+# Example usage
+optimal_slope, optimal_intercept, history = gradient_descent(X, y)
+print(f"Optimal slope: {optimal_slope:.4f}")
+print(f"Optimal intercept: {optimal_intercept:.4f}")
+```
+
+Slide 4: Adaptive Learning Rate Implementation
+
+Adaptive learning rates improve convergence by adjusting the step size dynamically. This implementation uses a simple decay schedule that reduces the learning rate as optimization progresses, allowing for more precise parameter updates near the optimum.
+
+```python
+def adaptive_gradient_descent(X, y, initial_lr=0.01, n_iterations=1000):
+    slope = 0
+    intercept = 0
+    history = []
+    
+    for i in range(n_iterations):
+        # Compute adaptive learning rate
+        current_lr = initial_lr / (1 + i/100)
+        
+        # Compute gradients
+        d_slope, d_intercept = compute_gradients(X, y, slope, intercept)
+        
+        # Update parameters with adaptive learning rate
+        slope -= current_lr * d_slope
+        intercept -= current_lr * d_intercept
+        
+        history.append((slope, intercept, calculate_ssr(X, y, slope, intercept)))
+    
+    return slope, intercept, history
+```
+
+Slide 5: Visualization of Gradient Descent Progress
+
+Creating visualizations helps understand how gradient descent converges to the optimal solution. This implementation plots the parameter updates and cost function evolution over iterations, providing insights into the optimization process.
+
+```python
+def visualize_gradient_descent(history):
+    iterations = range(len(history))
+    slopes, intercepts, costs = zip(*history)
+    
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 5))
+    
+    # Plot parameter evolution
+    ax1.plot(iterations, slopes, label='Slope')
+    ax1.plot(iterations, intercepts, label='Intercept')
+    ax1.set_xlabel('Iteration')
+    ax1.set_ylabel('Parameter Value')
+    ax1.legend()
+    ax1.set_title('Parameter Evolution')
+    
+    # Plot cost function
+    ax2.plot(iterations, costs)
+    ax2.set_xlabel('Iteration')
+    ax2.set_ylabel('SSR Cost')
+    ax2.set_title('Cost Function Evolution')
+    
+    plt.tight_layout()
+    plt.show()
+```
+
+\[Continuing with the remaining slides...\]
+
+## Response:
+Slide 6: Real-World Application - Housing Price Prediction
+
+Implementing gradient descent for predicting housing prices based on square footage demonstrates practical application. This example includes data preprocessing, model training, and evaluation using real estate data.
+
+```python
+import numpy as np
+import pandas as pd
+
+# Sample housing data (square footage, price in thousands)
+data = {
+    'sqft': [1400, 1600, 1700, 1875, 1100, 1550, 2350, 2450, 1425, 1700],
+    'price': [245, 312, 279, 308, 199, 219, 405, 324, 319, 255]
+}
+
+# Normalize features for better convergence
+def normalize_features(X):
+    return (X - np.mean(X)) / np.std(X)
+
+# Prepare data
+df = pd.DataFrame(data)
+X = normalize_features(df['sqft'].values)
+y = df['price'].values
+
+# Train model using gradient descent
+slope, intercept, history = gradient_descent(X, y, learning_rate=0.01, n_iterations=1500)
+
+# Make predictions
+y_pred = slope * X + intercept
+mse = np.mean((y - y_pred)**2)
+print(f"Mean Squared Error: {mse:.2f}")
+```
+
+Slide 7: Implementing Mini-batch Gradient Descent
+
+Mini-batch gradient descent reduces computational overhead by updating parameters using smaller subsets of data. This implementation includes batch sampling and parameter updates, offering a balance between computational efficiency and convergence stability.
+
+```python
+def minibatch_gradient_descent(X, y, batch_size=4, learning_rate=0.01, n_iterations=1000):
+    slope = 0
+    intercept = 0
+    n_samples = len(X)
+    history = []
+    
+    for i in range(n_iterations):
+        # Random batch sampling
+        indices = np.random.permutation(n_samples)[:batch_size]
+        X_batch = X[indices]
+        y_batch = y[indices]
+        
+        # Compute gradients on batch
+        d_slope, d_intercept = compute_gradients(X_batch, y_batch, slope, intercept)
+        
+        # Update parameters
+        slope -= learning_rate * d_slope
+        intercept -= learning_rate * d_intercept
+        
+        # Store full dataset cost for monitoring
+        history.append((slope, intercept, calculate_ssr(X, y, slope, intercept)))
+    
+    return slope, intercept, history
+
+# Example usage
+mb_slope, mb_intercept, mb_history = minibatch_gradient_descent(X, y)
+print(f"Mini-batch GD - Final slope: {mb_slope:.4f}, intercept: {mb_intercept:.4f}")
+```
+
+Slide 8: Momentum-Based Gradient Descent
+
+Momentum helps accelerate gradient descent by accumulating previous gradient updates, particularly useful for escaping local minima and handling pathological curvature in the loss landscape.
+
+```python
+def momentum_gradient_descent(X, y, learning_rate=0.01, momentum=0.9, n_iterations=1000):
+    slope = 0
+    intercept = 0
+    velocity_slope = 0
+    velocity_intercept = 0
+    history = []
+    
+    for i in range(n_iterations):
+        # Compute gradients
+        d_slope, d_intercept = compute_gradients(X, y, slope, intercept)
+        
+        # Update velocities
+        velocity_slope = momentum * velocity_slope - learning_rate * d_slope
+        velocity_intercept = momentum * velocity_intercept - learning_rate * d_intercept
+        
+        # Update parameters using velocities
+        slope += velocity_slope
+        intercept += velocity_intercept
+        
+        history.append((slope, intercept, calculate_ssr(X, y, slope, intercept)))
+    
+    return slope, intercept, history
 ```
 
 Slide 9: Early Stopping Implementation
 
-Early stopping prevents overfitting by monitoring validation loss and stopping training when performance on validation set starts deteriorating.
+Early stopping prevents overfitting by monitoring the convergence rate and stopping when improvements become negligible. This implementation tracks the cost function's progress and stops when the improvement falls below a threshold.
 
 ```python
-def gradient_descent_with_early_stopping(X_train, y_train, X_val, y_val, theta, 
-                                       lr=0.01, patience=5):
-    best_val_loss = float('inf')
+def early_stopping_gradient_descent(X, y, learning_rate=0.01, patience=10, min_delta=1e-4):
+    slope = 0
+    intercept = 0
+    best_cost = float('inf')
     patience_counter = 0
-    best_theta = None
+    history = []
     
     while patience_counter < patience:
-        gradients = compute_gradients(X_train, y_train, theta)
-        theta = theta - lr * gradients
+        # Compute gradients
+        d_slope, d_intercept = compute_gradients(X, y, slope, intercept)
         
-        val_loss = cost_function(X_val, y_val, theta)
+        # Update parameters
+        slope -= learning_rate * d_slope
+        intercept -= learning_rate * d_intercept
         
-        if val_loss < best_val_loss:
-            best_val_loss = val_loss
-            best_theta = theta.copy()
+        # Calculate current cost
+        current_cost = calculate_ssr(X, y, slope, intercept)
+        history.append((slope, intercept, current_cost))
+        
+        # Check for improvement
+        if current_cost < best_cost - min_delta:
+            best_cost = current_cost
             patience_counter = 0
         else:
             patience_counter += 1
             
-    return best_theta, best_val_loss
-
-# Split data and apply early stopping
-X_train, X_val = X_b[:80], X_b[80:]
-y_train, y_val = y[:80], y[80:]
-theta_early, val_loss = gradient_descent_with_early_stopping(X_train, y_train, 
-                                                           X_val, y_val, initial_theta)
-print(f"Best validation loss: {val_loss:.4f}")
+    return slope, intercept, history
 ```
 
-Slide 10: Advanced Optimization with Adam
+\[Continuing with the remaining slides...\]
 
-Adam optimization combines the benefits of momentum and RMSprop, adapting learning rates for each parameter while maintaining momentum for faster convergence.
+## Response:
+Slide 10: Advanced Cost Surface Visualization
+
+This implementation creates a 3D visualization of the cost surface, showing how SSR varies with different combinations of slope and intercept parameters, helping understand the optimization landscape.
 
 ```python
-def adam_optimizer(X, y, theta, lr=0.001, beta1=0.9, beta2=0.999, epsilon=1e-8):
-    m = len(y)
-    v = np.zeros_like(theta)  # First moment estimate
-    s = np.zeros_like(theta)  # Second moment estimate
-    t = 0  # Time step
+def visualize_cost_surface(X, y, history=None):
+    # Create parameter grid
+    slope_range = np.linspace(-2, 4, 100)
+    intercept_range = np.linspace(-2, 4, 100)
+    slope_grid, intercept_grid = np.meshgrid(slope_range, intercept_range)
     
-    cost_history = []
+    # Calculate cost for each parameter combination
+    cost_grid = np.zeros_like(slope_grid)
+    for i in range(len(slope_range)):
+        for j in range(len(intercept_range)):
+            cost_grid[i,j] = calculate_ssr(X, y, slope_grid[i,j], intercept_grid[i,j])
     
-    for epoch in range(1000):
-        t += 1
-        gradients = compute_gradients(X, y, theta)
+    # Create 3D surface plot
+    fig = plt.figure(figsize=(12, 8))
+    ax = fig.add_subplot(111, projection='3d')
+    surface = ax.plot_surface(slope_grid, intercept_grid, cost_grid, 
+                            cmap='viridis', alpha=0.8)
+    
+    # Plot optimization path if history provided
+    if history:
+        slopes, intercepts, costs = zip(*history)
+        ax.plot(slopes, intercepts, costs, 'r-', linewidth=2, label='Optimization path')
+    
+    ax.set_xlabel('Slope')
+    ax.set_ylabel('Intercept')
+    ax.set_zlabel('Cost (SSR)')
+    plt.colorbar(surface)
+    plt.show()
+```
+
+Slide 11: Real-World Application - Temperature Prediction
+
+Implementing gradient descent for temperature prediction using historical weather data demonstrates another practical application with time series components.
+
+```python
+# Generate synthetic temperature data
+np.random.seed(42)
+days = np.arange(100)
+baseline_temp = 20
+seasonal_component = 5 * np.sin(2 * np.pi * days / 365)
+noise = np.random.normal(0, 1, 100)
+temperatures = baseline_temp + seasonal_component + noise
+
+def temperature_prediction_model(X, y, learning_rate=0.001, n_iterations=2000):
+    # Initialize parameters for quadratic fit
+    a, b, c = 0, 0, 0
+    history = []
+    
+    for i in range(n_iterations):
+        # Compute predictions
+        y_pred = a * X**2 + b * X + c
         
-        # Update biased first moment estimate
-        v = beta1 * v + (1 - beta1) * gradients
-        
-        # Update biased second moment estimate
-        s = beta2 * s + (1 - beta2) * np.square(gradients)
-        
-        # Bias correction
-        v_corrected = v / (1 - beta1**t)
-        s_corrected = s / (1 - beta2**t)
+        # Compute gradients
+        d_a = -2 * np.sum(X**2 * (y - y_pred))
+        d_b = -2 * np.sum(X * (y - y_pred))
+        d_c = -2 * np.sum(y - y_pred)
         
         # Update parameters
-        theta = theta - lr * v_corrected / (np.sqrt(s_corrected) + epsilon)
+        a -= learning_rate * d_a
+        b -= learning_rate * d_b
+        c -= learning_rate * d_c
         
-        cost = cost_function(X, y, theta)
-        cost_history.append(cost)
-        
-        if epoch > 0 and abs(cost_history[-1] - cost_history[-2]) < 1e-8:
-            break
+        # Store history
+        cost = np.sum((y - y_pred)**2)
+        history.append((a, b, c, cost))
     
-    return theta, cost_history
+    return a, b, c, history
 
-# Run Adam optimization
-theta_adam, cost_history_adam = adam_optimizer(X_b, y, initial_theta)
-print(f"Final parameters (Adam): {theta_adam}")
+# Train model
+X = days
+y = temperatures
+a, b, c, history = temperature_prediction_model(X, y)
+print(f"Quadratic coefficients: a={a:.6f}, b={b:.6f}, c={c:.6f}")
 ```
 
-Slide 11: Computing Loss Surface Visualization
+Slide 12: Gradient Descent with Constraints
 
-Visualizing the loss surface helps understand optimization trajectory and identify potential challenges in convergence.
-
-```python
-def plot_loss_surface(X, y, theta_range=(-2, 2), resolution=100):
-    w0 = np.linspace(theta_range[0], theta_range[1], resolution)
-    w1 = np.linspace(theta_range[0], theta_range[1], resolution)
-    W0, W1 = np.meshgrid(w0, w1)
-    Z = np.zeros((resolution, resolution))
-    
-    for i in range(resolution):
-        for j in range(resolution):
-            theta = np.array([W0[i,j], W1[i,j]])
-            Z[i,j] = cost_function(X, y, theta)
-    
-    return W0, W1, Z
-
-# Generate loss surface data
-W0, W1, Z = plot_loss_surface(X_b, y)
-
-# Create contour plot
-plt.figure(figsize=(10, 8))
-plt.contour(W0, W1, Z, levels=50)
-plt.colorbar(label='Loss')
-plt.xlabel('w0 (intercept)')
-plt.ylabel('w1 (slope)')
-plt.title('Loss Surface Contours')
-plt.savefig('loss_surface.png')
-plt.close()
-```
-
-Slide 12: Results Analysis and Visualization
-
-Comprehensive analysis of optimization results across different algorithms, including convergence rates and final performance metrics.
+Implementing constrained gradient descent allows optimization while respecting parameter bounds, crucial for many real-world applications where parameters must stay within specific ranges.
 
 ```python
-def analyze_optimization_results(results_dict):
-    plt.figure(figsize=(12, 6))
+def constrained_gradient_descent(X, y, bounds, learning_rate=0.01, n_iterations=1000):
+    # Initialize parameters within bounds
+    slope = np.random.uniform(bounds['slope'][0], bounds['slope'][1])
+    intercept = np.random.uniform(bounds['intercept'][0], bounds['intercept'][1])
+    history = []
     
-    for name, history in results_dict.items():
-        plt.plot(history, label=name)
+    for i in range(n_iterations):
+        # Compute gradients
+        d_slope, d_intercept = compute_gradients(X, y, slope, intercept)
+        
+        # Update parameters with bounds checking
+        new_slope = slope - learning_rate * d_slope
+        new_intercept = intercept - learning_rate * d_intercept
+        
+        # Apply constraints
+        slope = np.clip(new_slope, bounds['slope'][0], bounds['slope'][1])
+        intercept = np.clip(new_intercept, bounds['intercept'][0], bounds['intercept'][1])
+        
+        history.append((slope, intercept, calculate_ssr(X, y, slope, intercept)))
     
-    plt.xlabel('Iterations')
-    plt.ylabel('Cost')
-    plt.title('Convergence Comparison')
-    plt.legend()
-    plt.yscale('log')
-    plt.grid(True)
-    plt.savefig('convergence_comparison.png')
-    plt.close()
-    
-    # Compare final costs
-    final_costs = {name: history[-1] for name, history in results_dict.items()}
-    for name, cost in final_costs.items():
-        print(f"{name} final cost: {cost:.6f}")
+    return slope, intercept, history
 
-# Analyze results
-results = {
-    'Standard GD': cost_history,
-    'Momentum': cost_history_momentum,
-    'Adam': cost_history_adam
+# Example usage with bounds
+bounds = {
+    'slope': (0, 5),      # Positive slope only
+    'intercept': (-2, 2)  # Limited intercept range
 }
-analyze_optimization_results(results)
 ```
 
 Slide 13: Additional Resources
 
-*   "Adaptive Subgradient Methods for Online Learning and Stochastic Optimization" - [https://arxiv.org/abs/1412.6980](https://arxiv.org/abs/1412.6980)
-*   "On the Convergence of Adam and Beyond" - [https://arxiv.org/abs/1904.09237](https://arxiv.org/abs/1904.09237)
-*   "Why Momentum Really Works" - [https://distill.pub/2017/momentum/](https://distill.pub/2017/momentum/)
-*   "An Overview of Gradient Descent Optimization Algorithms" - [https://arxiv.org/abs/1609.04747](https://arxiv.org/abs/1609.04747)
-*   Search Google Scholar for: "Gradient Descent Optimization Algorithms Review"
+*   ArXiv: "An Overview of Gradient Descent Optimization Algorithms" - [https://arxiv.org/abs/1609.04747](https://arxiv.org/abs/1609.04747)
+*   ArXiv: "Adaptive Subgradient Methods for Online Learning and Stochastic Optimization" - [https://arxiv.org/abs/1212.5701](https://arxiv.org/abs/1212.5701)
+*   ArXiv: "On the Convergence of Gradient Descent for Finding the Riemannian Center of Mass" - [https://arxiv.org/abs/1201.0925](https://arxiv.org/abs/1201.0925)
+*   Recommended Searches:
+    *   "Gradient Descent Variants and Applications"
+    *   "Advanced Optimization Techniques in Machine Learning"
+    *   "Practical Applications of Gradient Descent in Data Science"
 

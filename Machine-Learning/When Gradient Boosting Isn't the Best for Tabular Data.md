@@ -1,634 +1,963 @@
-## When Gradient Boosting Isn't the Best for Tabular Data
-Slide 1: Linear Relationships in Tabular Data
+## Response:
+Slide 1: Linear vs Gradient Boosting Comparison
 
-Understanding when linear models outperform gradient boosting requires analyzing feature-target relationships through correlation analysis and visualizations. Linear regression provides interpretable coefficients and faster training when relationships are predominantly linear.
+The fundamental distinction between linear models and gradient boosting lies in their ability to capture relationships. While linear models assume straight-line relationships, gradient boosting constructs an ensemble of decision trees that can model complex, non-linear patterns through sequential improvements.
 
 ```python
-import pandas as pd
 import numpy as np
 from sklearn.linear_model import LinearRegression
-from sklearn.metrics import r2_score
-import seaborn as sns
+from sklearn.ensemble import GradientBoostingRegressor
+from sklearn.metrics import mean_squared_error
+import matplotlib.pyplot as plt
 
-# Generate synthetic linear data
+# Generate synthetic data with linear relationship
 np.random.seed(42)
-X = np.random.randn(1000, 3)
-y = 2*X[:, 0] + 3*X[:, 1] - X[:, 2] + np.random.randn(1000) * 0.1
+X = np.linspace(0, 10, 100).reshape(-1, 1)
+y = 2 * X + np.random.normal(0, 0.5, (100, 1))
 
-# Check linearity with correlation matrix
-df = pd.DataFrame(X, columns=['feature1', 'feature2', 'feature3'])
-df['target'] = y
+# Train both models
+lr_model = LinearRegression()
+gb_model = GradientBoostingRegressor(n_estimators=100)
 
-# Fit linear model
-model = LinearRegression()
-model.fit(X, y)
-y_pred = model.predict(X)
+lr_model.fit(X, y)
+gb_model.fit(X, y)
 
-print(f"R² Score: {r2_score(y, y_pred):.4f}")
-print("\nFeature Coefficients:")
-for feat, coef in zip(['feature1', 'feature2', 'feature3'], model.coef_):
-    print(f"{feat}: {coef:.4f}")
+# Calculate MSE
+lr_mse = mean_squared_error(y, lr_model.predict(X))
+gb_mse = mean_squared_error(y, gb_model.predict(X))
+
+print(f"Linear Regression MSE: {lr_mse:.4f}")
+print(f"Gradient Boosting MSE: {gb_mse:.4f}")
 ```
 
-Slide 2: Handling Noisy and Sparse Data
+Slide 2: Handling Sparse Data Comparison
 
-When dealing with noisy and sparse tabular data, simpler models often provide better generalization. This implementation demonstrates how to identify and handle sparse features while maintaining model performance.
+When dealing with sparse datasets, simpler models often outperform complex ensembles. This implementation demonstrates how linear regression maintains stability while gradient boosting may overfit on sparse data, particularly when feature density is low.
 
 ```python
 import numpy as np
-from sklearn.preprocessing import StandardScaler
-from sklearn.linear_model import Ridge
+from sklearn.linear_model import LinearRegression
+from sklearn.ensemble import GradientBoostingRegressor
+from sklearn.metrics import mean_squared_error
+from scipy.sparse import random
 
-# Generate sparse data
-n_samples = 1000
-n_features = 50
-X_sparse = np.zeros((n_samples, n_features))
-X_sparse[np.random.randint(0, n_samples, 100), np.random.randint(0, n_features, 100)] = 1
+# Generate sparse matrix
+X_sparse = random(100, 20, density=0.1)
+X_sparse = X_sparse.toarray()
+y_sparse = np.random.normal(0, 1, 100)
 
-# Add noise
-noise = np.random.normal(0, 0.1, (n_samples, n_features))
-X_noisy = X_sparse + noise
+# Train models on sparse data
+lr_sparse = LinearRegression()
+gb_sparse = GradientBoostingRegressor(n_estimators=100)
 
-# Calculate sparsity
-sparsity = 1.0 - np.count_nonzero(X_sparse) / X_sparse.size
-print(f"Data sparsity: {sparsity:.2%}")
+lr_sparse.fit(X_sparse, y_sparse)
+gb_sparse.fit(X_sparse, y_sparse)
 
-# Fit Ridge regression with regularization
-scaler = StandardScaler()
-X_scaled = scaler.fit_transform(X_noisy)
-model = Ridge(alpha=1.0)
-model.fit(X_scaled, y)
+# Cross-validation scores
+from sklearn.model_selection import cross_val_score
+
+lr_scores = cross_val_score(lr_sparse, X_sparse, y_sparse, cv=5)
+gb_scores = cross_val_score(gb_sparse, X_sparse, y_sparse, cv=5)
+
+print(f"Linear Regression CV Scores: {np.mean(lr_scores):.4f} ± {np.std(lr_scores):.4f}")
+print(f"Gradient Boosting CV Scores: {np.mean(gb_scores):.4f} ± {np.std(gb_scores):.4f}")
 ```
 
-Slide 3: Neural Networks for Extrapolation
+Slide 3: Neural Network Alternative Implementation
 
-Neural networks excel at capturing complex patterns and extrapolating beyond training data ranges. This implementation creates a custom neural network architecture specifically designed for tabular data extrapolation.
+Neural networks provide smooth decision boundaries and better extrapolation capabilities compared to gradient boosting. This implementation showcases a simple neural network architecture suitable for tabular data with non-linear relationships.
 
 ```python
-import torch
-import torch.nn as nn
+import tensorflow as tf
+from sklearn.preprocessing import StandardScaler
+import numpy as np
 
-class TabularNN(nn.Module):
-    def __init__(self, input_size, hidden_size=64):
-        super().__init__()
-        self.model = nn.Sequential(
-            nn.Linear(input_size, hidden_size),
-            nn.ReLU(),
-            nn.BatchNorm1d(hidden_size),
-            nn.Linear(hidden_size, hidden_size // 2),
-            nn.ReLU(),
-            nn.BatchNorm1d(hidden_size // 2),
-            nn.Linear(hidden_size // 2, 1)
-        )
-        
-    def forward(self, x):
-        return self.model(x)
+# Create a simple neural network
+def create_tabular_nn(input_dim):
+    model = tf.keras.Sequential([
+        tf.keras.layers.Dense(64, activation='relu', input_dim=input_dim),
+        tf.keras.layers.BatchNormalization(),
+        tf.keras.layers.Dropout(0.3),
+        tf.keras.layers.Dense(32, activation='relu'),
+        tf.keras.layers.BatchNormalization(),
+        tf.keras.layers.Dropout(0.2),
+        tf.keras.layers.Dense(1)
+    ])
+    model.compile(optimizer='adam', loss='mse')
+    return model
 
-# Initialize model
-model = TabularNN(input_size=10)
+# Generate non-linear data
+X = np.random.normal(0, 1, (1000, 10))
+y = np.sin(X[:, 0]) + np.exp(X[:, 1])
 
-# Training loop setup
-criterion = nn.MSELoss()
-optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
+# Standardize features
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
 
-# Example training iteration
-x = torch.randn(32, 10)  # batch_size=32, features=10
-y = torch.randn(32, 1)
-optimizer.zero_grad()
-output = model(x)
-loss = criterion(output, y)
-loss.backward()
-optimizer.step()
+# Train model
+model = create_tabular_nn(X.shape[1])
+history = model.fit(X_scaled, y, epochs=50, batch_size=32, validation_split=0.2, verbose=0)
+
+print(f"Final validation loss: {history.history['val_loss'][-1]:.4f}")
 ```
 
-Slide 4: Quick Non-Linear Baseline with Random Forest
+Slide 4: Random Forest as Quick Baseline
 
-Random Forests provide an excellent alternative to gradient boosting when quick model iteration is needed. This implementation showcases automatic hyperparameter tuning and feature importance analysis for rapid model development.
+Random Forest provides a robust non-linear baseline with minimal hyperparameter tuning requirements. This implementation shows how to quickly establish a performance benchmark using Random Forest's inherent parallel processing capabilities.
 
 ```python
 from sklearn.ensemble import RandomForestRegressor
-from sklearn.model_selection import RandomizedSearchCV
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_squared_error, r2_score
 import numpy as np
+import time
 
-# Initialize RandomForestRegressor with parameter grid
-param_dist = {
-    'n_estimators': [100, 200, 300],
-    'max_depth': [None, 10, 20, 30],
-    'min_samples_split': [2, 5, 10],
-    'min_samples_leaf': [1, 2, 4]
-}
+# Generate complex non-linear data
+X = np.random.normal(0, 1, (1000, 15))
+y = np.sin(X[:, 0]) + np.exp(X[:, 1]) - np.square(X[:, 2])
 
-rf = RandomForestRegressor(random_state=42)
-random_search = RandomizedSearchCV(
-    rf, param_distributions=param_dist,
-    n_iter=10, cv=5, random_state=42, n_jobs=-1
-)
+# Split data
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
-# Fit and evaluate
-X = np.random.randn(1000, 10)
-y = np.sin(X[:, 0]) + np.cos(X[:, 1]) + np.random.randn(1000) * 0.1
-random_search.fit(X, y)
+# Train Random Forest
+start_time = time.time()
+rf_model = RandomForestRegressor(n_estimators=100, n_jobs=-1)
+rf_model.fit(X_train, y_train)
 
-# Get feature importance
-importances = random_search.best_estimator_.feature_importances_
-print("Best parameters:", random_search.best_params_)
-print("\nFeature importances:", importances)
+# Evaluate performance
+train_time = time.time() - start_time
+predictions = rf_model.predict(X_test)
+mse = mean_squared_error(y_test, predictions)
+r2 = r2_score(y_test, predictions)
+
+print(f"Training Time: {train_time:.2f} seconds")
+print(f"MSE: {mse:.4f}")
+print(f"R2 Score: {r2:.4f}")
 ```
 
-Slide 5: Gaussian Process for Optimization Tasks
+Slide 5: Optimization-Friendly Model Implementation
 
-Gaussian Processes provide smooth, differentiable predictions ideal for optimization tasks. This implementation demonstrates GP regression with uncertainty estimation and acquisition function optimization.
-
-```python
-from sklearn.gaussian_process import GaussianProcessRegressor
-from sklearn.gaussian_process.kernels import RBF, ConstantKernel as C
-
-# Define kernel
-kernel = C(1.0) * RBF([1.0])
-
-# Initialize and fit GP
-gp = GaussianProcessRegressor(kernel=kernel, random_state=42)
-
-# Generate sample data
-X = np.linspace(0, 10, 100).reshape(-1, 1)
-y = np.sin(X.ravel()) + np.random.normal(0, 0.1, X.shape[0])
-
-# Fit GP
-gp.fit(X, y)
-
-# Predict with uncertainty
-X_test = np.linspace(-2, 12, 200).reshape(-1, 1)
-y_pred, sigma = gp.predict(X_test, return_std=True)
-
-# Define acquisition function (Expected Improvement)
-def expected_improvement(X, gp, y_best):
-    mean, std = gp.predict(X.reshape(-1, 1), return_std=True)
-    z = (mean - y_best) / std
-    ei = (mean - y_best) * norm.cdf(z) + std * norm.pdf(z)
-    return ei
-
-# Find next point to evaluate
-y_best = y.max()
-ei = expected_improvement(X_test, gp, y_best)
-next_point = X_test[ei.argmax()]
-```
-
-Slide 6: Implementing Splines for Smooth Interpolation
-
-Spline regression offers smooth interpolation capabilities while maintaining interpretability. This implementation shows how to use B-splines for complex non-linear relationships.
+For optimization tasks, implementing models with smooth gradients is crucial. This implementation demonstrates a custom neural network architecture designed specifically for optimization problems with continuous outputs.
 
 ```python
-from scipy.interpolate import BSpline
+import tensorflow as tf
 import numpy as np
-from sklearn.base import BaseEstimator, RegressorMixin
+from sklearn.preprocessing import StandardScaler
 
-class SplineRegressor(BaseEstimator, RegressorMixin):
-    def __init__(self, degree=3, n_knots=5):
-        self.degree = degree
-        self.n_knots = n_knots
+class OptimizationFriendlyModel:
+    def __init__(self, input_dim, hidden_dims=[64, 32]):
+        self.model = self._build_model(input_dim, hidden_dims)
+        self.scaler = StandardScaler()
         
-    def fit(self, X, y):
-        # Generate knot sequence
-        x = X.ravel()
-        knots = np.linspace(x.min(), x.max(), self.n_knots)
+    def _build_model(self, input_dim, hidden_dims):
+        inputs = tf.keras.Input(shape=(input_dim,))
+        x = inputs
         
-        # Fit B-spline
-        self.spline = BSpline.fit(x, y, self.degree, knots)
-        return self
+        for dim in hidden_dims:
+            x = tf.keras.layers.Dense(dim, activation='elu')(x)
+            x = tf.keras.layers.BatchNormalization()(x)
+        
+        outputs = tf.keras.layers.Dense(1, activation='linear')(x)
+        model = tf.keras.Model(inputs=inputs, outputs=outputs)
+        
+        model.compile(optimizer='adam',
+                     loss='mse',
+                     metrics=['mae'])
+        return model
+    
+    def fit(self, X, y, **kwargs):
+        X_scaled = self.scaler.fit_transform(X)
+        return self.model.fit(X_scaled, y, **kwargs)
         
     def predict(self, X):
-        return self.spline(X.ravel())
+        X_scaled = self.scaler.transform(X)
+        return self.model.predict(X_scaled)
 
 # Example usage
-X = np.linspace(0, 10, 100).reshape(-1, 1)
-y = np.sin(X.ravel()) + np.random.normal(0, 0.1, 100)
+X = np.random.normal(0, 1, (1000, 10))
+y = np.sin(X[:, 0]) + np.exp(X[:, 1]) - np.square(X[:, 2])
 
-spline_reg = SplineRegressor(degree=3, n_knots=10)
-spline_reg.fit(X, y)
-y_pred = spline_reg.predict(X)
+model = OptimizationFriendlyModel(input_dim=X.shape[1])
+history = model.fit(X, y, epochs=50, validation_split=0.2, verbose=0)
 
-print(f"MSE: {np.mean((y - y_pred)**2):.4f}")
+print(f"Final validation loss: {history.history['val_loss'][-1]:.4f}")
 ```
 
-Slide 7: Data Preprocessing for Linear Models
+\[Continuing with the remaining slides...\]
 
-Effective preprocessing is crucial when using linear models as alternatives to gradient boosting. This implementation demonstrates robust scaling, outlier handling, and feature engineering techniques optimized for linear modeling.
+## Response:
+Slide 6: Feature Relationship Analysis
+
+Before deciding between gradient boosting and simpler models, it's crucial to analyze feature relationships. This implementation provides tools to evaluate linearity and feature interactions, helping determine the most appropriate model choice.
 
 ```python
 import numpy as np
 import pandas as pd
-from sklearn.preprocessing import RobustScaler, PolynomialFeatures
-from sklearn.compose import ColumnTransformer
-from sklearn.pipeline import Pipeline
+from scipy.stats import spearmanr
+from sklearn.preprocessing import StandardScaler
+import seaborn as sns
 
-class RobustPreprocessor:
-    def __init__(self, polynomial_degree=2, interaction_only=True):
-        self.polynomial_degree = polynomial_degree
-        self.interaction_only = interaction_only
+class FeatureRelationshipAnalyzer:
+    def __init__(self, X, y):
+        self.X = pd.DataFrame(X)
+        self.y = y
+        self.scaler = StandardScaler()
         
-    def create_pipeline(self, numeric_features, categorical_features):
-        numeric_transformer = Pipeline(steps=[
-            ('scaler', RobustScaler()),
-            ('poly', PolynomialFeatures(
-                degree=self.polynomial_degree, 
-                interaction_only=self.interaction_only,
-                include_bias=False
-            ))
-        ])
+    def analyze_linearity(self):
+        correlations = []
+        for col in range(self.X.shape[1]):
+            correlation, _ = spearmanr(self.X.iloc[:, col], self.y)
+            correlations.append(abs(correlation))
+            
+        avg_correlation = np.mean(correlations)
+        linearity_score = avg_correlation ** 2
+        
+        return {
+            'feature_correlations': correlations,
+            'avg_correlation': avg_correlation,
+            'linearity_score': linearity_score
+        }
+    
+    def detect_interactions(self, threshold=0.3):
+        interactions = []
+        n_features = self.X.shape[1]
+        
+        for i in range(n_features):
+            for j in range(i+1, n_features):
+                interaction_term = self.X.iloc[:, i] * self.X.iloc[:, j]
+                corr_with_target, _ = spearmanr(interaction_term, self.y)
+                
+                if abs(corr_with_target) > threshold:
+                    interactions.append((i, j, corr_with_target))
+                    
+        return interactions
 
-        preprocessor = ColumnTransformer(
-            transformers=[
-                ('num', numeric_transformer, numeric_features)
-            ]
+# Example usage
+X = np.random.normal(0, 1, (1000, 5))
+y = X[:, 0] + 0.5 * X[:, 1] * X[:, 2] + np.random.normal(0, 0.1, 1000)
+
+analyzer = FeatureRelationshipAnalyzer(X, y)
+linearity_results = analyzer.analyze_linearity()
+interactions = analyzer.detect_interactions()
+
+print("Linearity Analysis:")
+print(f"Average correlation: {linearity_results['avg_correlation']:.4f}")
+print(f"Linearity score: {linearity_results['linearity_score']:.4f}")
+print("\nSignificant Feature Interactions:")
+for i, j, corr in interactions:
+    print(f"Features {i} and {j}: correlation = {corr:.4f}")
+```
+
+Slide 7: Noise Level Assessment Implementation
+
+Analyzing data noise levels helps determine whether gradient boosting's complexity is justified. This implementation provides methods to quantify noise and assess data quality for model selection.
+
+```python
+import numpy as np
+from sklearn.model_selection import KFold
+from sklearn.metrics import r2_score
+from sklearn.linear_model import LinearRegression
+import matplotlib.pyplot as plt
+
+class NoiseAnalyzer:
+    def __init__(self, X, y):
+        self.X = X
+        self.y = y
+        
+    def estimate_noise_level(self, n_splits=5):
+        kf = KFold(n_splits=n_splits, shuffle=True)
+        residuals = []
+        
+        for train_idx, val_idx in kf.split(self.X):
+            X_train, X_val = self.X[train_idx], self.X[val_idx]
+            y_train, y_val = self.y[train_idx], self.y[val_idx]
+            
+            # Fit simple linear model
+            model = LinearRegression()
+            model.fit(X_train, y_train)
+            
+            # Calculate residuals
+            pred = model.predict(X_val)
+            residuals.extend(y_val - pred)
+            
+        noise_std = np.std(residuals)
+        signal_std = np.std(self.y)
+        snr = signal_std / noise_std
+        
+        return {
+            'noise_std': noise_std,
+            'signal_std': signal_std,
+            'snr': snr,
+            'residuals': residuals
+        }
+    
+    def plot_noise_analysis(self, results):
+        plt.figure(figsize=(12, 4))
+        
+        # Residuals distribution
+        plt.subplot(1, 2, 1)
+        plt.hist(results['residuals'], bins=50, density=True)
+        plt.title('Residuals Distribution')
+        plt.xlabel('Residual Value')
+        plt.ylabel('Density')
+        
+        # SNR visualization
+        plt.subplot(1, 2, 2)
+        plt.bar(['Signal', 'Noise'], 
+                [results['signal_std'], results['noise_std']])
+        plt.title(f'Signal-to-Noise Ratio: {results["snr"]:.2f}')
+        plt.ylabel('Standard Deviation')
+        
+        plt.tight_layout()
+        return plt
+
+# Example usage
+X = np.random.normal(0, 1, (1000, 5))
+true_signal = X[:, 0] + 0.5 * X[:, 1]
+noise = np.random.normal(0, 0.2, 1000)
+y = true_signal + noise
+
+analyzer = NoiseAnalyzer(X, y)
+noise_results = analyzer.estimate_noise_level()
+
+print(f"Estimated SNR: {noise_results['snr']:.4f}")
+print(f"Noise Standard Deviation: {noise_results['noise_std']:.4f}")
+print(f"Signal Standard Deviation: {noise_results['signal_std']:.4f}")
+```
+
+Slide 8: Model Selection Framework
+
+This comprehensive framework evaluates different models based on data characteristics, automatically suggesting the most appropriate choice between linear models, gradient boosting, or alternatives.
+
+```python
+import numpy as np
+from sklearn.model_selection import cross_val_score
+from sklearn.linear_model import LinearRegression
+from sklearn.ensemble import GradientBoostingRegressor
+from sklearn.neural_network import MLPRegressor
+from sklearn.preprocessing import StandardScaler
+
+class ModelSelector:
+    def __init__(self, X, y):
+        self.X = X
+        self.y = y
+        self.scaler = StandardScaler()
+        self.X_scaled = self.scaler.fit_transform(X)
+        
+    def evaluate_models(self, cv=5):
+        models = {
+            'linear': LinearRegression(),
+            'gradient_boosting': GradientBoostingRegressor(n_estimators=100),
+            'neural_network': MLPRegressor(hidden_layer_sizes=(64, 32))
+        }
+        
+        scores = {}
+        for name, model in models.items():
+            cv_scores = cross_val_score(model, self.X_scaled, self.y, 
+                                      cv=cv, scoring='r2')
+            scores[name] = {
+                'mean_score': cv_scores.mean(),
+                'std_score': cv_scores.std()
+            }
+            
+        return scores
+    
+    def analyze_data_characteristics(self):
+        n_samples, n_features = self.X.shape
+        sparsity = np.sum(self.X == 0) / (n_samples * n_features)
+        
+        # Calculate feature variability
+        feature_std = np.std(self.X, axis=0)
+        avg_variability = np.mean(feature_std)
+        
+        return {
+            'n_samples': n_samples,
+            'n_features': n_features,
+            'sparsity': sparsity,
+            'avg_variability': avg_variability
+        }
+    
+    def recommend_model(self):
+        scores = self.evaluate_models()
+        characteristics = self.analyze_data_characteristics()
+        
+        # Decision logic
+        if characteristics['sparsity'] > 0.5:
+            recommended = 'linear'
+        elif characteristics['avg_variability'] < 0.1:
+            recommended = 'linear'
+        else:
+            recommended = max(scores.items(), 
+                            key=lambda x: x[1]['mean_score'])[0]
+            
+        return {
+            'recommended_model': recommended,
+            'model_scores': scores,
+            'data_characteristics': characteristics
+        }
+
+# Example usage
+X = np.random.normal(0, 1, (1000, 10))
+y = np.sin(X[:, 0]) + 0.5 * X[:, 1] * X[:, 2] + np.random.normal(0, 0.1, 1000)
+
+selector = ModelSelector(X, y)
+results = selector.recommend_model()
+
+print(f"Recommended Model: {results['recommended_model']}")
+print("\nModel Scores:")
+for model, scores in results['model_scores'].items():
+    print(f"{model}: {scores['mean_score']:.4f} ± {scores['std_score']:.4f}")
+```
+
+\[Continuing with the remaining slides...\]
+
+## Response:
+Slide 9: Extrapolation Testing Framework
+
+Implementing a robust framework to test model extrapolation capabilities helps identify when gradient boosting might not be suitable. This framework systematically evaluates how different models perform outside their training distribution.
+
+```python
+import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.ensemble import GradientBoostingRegressor
+from sklearn.neural_network import MLPRegressor
+import matplotlib.pyplot as plt
+
+class ExtrapolationTester:
+    def __init__(self, X, y):
+        self.scaler = StandardScaler()
+        self.X = self.scaler.fit_transform(X)
+        self.y = y
+        
+    def generate_extrapolation_data(self, feature_idx, extension_factor=1.5):
+        X_extra = np.copy(self.X)
+        max_val = np.max(self.X[:, feature_idx])
+        extra_range = np.linspace(max_val, max_val * extension_factor, 100)
+        X_extra = np.vstack([X_extra, 
+                            np.tile(np.mean(self.X, axis=0), (100, 1))])
+        X_extra[-100:, feature_idx] = extra_range
+        return X_extra
+    
+    def compare_extrapolation(self, feature_idx=0):
+        # Train models
+        gb_model = GradientBoostingRegressor(n_estimators=100)
+        nn_model = MLPRegressor(hidden_layer_sizes=(64, 32))
+        
+        gb_model.fit(self.X, self.y)
+        nn_model.fit(self.X, self.y)
+        
+        # Generate extrapolation data
+        X_extra = self.generate_extrapolation_data(feature_idx)
+        
+        # Get predictions
+        gb_pred = gb_model.predict(X_extra)
+        nn_pred = nn_model.predict(X_extra)
+        
+        return {
+            'X_extra': X_extra,
+            'gb_predictions': gb_pred,
+            'nn_predictions': nn_pred,
+            'feature_idx': feature_idx
+        }
+    
+    def plot_extrapolation(self, results):
+        plt.figure(figsize=(10, 6))
+        feature_idx = results['feature_idx']
+        
+        # Plot training data
+        plt.scatter(self.X[:, feature_idx], self.y, 
+                   alpha=0.5, label='Training Data')
+        
+        # Plot extrapolation
+        extra_x = results['X_extra'][-100:, feature_idx]
+        plt.plot(extra_x, results['gb_predictions'][-100:], 
+                label='Gradient Boosting', linestyle='--')
+        plt.plot(extra_x, results['nn_predictions'][-100:], 
+                label='Neural Network', linestyle='--')
+        
+        plt.axvline(x=np.max(self.X[:, feature_idx]), 
+                   color='r', linestyle=':', 
+                   label='Extrapolation Boundary')
+        
+        plt.xlabel(f'Feature {feature_idx}')
+        plt.ylabel('Target')
+        plt.legend()
+        plt.title('Extrapolation Comparison')
+        return plt
+
+# Example usage
+X = np.random.normal(0, 1, (1000, 5))
+y = np.exp(0.5 * X[:, 0]) + 0.2 * X[:, 1]**2
+
+tester = ExtrapolationTester(X, y)
+results = tester.compare_extrapolation(feature_idx=0)
+
+# Calculate extrapolation metrics
+train_range = np.max(tester.X[:, 0]) - np.min(tester.X[:, 0])
+extrap_range = np.max(results['X_extra'][:, 0]) - np.max(tester.X[:, 0])
+print(f"Training range: {train_range:.2f}")
+print(f"Extrapolation range: {extrap_range:.2f}")
+```
+
+Slide 10: Real-World Case Study - Financial Time Series
+
+Demonstrating a practical application where gradient boosting's limitations become apparent in financial time series prediction, particularly during regime changes and market shifts.
+
+```python
+import numpy as np
+import pandas as pd
+from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import mean_squared_error, mean_absolute_percentage_error
+from sklearn.ensemble import GradientBoostingRegressor
+from sklearn.neural_network import MLPRegressor
+import matplotlib.pyplot as plt
+
+class FinancialPredictor:
+    def __init__(self, window_size=10):
+        self.window_size = window_size
+        self.scaler = StandardScaler()
+        
+    def create_sequences(self, data):
+        X, y = [], []
+        for i in range(len(data) - self.window_size):
+            X.append(data[i:(i + self.window_size)])
+            y.append(data[i + self.window_size])
+        return np.array(X), np.array(y)
+    
+    def prepare_data(self, prices):
+        # Calculate returns
+        returns = np.diff(prices) / prices[:-1]
+        X, y = self.create_sequences(returns)
+        
+        # Scale features
+        X_reshaped = X.reshape(-1, X.shape[1])
+        X_scaled = self.scaler.fit_transform(X_reshaped)
+        X_scaled = X_scaled.reshape(X.shape)
+        
+        return X_scaled, y
+    
+    def evaluate_models(self, X, y, train_size=0.8):
+        split_idx = int(len(X) * train_size)
+        X_train, X_test = X[:split_idx], X[split_idx:]
+        y_train, y_test = y[:split_idx], y[split_idx:]
+        
+        models = {
+            'gradient_boosting': GradientBoostingRegressor(n_estimators=100),
+            'neural_network': MLPRegressor(hidden_layer_sizes=(64, 32))
+        }
+        
+        results = {}
+        for name, model in models.items():
+            model.fit(X_train, y_train)
+            pred = model.predict(X_test)
+            
+            results[name] = {
+                'mse': mean_squared_error(y_test, pred),
+                'mape': mean_absolute_percentage_error(y_test, pred),
+                'predictions': pred
+            }
+            
+        return results, y_test
+    
+    def plot_predictions(self, y_true, results):
+        plt.figure(figsize=(12, 6))
+        plt.plot(y_true, label='Actual', alpha=0.7)
+        
+        for name, metrics in results.items():
+            plt.plot(metrics['predictions'], 
+                    label=f"{name} (MAPE: {metrics['mape']:.4f})", 
+                    alpha=0.7)
+        
+        plt.legend()
+        plt.title('Return Predictions Comparison')
+        plt.xlabel('Time')
+        plt.ylabel('Returns')
+        return plt
+
+# Example usage with synthetic financial data
+np.random.seed(42)
+n_points = 1000
+# Simulate regime change
+regime1 = np.random.normal(0.001, 0.01, n_points//2)
+regime2 = np.random.normal(-0.002, 0.02, n_points//2)
+returns = np.concatenate([regime1, regime2])
+prices = 100 * np.exp(np.cumsum(returns))
+
+predictor = FinancialPredictor()
+X, y = predictor.prepare_data(prices)
+results, y_test = predictor.evaluate_models(X, y)
+
+print("\nModel Performance:")
+for name, metrics in results.items():
+    print(f"\n{name}:")
+    print(f"MSE: {metrics['mse']:.6f}")
+    print(f"MAPE: {metrics['mape']:.4f}")
+```
+
+\[Continuing with the remaining slides...\]
+
+## Response:
+Slide 11: Practical Performance Optimization Framework
+
+Implementing a comprehensive optimization framework that automatically tunes and compares different models, measuring both computational efficiency and prediction accuracy to make informed model selection decisions.
+
+```python
+import numpy as np
+from sklearn.model_selection import RandomizedSearchCV
+from sklearn.ensemble import GradientBoostingRegressor
+from sklearn.linear_model import LassoCV
+from sklearn.neural_network import MLPRegressor
+import time
+from scipy.stats import uniform, randint
+
+class ModelOptimizer:
+    def __init__(self, X, y, time_budget=300):
+        self.X = X
+        self.y = y
+        self.time_budget = time_budget
+        self.results = {}
+        
+    def define_search_spaces(self):
+        return {
+            'gradient_boosting': {
+                'n_estimators': randint(50, 500),
+                'learning_rate': uniform(0.01, 0.3),
+                'max_depth': randint(3, 10),
+                'min_samples_split': randint(2, 20),
+                'subsample': uniform(0.5, 0.5)
+            },
+            'neural_network': {
+                'hidden_layer_sizes': [(x,y) for x in [32,64,128] 
+                                     for y in [16,32,64]],
+                'learning_rate_init': uniform(0.001, 0.01),
+                'alpha': uniform(0.0001, 0.001)
+            }
+        }
+        
+    def optimize_model(self, model_type):
+        if model_type == 'gradient_boosting':
+            base_model = GradientBoostingRegressor()
+        elif model_type == 'neural_network':
+            base_model = MLPRegressor(max_iter=1000)
+        else:
+            raise ValueError("Unsupported model type")
+            
+        search_space = self.define_search_spaces()[model_type]
+        
+        search = RandomizedSearchCV(
+            base_model,
+            search_space,
+            n_iter=20,
+            cv=5,
+            scoring='neg_mean_squared_error',
+            n_jobs=-1
         )
         
-        return preprocessor
+        start_time = time.time()
+        search.fit(self.X, self.y)
+        training_time = time.time() - start_time
+        
+        return {
+            'best_params': search.best_params_,
+            'best_score': -search.best_score_,
+            'training_time': training_time
+        }
+    
+    def evaluate_all_models(self):
+        models = ['gradient_boosting', 'neural_network']
+        
+        for model_type in models:
+            try:
+                results = self.optimize_model(model_type)
+                self.results[model_type] = results
+            except Exception as e:
+                print(f"Error optimizing {model_type}: {str(e)}")
+                
+        return self.results
+    
+    def get_recommendation(self):
+        if not self.results:
+            return None
+            
+        scores = {}
+        for model, results in self.results.items():
+            # Normalize scores between 0 and 1
+            normalized_score = 1.0 / (1.0 + results['best_score'])
+            time_score = np.exp(-results['training_time'] / self.time_budget)
+            
+            # Combined score with weight on accuracy
+            scores[model] = 0.7 * normalized_score + 0.3 * time_score
+            
+        best_model = max(scores.items(), key=lambda x: x[1])[0]
+        return {
+            'recommended_model': best_model,
+            'model_scores': scores,
+            'detailed_results': self.results
+        }
 
 # Example usage
 np.random.seed(42)
-n_samples = 1000
-X = pd.DataFrame({
-    'feature1': np.random.normal(0, 1, n_samples),
-    'feature2': np.random.normal(0, 1, n_samples),
-    'feature3': np.random.normal(0, 1, n_samples)
-})
+X = np.random.normal(0, 1, (1000, 10))
+y = np.sin(X[:, 0]) + 0.5 * X[:, 1]**2 + np.random.normal(0, 0.1, 1000)
 
-# Add outliers
-X.loc[0:10, 'feature1'] = 100
+optimizer = ModelOptimizer(X, y)
+results = optimizer.evaluate_all_models()
+recommendation = optimizer.get_recommendation()
 
-preprocessor = RobustPreprocessor(polynomial_degree=2)
-pipeline = preprocessor.create_pipeline(
-    numeric_features=['feature1', 'feature2', 'feature3'],
-    categorical_features=[]
-)
+print("\nOptimization Results:")
+for model, metrics in results.items():
+    print(f"\n{model}:")
+    print(f"Best MSE: {metrics['best_score']:.6f}")
+    print(f"Training time: {metrics['training_time']:.2f} seconds")
+    print("Best parameters:", metrics['best_params'])
 
-X_transformed = pipeline.fit_transform(X)
-print(f"Original shape: {X.shape}, Transformed shape: {X_transformed.shape}")
+print(f"\nRecommended model: {recommendation['recommended_model']}")
 ```
 
-Slide 8: Model Selection Strategy
+Slide 12: Cross-Model Validation Framework
 
-This implementation provides a systematic approach to choosing between linear models and gradient boosting using cross-validation and statistical tests for model comparison.
+Implementing a robust validation framework that tests model performance across different data scenarios and validates the decision between gradient boosting and alternative models.
 
 ```python
-from sklearn.model_selection import cross_val_score
-from sklearn.linear_model import LassoCV
+import numpy as np
+from sklearn.model_selection import KFold
+from sklearn.metrics import mean_squared_error, r2_score
+from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import GradientBoostingRegressor
-from scipy import stats
+from sklearn.linear_model import LinearRegression
+from sklearn.neural_network import MLPRegressor
 
-class ModelSelector:
-    def __init__(self, significance_level=0.05):
-        self.significance_level = significance_level
+class CrossModelValidator:
+    def __init__(self, X, y, n_splits=5):
+        self.X = X
+        self.y = y
+        self.n_splits = n_splits
+        self.scaler = StandardScaler()
         
-    def compare_models(self, X, y, cv=5):
-        # Initialize models
-        linear_model = LassoCV(cv=5)
-        gb_model = GradientBoostingRegressor(random_state=42)
+    def create_scenarios(self):
+        scenarios = {
+            'base': (self.X, self.y),
+            'noisy': (self.X, self.y + np.random.normal(0, 0.2, len(self.y))),
+            'sparse': (self.X * (np.random.random(self.X.shape) > 0.3), self.y),
+            'outliers': self._add_outliers()
+        }
+        return scenarios
+    
+    def _add_outliers(self):
+        X_out = np.copy(self.X)
+        y_out = np.copy(self.y)
         
-        # Get cross-validation scores
-        linear_scores = cross_val_score(linear_model, X, y, cv=cv)
-        gb_scores = cross_val_score(gb_model, X, y, cv=cv)
+        # Add outliers to 5% of the data
+        n_outliers = int(0.05 * len(self.y))
+        outlier_idx = np.random.choice(len(self.y), n_outliers, replace=False)
         
-        # Perform statistical test
-        t_stat, p_value = stats.ttest_rel(linear_scores, gb_scores)
+        # Modify outlier values
+        y_out[outlier_idx] = y_out[outlier_idx] * 3
+        return X_out, y_out
+    
+    def evaluate_scenario(self, X, y, model):
+        kf = KFold(n_splits=self.n_splits, shuffle=True)
+        scores = []
         
-        results = {
-            'linear_mean': linear_scores.mean(),
-            'linear_std': linear_scores.std(),
-            'gb_mean': gb_scores.mean(),
-            'gb_std': gb_scores.std(),
-            'p_value': p_value,
-            'significant_difference': p_value < self.significance_level
+        for train_idx, test_idx in kf.split(X):
+            X_train, X_test = X[train_idx], X[test_idx]
+            y_train, y_test = y[train_idx], y[test_idx]
+            
+            # Scale features
+            X_train_scaled = self.scaler.fit_transform(X_train)
+            X_test_scaled = self.scaler.transform(X_test)
+            
+            # Train and evaluate
+            model.fit(X_train_scaled, y_train)
+            pred = model.predict(X_test_scaled)
+            
+            scores.append({
+                'mse': mean_squared_error(y_test, pred),
+                'r2': r2_score(y_test, pred)
+            })
+            
+        return scores
+    
+    def validate_all_models(self):
+        models = {
+            'gradient_boosting': GradientBoostingRegressor(n_estimators=100),
+            'linear': LinearRegression(),
+            'neural_network': MLPRegressor(hidden_layer_sizes=(64, 32))
         }
         
+        scenarios = self.create_scenarios()
+        results = {}
+        
+        for scenario_name, (X, y) in scenarios.items():
+            results[scenario_name] = {}
+            
+            for model_name, model in models.items():
+                scores = self.evaluate_scenario(X, y, model)
+                results[scenario_name][model_name] = {
+                    'mean_mse': np.mean([s['mse'] for s in scores]),
+                    'std_mse': np.std([s['mse'] for s in scores]),
+                    'mean_r2': np.mean([s['r2'] for s in scores]),
+                    'std_r2': np.std([s['r2'] for s in scores])
+                }
+                
         return results
 
 # Example usage
-X = np.random.randn(1000, 5)
-y = X[:, 0] + 0.5 * X[:, 1] + np.random.randn(1000) * 0.1
+X = np.random.normal(0, 1, (1000, 10))
+y = np.sin(X[:, 0]) + 0.5 * X[:, 1]**2 + np.random.normal(0, 0.1, 1000)
 
-selector = ModelSelector()
-results = selector.compare_models(X, y)
-print("Model Comparison Results:")
-for key, value in results.items():
-    print(f"{key}: {value:.4f}")
+validator = CrossModelValidator(X, y)
+validation_results = validator.validate_all_models()
+
+print("\nValidation Results:")
+for scenario, models in validation_results.items():
+    print(f"\n{scenario} scenario:")
+    for model, metrics in models.items():
+        print(f"\n{model}:")
+        print(f"MSE: {metrics['mean_mse']:.6f} ± {metrics['std_mse']:.6f}")
+        print(f"R2: {metrics['mean_r2']:.4f} ± {metrics['std_r2']:.4f}")
 ```
 
-Slide 9: Feature Importance Analysis
+\[Continuing with the remaining slides...\]
 
-Understanding feature importance helps determine when simpler models might be more appropriate. This implementation provides multiple methods for analyzing feature relationships and importance.
+## Response:
+Slide 13: Performance Monitoring and Model Switching Framework
+
+This framework implements continuous monitoring of model performance and automatically switches between gradient boosting and simpler models based on real-time performance metrics and data characteristics.
 
 ```python
 import numpy as np
-from sklearn.linear_model import Lasso
+from sklearn.base import BaseEstimator, RegressorMixin
+from sklearn.ensemble import GradientBoostingRegressor
+from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import StandardScaler
-from sklearn.inspection import permutation_importance
+from collections import deque
 
-class FeatureAnalyzer:
-    def __init__(self, n_repeats=10):
-        self.n_repeats = n_repeats
+class AdaptiveModelSelector(BaseEstimator, RegressorMixin):
+    def __init__(self, window_size=1000, performance_threshold=0.1):
+        self.window_size = window_size
+        self.performance_threshold = performance_threshold
+        self.scaler = StandardScaler()
+        self.performance_history = deque(maxlen=window_size)
+        self.current_model = None
+        self.models = {
+            'gradient_boosting': GradientBoostingRegressor(n_estimators=100),
+            'linear': LinearRegression()
+        }
         
-    def analyze_features(self, X, y):
-        # Standardize features
-        scaler = StandardScaler()
-        X_scaled = scaler.fit_transform(X)
-        
-        # Lasso coefficients
-        lasso = Lasso(alpha=0.01)
-        lasso.fit(X_scaled, y)
-        
-        # Permutation importance
-        perm_importance = permutation_importance(
-            lasso, X_scaled, y, 
-            n_repeats=self.n_repeats
-        )
-        
-        # Calculate feature correlations
-        correlations = np.corrcoef(X_scaled.T)
+    def check_data_characteristics(self, X):
+        features_std = np.std(X, axis=0)
+        avg_variability = np.mean(features_std)
+        sparsity = np.sum(X == 0) / X.size
         
         return {
-            'lasso_coefficients': lasso.coef_,
-            'permutation_importance': perm_importance.importances_mean,
-            'feature_correlations': correlations
+            'variability': avg_variability,
+            'sparsity': sparsity,
+            'sample_size': X.shape[0]
         }
-
-# Example usage
-X = np.random.randn(1000, 5)
-y = 2*X[:, 0] + 3*X[:, 1] + np.random.randn(1000) * 0.1
-
-analyzer = FeatureAnalyzer()
-results = analyzer.analyze_features(X, y)
-
-print("Lasso Coefficients:", results['lasso_coefficients'])
-print("\nPermutation Importance:", results['permutation_importance'])
-```
-
-Slide 10: Real-World Application - Credit Risk Modeling
-
-Implementation of a credit risk prediction system demonstrating when linear models outperform gradient boosting in a highly regulated environment requiring model interpretability.
-
-```python
-import pandas as pd
-import numpy as np
-from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import roc_auc_score, classification_report
-
-class CreditRiskModel:
-    def __init__(self, regularization='l1'):
-        self.model = LogisticRegression(
-            penalty=regularization,
-            solver='liblinear',
-            random_state=42
-        )
-        
-    def prepare_features(self, X):
-        # Calculate financial ratios
-        X['debt_to_income'] = X['total_debt'] / (X['income'] + 1e-6)
-        X['payment_to_income'] = X['monthly_payment'] / (X['income'] + 1e-6)
-        
-        # Log transform skewed features
-        for col in ['income', 'total_debt']:
-            X[f'{col}_log'] = np.log1p(X[col])
-            
-        return X
     
-    def get_feature_importance(self):
-        return pd.DataFrame({
-            'feature': self.feature_names,
-            'coefficient': self.model.coef_[0],
-            'odds_ratio': np.exp(self.model.coef_[0])
-        })
-
-# Generate synthetic credit data
-np.random.seed(42)
-n_samples = 1000
-data = pd.DataFrame({
-    'income': np.random.lognormal(10, 1, n_samples),
-    'total_debt': np.random.lognormal(9, 1.5, n_samples),
-    'monthly_payment': np.random.lognormal(6, 0.5, n_samples),
-    'credit_score': np.random.normal(650, 100, n_samples)
-})
-
-# Create target variable
-data['default'] = (data['total_debt'] / data['income'] > 0.5).astype(int)
-
-# Train model
-model = CreditRiskModel()
-X = model.prepare_features(data.drop('default', axis=1))
-y = data['default']
-
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
-model.feature_names = X.columns
-model.model.fit(X_train, y_train)
-
-# Evaluate
-y_pred_proba = model.model.predict_proba(X_test)[:, 1]
-print(f"ROC-AUC Score: {roc_auc_score(y_test, y_pred_proba):.4f}")
-```
-
-Slide 11: Performance Monitoring System
-
-This implementation creates a monitoring system to detect when model performance degrades and determines if switching from gradient boosting to simpler models is warranted.
-
-```python
-import numpy as np
-from scipy import stats
-from datetime import datetime, timedelta
-
-class ModelMonitor:
-    def __init__(self, baseline_metrics, window_size=30):
-        self.baseline_metrics = baseline_metrics
-        self.window_size = window_size
-        self.performance_history = []
-        
-    def add_daily_metrics(self, date, metrics):
-        self.performance_history.append({
-            'date': date,
-            'metrics': metrics
-        })
-        
-        if len(self.performance_history) > self.window_size:
-            self.performance_history.pop(0)
-            
-    def detect_degradation(self, threshold=0.05):
-        if len(self.performance_history) < self.window_size:
-            return False, None
-            
-        recent_metrics = [p['metrics'] for p in self.performance_history]
-        
-        # Perform statistical tests
-        t_stat, p_value = stats.ttest_1samp(
-            recent_metrics,
-            self.baseline_metrics
-        )
-        
-        degradation_detected = p_value < threshold and t_stat < 0
-        
-        analysis = {
-            'degradation_detected': degradation_detected,
-            'p_value': p_value,
-            't_statistic': t_stat,
-            'current_mean': np.mean(recent_metrics),
-            'baseline_mean': self.baseline_metrics
-        }
-        
-        return degradation_detected, analysis
-
-# Example usage
-monitor = ModelMonitor(baseline_metrics=0.85)
-
-# Simulate 60 days of metrics
-np.random.seed(42)
-start_date = datetime(2024, 1, 1)
-for i in range(60):
-    date = start_date + timedelta(days=i)
-    # Simulate gradual degradation
-    metric = 0.85 - (i/200) + np.random.normal(0, 0.02)
-    monitor.add_daily_metrics(date, metric)
+    def select_model(self, characteristics):
+        if characteristics['sparsity'] > 0.5 or \
+           characteristics['variability'] < 0.1:
+            return 'linear'
+        return 'gradient_boosting'
     
-    if (i + 1) % 30 == 0:
-        degraded, analysis = monitor.detect_degradation()
-        print(f"\nDay {i+1} Analysis:")
-        for key, value in analysis.items():
-            print(f"{key}: {value:.4f}" if isinstance(value, float) else f"{key}: {value}")
-```
-
-Slide 12: Time Series Feature Engineering
-
-Advanced feature engineering techniques specifically designed for time series data when linear models are preferred over gradient boosting due to temporal dependencies.
-
-```python
-import pandas as pd
-import numpy as np
-from scipy.stats import skew
-from statsmodels.tsa.seasonal import seasonal_decompose
-
-class TimeSeriesFeatureEngineer:
-    def __init__(self, window_sizes=[7, 14, 30]):
-        self.window_sizes = window_sizes
+    def update_performance(self, y_true, y_pred):
+        mse = np.mean((y_true - y_pred) ** 2)
+        self.performance_history.append(mse)
         
-    def create_features(self, df, target_col):
-        features = pd.DataFrame(index=df.index)
-        
-        # Rolling statistics
-        for window in self.window_sizes:
-            features[f'roll_mean_{window}'] = df[target_col].rolling(window).mean()
-            features[f'roll_std_{window}'] = df[target_col].rolling(window).std()
-            features[f'roll_skew_{window}'] = df[target_col].rolling(window).apply(skew)
-        
-        # Seasonal decomposition
-        decomposition = seasonal_decompose(
-            df[target_col], 
-            period=min(self.window_sizes),
-            extrapolate_trend='freq'
-        )
-        
-        features['trend'] = decomposition.trend
-        features['seasonal'] = decomposition.seasonal
-        features['residual'] = decomposition.resid
-        
-        # Lag features
-        for lag in self.window_sizes:
-            features[f'lag_{lag}'] = df[target_col].shift(lag)
+        if len(self.performance_history) >= self.window_size:
+            recent_perf = np.mean(list(self.performance_history)[-100:])
+            overall_perf = np.mean(list(self.performance_history))
             
-        return features.fillna(method='bfill')
-
-# Example usage
-np.random.seed(42)
-dates = pd.date_range(start='2024-01-01', periods=365, freq='D')
-data = pd.DataFrame({
-    'date': dates,
-    'value': np.random.normal(0, 1, 365) + np.sin(np.linspace(0, 4*np.pi, 365))
-}).set_index('date')
-
-engineer = TimeSeriesFeatureEngineer()
-features = engineer.create_features(data, 'value')
-
-print("Generated features shape:", features.shape)
-print("\nFeature columns:", features.columns.tolist())
-```
-
-Slide 13: Model Interpretability Framework
-
-Comprehensive framework for interpreting and explaining linear model predictions with techniques specifically designed for regulatory compliance.
-
-```python
-import numpy as np
-import pandas as pd
-from sklearn.linear_model import LogisticRegression
-from sklearn.preprocessing import StandardScaler
-
-class InterpretableModel:
-    def __init__(self):
-        self.model = LogisticRegression(penalty='l2')
-        self.scaler = StandardScaler()
-        self.feature_names = None
-        
+            return recent_perf / overall_perf
+        return 1.0
+    
     def fit(self, X, y):
-        self.feature_names = X.columns
         X_scaled = self.scaler.fit_transform(X)
-        self.model.fit(X_scaled, y)
+        characteristics = self.check_data_characteristics(X_scaled)
+        model_type = self.select_model(characteristics)
+        
+        self.current_model = self.models[model_type]
+        self.current_model.fit(X_scaled, y)
+        
+        # Initialize performance monitoring
+        y_pred = self.current_model.predict(X_scaled)
+        self.update_performance(y, y_pred)
+        
         return self
+    
+    def predict(self, X):
+        if self.current_model is None:
+            raise ValueError("Model not fitted")
+            
+        X_scaled = self.scaler.transform(X)
+        return self.current_model.predict(X_scaled)
+    
+    def monitor_and_adapt(self, X, y):
+        X_scaled = self.scaler.transform(X)
+        y_pred = self.predict(X)
+        performance_ratio = self.update_performance(y, y_pred)
         
-    def get_feature_importance(self):
-        coefficients = self.model.coef_[0]
-        importance_df = pd.DataFrame({
-            'feature': self.feature_names,
-            'coefficient': coefficients,
-            'abs_importance': np.abs(coefficients)
-        }).sort_values('abs_importance', ascending=False)
-        
-        return importance_df
-        
-    def explain_prediction(self, X_sample):
-        X_scaled = self.scaler.transform(X_sample)
-        contribution = X_scaled * self.model.coef_[0]
-        
-        explanation_df = pd.DataFrame({
-            'feature': self.feature_names,
-            'value': X_sample.iloc[0],
-            'scaled_value': X_scaled[0],
-            'coefficient': self.model.coef_[0],
-            'contribution': contribution[0]
-        })
-        
-        explanation_df['contribution_pct'] = (
-            explanation_df['contribution'].abs() / 
-            explanation_df['contribution'].abs().sum() * 100
-        )
-        
-        return explanation_df.sort_values('contribution_pct', ascending=False)
+        if performance_ratio > (1 + self.performance_threshold):
+            # Performance degradation detected
+            characteristics = self.check_data_characteristics(X_scaled)
+            new_model_type = self.select_model(characteristics)
+            
+            if self.current_model != self.models[new_model_type]:
+                self.current_model = self.models[new_model_type]
+                self.current_model.fit(X_scaled, y)
+                
+        return {
+            'current_model': type(self.current_model).__name__,
+            'performance_ratio': performance_ratio
+        }
 
-# Example usage
+# Example usage with simulated concept drift
 np.random.seed(42)
-X = pd.DataFrame({
-    'feature1': np.random.normal(0, 1, 1000),
-    'feature2': np.random.normal(0, 1, 1000),
-    'feature3': np.random.normal(0, 1, 1000)
-})
-y = (X['feature1'] + 2*X['feature2'] - X['feature3'] > 0).astype(int)
+n_samples = 2000
 
-model = InterpretableModel()
-model.fit(X, y)
+# Generate data with changing characteristics
+X1 = np.random.normal(0, 1, (n_samples//2, 5))
+y1 = X1[:, 0] + 0.5 * X1[:, 1]  # Linear relationship
 
-print("Feature Importance:")
-print(model.get_feature_importance())
+X2 = np.random.normal(0, 1, (n_samples//2, 5))
+y2 = np.sin(X2[:, 0]) + 0.5 * X2[:, 1]**2  # Non-linear relationship
 
-print("\nSample Prediction Explanation:")
-print(model.explain_prediction(X.iloc[[0]]))
+X = np.vstack([X1, X2])
+y = np.concatenate([y1, y2])
+
+# Initialize and train adaptive model
+adaptive_model = AdaptiveModelSelector()
+adaptive_model.fit(X[:1000], y[:1000])
+
+# Monitor and adapt to changing data
+monitoring_results = []
+for i in range(1000, n_samples, 100):
+    batch_X = X[i:i+100]
+    batch_y = y[i:i+100]
+    
+    results = adaptive_model.monitor_and_adapt(batch_X, batch_y)
+    monitoring_results.append(results)
+    
+print("\nModel Adaptation Results:")
+for i, result in enumerate(monitoring_results):
+    print(f"\nBatch {i+1}:")
+    print(f"Active Model: {result['current_model']}")
+    print(f"Performance Ratio: {result['performance_ratio']:.4f}")
 ```
 
 Slide 14: Additional Resources
 
-*   Machine Learning for Tabular Data: A Critical Analysis - [https://arxiv.org/abs/2110.01889](https://arxiv.org/abs/2110.01889)
-*   Beyond Gradient Boosting: When Linear Models Win - [https://arxiv.org/abs/2012.01315](https://arxiv.org/abs/2012.01315)
-*   Linear Models vs Tree-based Models: A Comprehensive Study - [https://arxiv.org/abs/2103.11869](https://arxiv.org/abs/2103.11869)
-*   Search Suggestions:
-    *   "Linear Models vs Gradient Boosting Performance Comparison"
-    *   "When to Use Simple Models in Machine Learning"
-    *   "Model Selection for Tabular Data"
-*   Books:
-    *   "Introduction to Statistical Learning"
-    *   "Elements of Statistical Learning"
+*   "XGBoost: A Scalable Tree Boosting System" - [https://arxiv.org/abs/1603.02754](https://arxiv.org/abs/1603.02754)
+*   "LightGBM: A Highly Efficient Gradient Boosting Decision Tree" - [https://papers.nips.cc/paper/6907-lightgbm-a-highly-efficient-gradient-boosting-decision-tree](https://papers.nips.cc/paper/6907-lightgbm-a-highly-efficient-gradient-boosting-decision-tree)
+*   "Practical Lessons from Predicting Clicks on Ads at Facebook" - [https://research.facebook.com/publications/practical-lessons-from-predicting-clicks-on-ads-at-facebook/](https://research.facebook.com/publications/practical-lessons-from-predicting-clicks-on-ads-at-facebook/)
+*   "Model Selection in Gradient Boosting: A Systematic Analysis" - [https://www.sciencedirect.com/science/article/pii/S0925231219311592](https://www.sciencedirect.com/science/article/pii/S0925231219311592)
+*   "Deep Neural Networks for High-Dimensional Sparse Data" - [https://arxiv.org/abs/1911.05289](https://arxiv.org/abs/1911.05289)
+*   Suggested searches:
+    *   "Comparison of gradient boosting vs neural networks for tabular data"
+    *   "When to use linear models vs gradient boosting"
+    *   "Model selection strategies for time series prediction"
+    *   "Handling concept drift in machine learning models"
 
