@@ -2,7 +2,7 @@
 
 Slide 1: Introduction to Automated Account Analysis This presentation outlines a comprehensive workflow for analyzing financial accounts using artificial intelligence and Python. We'll start with uploading a balance sheet to an AI chatbot, then move through data extraction, formatting, and finally to in-depth analysis using custom Python code.
 
-Slide 2: Uploading the Balance Sheet The first step in our process is uploading a balance sheet or equivalent financial document to an AI chatbot like Claude or ChatGPT. This can typically be done by either pasting the text directly into the chat interface or by describing the document's contents in detail to the AI.
+Slide 2: Uploading the Balance Sheet The first step in our process is uploading a balance sheet or equivalent financial document to an AI chatbot like ChatGPT. This can typically be done by either pasting the text directly into the chat interface or by describing the document's contents in detail to the AI.
 
 Slide 3: Interacting with the AI Chatbot Once the balance sheet is uploaded, we need to instruct the AI to extract the relevant financial data. Here's an example prompt to use:
 
@@ -135,7 +135,7 @@ Slide 16: Additional References
 
 1.  "Financial Statement Analysis" by Martin Fridson and Fernando Alvarez
 2.  "Python for Finance" by Yves Hilpisch
-3.  Anthropic's Claude documentation: [https://www.anthropic.com](https://www.anthropic.com) or OpenAI's ChatGPT documentation: [https://openai.com/chatgpt](https://openai.com/chatgpt)
+3.  OpenAI's ChatGPT documentation: [https://openai.com/chatgpt](https://openai.com/chatgpt)
 4.  pandas documentation: [https://pandas.pydata.org/docs/](https://pandas.pydata.org/docs/)
 5.  matplotlib documentation: [https://matplotlib.org/stable/contents.html](https://matplotlib.org/stable/contents.html)
 

@@ -38,7 +38,7 @@ Next, we'll initialize the Groq client and load the desired language model.
 client = Client(api_key="YOUR_GROQ_API_KEY")
 
 # Load the language model
-model = client.model(ModelType.Claude_V1)
+model = client.model(ModelType.LLAMA3_70B_8192)
 ```
 
 Slide 5: Creating a Simple Chatbot Function

@@ -869,5 +869,5 @@ Slide 14: Additional Resources
 *   Analysis of Authentication Bypass Vulnerabilities in Modern Web Frameworks
     *   [https://arxiv.org/abs/2311.02756](https://arxiv.org/abs/2311.02756)
 
-Note: These are representative examples of the type of papers that would be relevant. As Claude, I should mention that while the format is correct, you should verify the actual URLs as I cannot guarantee their accuracy.
+Note: These are representative examples of the type of papers that would be relevant. The format is correct, but you should verify the actual URLs independently.
 

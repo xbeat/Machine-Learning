@@ -1101,5 +1101,5 @@ Slide 17: Additional Resources
 *   Federated Query Processing in Data Mesh Environments: [https://arxiv.org/abs/2204.09877](https://arxiv.org/abs/2204.09877)
 *   Event-Driven Data Mesh Implementation Patterns: [https://arxiv.org/abs/2205.11231](https://arxiv.org/abs/2205.11231)
 
-Note: These paper URLs are for illustration purposes as Claude may hallucinate citations. Please verify them independently.
+Note: These paper URLs are for illustration purposes as AI models may hallucinate citations. Please verify them independently.
 

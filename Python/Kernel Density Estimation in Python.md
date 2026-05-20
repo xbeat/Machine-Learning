@@ -1,4 +1,4 @@
-## Claude-Kernel Density Estimation in Python
+## Kernel Density Estimation in Python
 Slide 1: Introduction to Kernel Density Estimation
 
 Kernel Density Estimation (KDE) is a non-parametric method for estimating the probability density function of a random variable based on a finite data sample. It's a powerful technique used in data analysis and visualization to smooth out the data and reveal underlying patterns.
